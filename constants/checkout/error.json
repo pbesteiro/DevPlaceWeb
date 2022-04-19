@@ -1,0 +1,10 @@
+{
+  "title": "Dev Place",
+  "description": "Error al pagar",
+  "thumbnail": "logo.png",
+  "sections": [
+    {
+      "component": "ErrorPayment"
+    }
+  ]
+}

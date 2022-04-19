@@ -1,0 +1,81 @@
+section.steps-component {
+  h2.title {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  
+  small.subtitle {
+    text-align: center;
+    display: block;
+  }
+
+  p.text {
+    text-align: center;
+  }
+
+  &.show-rainbow {
+    padding: 0;
+    z-index: 1;
+    margin-top: -100px;
+    padding: 0px 0px 70px;
+
+    @media (min-width: 768px) {
+      padding: 0px 0px 70px
+    }
+  
+    @media (min-width: 1440px) {
+      padding: 0px 0px 170px
+    }
+
+    h2.title {
+      margin-bottom: 0px;
+    }
+  }
+
+  .step {
+    text-align: center;
+
+    &:last-child {
+      div.arrow {
+        display: none;
+      }
+    }
+
+    &:not(:last-child) {
+      p.text {
+        @media (min-width: 768px) {
+          margin-bottom: 60px;
+        }
+      }
+    }
+
+    h3.title {
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 20px;
+
+      @media (min-width: 768px) {
+        margin-bottom: 30px;
+      }
+    }
+
+    p.text {
+      margin-bottom: 40px;
+      color: #425466;
+    }
+
+    div.arrow {
+      img {
+        margin-bottom: 45px;
+        width: 30px;
+        height: 35px;
+
+        @media (min-width: 768px) {
+          margin-bottom: 55px;
+          width: 66px;
+          height: 68px;
+        }
+      }
+    }
+  }
+}

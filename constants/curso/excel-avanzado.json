@@ -1,0 +1,65 @@
+{
+  "title": "Dev Place",
+  "description": "Cursos online en vivo. Aprende nuevas habilidades tech en programación, diseño, data, marketing digital y mucho más.",
+  "thumbnail": "logo.png",
+  "header_skin": "",
+  "page_name":"curso",
+  "sections": [
+    {
+      "component": "Course",
+      "modality": "Curso online en vivo",
+      "technologyId":"624323f7e14c520a7dcaf322",
+      "name": "Excel Avanzado",
+      "image": "excel.png",
+      "program": {
+        "type": "link",
+        "icon": {
+          "name": "blue-arrow.png"
+        },
+        "action": "#",
+        "label": "Descargar programa"
+      },
+      "details": [
+        {
+          "image": "calendar.png",
+          "description": "6 semanas"
+        },
+        {
+          "image": "clock.png",
+          "description": "2hs por clase"
+        },
+        {
+          "image": "schedule.png",
+          "description": "2 clases por semana"
+        },
+        {
+          "image": "group.png",
+          "description": "Grupos reducidos"
+        }
+      ],
+      "cta": {
+        "type": "filled",
+        "link": "#course-calendar-carousel",
+        "label": "Quiero inscribirme"
+      },
+      "objectives": "El objetivo de este curso es que aprendas a manipular el gestor de datos más importante, Microsoft Excel. Aprende las fórmulas, acciones y buenas prácticas del software. Sabe como aplicar las funcionas más dificiles y dominarlas para cualquier tarea que te sea encomendada.",
+      "forWhom": "Personas que busquen profesionalizarse en la gestion de Excel.",
+      "finalProject": "El proyecto final e integrador que se podra realizar durante la cursada, será aquel que en caso de estar aprobado, DEV PLACE emitirá un certificado de aprobación del curso. Al terminar el curso el usuario tendra 30 días contando desde la última clase para poder enviar el proyecto final al mail correspondiente. Entregado el proyecto DEV PLACE tendra 30 días corridos desde recibido el mismo para, en caso de que este aprobado el proyecto emitir el certificado validando la aprobación del curso correspondiente y en caso que no, notificando la desaprobación del proyecto y del curso. El proyecto sera corregido según las rúbricas de evaluacion de DEV PLACE.",
+      "profile": "● Crear y formular las funciones más importantes y más usadas en excel.\\n ● Saber usar los features más importantes y útiles del Software. \\n ● Creación y generación de reportes. ",
+      "tools": {
+        "component": "Carousel",
+        "options": {
+          "skin": "tools"
+        },
+        "title": "Herramientas que aprenderás",
+        "content": [
+          {
+            "component": "SlideTools",
+            "image": "excel.png",
+            "name": "Excel"
+          }
+        ]
+      }
+    }
+  ]
+}

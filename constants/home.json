@@ -1,0 +1,116 @@
+{
+  "title": "Tech Academy",
+  "description": "Cursos online en vivo. Aprende nuevas habilidades tech en programación, diseño, data, marketing digital y mucho más.",
+  "thumbnail": "logo.png",
+  "header_skin": "",
+  "sections": [
+    {
+      "component": "HeroText",
+      "options": {
+        "skin": "white",
+        "showRainbow": true,
+        "firstSection": true
+      },
+      "title": "Cursos online en vivo",
+      "subtitle": "Aprende nuevas habilidades tech en programación, diseño, data, marketing y mucho más.",
+      "content": "",
+      "image": "",
+      "cta": {
+        "type": "filled",
+        "link": "/cursos.php",
+        "label": "Saber más"
+      }
+    },
+    {
+      "component": "Box",
+      "title": "Tech bootcamps",
+      "subtitle": "Especializate en las ***tecnologías más pedidas*** por el mercado laboral IT. Aprende y entrénate alcanzando una alta performance como programador y accede a tu primer experiencia laboral IT.",
+      "image": {
+        "styles": "",
+        "name": "tech-bootcamps.png"
+      },
+      "cta": {
+        "type": "filled",
+        "link": "/bootcamps.php",
+        "label": "Saber más"
+      }
+    },
+    {
+      "section_id": "home-carreras",
+      "component": "HeroText",
+      "options": {
+        "skin": "white",
+        "showRainbow": true,
+        "mobile_rainbow_band": true
+      },
+      "title": "Carreras",
+      "subtitle": "Aprende e instruite en nuestras carreras cortas en desarrollo full stack, data science, digital marketer y más.",
+      "content": "",
+      "image": "",
+      "cta": {
+        "type": "filled",
+        "link": "/carreras.php",
+        "label": "Saber más"
+        
+      }
+    },
+    {
+      "component": "Box",
+      "title": "Empresas",
+      "subtitle": "Incorpora talento IT según tus necesidades específicas siendo partner nuestro. Programas In Company a medida. Contrata el plan de cursos  que necesites para que tus colaboradores adquieran nuevas habilidades en tecnología.",
+      "image": {
+        "styles": "",
+        "name": "empresas.png"
+      },
+      "cta": {
+        "type": "filled",
+        "link": "/empresas.php",
+        "label": "Saber más"
+      }
+    },
+    {
+      "section_id": "home-dev-platform",
+      "component": "HeroText",
+      "options": {
+        "skin": "white",
+        "showRainbow": true,
+        "mobile_rainbow_band": true
+      },
+      "title": "Dev Platform",
+      "subtitle": "Dev Platform. Registrate en la plataforma elegida por profesionales y estudiantes de la industria tecnológica gratis.",
+      "content": "",
+      "image": "",
+      "cta": {
+        "type": "filled",
+        "link": "/platform.php",
+        "label": "Saber más"
+      }
+    },
+    {
+      "component": "Box",
+      "title": "Beneficios",
+      "subtitle": null,
+      "image": {
+        "styles": "",
+        "name": "beneficios.png"
+      },
+      "cta": {
+        "type": "filled",
+        "link": "/beneficios.php",
+        "label": "Saber más"
+      },
+      "content": [
+        {
+          "component": "HighLight",
+          "title": "gift card",
+          "text": "Regalale ese curso a la persona que sabes que lo necesita con la ***giftcard de Dev Place***"
+        },
+        {
+          "component": "HighLight",
+          "title": "15% off",
+          "text": "Si quieres hacer un primer curso con un amigo aprovecha el descuento del ***15% para los dos***!"
+        }
+      ]
+    }
+  ]
+}

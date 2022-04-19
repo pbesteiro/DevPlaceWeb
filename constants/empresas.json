@@ -1,0 +1,141 @@
+{
+  "title": "Dev Place",
+  "description": "Cursos online en vivo. Aprende nuevas habilidades tech en programación, diseño, data, marketing digital y mucho más.",
+  "thumbnail": "logo.png",
+  "header_skin": "",
+  "sections": [
+    {
+      "component": "HeroText",
+      "options": {
+        "skin": "dark",
+        "showRainbow": true,
+        "firstSection": true
+      },
+      "title": "Incorpora talento junior de alta performance segun tus necesidades y a costo $0.",
+      "subtitle":"Permiti que Dev Place capacite, entrene y busque a tus candidatos Tech mientras vos te enfocas en hacer mejor tu producto y ahora con los mejores talentos.",
+      "content":"",
+      "cta":{
+        "type": "filled",
+        "action": "showModal('apply-modal')",
+        "label": "Contrata"
+      }
+    },
+    {
+      "component": "Box",
+      "title": "¿Por qué talento Dev Place?",
+      "subtitle": "",
+      "content": [
+        {
+          "component": "HighLight",
+          "title": "Costo inicial $0",
+          "text": "Ahorra tiempo y dinero. No nos tienes que pagar ***ninguna tarifa*** por contratación ni por intermediación."
+        },
+        {
+          "component": "HighLight",
+          "title": "Perfil preparado para trabajar",
+          "text": "Además de aprender, entrenarse y especializarse en tecnología, el talento se somete a un proyecto con un equipo de trabajo donde ***tendrá una experiencia laboral real.***"
+        },
+        {
+          "component": "HighLight",
+          "title": "Detalle de los talentos",
+          "text": "Conoce tanto las ***habilidades blandas como las técnicas*** de cada candidato que vayas a entrevistar con especifidad."
+        }
+      ]
+    },
+    {
+      "component": "steps",
+      "title": "Proceso",
+      "subtitle": "",
+      "options": {
+        "showRainbow": true
+      },
+      "cta":{
+        "type":"filled",
+        "link": "#",
+        "label": "Contrata"
+      },
+      "content": [
+        {
+        "title": "01. Contactanos",
+        "text":"Completa el formulario de inscripción si no sos partner y conoce nuestro equipo de talent acquisition & educational projects."
+        },
+        {
+          "title": "02. Acceso a bade de datos",
+          "text":"Una vez que sos un Dev partner, obtene acceso a nuestra base de datos de performance en soft y hard skills de los talentos."
+        },
+        {
+          "title": "03. Preparación para el trabajo",
+          "text":"Incorpora al mejor candidato para tu posición abierta. Realiza las entrevistas necesarias a los candidatos que consideres  necesarios."
+        }
+      ]
+    },
+    {
+      "component":"plainBox",
+      "title":"Programas in Company",
+      "text":"Si estas buscando una capacitación, un bootcamp a medida para desarrollar tu marca como una marca empleadora o un entrenamiento para tus colaboradores, contáctenos para trabajar jusntos en la en la solución.",
+      "image": {
+        "styles": "",
+        "name": ""
+      },
+      "cta":{
+        "type": "filled",
+        "action": "showModal('apply-modal')",
+        "label": "Contactar"
+      }
+    },
+    {
+      "component": "Carousel",
+      "options": {
+        "skin":"empresas",
+        "showRainbowDesktop": true,
+        "showRainbowMobile": true,
+        "rainbowMobilePosition": "top",
+        "rainbowDesktopPosition": "top"
+      },
+      "title": "Encontra las habilidades en tecnología que tus colaboradores necesitan con nosotros cursos y carreras.",
+      "subtitle": "Accede al plan que más le sirva a tu equipo a precios accesibles",
+      "content": [
+        {
+         "component": "SlideEmpresas",
+         "name":"Team",
+          "price": "9.350*",
+          "content": [
+            {"item":"1 curso a eleccion para tus claboradores/as."},
+            {"item":"Clases grabadas."},
+            {"item":"Mentor de soporte para el seguimiento del curso."},
+            {"item":"Mentor Senior."},
+            {"item":"Certificación en caso de Aprobación del proyecto final por cada colaborador."}
+          ],
+          "clarification": "* Precio contemplando mínimo de 5 colaboradores/as. Menos de 5 colaboradores/as el precio es de 11210 ARS + IVA"
+        },
+        {
+          "component": "SlideEmpresas",
+          "name":"business",
+           "price": "19.850*",
+           "content": [
+            {"item":"Cursos limitados por mes, en todas las fechas disponibles dentro de la plataforma."},
+            {"item":"Clases grabadas."},
+            {"item":"Mentor de soporte para el seguimiento del curso."},
+            {"item":"Mentor Senior."},
+            {"item":"Certificación en caso de Aprobación del proyecto final por cada colaborador."}
+          ],
+           "clarification": "* Mínimo de 10 colaboradores/as"
+        },
+        {
+          "component": "SlideEmpresas",
+          "name":"Company",
+           "price": "26.650*",
+           "content": [
+            {"item":"Cursos exclusivos."},
+            {"item":"Medición de performance de cada colaborador a lo largo delcurso."},
+            {"item":"Mentor de soporte para los horarios fuera de clase."},
+            {"item":"Mentor Senior."},
+            {"item":"Elección de la grilla de horarios"},
+            {"item":"Certificación en caso de Aprobación del proyecto final por cada colaborador."}
+          ],
+           "clarification": "* Mínimo de 10 colaboradores/as"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+div.slide-component {
+  background-color: white;
+  border-radius: 3px;
+  padding: 64px 24px 46px;
+  height: auto;
+
+  @media (min-width: 768px) {
+    max-width: 350px;
+  }
+
+  h3.title {
+    font-size: 30px;
+    font-style: italic;
+    text-align: left;
+    margin-bottom: 35px;
+
+    @media (min-width: 768px) {
+      font-size: 45px;
+      margin-bottom: 60px;
+      line-height: 50px;
+    }
+  }
+
+  .text {
+    margin-bottom: 20px;
+    color: #334253;
+
+    @media (min-width: 768px) {
+      margin-bottom: 27px;
+    }
+
+    em,
+    strong {
+      font-size: 18px;
+      line-height: 24px;
+
+      @media (min-width: 768px) {
+        font-size: 22px;
+        font-weight: 500;
+      }
+    }
+
+    em {
+      display: block;
+    }
+  }
+  a {
+    line-height: 25px;
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    color: #1573e5;
+    font-weight: 500;
+  }
+
+  .call-to-action{
+    min-width:100%;
+    display:flex;
+    margin: 0px auto;
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "title": "Ingresar",
+  "description": "Ingresa a tu cuenta",
+  "thumbnail": "logo.png",
+  "sections": [
+    {
+    "component":"SignInForm"   
+    }
+  ]
+}

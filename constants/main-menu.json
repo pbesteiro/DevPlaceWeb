@@ -1,0 +1,158 @@
+[
+  {
+    "visible": true,
+    "label": "Cursos",
+    "href": "/cursos.php",
+    "children": [
+      {
+        "visible": true,
+        "label": "Programación",
+        "href": "/curso.php",
+        "children": [
+          {
+            "visible": true,
+            "label": "Java Script",
+            "href": "/curso/javascript.php"
+          },
+          {
+            "visible": true,
+            "label": "Desarrollo Web",
+            "href": "/curso/desarrollo-web.php"
+          },
+          {
+            "visible": true,
+            "label": "Fundamentos de la Programación",
+            "href": "/curso/fundamentos-de-la-programacion.php"
+          },
+          {
+            "visible": true,
+            "label": "POO",
+            "href": "/curso/poo.php"
+          }
+        ]
+      },
+      {
+        "visible": true,
+        "label": "Base de Datos",
+        "href": "/cursos.php",
+        "children":[
+          {
+            "visible": true,
+            "label": "SQL",
+            "href": "/curso/sql.php"
+          },
+          {
+            "visible": true,
+            "label": "Mongo DB",
+            "href": "/curso/mongo-db.php"
+          }
+        ]
+      },
+      {
+        "visible": true,
+        "label": "Diseño",
+        "href": "/cursos.php",
+        "children": [
+          {
+            "visible": true,
+            "label": "Diseño UX & UI",
+            "href": "/curso/diseno-ux-ui.php"
+          }
+        ]
+      },
+      {
+        "visible": true,
+        "label": "Marketing digital",
+        "href": "/cursos.php",
+        "children": [
+          {
+            "visible": true,
+            "label": "Growth Marketing",
+            "href": "/curso/growth-marketing.php"
+          },
+          {
+            "visible": true,
+            "label": "Community management + FB & Google Ads",
+            "href": "/curso/community-management-fb-google-ads.php"
+          }
+        ]
+      },
+      {
+        "visible": true,
+        "label": "Datos",
+        "href": "/cursos.php",
+        "children": [
+          {
+            "visible": true,
+            "label": "Data Analytics",
+            "href": "/curso/data-analytics.php"
+          }
+        ]
+      },
+      {
+        "visible": true,
+        "label": "Infraestructura digital",
+        "href": "/cursos.php",
+        "children": [
+          {
+            "visible": true,
+            "label": "Dev Ops",
+            "href": "/curso/dev-ops.php"
+          },
+          {
+            "visible": true,
+            "label": "Linux",
+            "href": "/curso/linux.php"
+          }
+        ]
+      },
+      {
+        "visible": true,
+        "label": "Productividad",
+        "href": "/cursos.php",
+        "children": [
+          {
+            "visible": true,
+            "label": "Product Management",
+            "href": "/curso/product-management.php"
+          },
+          {
+            "visible": true,
+            "label": "Excel Avanzado",
+            "href": "/curso/excel-avanzado.php"
+          },
+          {
+            "visible": true,
+            "label": "Scrum",
+            "href": "/curso/scrum.php"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "visible": true,
+    "label": "Bootcamps",
+    "href": "/bootcamps.php"
+  },
+  {
+    "visible": true,
+    "label": "Carreras",
+    "href": "/carreras.php"
+  },
+  {
+    "visible": true,
+    "label": "Empresas",
+    "href": "/empresas.php"
+  },
+  {
+    "visible": true,
+    "label": "Platform",
+    "href": "/platform.php"
+  },
+  {
+    "visible": true,
+    "label": "Beneficios",
+    "href": "/beneficios.php"
+  }
+]

@@ -1,0 +1,35 @@
+.bank-transfer-information-component{
+  margin-bottom: 28px;
+
+  @media(min-width: 768px){
+    margin-bottom: 50px;
+  }
+}
+
+#bank-transfer-information-form {
+  margin-bottom: 28px;
+
+  @media(min-width: 768px){
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 506px;
+  }
+
+  .field {
+    label {
+      font-size: 16px;
+    }
+  }
+
+  h3.title {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 37px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 48px;
+    }
+  }
+}

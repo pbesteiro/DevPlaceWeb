@@ -1,0 +1,56 @@
+section.carousel-component {
+  &.carousel-tools-skin {
+    h2.title {
+      font-size: 50px;
+      text-align: center;
+    }
+
+    .carousel {
+      .carousel-container {
+        width: 1000px;
+        max-width: 100%;
+
+        .carousel-row {
+        }
+        
+        .glide {
+          padding: 0px;
+
+          &:not(.glide--carousel, .glide--slider){
+            .glide__track{
+              .glide__slides{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .glide__slide{
+                  width: auto;
+                }
+              }
+            }
+
+            .glide__arrows {
+              display: none;
+            }
+          }
+
+          .glide__track{
+            .glide__slides{
+              @media(min-width: 1024px){
+                padding: 0px;
+              }
+
+              .glide__slide{
+                
+              }
+            }
+          }
+          
+          .glide__arrows {
+          }
+        }
+        
+      }
+    }
+  }
+}

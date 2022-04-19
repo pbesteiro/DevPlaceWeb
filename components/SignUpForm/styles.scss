@@ -1,0 +1,61 @@
+#signup-form{
+  max-width: 500px;
+  margin: 0px auto;
+  
+
+  h3{
+    text-align: start;
+    margin-bottom: 45px;
+
+    @media(min-width: 1024px){
+      text-align: center;
+      margin-bottom: 60px;
+    }
+  }
+
+  .call-to-action{
+    width: 100%;
+  }
+
+  .get-it-back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a{
+      color: #425466;
+    }
+
+    span{
+      padding: 0px 15px;
+    }
+  }
+
+  hr{
+    margin: 50px 0px;
+
+    @media(min-width: 1024px){
+      margin: 55px 0px;
+    }
+  }
+
+  .fields{
+    .field{
+      &:last-of-type{
+        margin-bottom: 35px;
+
+        @media(min-width: 1024px){
+          margin-bottom: 45px;
+        }
+      }
+    }   
+  }
+
+  .field-checkbox{
+    margin-bottom: 40px;
+
+    @media(min-width: 1024px){
+      margin-bottom: 65px;
+    }
+  }
+}

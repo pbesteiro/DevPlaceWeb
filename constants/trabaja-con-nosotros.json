@@ -1,0 +1,11 @@
+{
+  "title": "Trabaja con nosotros",
+  "description": "Trabaja con Dev Place",
+  "thumbnail": "logo.png",
+  "header_skin": "brand-mode",
+  "sections": [
+    {
+    "component":"WorkWithUsForm"   
+    }
+  ]
+}

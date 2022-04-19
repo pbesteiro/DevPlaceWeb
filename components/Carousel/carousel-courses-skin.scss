@@ -1,0 +1,82 @@
+section.carousel-component {
+  &.carousel-courses-skin {
+
+    h2.title {
+      text-align: left;
+      font-size: 30px;
+      margin-bottom: 20px;
+
+      @media (min-width: 768px) {
+        font-size: 45px;
+        margin-bottom: 30px;
+      }
+
+      @media (min-width: 1200px) {
+        font-size: 80px;
+        margin-bottom: 60px;
+      }
+
+      @media (min-width: 1440px) {
+        font-size: 40px;
+        margin-bottom: 15px;
+      }
+    }
+
+    small.subtitle {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 50px;
+
+      @media (min-width: 1200px) {
+        font-size: 30px;
+        margin-bottom: 85px;
+      }
+      @media (min-width: 1440px) {
+        font-size: 20px;
+        margin-bottom: 50px;
+      }
+    }
+
+    p.text {
+    }
+
+    .carousel {
+      .carousel-container {
+        .carousel-row {
+        }
+
+        .glide {
+          &:not(.glide--carousel, .glide--slider){
+            .glide__track {
+              .glide__slides {
+                .glide__slide {
+                  width: 100%;
+                  max-width: 220px;
+
+                  &:not(:last-child) {
+                    margin-right: 20px;
+                  }
+
+                  @media (min-width: 768px) {
+                    max-width: calc(50% - 60px);
+                  }
+
+                  @media (min-width: 1024px) {
+                    max-width: 315px;
+                  }
+
+                  @media (min-width: 1440px) {
+                    max-width: calc(25% - 15px);
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .glide__arrows {
+        }
+      }
+    }
+  }
+}

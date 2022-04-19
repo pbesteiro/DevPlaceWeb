@@ -1,0 +1,37 @@
+body.simple-layout{
+  padding: 35px 0px 120px;
+
+  @media (min-width: 1024px){
+    padding: 45px 0px;
+  }
+
+  &::-webkit-scrollbar {
+    width: 5px;      
+  }
+  &::-webkit-scrollbar-thumb {
+    background: rgb(173, 173, 173);
+    border-radius: 5px;
+  }
+
+  header {
+    position: relative;
+    padding: 0px 0px 65px;
+
+    @media(min-width: 1024px){
+      padding: 0px 0px 80px;
+    }
+
+    .logo {
+      svg {
+        display: flex;
+        margin: 0px auto;
+        fill: #4b21aa;
+        max-width: 185px;
+
+        @media (min-width: 1024px) {
+          max-width: 255px;
+        }
+      }
+    }
+  }
+}

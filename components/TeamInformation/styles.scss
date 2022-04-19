@@ -1,0 +1,112 @@
+.team-information-component {
+  padding: 140px 0px;
+
+  h2.title {
+    font-size: 45px;
+    font-weight: 600;
+    text-align: start;
+    margin-bottom: 60px;
+
+    @media (min-width: 768px) {
+      font-size: 60px;
+      margin-bottom: 80px;
+    }
+  }
+
+  .information {
+    .information-item {
+      margin-bottom: 75px;
+
+      @media (min-width: 768px) {
+        margin-bottom: 90px;
+      }
+      h3.title {
+        font-size: 30px;
+        margin-bottom: 20px;
+
+        @media (min-width: 768px) {
+          font-size: 45px;
+          line-height: 30px;
+          margin-bottom: 40px;
+        }
+      }
+      p.text {
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 0px;
+
+        @media (min-width: 768px) {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+  &.long {
+    h2.title {
+      margin-bottom: 60px;
+      @media(min-width: 768px){
+        margin-bottom: 70px;
+      }
+    }
+
+    small.subtitle {
+      font-size: 20px;
+      line-height: 35px;
+      font-weight: 600;
+      margin-bottom: 25px;
+      color: black;
+
+      @media (min-width: 768px) {
+        font-size: 25px;
+        line-height: 40px;
+        font-weight: 600;
+        margin-bottom: 25px;
+        color: black;
+      }
+    }
+
+    p.written {
+      font-size: 15px;
+      line-height: 22px;
+      margin-bottom: 40px;
+      @media (min-width: 768px) {
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 55px;
+      }
+    }
+
+    .information {
+      .information-item {
+        margin-bottom: 40px;
+        @media(min-width: 768px){
+          margin-bottom: 55px;
+        }
+      
+        h3.title {
+          font-size: 20px;
+          line-height: 24px;
+          margin-bottom: 25px;
+          font-weight: 300;
+
+          @media (min-width: 768px) {
+            font-size: 30px;
+            line-height: 30px;
+            margin-bottom: 30px;
+          }
+        }
+
+        p.text {
+          font-size: 15px;
+          line-height: 22px;
+
+          @media (min-width: 768px) {
+            font-size: 18px;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+  }
+}

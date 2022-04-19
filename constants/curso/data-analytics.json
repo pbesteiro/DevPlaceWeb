@@ -1,0 +1,95 @@
+{
+  "title": "Dev Place",
+  "description": "Cursos online en vivo. Aprende nuevas habilidades tech en programación, diseño, data, marketing digital y mucho más.",
+  "thumbnail": "logo.png",
+  "header_skin": "",
+  "page_name":"curso",
+  "sections": [
+    {
+      "component": "Course",
+      "modality": "Curso online en vivo",
+      "technologyId":"62432360e14c520a7dcaf30f",
+      "name": "Data Analytics",
+      "image": "data-analytics.png",
+      "program": {
+        "type": "link",
+        "icon": {
+          "name": "blue-arrow.png"
+        },
+        "action": "#",
+        "label": "Descargar programa"
+      },
+      "details": [
+        {
+          "image": "calendar.png",
+          "description": "12 semanas"
+        },
+        {
+          "image": "clock.png",
+          "description": "2hs por clase"
+        },
+        {
+          "image": "schedule.png",
+          "description": "2 clases por semana"
+        },
+        {
+          "image": "group.png",
+          "description": "Grupos reducidos"
+        }
+      ],
+      "cta": {
+        "type": "filled",
+        "link": "#course-calendar-carousel",
+        "label": "Quiero inscribirme"
+      },
+      "objectives": "El objetivo del curso es que aprendas a gestionar la información recabada para que generarle un alto valor a tu negocio. Para esto aprenderás también a gestionar bases de datos relacionales y posteriormente diseñaras y desarrollaras tableros de control con las herramientas de analiticas más usadas del mercado IT.",
+      "forWhom": "● Para profesionales que desean emprender en el área del análisis de los datos y que quieran generar impacto dentro de las unidades de negocio de una organización. \\n ● Quienes esperan ampliar o profundizar conocimientos dentro de sus rubros profesionales, como por ejemplo: Administración y/o Negocios, Ingeniería , Economía, Contabilidad o carreras técnicas. \\n ● Quienes buscan dar un giro profesional a su carrera, orientándose hacia una nueva disciplina muy demandada en el mercado de diversas industrias.",
+      "finalProject": "El proyecto final e integrador que se podra realizar durante la cursada, será aquel que en caso de estar aprobado, DEV PLACE emitirá un certificado de aprobación del curso. Al terminar el curso el usuario tendra 30 días contando desde la ultima clase para poder enviar el proyecto final al mail correspondiente. Entregado el proyecto DEV PLACE tendra 30 días corridos desde recibido el mismo para, en caso de que este aprobado el proyecto emitir el certificado validando la aprobación del curso correspondiente y en caso que no, notificando la desaprobación del proyecto y del curso. El proyecto sera corregido según las rúbricas de evaluacion de DEV PLACE.",
+      "profile": "● Comprende y aplica los conceptos asociados al análisis de datos y la extracción de patrones usando un lenguaje de programación, con el objetivo de identificar las diferentes técnicas y modelos en relación a las aplicaciones potenciales. \\n  ● Interpreta y transmite las tendencias obtenidas del análisis de datos y su influencia en las métricas de negocio, con el objetivo de potenciar el proceso de toma de decisiones empresariales.\\n ● Cumple de manera responsable con las asignaciones para asegurar el éxito del trabajo y la calidad del mismo. \\n ● Colabora y participa en forma proactiva para alcanzar las metas y grupales propuestas.",
+      "tools": {
+        "component": "Carousel",
+        "options": {
+          "skin": "tools"
+        },
+        "title": "Herramientas que aprenderás",
+        "content": [
+          {
+            "component": "SlideTools",
+            "image": "sql.png",
+            "name": "sql"
+          },
+          {
+            "component": "SlideTools",
+            "image": "microsoft-sql-server.png",
+            "name": "sql Server"
+          },
+          {
+            "component": "SlideTools",
+            "image": "python.png",
+            "name": "Python"
+          },
+          {
+            "component": "SlideTools",
+            "image": "pandas.png",
+            "name": "Pandas"
+          },
+          {
+            "component": "SlideTools",
+            "image": "power-bi.png",
+            "name": "Power Bi"
+          },
+          {
+            "component": "SlideTools",
+            "image": "tableau.png",
+            "name": "Tableau"
+          },
+          {
+            "component": "SlideTools",
+            "image": "excel.png",
+            "name": "Excel"
+          }
+        ]
+      }
+    }
+  ]
+}

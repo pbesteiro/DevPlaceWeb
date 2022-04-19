@@ -1,0 +1,285 @@
+{
+  "title": "Dev Place",
+  "description": "Cursos online en vivo. Aprende nuevas habilidades tech en programación, diseño, data, marketing digital y mucho más.",
+  "thumbnail": "logo.png",
+  "header_skin": "",
+  "sections": [
+    {
+      "component": "HeroText",
+      "section_id": "convertite-en-un-desarrollador",
+      "options": {
+        "skin": "dark",
+        "showRainbow": true,
+        "firstSection": true
+      },
+      "title": "¿Sabes programar?\nEspecialízate en una o mas tecnologías y conseguí trabajo como desarrollador de software",
+      "subtitle": "Convertite en un desarrollador de software profesional y ***paga recién cuando conseguís trabajo***. Aprende, entrénate y especialízate por ***2 meses*** de forma remota.",
+      "content": "",
+      "cta": {
+        "type": "filled",
+        "link": "#proximas-fechas",
+        "label": "Quiero aplicar"
+      }
+    },
+    {
+      "component": "Box",
+      "section_id": "proceso-de-admision",
+      "title": "Proceso de admisión",
+      "subtitle": "",
+      "image": {
+        "styles": "",
+        "name": "proceso-de-admision.png"
+      },
+      "cta": {
+        "type": "filled",
+        "link": "#proximas-fechas",
+        "label": "Quiero aplicar"
+      },
+      "content": [
+        {
+          "component": "HighLight",
+          "title": "01.",
+          "text": "Aplica completando el formulario en ***5 minutos***."
+        },
+        {
+          "component": "HighLight",
+          "title": "02.",
+          "text": "Evalúa ***tus skills*** en tecnología con el Dev Challenge."
+        },
+        {
+          "component": "HighLight",
+          "title": "03.",
+          "text": "Completa el formulario de inscripción y ***comenza a aprender*** y entrenarte en tu Tech Bootcamp."
+        },
+        {
+          "component": "HighLight",
+          "title": "04.",
+          "text": "Conéctate con ***nuestras empresas partner*** en tecnológia de todo el mundo y accede a tu empleo IT."
+        }
+      ]
+    },
+    {
+      "component": "steps",
+      "section_id": "tu-camino-con-el-tech-bootcamp",
+      "title": "Tu camino con el \\n Tech Bootcamp",
+      "subtitle": "",
+      "options": {
+        "showRainbow": true
+      },
+      "content": [
+        {
+          "title": "01. Bootcamp",
+          "text": "Aprende y entrénate profundamente en las tecnologías dispuestas en el bootcamp elegido con expertos en la industria y con metodologías educativas innovadoras."
+        },
+        {
+          "title": "02. Dev labs",
+          "text": "Trabaja en proyectos reales en equipo con metodologias agiles inmerso en un ambiente laboral con tu equipo de desarrollo, technical leader y un proyect manager."
+        },
+        {
+          "title": "03. Preparación para el trabajo",
+          "text": " Te preparamos y damos todas las herramientas para tener un perfil listo para ingresar al mercado laboral IT."
+        },
+        {
+          "title": "04. Post Bootcamp",
+          "text": "Si no conseguiste trabajo terminado los dev labs, segui haciendo proyectos individuales con nosotros para seguir profundizando tus skills tech."
+        }
+      ]
+    },
+    {
+      "component": "Box",
+      "section_id": "requisitos-para-ingresar-al-tech-bootcamp",
+      "title": " Requisitos para ingresar \\n al Tech Bootcamp",
+      "subtitle": "",
+      "image": {
+        "styles": "",
+        "name": "requisitos.png"
+      },
+      "content": [
+        {
+          "component": "HighLight",
+          "title": "wifi",
+          "text": "Acceso a una computadora y conexión wi fi."
+        },
+        {
+          "component": "HighLight",
+          "title": "+18.",
+          "text": "Ser mayor de 18 años."
+        },
+        {
+          "component": "HighLight",
+          "title": "full time",
+          "text": "Disponibilidad full time de lunes a viernes"
+        }
+      ]
+    },
+    {
+      "component": "Calendar",
+      "section_id": "daily-calendar",
+      "title": "Daily calendar",
+      "subtitle": "Lunes a Viernes (*)",
+      "text": "**(*) Cada 2 semanas, los sabados, se propone hacer opcionalmente un challenge real de entrevistas tecnicas de empresas IT sobre los temas vistos hasta el momento.\nClases de soporte nocturnas 1 vez por semana en caso de ser necesarias**",
+      "cta": {
+        "type": "filled",
+        "link": "#proximas-fechas",
+        "label": "Quiero aplicar"
+      },
+      "content": [
+        {
+          "hour": "9 a 10hs",
+          "title": "Review + Ejercitación",
+          "text": "Corrección de ejercicios de la review pro junto con tu instructor, puesta en común de los mismos y explicación del workshop a realizar."
+        },
+        {
+          "hour": "10 a 12hs",
+          "title": "Workshop",
+          "text": "Desafio práctico de alta dificultad a realizar individualmente."
+        },
+        {
+          "hour": "12 a 13hs",
+          "title": "Workshop Review",
+          "text": "Q&A del workshop con tu instructor y revisión del código modelo."
+        },
+        {
+          "hour": "13 a 14hs",
+          "title": "Descanso y almuerzo",
+          "text": ""
+        },
+        {
+          "hour": "14 a 15.30hs",
+          "title": "Lectura",
+          "text": "Clase teórica online en vivo sobre el nuevo tema y entrega de ejercicios a realizar en la siguiente etapa."
+        },
+        {
+          "hour": "15.30 a 17hs",
+          "title": "Pair Programming",
+          "text": "Resolucion de los ejercicios entregados  terminada la \"Lectura\". Creación de ejercicios en parejas sobre el nuevo tema y elaboración de casos de aplicación alternativos."
+        },
+        {
+          "hour": "17 a 18.30hs",
+          "title": "Review Pro",
+          "text": "Correccion de los ejercicios dados en la Lectura por el instructor + exposición de cada pareja de sus ejercicios y casos de uso + corrección en vivo del instructor."
+        }
+      ]
+    },
+    {
+      "component": "Box",
+      "section_id": "dev-place-en-numeros",
+      "title": "Dev Place en números",
+      "subtitle": "",
+      "image": {
+        "styles": "",
+        "name": "estadisticas.png"
+      },
+      "content": [
+        {
+          "component": "HighLight",
+          "title": "80%",
+          "text": "De inserción laboral en los primeros 2 meses."
+        },
+        {
+          "component": "HighLight",
+          "title": " 95%",
+          "text": "De inserción laboral en los primeros 3 meses."
+        },
+        {
+          "component": "HighLight",
+          "title": "+9",
+          "text": "Países"
+        },
+        {
+          "component": "HighLight",
+          "title": "+150",
+          "text": "Empresas partner"
+        }
+      ]
+    },
+    {
+      "component": "steps",
+      "section_id": "costo-del-tech-bootcamp",
+      "title": "Costo del \\n Tech Bootcamp",
+      "options": {
+        "showRainbow": false
+      },
+      "content": [
+        {
+          "title": "Costo inicial $0",
+          "text": "Completa el programa del Tech Bootcamp sin costo"
+        },
+        {
+          "title": "Consigue trabajo",
+          "text": "Te preparamos para que consigas trabajo en IT"
+        },
+        {
+          "title": "Pagas el 15%",
+          "text": "de tus ingresos o en 18 cuotas  mensuales o hasta llegar a USD 1500 oficiales"
+        }
+      ]
+    },
+    {
+      "component": "Carousel",
+      "section_id": "proximas-fechas",
+      "options": {
+        "skin": "next-dates"
+      },
+      "title": "Próximas Fechas",
+      "content": [
+        {
+          "cta": {
+            "type": "filled",
+            "action": "showModal('apply-modal')",
+            "label": "Aplicar"
+          },
+          "component": "SlideNextDates",
+          "title": "31 de Noviembre de<br />2022",
+          "text": "text section 31 de Noviembre de<br />2022",
+          "duration": "4 meses. Full Time.",
+          "format": "Clase en vivo",
+          "schedule": "Lunes a Viernes<br />9am a 6pm",
+          "profile": "Back End: Java"
+        },
+        {
+          "cta": {
+            "type": "filled",
+            "action": "showModal('apply-modal')",
+            "label": "Aplicar"
+          },
+          "component": "SlideNextDates",
+          "title": "31 de Noviembre de<br />2022",
+          "text": "text section 31 de Noviembre de<br />2022",
+          "duration": "4 meses. Full Time.",
+          "format": "Clase en vivo",
+          "schedule": "Lunes a Viernes<br />9am a 6pm",
+          "profile": "Back End: Java"
+        },
+        {
+          "cta": {
+            "type": "filled",
+            "action": "showModal('apply-modal')",
+            "label": "Aplicar"
+          },
+          "component": "SlideNextDates",
+          "title": "31 de Noviembre de<br />2022",
+          "text": "text section 31 de Noviembre de<br />2022",
+          "duration": "4 meses. Full Time.",
+          "format": "Clase en vivo",
+          "schedule": "Lunes a Viernes<br />9am a 6pm",
+          "profile": "Back End: Java"
+        },
+        {
+          "cta": {
+            "type": "filled",
+            "action": "showModal('apply-modal')",
+            "label": "Aplicar"
+          },
+          "component": "SlideNextDates",
+          "title": "31 de Noviembre de<br />2022",
+          "text": "text section 31 de Noviembre de<br />2022",
+          "duration": "4 meses. Full Time.",
+          "format": "Clase en vivo",
+          "schedule": "Lunes a Viernes<br />9am a 6pm",
+          "profile": "Back End: Java"
+        }
+      ]
+    }
+  ]
+}

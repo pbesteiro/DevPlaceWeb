@@ -1,0 +1,58 @@
+section.carousel-component {
+  &.carousel-empresas-skin {
+    padding: 81px 0px 150px;
+
+    @media(min-width: 1024px){
+      padding: 160px 0px;
+    }
+    h2.title{
+      text-align: start;
+      margin-bottom: 40px;
+
+      @media(min-width: 768px){
+        margin-bottom: 60px;
+      }
+
+      @media(min-width: 1440px){
+        margin-bottom: 100px;
+      }
+    }
+
+    small.subtitle{
+      margin-bottom: 60px;
+
+      @media(min-width: 768px){
+        margin-bottom: 80px;
+      }
+
+      @media(min-width: 1440px){
+        margin-bottom: 120px;
+      }
+    }
+
+    .carousel {
+      .carousel-container {
+         .carousel-row {
+        }
+        
+        .glide {
+          .glide__track{
+            .glide__slides{
+              
+              @media(min-width: 1440px){
+                justify-content: center;
+              }
+          
+              }
+              .glide__slide{
+                
+              }
+            }
+          }
+        }
+        
+        .glide__arrows {
+        }
+      }
+    }
+  }

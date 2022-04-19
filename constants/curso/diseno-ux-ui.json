@@ -1,0 +1,100 @@
+{
+  "title": "Dev Place",
+  "description": "Cursos online en vivo. Aprende nuevas habilidades tech en programación, diseño, data, marketing digital y mucho más.",
+  "thumbnail": "logo.png",
+  "header_skin": "",
+  "page_name":"curso",
+  "sections": [
+    {
+      "component": "Course",
+      "modality": "Curso online en vivo",
+      "technologyId":"624322c9e14c520a7dcaf2f8",
+      "name": "Diseño UX & UI",
+      "image": "ui-ux-design.png",
+      "program": {
+        "type": "link",
+        "icon": {
+          "name": "blue-arrow.png"
+        },
+        "action": "#",
+        "label": "Descargar programa"
+      },
+      "details": [
+        {
+          "image": "calendar.png",
+          "description": "12 semanas"
+        },
+        {
+          "image": "clock.png",
+          "description": "2hs por clase"
+        },
+        {
+          "image": "schedule.png",
+          "description": "2 clases por semana"
+        },
+        {
+          "image": "group.png",
+          "description": "Grupos reducidos"
+        }
+      ],
+      "cta": {
+        "type": "filled",
+        "link": "#course-calendar-carousel",
+        "label": "Quiero inscribirme"
+      },
+      "objectives": "El objetivo del curso es que Aprendas a Diseñar y crear un prototipo de app o sitio web mobile first (en base a esta tendencia, se crea primero una versión optimizada para dispositivos móviles, y luego se amplía a web o desktop). \\n Comenzarás a plasmar tu idea definiendo las funcionalidades principales de la misma (MVP). Entenderás qué tipo de perfiles son aquellos a los cuales les interesará tu producto. \\n Utilizarás herramientas de prototipo actuales y solicitadas en el mundo laboral. Asimismo, validarás tu proyecto mediante diferentes metodologías y actividades.\\n Llegarás a adquirir habilidades de metodologías ágiles. Podrás fundamentar las decisiones de diseño del proyecto de manera clara. Finalmente, aprenderás metodologías de diseño para tu proyecto, e incorporarás conocimientos de disciplinas proyectuales.",
+      "forWhom": "Personas que busquen profesionalizarse en el Diseño digital de aplicaciones y sistemas creados, confeccionados y pensandos para que el usuario tenga la mejor experiencia posible.",
+      "finalProject": "El proyecto final e integrador que se podra realizar durante la cursada, será aquel que en caso de estar aprobado, DEV PLACE emitirá un certificado de aprobación del curso. Al terminar el curso el usuario tendra 30 dias contando desde la ultima clase para poder enviar el proyecto final al mail correspondiente. Entregado el proyecto DEV PLACE tendra 30 dias corridos desde recibido el mismo para, en caso de que este aprobado el proyecto emitir el certificado validando la aprobacion del curso correspondiente y en caso que no, notificando la desaprobacion del proyecto y del curso. El proyecto sera corregido segun las rubricas de evaluacion de DEV PLACE.",
+      "profile": "● Utilizar la metodología del Diseño Centrado en el Usuario (DCU).\\n ● Fundamentar decisiones de diseño de tu proyecto.\\n  ● Analizar e identificar las necesidades de los usuarios.\\n ● Diferenciar el trabajo de UX de UI.\\n ● Conocer sobre metodologías ágiles.\\n ● Conocer sobre metodologías de diseño: design thinking, lean UX, design sprint.\\n ● Conocer, aplicar y utilizar los patrones y tendencias de diseño.\\n ● Adquirir habilidades para el manejo de las herramientas y recursos que se utilizan para elaborar un diseño de interfaz.\\n ● Comprender conceptos de grilla para que tu diseño se adapte correctamente a cualquier dispositivo.\\n ● Crear la estructura y wireframe de tu diseño de interfaces).\\n ● Validar prototipos funcionales con usuarios (pruebas de usabilidad).\\n ● Utilizar herramientas de validación del prototipo tales como evaluación heurística, testeo de usuarios, entrevistas cualitativas, entre otros.\\n ● Construir prototipos navegables para presentar el proyecto.",
+      "tools": {
+        "component": "Carousel",
+        "options": {
+          "skin": "tools"
+        },
+        "title": "Herramientas que aprenderás",
+        "content": [
+          {
+            "component": "SlideTools",
+            "image": "zeplin.png",
+            "name": "Zeplin"
+          },
+          {
+            "component": "SlideTools",
+            "image": "figma.png",
+            "name": "Figma"
+          },
+          {
+            "component": "SlideTools",
+            "image": "adobe-xd.png",
+            "name": "Adobe xd"
+        },
+          {
+            "component": "SlideTools",
+            "image": "whimsical.png",
+            "name": "Whimsical"
+          },
+          {
+            "component": "SlideTools",
+            "image": "sketch.png",
+            "name": "Sketch"
+          },
+          {
+            "component": "SlideTools",
+            "image": "draw-io.png",
+            "name": "Draw-io"
+          },
+          {
+            "component": "SlideTools",
+            "image": "google-drive.png",
+            "name": "Google Drive"
+          },
+          {
+            "component": "SlideTools",
+            "image": "behance.png",
+            "name": "Behance"
+          }
+        ]
+      }
+    }
+  ]
+}

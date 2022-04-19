@@ -1,0 +1,44 @@
+.plain-box-component {
+  padding: 40px 0px 115px;
+
+  @media(min-width: 768px){
+    padding: 40px 0px 115px;
+  }
+
+  @media(min-width: 1440px){
+    padding: 150px 0px;
+  }
+  h2.title {
+    text-align: start;
+    margin-bottom: 40px;
+
+    @media(min-width: 768px){
+      text-align: center;
+    }
+    
+    @media(min-width: 1440px){
+      margin-bottom: 100px;
+    }
+  }
+
+  p.text {
+    text-align: start;
+    font-size: 18px;
+    margin-bottom: 90px;
+
+    @media(min-width: 768px){
+      text-align: center;
+    }
+
+    @media(min-width: 1440px){
+      font-size: 30px;
+      margin-bottom: 90px;
+    }
+  }
+
+  .content-center{
+    .call-to-action{
+      font-size: 15px;
+    }
+  }
+}

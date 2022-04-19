@@ -1,0 +1,95 @@
+{
+  "title": "Dev Place",
+  "description": "Cursos online en vivo. Aprende nuevas habilidades tech en programación, diseño, data, marketing digital y mucho más.",
+  "thumbnail": "logo.png",
+  "header_skin": "",
+  "page_name":"curso",
+  "sections": [
+    {
+      "component": "Course",
+      "modality": "Curso online en vivo",
+      "technologyId":"62432418e14c520a7dcaf32d",
+      "name": "Dev Ops",
+      "image": "dev-ops.png",
+      "program": {
+        "type": "link",
+        "icon": {
+          "name": "blue-arrow.png"
+        },
+        "action": "#",
+        "label": "Descargar programa"
+      },
+      "details": [
+        {
+          "image": "calendar.png",
+          "description": "6 semanas"
+        },
+        {
+          "image": "clock.png",
+          "description": "2hs por clase"
+        },
+        {
+          "image": "schedule.png",
+          "description": "2 clases por semana"
+        },
+        {
+          "image": "group.png",
+          "description": "Grupos reducidos"
+        }
+      ],
+      "cta": {
+        "type": "filled",
+        "link": "#course-calendar-carousel",
+        "label": "Quiero inscribirme"
+      },
+      "objectives": "El objetivo de este curso es que aprendas a mejorar la agilidad y entrega de software con metodologías DevOps. Reconocer la cultura y metodologías DevOps. Comprenderás lo que mejora la integración continua a una metodología ágil. Conocerás y utilizaras las herramientas más utilizadas en la integración continua.",
+      "forWhom": "Está dirigido a personas que quieran dominar los procesos y metodologías que utiliza un ingeniero en DevOps.",
+      "finalProject": "El proyecto final e integrador que se podra realizar durante la cursada, será aquel que en caso de estar aprobado, DEV PLACE emitirá un certificado de aprobación del curso. Al terminar el curso el usuario tendra 30 dias contando desde la ultima clase para poder enviar el proyecto final al mail correspondiente. Entregado el proyecto DEV PLACE tendra 30 dias corridos desde recibido el mismo para, en caso de que este aprobado el proyecto emitir el certificado validando la aprobacion del curso correspondiente y en caso que no, notificando la desaprobacion del proyecto y del curso. El proyecto sera corregido segun las rubricas de evaluacion de DEV PLACE.",
+      "profile": "● Entender y saber aplicar los conceptos y herramientas escenciales de la cultura DevOps en una organización que utiliza metodologías ágiles.",
+      "tools": {
+        "component": "Carousel",
+        "options": {
+          "skin": "tools"
+        },
+        "title": "Herramientas que aprenderás",
+        "content": [
+          {
+            "component": "SlideTools",
+            "image": "docker.png",
+            "name": "Docker"
+          },
+          {
+            "component": "SlideTools",
+            "image": "kubernetes.png",
+            "name": "Kubernetes"
+          },
+          {
+            "component": "SlideTools",
+            "image": "jenkins.png",
+            "name": "Jenkins"
+          },
+          {
+            "component": "SlideTools",
+            "image": "terminal.png",
+            "name": "Terminal"
+          },
+          {
+            "component": "SlideTools",
+            "image": "linux.png",
+            "name": "Linux"
+          },
+          {
+            "component": "SlideTools",
+            "image": "git.png",
+            "name": "Git"
+          },
+          {
+            "component": "SlideTools",
+            "image": "github.png",
+            "name": "Git Hub"
+          }
+        ]
+      }
+    }
+  ]
+}

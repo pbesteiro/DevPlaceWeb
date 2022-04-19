@@ -1,0 +1,12 @@
+{
+  "title": "INGRESAR DATOS",
+  "description": "Ingresa tus datos personales para poder proceder con el pago de tu giftcard.",
+  "thumbnail": "logo.png",
+  "step": "1",
+  "sections": [
+    {
+      "component": "GiftCardForm",
+      "nextStep": "gift-card-payment-method.php"
+    }
+  ]
+}

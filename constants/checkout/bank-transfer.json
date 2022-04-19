@@ -1,0 +1,43 @@
+{
+  "title": "TRANSFERENCIA BANCARIA",
+  "description": "Abona tu curso por medio de una transferencia bancaria.",
+  "thumbnail": "logo.png",
+  "step": "3",
+  "sections": [
+    {
+      "component": "BankInformation",
+      "title": "Datos bancarios de Dev Place:",
+      "information": [
+        {
+          "label": "Titular",
+          "value": "DEV TECHNOLOGIES SA"
+        },{
+          "label": "Banco",
+          "value": "Santander Rio"
+        },{
+          "label": "Nro. de cuenta",
+          "value": "519-006051/8"
+        },{
+          "label": "Cuit",
+          "value": "30-71708864-2"
+        },{
+          "label": "Sucursal",
+          "value": "519"
+        },{
+          "label": "Tipo de cuenta",
+          "value": "Cuenta Corriente en Pesos"
+        },{
+          "label": "CBU",
+          "value": "0720519420000000605186"
+        }
+      ]
+    },
+    {
+      "component": "TransferInformationForm",
+      "prevStep": "payment-method.php"
+    },
+    {
+      "component": "CourseBenefits"
+    }
+  ]
+}

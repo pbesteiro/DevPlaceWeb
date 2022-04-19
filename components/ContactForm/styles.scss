@@ -1,0 +1,56 @@
+.contact-component {
+  position: relative;
+  padding: 150px 0px 50px;
+  overflow: hidden;
+  #contact-form {
+    max-width: 500px;
+    margin: 0px auto;
+
+    h2.title {
+      font-size: 30px;
+      margin-bottom: 45px;
+
+      @media (min-width: 768px) {
+        font-size: 35px;
+        margin-bottom: 80px;
+      }
+    }
+
+    h3.title {
+      font-size: 18px;
+      margin-bottom: 40px;
+      text-align: start;
+      font-weight: 600;
+
+      @media (min-width: 768px) {
+        font-size: 20px;
+        margin-bottom: 50px;
+      }
+    }
+
+    .field {
+      #mensaje {
+        margin-bottom: 55px;
+
+        @media (min-width: 768px) {
+          margin-bottom: 65px;
+        }
+      }
+    }
+
+    .field-checkbox {
+      margin-bottom: 50px;
+
+      @media (min-width: 768px) {
+        margin-bottom: 45px;
+      }
+    }
+  }
+  .form-actions {
+    max-width: 500px;
+    margin: 0px auto;
+    button.call-to-action {
+      width: 100%;
+    }
+  }
+}

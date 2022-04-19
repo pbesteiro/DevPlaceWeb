@@ -1,0 +1,23 @@
+div.rainbow-title-component {
+  position: relative;
+  margin-bottom: -60px;
+  padding: 110px 0;
+
+  @media(min-width: 1024px){
+    padding: 100px 0;
+    margin-bottom: -55px;
+  }
+
+  @media(min-width: 1440px){
+    margin-bottom: -70px;
+    padding: 150px 0;
+  }
+
+  @media(min-width: 1920px){
+    padding: 270px 0;
+  }
+
+  .rainbow-hero-wrapper{
+    clip-path: polygon(100% 0%, 0% 100px, 0% 100%, 100% calc(100% - 100px));
+  }
+}

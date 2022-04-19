@@ -1,0 +1,69 @@
+{
+  "title": "Dev Place",
+  "description": "Cursos online en vivo. Aprende nuevas habilidades tech en programación, diseño, data, marketing digital y mucho más.",
+  "thumbnail": "logo.png",
+  "header_skin": "",
+  "sections": [
+ {
+   "section_id": "beneficios-banner",
+    "component":"HeroText",
+    "options": {
+      "skin": "dark",
+      "showRainbow": true,
+      "firstSection": true
+    },
+    "title": "Regalale ese curso que sabes que necesita esa persona para su desarrollo personal.",
+    "subtitle":"Elegi el curso que quieras y selecciona cuando quieres que le llegue la ¨gift card¨ de Dev Place.",
+    "content":"",
+    "image": {
+      "name": "beneficios-banner.png"
+    },
+    "cta":{
+      "link": "/checkout/gift-card-customer-information.php",
+      "label": "Regalar"
+    }
+  },{
+    "section_id": "beneficios-como-funciona",
+    "component": "steps",
+    "title": "¿Cómo funciona?",
+    "subtitle": "",
+    "options": {
+      "showRainbow": true
+    },
+    "cta":{
+      "type":"filled",
+      "link": "/checkout/gift-card-customer-information.php",
+      "label": "Regalar"
+    },
+    "content": [
+      {
+        "title": "01. ",
+        "text": "Compra la Gift Card de Dev Place para regalarsela a quien quieras."
+      },
+      {
+        "title": "02. ",
+        "text": "Completá los datos del destinatario, nombre, apellido, mail, y podes hacerle una dedicatoria. Luego seleccionas la fecha del día que querés que llegue la Gift Card"
+      },
+      {
+        "title": "03. ",
+        "text": "El destinatario recibe por mail la Gift Card de Dev Place y puede canjearla por cualquier curso através de WhatsApp. Tiene 6 meses para cambiarla."
+      }
+    ]
+  },{
+    "section_id": "beneficios-programa-referido",
+    "component": "Box",
+    "styles": "",
+    "title": "Programas de referidos",
+    "subtitle": "Vos y tu compañero/a pueden beneficiarce si van a hacer por primera vez un curso en Dev Place. Obtene un 15% de descuento con tu compañero/a refiriéndole Dev Place y haciendo el mismo curso junt@s! ",
+    "content":"",
+    "cta":{
+      "type": "filled",
+      "link": "/checkout/gift-card-customer-information.php",
+      "label": "Referir"
+    },
+    "image": {
+      "name": "programa-de-referidos.png"
+    }
+  }
+  ]
+}

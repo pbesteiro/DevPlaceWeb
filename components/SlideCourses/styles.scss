@@ -1,0 +1,79 @@
+div.slide-courses-component {
+  background-color: white;
+  padding: 15px 25px;
+  position: relative;
+
+  .image-wrapper {
+    margin-bottom: 20px;
+    overflow: hidden;
+
+    img {
+      height: auto;
+      width: 100%;
+      margin: 0px auto;
+      display: flex;
+    }
+  }
+
+  .duration {
+    color: #66788d;
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+
+  .name {
+    color: $text;  
+    font-size: 20px;
+    margin: 0px; 
+    line-height: 24px;
+    min-height: 96px; 
+  }
+
+  .value{
+    // position: absolute;
+    // bottom: 35px;
+
+    // @media (min-width: 768px) {
+    //   bottom: 0px;
+    // }
+
+    // @media (min-width: 1440px) {
+     
+    // }
+  }
+
+  .cost {
+    color: #1e1433;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 0px;
+  }
+
+  .payment {
+    color: #334253;
+    font-size: 14px;
+    font-style: italic;
+
+    @media (min-width: 768px) {
+     
+    }
+
+    @media (min-width: 1440px) {
+     
+    }
+  }
+
+  .buttonWrapper{
+    display: flex;
+    justify-content: center;
+  }
+
+  .call-to-action{
+    font-size: 18px;
+    height: 45px;
+
+    @media(min-width: 768px){
+      min-width: auto;
+    }
+  }
+}

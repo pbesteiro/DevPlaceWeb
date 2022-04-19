@@ -1,0 +1,47 @@
+div.bank-information-component{
+  margin-bottom: 35px;
+
+  @media(min-width: 768px){
+    margin-bottom: 45px;
+  }
+
+  @media(min-width: 1024px){
+    max-width: 506px;
+  }
+  
+  .title-bank-information{
+    display: flex;
+    margin-bottom: 28px;
+    align-items: center;
+    
+    img{
+      margin-right: 12px;
+   }
+    h3{
+      font-size: 16px;
+      line-height: 20px;
+      margin: 0px;
+    }
+  }
+
+  ul{
+    list-style: none;
+    padding: 0px;
+    margin-bottom: 35px;
+
+    @media(min-width: 768px){
+      margin-bottom: 45px;
+    }
+
+    li{
+      font-size: 14px;
+      color: #000;
+      margin-bottom: 5px;
+    }
+  }
+
+  .horizontal-separation{
+    border: 1px solid #dadada;
+    background-color: #dadada;
+  }
+}

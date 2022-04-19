@@ -1,0 +1,66 @@
+#apply-form{
+  .wrapper {
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: 1440px) {
+      justify-content: center;
+    }
+    .call-to-action{
+      width: 100%;
+    }
+  }
+}
+
+.country-field {
+  max-width: 120px;
+  width: 100%;
+  margin-right: 12px;
+  margin-bottom: 21px;
+}
+
+.phone-field {
+  width: 100%;
+  margin-bottom: 21px;
+
+  input#telefono {
+    padding-left: 85px;
+  }
+
+  #country-code {
+    position: absolute;
+    line-height: 50px;
+    bottom: 0;
+    font-size: 18px;
+    left: 22px;
+    text-align: right;
+    color: black;
+    padding-right: 10px;
+    min-width: 55px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      right: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+      width: 1px;
+      height: 23px;
+      background: #8d8c8c;
+    }
+  }
+}
+
+.modal-header {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  .btn-close {
+    margin: 0px;
+  }
+}
+
+
+

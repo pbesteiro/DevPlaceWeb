@@ -1,0 +1,101 @@
+{
+  "title": "Dev Place",
+  "description": "Cursos online en vivo. Aprende nuevas habilidades tech en programación, diseño, data, marketing digital y mucho más.",
+  "thumbnail": "logo.png",
+  "header_skin": "",
+  "page_name":"curso",
+  "sections": [
+    {
+      "component": "Course",
+      "modality": "Curso online en vivo",
+      "technologyId":"62430ff7e14c520a7dcaf22c",
+      "name": "Desarrollo Web",
+      "image": "html.png",
+      "paymentLink":"https://mpago.la/29PMkqk",
+      "program": {
+        "type": "link",
+        "icon": {
+          "name": "blue-arrow.png"
+        },
+        "action": "#",
+        "label": "Descargar programa"
+      },
+      "details": [
+        {
+          "image": "calendar.png",
+          "description": "8 semanas"
+        },
+        {
+          "image": "clock.png",
+          "description": "2hs por clase"
+        },
+        {
+          "image": "schedule.png",
+          "description": "2 clases por semana"
+        },
+        {
+          "image": "group.png",
+          "description": "Grupos reducidos"
+        }
+      ],
+      "cta": {
+        "type": "filled",
+        "link": "#course-calendar-carousel",
+        "label": "Quiero inscribirme"
+      },
+      "objectives": "El objetivo de este curso es enseñarte a desarrollar una página web de viajes a la cual se podrá acceder desde diferentes dispositivos, ya sea una computadora, tablet o celular. Contará con un diseño moderno, con animaciones y elementos multimedia. Además, tendrá varias secciones para que los usuarios puedan ver los precios, realizar consultas y ver destinos destacados.",
+      "forWhom": "El curso está dirigido a personas con experiencia mínima o nula en programación.",
+      "finalProject": "El proyecto final e integrador que se podra realizar durante la cursada, será aquel que en caso de estar aprobado, DEV PLACE emitirá un certificado de aprobación del curso. Al terminar el curso el usuario tendra 30 dias contando desde la ultima clase para poder enviar el proyecto final al mail correspondiente. Entregado el proyecto DEV PLACE tendra 30 días corridos desde recibido el mismo para, en caso de que este aprobado el proyecto emitir el certificado validando la aprobacion del curso correspondiente y en caso que no, notificando la desaprobacion del proyecto y del curso. El proyecto sera corregido segun las rubricas de evaluacion de DEV PLACE.",
+      "profile": "● Desarrollar paginas web siguiendo las mejores practicas. \\n ● Utilizar html y css. \\n ● Crear sitios web responsive.",
+      "tools": {
+        "component": "Carousel",
+        "options": {
+          "skin": "tools"
+        },
+        "title": "Herramientas que aprenderás",
+        "content": [
+          {
+            "component": "SlideTools",
+            "image": "git.png",
+            "name": "Git"
+          },
+          {
+            "component": "SlideTools",
+            "image": "github.png",
+            "name": "Git Hub"
+          },
+          {
+            "component": "SlideTools",
+            "image": "html.png",
+            "name": "Html"
+          },
+          {
+            "component": "SlideTools",
+            "image": "css.png",
+            "name": "Css"
+          },
+          {
+            "component": "SlideTools",
+            "image": "bootstrap.png",
+            "name": "Bootstrap"
+          },
+          {
+            "component": "SlideTools",
+            "image": "visual-studio-code.png",
+            "name": "Visual Studio"
+          },
+          {
+            "component": "SlideTools",
+            "image": "json.png",
+            "name": "JSON"
+          },
+          {
+            "component": "SlideTools",
+            "image": "terminal.png",
+            "name": "Terminal"
+          }
+        ]
+      }
+    }
+  ]
+}

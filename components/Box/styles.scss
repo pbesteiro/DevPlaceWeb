@@ -1,0 +1,217 @@
+section.box-component {
+  padding: 100px 0px 150px;
+  background-color: $gray;
+
+  @media(min-width: 768px){
+    padding: 100px 0px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 150px 0px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 100px 0px 150px;
+  }
+
+  [class^="col"] {
+    position: relative;
+    z-index: 3;
+  }
+
+  h2.title {
+    text-align: left;
+    margin-bottom: 40px;
+
+    @media(min-width: 768px){
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: 1440px) {
+      //margin-bottom: 45px;
+    }
+
+    @media (min-width: 1920px) {
+      margin-bottom: 120px;
+    }
+  }
+
+  small.subtitle {
+    text-align: left;
+    margin-bottom: 60px;
+    max-width: 65%;
+
+    @media (min-width: 768px) {
+      margin-bottom: 80px;
+      //max-width: 480px;
+    }
+
+    @media (min-width: 1024px) {
+      margin-bottom: 110px;
+      //max-width: 620px;
+    }
+
+    @media (min-width: 1440px) {
+      margin-bottom: 80px;
+      //max-width: 950px;
+    }
+
+    @media (min-width: 1920px) {
+      margin-bottom: 150px;
+    }
+  }
+
+  p.text {
+    text-align: left;
+  }
+
+  &:not(.with-image) {
+    h2.title {
+      @media (min-width: 768px){
+        text-align: center;
+      }
+    }
+
+    div.content {
+      .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        max-width: 1130px;
+        margin: 0 auto;
+
+        @media (min-width: 768px){
+          flex-direction: row;
+        }
+        
+        & > * {
+          margin-bottom: 40px;
+          
+          @media (min-width: 768px){
+            margin-bottom: 80px;
+            width: calc(100% / 3 - 30px);
+          }
+  
+          @media (min-width: 1024px){
+            width: calc(100% / 3 - 90px);
+          }
+        }
+      }
+    }
+  }
+
+  &.with-image {
+    .image-wrapper {
+      position: absolute;
+      padding: 0;
+      z-index: 1;
+      left: auto;
+      bottom: 0;
+      right: -140px;
+      display: flex;
+      justify-content: flex-end;
+  
+      @media(min-width: 768px){
+        right: 0;
+      }
+  
+      @media(min-width: 1024px){
+        right: 0;
+      }
+  
+      @media(min-width: 1440px){
+        right: 0;
+      }
+    
+      img {
+        display: block;
+        height: auto;
+        width: 470px;
+  
+        @media(min-width: 768px){
+          width: 400px;
+        }
+  
+        @media(min-width: 1024px){
+          width: 500px;
+        }
+  
+        @media(min-width: 1440px){
+          width: 450px;
+        }
+      }
+    }
+    
+    div.content {
+      margin-bottom: 60px;
+  
+      @media(min-width: 768px){
+        margin-bottom: 75px;
+      }
+  
+      @media(min-width: 1024px){
+        margin-bottom: 0px;
+      }
+  
+      .content-wrapper {
+        &.total-items-1,
+        &.total-items-2,
+        &.total-items-3,
+        &.total-items-4 {
+          max-width: 950px;
+          display: flex;
+          flex-wrap: nowrap;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-between;
+  
+          @media (min-width: 768px) {
+            flex-direction: row;
+            max-width: 450px;
+          }
+  
+          @media (min-width: 1024px) {
+            max-width: 540px;
+          }
+  
+          @media (min-width: 1440px) {
+            max-width: 800px;
+          }
+          
+          & > * {
+            padding-right: 20px;
+            width: 220px;
+  
+            &:not(:last-child) {
+              margin-bottom: 30px;
+            }
+  
+            @media (min-width: 1440px) {
+              padding-right: 70px;
+              width: 50%;
+  
+              &:not(:last-child) {
+                margin-bottom: 35px;
+              }
+            }
+          }
+        }
+  
+        &.total-items-3 {
+          & > * {
+            @media (min-width: 1440px) {
+              padding-right: 50px;
+              width: calc(100% / 3);
+            }
+          }
+        }
+  
+        &.total-items-4,
+        &.total-items-3 {
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+}

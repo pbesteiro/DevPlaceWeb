@@ -1,0 +1,88 @@
+section.carousel-component {
+  &.carousel-calendar-skin {
+    padding: 65px 0px 70px;
+
+    @media (min-width: 1024px){
+      padding: 120px 0px;
+    }
+
+    h2.title {
+      text-align: center;
+    }
+
+    // h2.title {
+    //   margin-bottom: 55px;
+
+    //   @media (min-width: 1024px){
+    //     margin-bottom: 85px;
+    //   }
+      
+    //   @media (min-width: 1440px){
+    //     font-size: 75px;
+    //     margin-bottom: 80px;
+    //   }
+    // }
+
+    .carousel {
+      .rainbow-hero-wrapper {
+  
+        @media(min-width: 1440px){
+          height: 530px;
+          clip-path: polygon(100% 0%, 0% 280px, 0% 100%, 100% calc(100% - 280px));
+        }
+      }
+      .carousel-container {
+        max-width: 940px;
+
+        .carousel-row {
+        }
+        
+        .glide {
+          overflow: visible;
+          
+          &:not(.glide--carousel, .glide--slider){
+            .glide__track {
+              .glide__slides{
+                display: flex;
+                justify-content: center;
+
+                .glide__slide{
+                  max-width: 285px;
+      
+                  @media(min-width: 768px){
+                    max-width: 285px;
+                  }
+      
+                  @media (min-width: 1024px) {
+                    max-width: 285px;
+                  }
+                }
+              }
+            }
+          }
+
+          .glide__track {
+            overflow: hidden;
+
+            .glide__slides{
+              .glides__slide{
+
+                &:not(:last-child){
+                  margin-right: 0px;
+                }
+    
+                @media(min-width: 1440px){
+                  max-width: 300px;
+                }
+              }
+
+            }
+          }
+        }
+        
+        .glide__arrows {
+        }
+      }
+    }
+  }
+}

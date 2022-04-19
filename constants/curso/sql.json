@@ -1,0 +1,90 @@
+{
+  "title": "Dev Place",
+  "description": "Cursos online en vivo. Aprende nuevas habilidades tech en programación, diseño, data, marketing digital y mucho más.",
+  "thumbnail": "logo.png",
+  "header_skin": "",
+  "page_name":"curso",
+  "sections": [
+    {
+      "component": "Course",
+      "modality": "Curso online en vivo",
+      "technologyId":"62432433e14c520a7dcaf338",
+      "name": "SQL",
+      "image": "microsoft-sql-server.png",
+      "program": {
+        "type": "link",
+        "icon": {
+          "name": "blue-arrow.png"
+        },
+        "action": "#",
+        "label": "Descargar programa"
+      },
+      "details": [
+        {
+          "image": "calendar.png",
+          "description": "8 semanas"
+        },
+        {
+          "image": "clock.png",
+          "description": "2hs por clase"
+        },
+        {
+          "image": "schedule.png",
+          "description": "2 clases por semana"
+        },
+        {
+          "image": "group.png",
+          "description": "Grupos reducidos"
+        }
+      ],
+      "cta": {
+        "type": "filled",
+        "link": "#course-calendar-carousel",
+        "label": "Quiero inscribirme"
+      },
+      "objectives": "El objetivo del curso es darte todos los conocimientos fundamentales para que entiendas que es una base de datos relacional y cómo funciona. En este curso aprenderás a crear una base de datos SQL, pensar su estructura, crear las tablas y relaciones, y generar los procedimientos necesarios para insertar, modificar, eliminar y obtener información de la misma. También te enseñaremos a generar reportes de datos customizados con gráficos, títulos, colores y todo lo necesario para generar informes.",
+      "forWhom": "El curso está dirigido a profesionales de cualquier área que necesiten realizar manipulaciones y reportes de datos.",
+      "finalProject": "El proyecto final e integrador que se podra realizar durante la cursada, será aquel que en caso de estar aprobado, DEV PLACE emitirá un certificado de aprobación del curso. Al terminar el curso el usuario tendra 30 dias contando desde la ultima clase para poder enviar el proyecto final al mail correspondiente. Entregado el proyecto DEV PLACE tendra 30 dias corridos desde recibido el mismo para, en caso de que este aprobado el proyecto emitir el certificado validando la aprobacion del curso correspondiente y en caso que no, notificando la desaprobacion del proyecto y del curso. El proyecto sera corregido segun las rubricas de evaluacion de DEV PLACE.",
+      "profile": "● Entender el funcionamiento de una base de datos SQL. \\n ● Implementar el lenguaje DDL para la creación de una base de datos y todos sus componentes: tablas, índices, relaciones, disparadores (triggers), procedimientos almacenados.\\n ● Implementar el lenguaje DML para insertar, borrar, modificar y consultar los datos de una base de datos. \\n ● Realizar reportes de datos con herramientas actuales del mercado.",
+      "tools": {
+        "component": "Carousel",
+        "options": {
+          "skin": "tools"
+        },
+        "title": "Herramientas que aprenderás",
+        "content": [
+          {
+            "component": "SlideTools",
+            "image": "sql.png",
+            "name": "SQL"
+          },
+          {
+            "component": "SlideTools",
+            "image": "microsoft-sql-server.png",
+            "name": "SQL Server"
+          },
+          {
+            "component": "SlideTools",
+            "image": "power-bi.png",
+            "name": "Power bi"
+          },
+          {
+            "component": "SlideTools",
+            "image": "excel.png",
+            "name": "Excel"
+          },
+          {
+            "component": "SlideTools",
+            "image": "visual-studio-code.png",
+            "name": "Visual Studio"
+          },
+          {
+            "component": "SlideTools",
+            "image": "terminal.png",
+            "name": "Terminal"
+          }
+        ]
+      }
+    }
+  ]
+}

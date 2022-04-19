@@ -1,0 +1,91 @@
+{
+  "title": "Dev Place",
+  "description": "Cursos online en vivo. Aprende nuevas habilidades tech en programación, diseño, data, marketing digital y mucho más.",
+  "thumbnail": "logo.png",
+  "header_skin": "",
+  "page_name":"curso",
+  "sections": [
+    {
+      "component": "Course",
+      "modality": "Curso online en vivo",
+      "technologyId":"62431031e14c520a7dcaf236",
+      "name": "POO",
+      "image": "poo.png",
+      "paymentLink":"https://mpago.la/1r8yq3r",
+      "program": {
+        "type": "link",
+        "icon": {
+          "name": "blue-arrow.png"
+        },
+        "action": "#",
+        "label": "Descargar programa"
+      },
+      "details": [
+        {
+          "image": "calendar.png",
+          "description": "6 semanas"
+        },
+        {
+          "image": "clock.png",
+          "description": "2hs por clase"
+        },
+        {
+          "image": "schedule.png",
+          "description": "2 clases por semana"
+        },
+        {
+          "image": "group.png",
+          "description": "Grupos reducidos"
+        }
+      ],
+      "cta": {
+        "type": "filled",
+        "link": "#course-calendar-carousel",
+        "label": "Quiero inscribirme"
+      },
+      "objectives": "El objetivo de este curso es introducirte al paradigma orientado a objetos desde la programacion. Aprendiendo todo sobre el concepto y como aplicarlo mediante distintas practicas.",
+      "forWhom": "El curso está dirigido a personas con experiencia mínima o nula en programación.",
+      "finalProject": "El proyecto final e integrador que se podra realizar durante la cursada, será aquel que en caso de estar aprobado, DEV PLACE emitirá un certificado de aprobación del curso. Al terminar el curso el usuario tendra 30 dias contando desde la ultima clase para poder enviar el proyecto final al mail correspondiente. Entregado el proyecto DEV PLACE tendra 30 dias corridos desde recibido el mismo para, en caso de que este aprobado el proyecto emitir el certificado validando la aprobacion del curso correspondiente y en caso que no, notificando la desaprobacion del proyecto y del curso. El proyecto sera corregido segun las rubricas de evaluacion de DEV PLACE.",
+      "profile": "● Poder aplicar el paradigma orientado a objetos a cualquiera de los lenguajes en los cuales se aplique el mismo.",
+      "tools": {
+        "component": "Carousel",
+        "options": {
+          "skin": "tools"
+        },
+        "title": "Herramientas que aprenderás",
+        "content": [
+          {
+            "component": "SlideTools",
+            "image": "git.png",
+            "name": "Git"
+          },
+          {
+            "component": "SlideTools",
+            "image": "github.png",
+            "name": "Git Hub"
+          },
+          {
+            "component": "SlideTools",
+            "image": "visual-studio-code.png",
+            "name": "Visual Studio Code"
+          },
+          {
+            "component": "SlideTools",
+            "image": "html.png",
+            "name": "Html"
+          },
+          {
+            "component": "SlideTools",
+            "image": "javascript.png",
+            "name": "Javascript"
+          },
+          {
+            "component": "SlideTools",
+            "image": "terminal.png",
+            "name": "Terminal"
+          }
+        ]
+      }
+    }
+  ]
+}

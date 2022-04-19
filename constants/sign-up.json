@@ -1,0 +1,10 @@
+{
+  "title": "Registro",
+  "description": "Registrate en Dev Place",
+  "thumbnail": "logo.png",
+  "sections": [
+    {
+    "component":"SignUpForm"   
+    }
+  ]
+}

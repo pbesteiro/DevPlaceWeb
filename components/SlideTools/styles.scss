@@ -1,0 +1,12 @@
+div.slide-tools-component {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  img {
+    border-radius: 16px;
+    overflow: hidden;
+    max-width: 88px;
+    height: auto;
+  }
+}

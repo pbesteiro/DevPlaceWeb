@@ -1,0 +1,38 @@
+.highlight-component {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  
+  
+  @media (min-width: 1024px) {
+    margin-bottom: 80px;
+  }
+
+  h3.title {
+    background: linear-gradient(-160deg, #fd7c08 50%, #42009c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: italic;
+    margin-bottom: 10px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: 1440px) {
+      margin-bottom: 22px;
+      font-size: 30px;
+    }
+  }
+
+  p.text {
+    margin: 0px;
+    color: #334253;
+
+    @media (min-width: 1440px) {
+      font-size: 25px;
+      line-height: 29px;
+    }
+
+  }
+}

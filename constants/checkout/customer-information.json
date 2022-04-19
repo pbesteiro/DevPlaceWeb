@@ -1,0 +1,15 @@
+{
+  "title": "INGRESAR TUS DATOS",
+  "description": "Ingresa tus datos personales para poder proceder con el pago del curso seleccionado.",
+  "thumbnail": "logo.png",
+  "step": "1",
+  "sections": [
+    {
+      "component": "CustomerInformationForm",
+      "nextStep": "payment-method.php"
+    },
+    {
+      "component": "CourseBenefits"
+    }
+  ]
+}

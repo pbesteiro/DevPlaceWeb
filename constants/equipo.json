@@ -1,0 +1,31 @@
+{
+  "title": "Equipo",
+  "description": "Informacion de equipo",
+  "thumbnail": "logo.png",
+  "header_skin": "brand-mode",
+  "sections": [
+    {
+      "component": "TeamInformation",
+      "title":"Equipo",
+      "cta": {
+        "label": "Contactanos",
+        "link": "/contacto.php",
+        "type": "filled"
+      },
+      "content":[
+        {
+          "title": "Nuestra misión",
+          "text": "Que todas las personas tengan acceso al mejor aprendizaje y entrenamiento en tech skills insertándose en la industria tecnológica o agregando valor en su profesión."
+        },
+        {
+          "title": "Nuestra visión",
+          "text": "Nuestra visión es que todas las personas van a trabajar en la industria tecnológica o van a tener que tener skills en tecnología para poder desempeñar su profesión."
+        },
+        {
+          "title": "¿Por qué Dev Place?",
+          "text": "Somos una compañia de educación y tecnología que brinda soluciones para el aprendizaje y entrenamiento de las personas que buscan obtener skills en tecnología o que buscan especializarse y profundizar sus habilidades tech para obtener un trabajo en la industria. Nuestros objetivos primarios son reducir el % de desocupación global insertandolo en la industria tecnológica y acelerar el avance de la sociedad a través de la tecnología.Si estas interesado en formar parte del equipo que esta transformando la industria tecnológica contactanos."
+        }
+      ]
+    }
+  ]
+}

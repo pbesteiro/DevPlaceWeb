@@ -1,0 +1,28 @@
+[
+  {
+    "visible": true,
+    "label":"Equipo",
+    "href": "/equipo.php"
+  },
+  {
+    "visible": true,
+    "label":"Trabaja con nosotros",
+    "href": "/trabaja-con-nosotros.php"
+  },
+  {
+    "visible": true,
+    "label":"Preguntas frecuentes",
+    "href": "/preguntas-frecuentes.php"
+  },
+  {
+    "visible": true,
+    "label":"Contacto",
+    "href": "/contacto.php"
+  },
+  {
+    "visible": true,
+    "label":"Legal",
+    "href": "/legal.php"
+  }
+
+]

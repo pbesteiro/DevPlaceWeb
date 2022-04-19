@@ -1,0 +1,177 @@
+[
+  {
+    "enabled": true,
+    "name": "Argentina",
+    "flagIcon": "🇦🇷",
+    "code": "AR",
+    "flag": "flag-AR.png",
+    "dialCode": "54",
+    "mask": "99 9999-9999"
+  },
+  {
+    "enabled": true,
+    "name": "Bolivia",
+    "flagIcon": "🇧🇴",
+    "code": "BO",
+    "flag": "flag-BO.png",
+    "dialCode": "591",
+    "mask": "99999999"
+  },
+  {
+    "enabled": true,
+    "name": "Brasil",
+    "flagIcon": "🇧🇷",
+    "code": "BR",
+    "flag": "flag-BR.png",
+    "dialCode": "55",
+    "mask": "(99) 99999 9999"
+  },
+  {
+    "enabled": true,
+    "name": "Chile",
+    "flagIcon": "🇨🇱",
+    "code": "CL",
+    "flag": "flag-CL.png",
+    "dialCode": "56",
+    "mask": "(9) 9999 9999"
+  },
+  {
+    "enabled": true,
+    "es": "Colombia",
+    "flagIcon": "🇨🇴",
+    "code": "CO",
+    "flag": "flag-CO.png",
+    "dialCode": "57",
+    "mask": "999 9999999"
+  },
+  {
+    "enabled": true,
+    "name": "Costa Rica",
+    "flagIcon": "🇨🇷",
+    "code": "CR",
+    "flag": "flag-CR.png",
+    "dialCode": "506",
+    "mask": "9999 9999"
+  },
+  {
+    "enabled": true,
+    "name": "Cuba",
+    "flagIcon": "🇨🇺",
+    "code": "CU",
+    "flag": "flag-CU.png",
+    "dialCode": "53",
+    "mask": "99 9999999"
+  },{
+    "enabled": true,
+    "name": "Ecuador",
+    "flagIcon": "🇪🇨",
+    "code": "EC",
+    "flag": "flag-EC.png",
+    "dialCode": "593",
+    "mask": "999 999 9999"
+  },{
+    "enabled": true,
+    "es": "El Salvador",
+    "flagIcon": "🇸🇻",
+    "code": "SV",
+    "flag": "flag-SV.png",
+    "dialCode": "503",
+    "mask": "9999 9999"
+  },{
+    "enabled": true,
+    "es": "Guatemala",
+    "flagIcon": "🇬🇹",
+    "code": "GT",
+    "flag": "flag-GT.png",
+    "dialCode": "502",
+    "mask": "9999 9999"
+  },{
+    "enabled": true,
+    "es": "Honduras",
+    "flagIcon": "🇭🇳",
+    "code": "HN",
+    "flag": "flag-HN.png",
+    "dialCode": "504",
+    "mask": "9999-9999"
+  },
+  {
+    "enabled": true,
+    "es": "Mexico",
+    "flagIcon": "🇲🇽",
+    "code": "MX",
+    "flag": "flag-MX.png",
+    "dialCode": "52",
+    "mask": "999 999 999 9999"
+  },
+  {
+    "enabled": true,
+    "es": "Nicaragua",
+    "flagIcon": "🇳🇮",
+    "code": "NI",
+    "flag": "flag-NI.png",
+    "dialCode": "505",
+    "mask": "9999 9999"
+  },
+  {
+    "enabled": true,
+    "es": "Panama",
+    "flagIcon": "🇵🇦",
+    "code": "PA",
+    "flag": "flag-PA.png",
+    "dialCode": "507",
+    "mask": "9999-9999"
+  },
+  
+  {
+    "enabled": true,
+    "es": "Paraguay",
+    "flagIcon": "🇵🇾",
+    "code": "PY",
+    "flag": "flag-PY.png",
+    "dialCode": "595",
+    "mask": "9999 999999"
+  },
+  {
+    "enabled": true,
+    "es": "Peru",
+    "flagIcon": "🇵🇪",
+    "code": "PE",
+    "flag": "flag-PE.png",
+    "dialCode": "51",
+    "mask": "999 999 999"
+  },
+  {
+    "enabled": true,
+    "es": "Puerto Rico",
+    "flagIcon": "🇵🇷",
+    "code": "PR",
+    "flag": "flag-PR.png",
+    "dialCode": "1939",
+    "mask": "(999) 999-9999"
+  },{
+    "enabled": true,
+    "es": "República Dominicana",
+    "flagIcon": "🇩🇴",
+    "code": "DO",
+    "flag": "flag-DO.png",
+    "dialCode": "1939",
+    "mask": "(999) 999-9999"
+  },
+  {
+    "enabled": true,
+    "es": "Uruguay",
+    "flagIcon": "🇺🇾",
+    "code": "UY",
+    "flag": "flag-UY.png",
+    "dialCode": "598",
+    "mask": "999 999 999"
+  },
+  {
+    "enabled": true,
+    "es": "Venezuela",
+    "flagIcon": "🇻🇪",
+    "code": "VE",
+    "flag": "flag-VE.png",
+    "dialCode": "58",
+    "mask": "9999-9999999"
+  }]

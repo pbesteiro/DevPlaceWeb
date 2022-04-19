@@ -1,0 +1,10 @@
+{
+  "title": "Dev Place",
+  "description": "Pago existoso",
+  "thumbnail": "logo.png",
+  "sections": [
+    {
+      "component": "SuccessPayment"
+    }
+  ]
+}

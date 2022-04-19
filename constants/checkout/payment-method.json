@@ -1,0 +1,52 @@
+{
+  "title": "ELEGIR PAGO",
+  "description": "Selecciona el metodo de pago que mas se adecue a vos",
+  "thumbnail": "logo.png",
+  "step": "2",
+  "sections": [
+    {
+      "component": "PaymentMethod",
+      "prevStep": "customer-information.php",
+      "paymentMethods": [{
+        "available": true,
+        "slug": "mercado-pago",
+        "name": "Mercado Pago",
+        "icon": "mercado-pago.png",
+        "gateway": "mercado-pago"
+      },{
+        "available": true,
+        "slug":"pago-facil",
+        "name":"Pago fácil/Rapipago",
+        "icon":"rapipago-pagofacil.png",
+        "gateway": "mercado-pago"
+      },{
+        "available": true,
+        "slug": "transferencia-bancaria",
+        "name": "Transferencia bancaria",
+        "icon": "bank-transfer.png",
+        "gateway": "bank-transfer.php"
+      },{
+        "available": true,
+        "slug": "tarjeta-de-debito",
+        "name": "Tarjeta de débito",
+        "icon": "credit-card.png",
+        "gateway": "mercado-pago"
+      },{
+        "available": true,
+        "slug": "tarjeta-de-credito",
+        "name": "Tarjeta de crédigo",
+        "icon": "credit-card.png",
+        "gateway": "mercado-pago"
+      },{
+        "available": true,
+        "slug": "ethereum",
+        "name": "Ethereum",
+        "icon": "ethereum.png",
+        "gateway": "whatsapp"
+      }]
+    },
+    {
+      "component": "CourseBenefits"
+    }
+  ]
+}

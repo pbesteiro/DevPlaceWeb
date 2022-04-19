@@ -1,0 +1,126 @@
+{
+  "title": "Dev Place",
+  "description": "Aprende nuevas habilidades tech con nuestras carreras online en vivo en grupos reducidos.",
+  "thumbnail": "logo.png",
+  "header_skin": "",
+  "sections": [
+    {
+      "component": "HeroText",
+      "options": {
+        "skin": "dark",
+        "showRainbow": true,
+        "firstSection": true
+      },
+      "title": "Aprende nuevas habilidades tech con nuestras carreras online en vivo en grupos reducidos.",
+      "subtitle": "Aprende con profesores expertos en la industria y aprovecha nuestros precios accesibles por tiempo limitado."
+    },
+    {
+      "component": "Carousel",
+      "options": {
+        "skin": "courses"
+      },
+      "title": "Programación",
+      "subtitle": "Iniciate en el mundo IT siguiendo el camino de Programador Web.",
+      "content": [
+        {
+          "component": "SlideCourses",
+          "image": "javascript.png",
+          "duration": "6 meses",
+          "name": "Programador Web",
+          "price": "00.000,00",
+          "payment": "Hasta 18 cuotas de $000",
+          "cta": {
+            "type": "link",
+            "link": "#",
+            "label": "Saber más"
+          }
+        },
+        {
+          "component": "SlideCourses",
+          "image": "javascript.png",
+          "duration": "6 meses",
+          "name": "Programador Web",
+          "price": "00.000,00",
+          "payment": "Hasta 18 cuotas de $000",
+          "cta": {
+            "type": "link",
+            "link": "#",
+            "label": "Saber más"
+          }
+        }
+      ]
+    },
+    {
+      "component": "Carousel",
+      "options": {
+        "skin": "courses"
+      },
+      "title": "Marketing digital",
+      "subtitle": "Hoy el marketing es Digital. Convertite en un Digital Marketer y aprende a desarrollar estrategias de marketing digital, conoce las mejores herramientas y aplicaciones tecnológicas para lograr una performance óptima para tus marcas, productos y servicios.",
+      "content": [
+        {
+          "component": "SlideCourses",
+          "image": "javascript.png",
+          "duration": "6 meses",
+          "name": "Programador Web",
+          "price": "00.000,00",
+          "payment": "",
+          "cta": {
+            "type": "link",
+            "link": "#",
+            "label": "Saber más"
+          }
+        },
+        {
+          "component": "SlideCourses",
+          "image": "javascript.png",
+          "duration": "6 meses",
+          "name": "Programador Web",
+          "price": "00.000,00",
+          "payment": "",
+          "cta": {
+            "type": "link",
+            "link": "#",
+            "label": "Saber más"
+          }
+        }
+      ]
+    },
+    {
+      "component": "Carousel",
+      "options": {
+        "skin": "courses"
+      },
+      "title": "Datos",
+      "subtitle": "Convertite en un profesional de la gestión de la información.",
+      "content": [
+        {
+          "component": "SlideCourses",
+          "image": "javascript.png",
+          "duration": "6 meses",
+          "name": "Programador Web",
+          "price": "00.000,00",
+          "payment": "",
+          "cta": {
+            "type": "link",
+            "link": "#",
+            "label": "Saber más"
+          }
+        },
+        {
+          "component": "SlideCourses",
+          "image": "javascript.png",
+          "duration": "6 meses",
+          "name": "Programador Web",
+          "price": "00.000,00",
+          "payment": "",
+          "cta": {
+            "type": "link",
+            "link": "#",
+            "label": "Saber más"
+          }
+        }
+      ]
+    }
+  ]
+}

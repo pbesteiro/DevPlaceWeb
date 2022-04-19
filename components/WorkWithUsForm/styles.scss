@@ -1,0 +1,43 @@
+.work-with-us-component {
+  position: relative;
+  padding: 150px 0px 50px;
+  overflow: hidden;
+  
+  #work-with-us-form {
+    max-width: 500px;
+    margin: 0px auto;
+
+    h2.title {
+      font-size: 30px;
+      margin-bottom: 45px;
+      text-align: center;
+
+      @media (min-width: 768px) {
+        font-size: 35px;
+        margin-bottom: 65px;
+      }
+    }
+
+    #dropzone {
+      margin-bottom: 30px;
+
+      @media (min-width: 768px) {
+        margin-bottom: 45px;
+      }
+    }
+    .field-checkbox {
+      margin-bottom: 50px;
+
+      @media (min-width: 768px) {
+        margin-bottom: 45px;
+      }
+    }
+  }
+  .form-actions {
+    max-width: 500px;
+    margin: 0px auto;
+    button.call-to-action {
+      width: 100%;
+    }
+  }
+}

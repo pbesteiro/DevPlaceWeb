@@ -1,0 +1,29 @@
+section.carousel-component {
+  &.carousel-next-dates-skin {
+    padding: 70px 0px 90px;
+
+    @media(min-width: 1024px){
+      padding: 70px 0px 110px;
+    }
+
+    h2.title {
+      margin-bottom: 60px;
+
+      @media (min-width: 1024px){
+        margin-bottom: 80px;
+      }
+    }
+    .carousel {
+      .carousel-container {
+        .carousel-row {
+        }
+        
+        .glide {
+        }
+        
+        .glide__arrows {
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+$rainbow-colors: (
+  "gradient-color-1": $rainbow-color-one,
+  "gradient-color-2": $rainbow-color-two,
+  "gradient-color-3": $rainbow-color-three,
+  "gradient-color-4": $rainbow-color-four,
+) !default;
+
+
+.rainbow-hero-wrapper {
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  //transform: rotate(-14deg);
+  //transform-origin: left;
+  overflow: hidden;
+  
+  .rainbow-hero {
+    height: 100%;
+    width: 100%;
+    @each $color, $value in $rainbow-colors {
+      --#{$color}: #{$value};
+    }
+  }
+}
