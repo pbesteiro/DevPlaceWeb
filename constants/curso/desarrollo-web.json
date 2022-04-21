@@ -17,7 +17,7 @@
         "icon": {
           "name": "blue-arrow.png"
         },
-        "action": "#",
+        "action": "window.open('https://devplace.tech/constants/curso/programa/DESARROLLO_WEB-DEVPLACE.pdf','_blank')",
         "label": "Descargar programa"
       },
       "details": [

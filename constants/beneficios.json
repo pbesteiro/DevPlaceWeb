@@ -58,7 +58,7 @@
     "content":"",
     "cta":{
       "type": "filled",
-      "link": "/checkout/gift-card-customer-information.php",
+      "link": "https://wa.me/5491121685045?text=Hola,%20Me%20interesa%20referir%20un%20amigo",
       "label": "Referir"
     },
     "image": {

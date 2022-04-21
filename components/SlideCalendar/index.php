@@ -2,7 +2,7 @@
 
 $srcPath = $_SERVER['DOCUMENT_ROOT'];
 $mentor = isset($mentor) && $mentor !== '' ? $mentor : 'Aún no asignado';
-$discount = isset($discount) && $discount !== '' ? $mentor : 0;
+$discount = isset($discount) && $discount !== '' ? $discount : 0;
 
 $courseInformation = array(
   '_id' => $_id,
