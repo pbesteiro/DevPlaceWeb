@@ -1,0 +1,9 @@
+section {
+  position: relative;
+  padding: 150px 0px 50px;
+  overflow: hidden;
+
+  @media(min-width: 768px){
+    padding: 100px 0px;
+  }
+}

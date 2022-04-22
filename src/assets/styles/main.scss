@@ -1,0 +1,55 @@
+@import "./bootstrap/bootstrap.scss";
+@import "./constants/constants.scss";
+@import "./global/global.scss";
+@import "./glide/glide.core.scss";
+@import "./pages/pages.scss";
+@import "./../../components/Box/styles.scss";
+@import "./../../components/BankInformation/styles.scss";
+@import "./../../components/Calendar/styles.scss";
+@import "./../../components/CallToAction/styles.scss";
+@import "./../../components/Carousel/styles.scss";
+@import "./../../components/Carousel/carousel-calendar-skin.scss";
+@import "./../../components/Carousel/carousel-tools-skin.scss";
+@import "./../../components/ContactForm/styles.scss";
+@import "./../../components/CustomerInformationForm/styles.scss";
+@import "./../../components/Flags/styles.scss";
+@import "./../../components/Footer/styles.scss";
+@import "./../../components/GiftCardForm/styles.scss";
+@import "./../../components/Header/styles.scss";
+@import "./../../components/HeroText/styles.scss";
+@import "./../../components/HighLight/styles.scss";
+@import "./../../components/SignInForm/styles.scss";
+@import "./../../components/MainNavbar/styles.scss";
+@import "./../../components/PricingCard/styles.scss";
+@import "./../../components/Rainbow/styles.scss";
+@import "./../../components/RainbowTitle/styles.scss";
+@import "./../../components/SimpleLayout/styles.scss";
+@import "./../../components/SignUpForm/styles.scss";
+@import"./../../components//SlideEmpresas/styles.scss";
+@import "./../../components/SidebarNavbar/styles.scss";
+@import "./../../components/SlideNextDates/styles.scss";
+@import "./../../components/SlideCourses/styles.scss";
+@import "./../../components/SlideCalendar/styles.scss";
+@import "./../../components/SlideTools/styles.scss";
+@import "./../../components/SocialNetworks/styles.scss";
+@import "./../../components/Steps/styles.scss";
+@import "./../../components/ApplyForm/styles.scss";
+@import "./../../components/Loader/styles.scss";
+@import "./../../components/Course/styles.scss";
+@import "./../../components/Layout/styles.scss";
+@import "./../../components/CheckoutLayout/styles.scss";
+@import "./../../components/CustomerInformationForm/styles.scss";
+@import "./../../components/PlainBox/styles.scss";
+@import "./../../components/PaymentMethod/styles.scss";
+@import "./../../components/TransferInformationForm/styles.scss";
+@import "./../../components/TeamInformation/styles.scss";
+@import "./../../components/CourseBenefits/styles.scss";
+@import "./../../components/Faqs/styles.scss";
+@import "./../../components/WorkWithUsForm/styles.scss";
+
+
+body {
+  color: #425466;
+  letter-spacing: -0.25px;
+  font-family: "DM Sans", sans-serif;
+}

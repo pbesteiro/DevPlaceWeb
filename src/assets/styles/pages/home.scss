@@ -1,0 +1,13 @@
+section.hero-text-component {
+  &.white:not(.first-section){
+    &#home-dev-platform,
+    &#home-carreras {
+      margin-bottom: 50px;
+
+      h2.title {
+        margin: 200px 0px 50px;
+      }
+  
+    }
+  }
+}

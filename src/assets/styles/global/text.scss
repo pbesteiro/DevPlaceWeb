@@ -1,0 +1,56 @@
+p.text {
+  font-size: 18px;
+  line-height: 26px;
+  color: $text;
+  font-weight: normal;
+
+  @media (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
+a {
+  font-size: 14px;
+  line-height: 18px;
+  color: $text;
+  text-decoration: none;
+}
+
+h2.title {
+  text-align: center;
+  font-size: 45px;
+  letter-spacing: -0.25px;
+  font-weight: 500;
+  margin: 0px;
+  color: $title;
+
+  @media (min-width: 1200px) {
+    font-size: 75px;
+  }
+}
+
+h3.title {
+  text-align: start;
+  font-size: 30px;
+  letter-spacing: -0.25px;
+  margin: 0px;
+  color: $title;
+
+  @media (min-width: 1440px) {
+    font-size: 40px;
+  }
+}
+
+small {
+  margin: 0px;
+  display: block;
+  font-size: 18px;
+  line-height: 28px;
+  color: $text;
+
+  @media (min-width: 1440px) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}

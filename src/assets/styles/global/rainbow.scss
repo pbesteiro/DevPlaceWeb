@@ -1,0 +1,71 @@
+.rainbow {
+  position: relative;
+  min-height: 365px;
+  background: rgb(85,33,172);
+  background: linear-gradient(135deg, #5521ac 0%, #882ec0 25%, #f46c03 56%, #fbd500 100%);
+  
+  @media(min-width: 768px){
+    height: 380px;
+  }
+
+  &::before {
+    content: "";
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    top: -1px;
+    left: 0;
+    width: calc(100% + 10px);
+    height: 100px;
+    transform: translate(0, 0);
+    clip-path: polygon(0% 100%, 0% 100%, 0% 0%, 100% 0%);
+  }
+
+  &::after {
+    content: "";
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    bottom: -1px;
+    right: 0;
+    width: calc(100% + 10px);
+    height: 100px;
+    transform: translate(0, 0);
+    clip-path: polygon(0% 100%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  
+  .rainbow-animation {
+    height: 365px;
+    overflow: hidden;
+    position: relative;
+
+    @media(min-width: 768px){
+      height: 380px;
+    }
+  
+    div.rotation {
+      height: 400vw;
+      width: 400vw;
+      position: absolute;
+      top: -200vw;
+      left: -200vw;
+    
+      -webkit-animation: rotating 10s linear infinite;
+      -moz-animation: rotating 10s linear infinite;
+      -ms-animation: rotating 10s linear infinite;
+      -o-animation: rotating 10s linear infinite;
+      animation: rotating 10s linear infinite;
+    
+      div.rainbow {
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(0deg, $dark-purple, $purple, $orange, $yellow, $yellow);
+        background-size: 100% 100%;
+        
+        -webkit-animation: rainbow 1.5s ease infinite, updown 2s ease infinite;
+        -moz-animation: rainbow 1.5s ease infinite, updown 2s ease infinite;
+        animation: rainbow 1.5s ease infinite, updown 2s ease infinite;
+      }
+    }
+  }
+}

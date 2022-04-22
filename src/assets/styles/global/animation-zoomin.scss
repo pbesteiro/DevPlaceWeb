@@ -1,0 +1,40 @@
+@keyframes zoomin {
+  0% {
+    opacity: 0;
+    transform: scale3d(.3,.3,.3);
+  }
+  
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomout {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    transform: scale3d(.3,.3,.3);
+  }
+  50%,100% {
+    opacity: 0;
+  }
+}
+
+
+.animation-zoomin {
+  animation-duration: .500s;
+  animation-fill-mode: both;
+
+  &.animation-entered {
+    animation-name: zoomin;
+  }
+
+  &.animation-entering {
+    display: none;
+  }
+
+  &.animation-exited {
+    animation-name: zoomout;
+  }
+}

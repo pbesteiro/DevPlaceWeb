@@ -1,0 +1,86 @@
+section.hero-text-component {
+  &#beneficios-banner {
+    padding-bottom: 120px;
+    
+    @media (min-width: 768px){
+      padding-bottom: 200px;
+    }
+
+    h2.title {
+      @media(min-width: 1024px){ 
+        max-width: 70%;
+      }
+
+      @media(min-width: 1440px){ 
+        max-width: 100%;
+      }
+    }
+
+    small.subtitle {
+      margin-bottom: 50px;
+    }
+
+    span.image-wrapper {
+      bottom: -50px;
+      right: -70px;
+
+      @media (min-width: 1024px){
+        bottom: 0;
+        right: 0;
+      }
+      
+      img {
+        width: 350px;
+
+        @media(min-width: 1024px){
+          width: 330px;
+        }
+
+        @media (min-width: 1440px){
+          width: 400px;
+        }
+      }
+    }
+  }
+  
+  &#beneficios-como-funciona {
+  
+  }
+  
+}
+section.box-component {
+  &.with-image {
+    &#beneficios-programa-referido {
+      @media(max-width: 767px){
+        padding: 100px 0px 60px;
+      }
+
+      h2.title {
+        
+      }
+      
+      small.subtitle {
+        @media(max-width: 767px){
+          max-width: 100%;
+          margin-bottom: 300px;
+        }
+      }
+  
+      span.image-wrapper {
+        @media(max-width: 767px){
+          right: auto;
+          left: 50%;
+          transform: translate(-50%, 0);
+          justify-content: center;
+        }
+
+        img{
+          @media(max-width: 767px){
+            width: 425px;
+          }
+        }
+      }
+    }
+  }
+}
+

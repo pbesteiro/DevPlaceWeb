@@ -1,0 +1,48 @@
+$sizes: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100;
+
+@each $size in $sizes {
+  .m-t-#{$size} {
+    margin-top: #{$size}px;
+  }
+
+  .m-b-#{$size} {
+    margin-bottom: #{$size}px;
+  }
+}
+
+.text-right{
+  text-align: right!important;
+}
+
+.text-center{
+  text-align: center!important;
+}
+
+.content-center {
+  display: flex;
+  justify-content: center;
+}
+
+.cut-top {
+  clip-path: polygon(100% 0%, 0% 200px, 0% 100%, 100% 100%);
+}
+
+.cut-bottom {
+  clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 100% calc(100% - 200px));
+}
+
+.cut-both {
+  clip-path: polygon(100% 0%, 0% 200px, 0% 100%, 100% calc(100% - 200px));
+}
+
+.mobile-hidden {
+  @media (max-width: 767px) {
+    display: none!important;
+  }
+}
+
+.desktop-hidden {
+  @media (min-width: 768px) {
+    display: none!important;
+  }
+}
