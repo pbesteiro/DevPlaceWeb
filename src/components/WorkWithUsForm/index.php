@@ -72,17 +72,24 @@ $countries = json_decode($file);
 
           <div class="field">
             <label>Adjuntar CV</label>
-            <div id="dropzone">
-              <input type="file" name="adjuntar-cv" id="adjuntar-cv">
-              <label for="adjuntar-cv" class="label">
-                <img src="/dist/images/payment/dropzone-colored-cloud.webp" alt="">
-                Arrastrá y soltá el archivo
-                <span>ó adjuntá desde el ordenador</span>
-              </label>
-              <button onclick="removeAllFiles()" class="dz-delete-image">
+
+            <div class="dropzone">
+              <input type="file" name="comprobante-de-pago" id="comprobante-de-pago" multiple>
+
+              <div class="dz-message">
+                <div class="empty-state">
+                  <img src="/dist/images/payment/dropzone-colored-cloud.webp" alt="">
+                  Arrastrá y soltá el archivo
+                  <span>ó adjuntá desde el ordenador</span>
+                </div>
+              </div>
+
+              <button class="dz-delete-image">
                 <img src="/dist/images/icons/delete-img.svg" alt="X" width="30px" height="30px">
               </button>
             </div>
+
+            <p class="helper-text">Formato de archivo incorrecto. Intenta con un JPEG, PNG o PDF.</p>
           </div>
 
           <div class="field">

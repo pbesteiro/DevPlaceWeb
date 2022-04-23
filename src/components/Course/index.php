@@ -107,7 +107,6 @@ $srcPath = $_SERVER['DOCUMENT_ROOT'];
   const TECHNOLOGY_ID = "<?php echo $technologyId; ?>";
   const PAYMENT_LINK = "<?php echo $paymentLink; ?>";
 
-  console.log(PAYMENT_LINK);
   const getPeriod = (start, end) => {
     const dateStart = dateSpliter(setToLocalTimeZone(start));
     const dateEnd = dateSpliter(setToLocalTimeZone(end));

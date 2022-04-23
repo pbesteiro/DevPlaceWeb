@@ -34,7 +34,6 @@ $page = json_decode($file);
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone-with-data.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
   <link href="/dist/styles.css?cb=<?php echo date('h:i:s'); ?>" rel="stylesheet">
 </head>
@@ -131,7 +130,6 @@ $page = json_decode($file);
   <?php include $srcPath . 'components/Loader/index.php'; ?>
   <div id="backdrop"></div>
   <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
-  <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
   <script src="/dist/scripts.js?cb=<?php echo date('h:i:s'); ?>"></script>
 </body>
 

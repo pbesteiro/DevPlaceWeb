@@ -28,17 +28,18 @@ if(!!bankTransferInformationForm ){
         value: 1,
         errorMessage: "Solo se puede agregar un comprobante de pago"
       },
-      {
-        rule: 'files',
-        value: {
-          files: {
-            extensions: ['jpeg', 'png', 'pdf'],
-            maxSize: 25000,
-            minSize: 1000,
-            types: ['image/jpeg', 'image/png', 'application/pdf'],
-          },
-        },
-      },
+      // {
+      //   rule: 'files',
+      //   value: {
+      //     files: {
+      //       extensions: ['jpeg', 'png', 'pdf'],
+      //       maxSize: 25000,
+      //       minSize: 1000,
+      //       types: ['image/jpeg', 'image/png', 'application/pdf'],
+      //     },
+      //   },
+      //   errorMessage: "Formato de archivo incorrecto. Intenta con un JPEG, PNG o PDF."
+      // },
     ])
     .onFail((failedFields) => {
       Object.values(failedFields).forEach(failedField => {

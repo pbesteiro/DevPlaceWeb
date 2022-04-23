@@ -26,7 +26,6 @@ if(!!signupForm ){
   }
   ])
   .onFail((failedFields) => {
-    console.log('Error', failedFields)
     Object.values(failedFields).forEach(failedField => {
       if(!failedField.isValid){
         failedField.elem.parentElement.classList.add('field-error')
@@ -34,7 +33,6 @@ if(!!signupForm ){
     });
   })
   .onSuccess((event) => {
-    console.log('Success', event)
     //saveInLocalSoterage('payment-method-form')
     //let nextStep = event.target.dataset.nextstep
     //goToUrl(nextStep, '/account')

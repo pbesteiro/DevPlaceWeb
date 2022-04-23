@@ -11,7 +11,6 @@ if (!!paymentMethodForm) {
       },
     ])
     .onFail((failedFields) => {
-      console.log("Error", failedFields);
       Object.values(failedFields).forEach((failedField) => {
         if (!failedField.isValid) {
           failedField.elem.parentElement.classList.add("field-error");

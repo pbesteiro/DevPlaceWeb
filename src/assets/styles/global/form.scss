@@ -138,6 +138,7 @@ form {
 
   .just-validate-error-label {
     position: absolute;
+    width: 100%;
     top: 100%;
     padding: 0px 22px;
     font-size: 14px;
@@ -210,7 +211,7 @@ form {
   }
 }
 
-#dropzone {
+.dropzone {
   width: 100%;
   height: 140px;
   border: 1px dashed #c2bfbf;
@@ -220,20 +221,24 @@ form {
   justify-content: center;
   transition: border-color 0.3s ease-in-out;
 
-  input {
+  input[type="file"] {
     display: none;
   }
 
-  &.dz-drag-hover {
-    border-color: black;
-
-    label {
-      filter: grayscale(100%);
-      opacity: 0.3;
-    }
+  .dz-delete-image {
+    display: none;
+    position: absolute;
+    top: 35px;;
+    right: 10px;
+    border-radius: 50%;
+    cursor: pointer;
   }
 
-  label {
+  .dz-progress {
+    display: none;
+  }
+
+  .empty-state {
     padding: 0;
     margin: 0px;
     font-size: 16px;
@@ -257,49 +262,17 @@ form {
     }
   }
 
-  &.dz-clickable {
+  &.dz-started {
     .dz-delete-image {
-      display: none;
+      display: block;
     }
   }
 
-  &.dz-started {
-    width: 100%;
-    position: relative;
-    height: auto;
-    padding: 10px 0px;
+  & + .helper-text {
+    margin-top: 5px;
+  }
 
-    .label,
-    .dz-size,
-    .dz-progress,
-    .dz-error-message,
-    .dz-success-mark,
-    .dz-error-mark {
-      display: none;
-    }
-
-    .dz-filename{
-      text-align: center;
-    }
-
-    .dz-delete-image {
-      display: flex;
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      border-radius: 50%;
-    }
-    .dz-image-preview {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      .dz-image {
-        img {
-          border-radius: 20px;
-          margin-bottom: 15px;
-        }
-      }
-    }
+  &.field-error + .helper-text {
+    display: none;
   }
 }

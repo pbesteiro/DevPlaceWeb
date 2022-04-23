@@ -37,7 +37,6 @@ if(!!applyForm ){
       },
     ])
     .onFail((failedFields) => {
-      console.log(failedFields)
       Object.values(failedFields).forEach(failedField => {
         if(!failedField.isValid){
           failedField.elem.parentElement.classList.add('field-error')
