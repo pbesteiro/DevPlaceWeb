@@ -12,7 +12,7 @@ $countries = json_decode($file);
 
     <div class="field">
       <label for="cuit">Cuil/Cuit</label>
-      <input type="text" name="cuit" id="cuit">
+      <input type="text" name="documento" id="documento">
     </div>
 
     <div class="field">
@@ -46,7 +46,7 @@ $countries = json_decode($file);
       Volver
     </a>
 
-    <button type='submit' form="bank-transfer-information-form" class="call-to-action skin-filled">
+    <button type='submit' form="bank-transfer-information-form" id="send-form" class="call-to-action skin-filled">
       Reservar cupo
     </button>
   </div>

@@ -10,7 +10,7 @@ if(!!workwithusForm ){
   .addField ("#apellido", [
     { rule: "required", errorMessage: "Campo obligatorio"},
   ])
-  .addField("#numero-de-documento", [
+  .addField("#documento", [
     { rule: "required", errorMessage: "Campo obligatorio" },
   ])
   .addField("#email", [

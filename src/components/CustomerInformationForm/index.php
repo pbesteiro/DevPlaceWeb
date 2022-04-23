@@ -18,8 +18,8 @@ $countries = json_decode($file);
     </div>
 
     <div class="field">
-      <label class="label" for="numero-de-documento">Numero de documento</label>
-      <input type="number" name="numero-de-documento" id="numero-de-documento">
+      <label class="label" for="documento">Numero de documento</label>
+      <input type="number" name="documento" id="documento">
     </div>
 
     <div class="field">

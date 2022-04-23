@@ -1,9 +1,9 @@
 {
- "titular": "HQIT SRL",
- "banco": "Galicia",
- "nroDeCuenta": "752933390",
- "cuit": "30-71024432-0",
- "sucursal": "999",
- "tipoDeCuenta": "Cuenta Corriente",
- "cbu": "0070339820000007529308"
+ "titular": "DEV TECHNOLOGIES SA",
+ "banco": "Santander Rio",
+ "nroDeCuenta": "519-006051/8",
+ "cuit": "30-71708864-2",
+ "sucursal": "519",
+ "tipoDeCuenta": "Cuenta Corriente en Pesos",
+ "cbu": "0720519420000000605186"
 }

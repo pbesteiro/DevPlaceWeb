@@ -1516,7 +1516,7 @@ if(!!applyForm ){
     .addField("#apellido", [
       { rule: "required", errorMessage: "Campo obligatorio" },
     ])
-    .addField("#numero-de-documento", [
+    .addField("#documento", [
       { rule: "required", errorMessage: "Campo obligatorio" },
     ])
     .addField("#email", [
@@ -1551,7 +1551,57 @@ if(!!applyForm ){
       });
     })
     .onSuccess((event) => {
-      saveInLocalSoterage('apply-form')
+      saveInLocalSoterage('apply-form');
+
+      event.preventDefault()
+      const sendEmailUrl = "helpers/send_email.php"
+      const baseUrl = window.location.protocol + "//" + window.location.host + "/";
+      
+      const formData = new FormData()
+      var customerJsonStr = localStorage.getItem("apply-form");
+      var customerInfo = JSON.parse(customerJsonStr);
+
+      var jsonStr = localStorage.getItem("selected-product");
+      var selectedProduct = JSON.parse(jsonStr);
+
+      form.append('subject', 'Aplicante Bootcamp');
+      form.append('nombre', customerInfo.nombre + ' ' +nombre.apellido);
+      form.append('documento', customerInfo.documento);
+      form.append('email', customerInfo.email);
+      form.append('pais', customerInfo.pais);
+      form.append('telefono', customerInfo.telefono);
+      form.append('curso', 'Bootcamp');
+      form.append('fecha', '');
+      
+      const body = document.getElementsByTagName('body');
+      body[0].classList.toggle("loading");
+  
+      const button = document.getElementById('send-form');
+      button.disabled = true;
+      button.classList.add('loading')
+  
+      fetch( baseUrl + sendEmailUrl, {
+        body: formData ,
+        method: "post",
+        headers: {
+          'Accept': 'application/json, application/xml, text/plain, text/html, *.*',
+          'Content-Type': 'multipart/form-data'
+        },
+      }).then((response) => {
+        body[0].classList.toggle("loading");
+        event.target.reset()
+        shoToast('form-sended-toast')
+        return response.text();
+      }).then((response) => {
+        init();
+      }).catch((error) => {
+        console.warn(error);
+      }).finally(() => {
+        button.disabled = false;
+        button.classList.remove('loading')
+      });
+
+
     });
   
 }
@@ -1568,10 +1618,10 @@ if(!!bankTransferInformationForm ){
     .addField("#apellido", [
       { rule: "required", errorMessage: "Campo obligatorio" },
     ])
-    .addField("#cuit", [
+    .addField("#documento", [
       { rule: "required", errorMessage: "Campo obligatorio" },
     ])
-    .addField('#comprobante-de-pago', [
+    /*.addField('#comprobante-de-pago', [
       {
         rule: "required",
         errorMessage: "Campo obligatorio"
@@ -1597,7 +1647,7 @@ if(!!bankTransferInformationForm ){
           },
         },
       },
-    ])
+    ])*/
     .onFail((failedFields) => {
       Object.values(failedFields).forEach(failedField => {
         if(!failedField.isValid){
@@ -1606,10 +1656,56 @@ if(!!bankTransferInformationForm ){
       });
     })
     .onSuccess((event) => {
-      saveInLocalSoterage('bank-transfer-information-form')
+      saveInLocalSoterage('bank-transfer-information-form');
+
+      event.preventDefault()
+      const sendEmailUrl = "helpers/send_email.php"
+      const baseUrl = window.location.protocol + "//" + window.location.host + "/";
+      
+      const formData = new FormData()
+      var customerJsonStr = localStorage.getItem("customer-information-form");
+      var customerInfo = JSON.parse(customerJsonStr);
+
+      var jsonStr = localStorage.getItem("selected-product");
+      var selectedProduct = JSON.parse(jsonStr);
+
+      formData.append('subject', 'Transferencia Bancaria');
+      formData.append('nombre', customerInfo[0].value + ' ' +customerInfo[1].value);
+      formData.append('documento', customerInfo[2].value);
+      formData.append('email', customerInfo[3].value);
+      formData.append('pais', customerInfo[4].value);
+      formData.append('telefono', customerInfo[5].value);
+      formData.append('curso', selectedProduct.name);
+      formData.append('fecha', selectedProduct.period);
+      //form.append("nombre_de_la_key", file, "nombre_del_file");
+
+      const body = document.getElementsByTagName('body');
+      body[0].classList.toggle("loading");
+  
+      const button = document.getElementById('send-form');
+      button.disabled = true;
+      button.classList.add('loading')
+  
+      fetch( baseUrl + sendEmailUrl, {
+        body: formData ,
+        method: "post"
+      }).then((response) => {
+        body[0].classList.toggle("loading");
+        event.target.reset()
+        shoToast('form-sended-toast')
+        return response.text();
+      }).then((response) => {
+        init();
+      }).catch((error) => {
+        console.warn(error);
+      }).finally(() => {
+        button.disabled = false;
+        button.classList.remove('loading')
+      });
+
     });
 
-    fillWithLocalStorageInfo('bank-transfer-information-form')
+    fillWithLocalStorageInfo('bank-transfer-information-form');
 }
 const getCart = () => {
   const cartDetails = document.getElementById("cart-details");
@@ -1727,7 +1823,7 @@ if(!!customerInformationForm ){
     .addField("#apellido", [
       { rule: "required", errorMessage: "Campo obligatorio" },
     ])
-    .addField("#numero-de-documento", [
+    .addField("#documento", [
       { rule: "required", errorMessage: "Campo obligatorio" },
     ])
     .addField("#email", [
@@ -1774,7 +1870,7 @@ if(!!giftCardForm ){
     .addField("#apellido", [
       { rule: "required", errorMessage: "Campo obligatorio" },
     ])
-    .addField("#numero-de-documento", [
+    .addField("#documento", [
       { rule: "required", errorMessage: "Campo obligatorio" },
     ])
     .addField("#email", [
@@ -1982,7 +2078,7 @@ if(!!workwithusForm ){
   .addField ("#apellido", [
     { rule: "required", errorMessage: "Campo obligatorio"},
   ])
-  .addField("#numero-de-documento", [
+  .addField("#documento", [
     { rule: "required", errorMessage: "Campo obligatorio" },
   ])
   .addField("#email", [

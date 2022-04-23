@@ -1,7 +1,7 @@
 <?php
 
 $srcPath = $_SERVER['DOCUMENT_ROOT'];
-$mentor = isset($mentor) && $mentor !== '' ? $mentor : 'Aún no asignado';
+$mentor = isset($mentor->name) && $mentor->name !== '' ? $mentor : 'Aún no asignado';
 $discount = isset($discount) && $discount !== '' ? $discount : 0;
 
 $courseInformation = array(
@@ -11,7 +11,7 @@ $courseInformation = array(
   'period' => $period,
   'hours' => $hours,
   "modality" => $modality,
-  'mentor' => $mentor,
+  'mentor' => $mentor->name,
   'price' => $price,
   'discount' => $discount,
   'duration' => $duration,

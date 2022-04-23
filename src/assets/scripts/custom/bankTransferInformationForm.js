@@ -10,10 +10,10 @@ if(!!bankTransferInformationForm ){
     .addField("#apellido", [
       { rule: "required", errorMessage: "Campo obligatorio" },
     ])
-    .addField("#cuit", [
+    .addField("#documento", [
       { rule: "required", errorMessage: "Campo obligatorio" },
     ])
-    .addField('#comprobante-de-pago', [
+    /*.addField('#comprobante-de-pago', [
       {
         rule: "required",
         errorMessage: "Campo obligatorio"
@@ -39,7 +39,7 @@ if(!!bankTransferInformationForm ){
           },
         },
       },
-    ])
+    ])*/
     .onFail((failedFields) => {
       Object.values(failedFields).forEach(failedField => {
         if(!failedField.isValid){

@@ -132,7 +132,7 @@ $page = json_decode($file);
   <div id="backdrop"></div>
   <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
   <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
-  <script src="/dist/scripts.js?cb=<?php echo date('h:i:s'); ?>"></script>
+  <script src="/dist/scripts.js"></script>
 </body>
 
 </html>

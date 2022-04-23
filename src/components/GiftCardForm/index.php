@@ -27,8 +27,8 @@ $coursesTypes = array_filter($pageCursos->sections, function ($section) {
     </div>
 
     <div class="field">
-      <label class="label" for="numero-de-documento">N° de documento</label>
-      <input type="text" name="numero-de-documento" id="numero-de-documento">
+      <label class="label" for="documento">N° de documento</label>
+      <input type="text" name="documento" id="documento">
     </div>
 
     <div class="field">
