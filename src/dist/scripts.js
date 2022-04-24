@@ -5212,7 +5212,63 @@ if(!!bankTransferInformationForm ){
       });
     })
     .onSuccess((event) => {
-      saveInLocalSoterage('bank-transfer-information-form')
+      saveInLocalSoterage('bank-transfer-information-form');
+
+      event.preventDefault();
+      const sendEmailUrl = "helpers/send_transfer_email.php"
+      const baseUrl = window.location.protocol + "//" + window.location.host + "/";
+      
+      const formData = new FormData()
+      var customerJsonStr = localStorage.getItem("customer-information-form");
+      var customerInfo = JSON.parse(customerJsonStr);
+
+      var jsonStr = localStorage.getItem("selected-product");
+      var selectedProduct = JSON.parse(jsonStr);
+
+      formData.append('nombre', customerInfo[0].value + ' ' +customerInfo[1].value);
+      formData.append('documento', customerInfo[2].value);
+      formData.append('email', customerInfo[3].value);
+      formData.append('pais', customerInfo[4].value);
+      formData.append('telefono', customerInfo[5].value);
+      formData.append('curso', selectedProduct.name);
+      formData.append('fecha', selectedProduct.period);
+      //formData.append("comprobante", $('input[type=file]')[0].files[0]);
+
+      const body = document.getElementsByTagName('body');
+      body[0].classList.toggle("loading");
+  
+      const button = document.getElementById('send-form');
+      button.disabled = true;
+      button.classList.add('loading')
+  
+      fetch( baseUrl + sendEmailUrl, {
+        body: formData ,
+        method: "post"
+      }).then((response) => {
+        body[0].classList.toggle("loading");
+        event.target.reset()
+        //shoToast('form-sended-toast')
+        
+        return response.text();
+        
+      }).then((response) => {
+        //init();
+        swal({
+          title: "Tu comprobante fue enviado ",
+          text: "A la brevedad nos estaremos comunicando con vos!",
+          icon: "success"
+        },
+        function(){
+          document.location.href ='https://devplace.tech/cursos.php';
+        });
+      }).catch((error) => {
+        console.log(error);
+      }).finally(() => {
+        button.disabled = false;
+        button.classList.remove('loading')
+      });
+
+
     });
 
     fillWithLocalStorageInfo('bank-transfer-information-form')

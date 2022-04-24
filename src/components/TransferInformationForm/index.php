@@ -53,7 +53,7 @@ $countries = json_decode($file);
       Volver
     </a>
 
-    <button type='submit' form="bank-transfer-information-form" class="call-to-action skin-filled">
+    <button type='submit' form="bank-transfer-information-form" id="send-form" class="call-to-action skin-filled">
       Reservar cupo
     </button>
   </div>
