@@ -12,6 +12,7 @@ $countries = json_decode($file);
 
       <div class="modal-body">
         <form action="" id="apply-form">
+               
           <div class="field">
             <label for="nombre">Nombre</label>
             <input type="text" name="nombre" id="nombre">
@@ -61,9 +62,9 @@ $countries = json_decode($file);
             <label for="nivel-de-conocimiento">Nivel de conocimiento en programación</label>
             <div class="select">
               <select name="nivel-de-conocimiento" id="nivel-de-conocimiento">
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
+                <option value="Cursando o grduado de carreta IT">Cursando o grduado de carreta IT</option>
+                <option value="Autodidacta">Autodidacta</option>
+                <option value="Sin conocimientos">Sin conocimientos</option>
               </select>
             </div>
           </div>
@@ -80,7 +81,7 @@ $countries = json_decode($file);
           </div>
 
           <div class="wrapper">
-            <button type='submit' form="apply-form" class="call-to-action skin-<?php echo isset($type) ? $type : 'filled'; ?>">
+            <button type='submit' form="apply-form" class="call-to-action skin-filled" id="send-form" >
               Enviar
             </button>
           </div>

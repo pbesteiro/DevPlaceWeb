@@ -4368,7 +4368,7 @@ const toggleModal = (modal) => {
   
   modal.classList.toggle("showing");
   backdrop.classList.toggle("showing");
-  document.getElementsByTagName('body')[0].classList('')
+  //document.getElementsByTagName('body')[0].classList('')
 }
 
 const showModal = (idModal) => {
@@ -5156,7 +5156,60 @@ if(!!applyForm ){
       });
     })
     .onSuccess((event) => {
-      saveInLocalSoterage('apply-form')
+      saveInLocalSoterage('apply-form');
+
+      event.preventDefault();
+      const sendEmailUrl = "helpers/send_bootcamp_email.php"
+      const baseUrl = window.location.protocol + "//" + window.location.host + "/";
+      
+      const formData = new FormData()
+      var customerJsonStr = localStorage.getItem("apply-form");
+      var customerInfo = JSON.parse(customerJsonStr);
+
+      formData.append('nombre', customerInfo[0].value + ' ' +customerInfo[1].value);
+      formData.append('documento', customerInfo[2].value);
+      formData.append('email', customerInfo[3].value);
+      formData.append('pais', customerInfo[4].value);
+      formData.append('telefono', customerInfo[5].value);
+      formData.append('nivelConocimiento', customerInfo[6].value);
+      formData.append('otros', customerInfo[7].value);
+      formData.append('bootcamp', customerInfo[7].value);
+      formData.append('fecha', customerInfo[7].value);
+
+      const body = document.getElementsByTagName('body');
+      body[0].classList.toggle("loading");
+  
+      const button = document.getElementById('send-form');
+      button.disabled = true;
+      button.classList.add('loading')
+  
+      fetch( baseUrl + sendEmailUrl, {
+        body: formData ,
+        method: "post"
+      }).then((response) => {
+        body[0].classList.toggle("loading");
+        event.target.reset()
+        //shoToast('form-sended-toast')
+        
+        return response.text();
+        
+      }).then((response) => {
+        //init();
+        swal({
+          title: "Gracias por tu consulta! ",
+          text: "A la brevedad nos estaremos comunicando con vos!",
+          icon: "success"
+        },
+        function(){
+          document.location.href ='https://devplace.tech/cursos.php';
+        });
+      }).catch((error) => {
+        console.log(error);
+      }).finally(() => {
+        button.disabled = false;
+        button.classList.remove('loading')
+      });
+
     });
   
 }
@@ -5225,6 +5278,9 @@ if(!!bankTransferInformationForm ){
       var jsonStr = localStorage.getItem("selected-product");
       var selectedProduct = JSON.parse(jsonStr);
 
+      
+      var file = document.getElementById('comprobante-de-pago');
+
       formData.append('nombre', customerInfo[0].value + ' ' +customerInfo[1].value);
       formData.append('documento', customerInfo[2].value);
       formData.append('email', customerInfo[3].value);
@@ -5232,7 +5288,7 @@ if(!!bankTransferInformationForm ){
       formData.append('telefono', customerInfo[5].value);
       formData.append('curso', selectedProduct.name);
       formData.append('fecha', selectedProduct.period);
-      //formData.append("comprobante", $('input[type=file]')[0].files[0]);
+      formData.append("comprobante", file.files[0]);
 
       const body = document.getElementsByTagName('body');
       body[0].classList.toggle("loading");
@@ -5243,7 +5299,10 @@ if(!!bankTransferInformationForm ){
   
       fetch( baseUrl + sendEmailUrl, {
         body: formData ,
-        method: "post"
+        method: "post",
+        headers: {
+          'Content-Type': 'multipart/form-data'
+      }
       }).then((response) => {
         body[0].classList.toggle("loading");
         event.target.reset()
@@ -5259,7 +5318,7 @@ if(!!bankTransferInformationForm ){
           icon: "success"
         },
         function(){
-          document.location.href ='https://devplace.tech/cursos.php';
+          //document.location.href ='https://devplace.tech/cursos.php';
         });
       }).catch((error) => {
         console.log(error);

@@ -32,6 +32,7 @@ $page = json_decode($file);
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
   <link href="/dist/styles.css" rel="stylesheet">
+  <link href="../assets/styles/sweetalert.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 
@@ -56,6 +57,7 @@ $page = json_decode($file);
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone-with-data.js"></script>
   <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
   <script src="/dist/scripts.js"></script>
+  <script src="../assets/scripts/plugins/sweetalert.min.js"></script>
 </body>
 
 </html>

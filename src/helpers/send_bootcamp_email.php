@@ -10,18 +10,18 @@ include './phpmailer/src/SMTP.php';
 
 try {
 
-$emailReceptor = 'pagos@devplace.tech';
-$subject = isset($_REQUEST['subject']) ? $_REQUEST['subject'] :'';
+$emailReceptor = 'aplicantes@devplace.tech';
+
 $firstname = isset($_REQUEST['nombre']) ? $_REQUEST['nombre'] :'';
 $lastName = isset($_REQUEST['apellido']) ? $_REQUEST['apellido'] :'';
 $document = isset($_REQUEST['documento']) ? $_REQUEST['documento'] :'';
 $email = isset($_REQUEST['email']) ? $_REQUEST['email'] :'';
 $country = isset($_REQUEST['pais']) ? $_REQUEST['pais'] :'';
-$curse = isset($_REQUEST['curso']) ? $_REQUEST['curso'] :'';
+$curse = isset($_REQUEST['bootcamp']) ? $_REQUEST['bootcamp'] :'';
 $date = isset($_REQUEST['fecha']) ? $_REQUEST['fecha'] :'';
 $phone = isset($_REQUEST['telefono']) ? $_REQUEST['telefono'] :'';
-$message = isset($_REQUEST['otros-conocimientos']) ? $_REQUEST['otros-conocimientos'] :'';
-$conocimiento = isset($_REQUEST['nivel-de-conocimiento']) ? $_REQUEST['nivel-de-conocimiento'] :'';
+$message = isset($_REQUEST['otros']) ? $_REQUEST['otros'] :'';
+$conocimiento = isset($_REQUEST['nivelConocimiento']) ? $_REQUEST['nivelConocimiento'] :'';
 
 
 
@@ -48,7 +48,7 @@ $mail = new PHPMailer(true);
 
   // Setting the email content
   $mail->IsHTML(true);
-  $mail->Subject = $subject." - DevPlace Portal";
+  $mail->Subject = "Aplicante para Bootcamp - DevPlace Portal";
   $mail->Body = '<ul>
                   <li><strong>Nombre: </strong>' . $firstname . ' '.$lastName. '</li>
                   <li><strong>Documeto: </strong>' . $document . '</li>
@@ -57,7 +57,7 @@ $mail = new PHPMailer(true);
                   <li><strong>Pais: </strong>' . $country . '</li>
                   <li><strong>Teléfono: </strong>' . $phone . '</li>
                   <li><strong>Consulta: </strong>' . $message . '</li>
-                  <li><strong>Curso: </strong>' . $curse . '</li>
+                  <li><strong>Bootcamp: </strong>' . $bootcamp . '</li>
                   <li><strong>Fechas: </strong>' . $date . '</li>
                  </ul>';
   //$mail->AltBody = 'Plain text message body for non-HTML email client. Gmail SMTP email body.';
