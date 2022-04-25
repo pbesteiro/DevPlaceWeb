@@ -136,7 +136,7 @@ $srcPath = $_SERVER['DOCUMENT_ROOT'];
           period: getPeriod(slide.dateStart, slide.dateEnd),
           hours: slide.hours,
           modality: "Online en vivo",
-          mentor: slide.mentor?.name,
+          mentor: slide.mentor?.name + ' ' + slide.mentor?.lastName,
           price: slide.price,
           discount: slide.discount,
           duration: slide.duration,
