@@ -25,26 +25,26 @@
       <div class="col">
         <ul class="social-networks">
           <li>
-            <a href="#"><img src="/dist/images/social-networks/facebook.png" width="32px" height="32px" alt="Argentina"></a>
+            <a href="https://www.facebook.com/DevPlace.Arg/" target="_blank"><img src="/dist/images/social-networks/facebook.png" width="32px" height="32px" alt="Argentina"></a>
           </li>
           <li>
-            <a href="#"><img src="/dist/images/social-networks/twitter.png" width="32px" height="32px" alt="Argentina"></a>
+            <a href="https://twitter.com/DevPlace_com" target="_blank"><img src="/dist/images/social-networks/twitter.png" width="32px" height="32px" alt="Argentina"></a>
           </li>
           <li>
-            <a href="#"><img src="/dist/images/social-networks/linkedin.png" width="32px" height="32px" alt="Argentina"></a>
+            <a href="https://www.linkedin.com/company/76796344/" target="_blank" ><img src="/dist/images/social-networks/linkedin.png" width="32px" height="32px" alt="Argentina"></a>
           </li>
-          <li>
+          <!--li>
             <a href="#"><img src="/dist/images/social-networks/youtube.png" width="32px" height="32px" alt="Argentina"></a>
           </li>
           <li>
             <a href="#"><img src="/dist/images/social-networks/pinterest.png" width="32px" height="32px" alt="Argentina"></a>
-          </li>
+          </li-->
           <li>
-            <a href="#"><img src="/dist/images/social-networks/instagram.png" width="32px" height="32px" alt="Argentina"></a>
+            <a href="https://www.instagram.com/devplace.tech/" target="_blank"><img src="/dist/images/social-networks/instagram.png" width="32px" height="32px" alt="Argentina"></a>
           </li>
-          <li>
+          <!--li>
             <a href="#"><img src="/dist/images/social-networks/tiktok.png" width="32px" height="32px" alt="Argentina"></a>
-          </li>
+          </li-->
         </ul>
       </div>
     </div>
