@@ -3847,8 +3847,9 @@ const days = {
 
 const dateSpliter = (date) => {
   const utcDate = setToLocalTimeZone(date);
-  const dateObj = moment(utcDate);
-
+  let dateObj = moment(utcDate);
+  //expiryDate2 = new Date(Date.now() + 2 * (60 * 60 * 1000) );
+  dateObj=dateObj.add('h',4);
   return {
     input: `${dateObj.format("YYYY")}-${dateObj.format("M")}-${dateObj.format(
       "D"
