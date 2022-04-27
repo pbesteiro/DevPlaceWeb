@@ -1,7 +1,7 @@
 {
   "title": "Dev Place",
   "description": "Cursos online en vivo. Aprende nuevas habilidades tech en programación, diseño, data, marketing digital y mucho más.",
-  "thumbnail": "logo.png",
+  "thumbnail": "courses/html.png",
   "header_skin": "",
   "page_name":"curso",
   "sections": [

@@ -17,12 +17,12 @@ $page = json_decode($file);
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta property="og:title" content="<?php echo $page->title; ?>" />
   <meta property="og:site_name" content="<?php echo $site->name; ?>" />
-  <meta name="description" content="<?php echo $page->description; ?>">
-  <meta name="description" property="og:description" content="<?php echo $page->description; ?>" />
+  <meta property="og:description" content="<?php echo $page->description; ?>" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="<?php echo $page->thumbnail; ?>" />
-  <meta property="og:url" content="<?php echo $site->base_url; ?>" />
+  <meta property="og:image" content="https://devplace.tech/dist/images/<?php echo $page->thumbnail; ?>" />
+  <meta property="og:url" content="https://devplace.tech/" />
   <meta property="og:locale" content="<?php echo $site->language; ?>" />
+  <meta property="fb:app_id" content="401652845152632" />  
   <link rel="apple-touch-icon" sizes="180x180" href="/dist/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/dist/images/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/dist/images/favicon/favicon-16x16.png">
