@@ -23,6 +23,7 @@ $page = json_decode($file);
   <meta property="og:url" content="https://devplace.tech/" />
   <meta property="og:locale" content="<?php echo $site->language; ?>" />
   <meta property="fb:app_id" content="401652845152632" />  
+  <meta name="facebook-domain-verification" content="zq9951ip9beihqvckaveu9zm1q9p04" />
   <link rel="apple-touch-icon" sizes="180x180" href="/dist/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/dist/images/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/dist/images/favicon/favicon-16x16.png">
