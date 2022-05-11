@@ -174,7 +174,7 @@ const initCarousel = () => {
        */
       
       if (initResponsiveCarusel(carousel, skin)) {
-        carouselInstance = new Glide(carousel, skin.options);
+        const carouselInstance = new Glide(carousel, skin.options);
 
         /**
          * Ocultamos o mostramos las arrows
