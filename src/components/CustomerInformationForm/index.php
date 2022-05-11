@@ -57,7 +57,10 @@ $countries = json_decode($file);
     </div>
 
     <div class="form-actions">
-      <span></span>
+      <button type="button" onClick="historyBack()" class="call-to-action skin-outline">
+        Volver
+      </button>
+
       <button type='submit' form="customer-information-form" class="call-to-action skin-filled">
         Continuar
       </button>

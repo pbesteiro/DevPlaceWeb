@@ -5651,6 +5651,10 @@ const goToTop = () => {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+const historyBack = () => {
+  history.back()
+}
+
 /**
  * Init front end routing
  */

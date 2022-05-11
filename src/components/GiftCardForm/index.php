@@ -126,7 +126,9 @@ $coursesTypes = array_filter($pageCursos->sections, function ($section) {
   </form>
 
   <div class="form-actions">
-    <span></span>
+    <button type="button" onClick="historyBack()" class="call-to-action skin-outline">
+      Volver
+    </button>
     <button type='submit' form="gift-card-form" class="call-to-action skin-filled">
       Continuar
     </button>
