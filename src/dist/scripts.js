@@ -4944,7 +4944,7 @@ class Gradient {
 
 //   startAnimation();
 // }
-const BASE_URL = "https://devplace-api.herokuapp.com/devplaces-campus-api/";
+const BASE_URL = "https://devplaceapi.azurewebsites.net/devplaces-campus-api/";
 const token = localStorage.getItem('token')
 
 const getConfig = async (config) => {
