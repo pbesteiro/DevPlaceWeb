@@ -35,6 +35,7 @@ gulp.task("watch", () => {
       global.themePath + "assets/scripts/plugins/*.js",
       global.themePath + "assets/scripts/vendors/*.js",
       global.themePath + "assets/scripts/custom/*.js",
+      global.themePath + "assets/scripts/pages/*.js",
       global.themePath + "assets/scripts/index.js"
     ],
     gulp.series("buildScripts")
@@ -44,7 +45,8 @@ gulp.task("watch", () => {
     [
       global.themePath + "assets/scripts/plugins/*.js",
       global.themePath + "assets/scripts/vendors/*.js", 
-      global.themePath + "assets/scripts/custom/*.js"
+      global.themePath + "assets/scripts/custom/*.js",
+      global.themePath + "assets/scripts/pages/*.js",
     ],
     {events: ['add']},
     gulp.series("buildScripts")

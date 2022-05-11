@@ -82,8 +82,10 @@ $page = json_decode($file);
   }
   unset($section)
   ?>
-
   <?php include $srcPath . 'components/Loader/index.php'; ?>
+  <a href="https://api.whatsapp.com/send?phone=5491121685045" class="whatsapp" target="_blank">
+    <i class="fa fa-whatsapp whatsapp-icon"></i>
+  </a>
   <div id="backdrop"></div>
   <script src="/dist/scripts.js?cb=<?php echo date('h:i:s'); ?>"></script>
 </body>

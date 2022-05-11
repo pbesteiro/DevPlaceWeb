@@ -14,23 +14,31 @@ $page = json_decode($file);
 
 <head>
   <!-- Meta Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '733271301029717');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=733271301029717&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-<meta name="facebook-domain-verification" content="5fztmngc8kemrguu55gk0pe9pb76sj" />
+  <script>
+    ! function(f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function() {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '733271301029717');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=733271301029717&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
+  <meta name="facebook-domain-verification" content="5fztmngc8kemrguu55gk0pe9pb76sj" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta property="og:title" content="<?php echo $page->title; ?>" />
@@ -40,7 +48,7 @@ $page = json_decode($file);
   <meta property="og:image" content="https://devplace.tech/dist/images/<?php echo $page->thumbnail; ?>" />
   <meta property="og:url" content="https://devplace.tech/" />
   <meta property="og:locale" content="<?php echo $site->language; ?>" />
-  <meta property="fb:app_id" content="401652845152632" />  
+  <meta property="fb:app_id" content="401652845152632" />
   <meta name="facebook-domain-verification" content="zq9951ip9beihqvckaveu9zm1q9p04" />
   <link rel="apple-touch-icon" sizes="180x180" href="/dist/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/dist/images/favicon/favicon-32x32.png">
@@ -51,14 +59,10 @@ $page = json_decode($file);
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
   <link href="/dist/styles.css" rel="stylesheet">
-  <link href="../assets/styles/sweetalert.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 
 <body>
-  <a href="https://api.whatsapp.com/send?phone=5491121685045" class="whatsapp" target="_blank">
-    <i class="fa fa-whatsapp whatsapp-icon"></i>
-  </a>
   <?php includeWithVariables($srcPath . 'components/Header/index.php', (array) $page, true); ?>
 
   <?php
@@ -71,12 +75,14 @@ $page = json_decode($file);
   <?php include $srcPath . 'components/Footer/index.php'; ?>
   <?php include $srcPath . 'components/ApplyForm/index.php'; ?>
   <?php include $srcPath . 'components/Loader/index.php'; ?>
+  <a href="https://api.whatsapp.com/send?phone=5491121685045" class="whatsapp" target="_blank">
+    <i class="fa fa-whatsapp whatsapp-icon"></i>
+  </a>
   <div id="backdrop"></div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone-with-data.js"></script>
   <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
   <script src="/dist/scripts.js"></script>
-  <script src="../assets/scripts/plugins/sweetalert.min.js"></script>
 </body>
 
 </html>
