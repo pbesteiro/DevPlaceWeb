@@ -139,11 +139,18 @@ section.carousel-component {
           padding: 0px 24px;
         }
 
+        .glide__track {
+          overflow: visible;
+          .glide__slides{
+            overflow: visible;
+          }
+        }
+
         &:not(.glide--carousel, .glide--slider){
           overflow: visible;
 
           .glide__track {
-            overflow: hidden;
+            overflow: visible;
             
             .glide__slides{
               width: auto;

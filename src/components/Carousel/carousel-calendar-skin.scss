@@ -62,9 +62,10 @@ section.carousel-component {
           }
 
           .glide__track {
-            overflow: hidden;
+            overflow: visible;
 
             .glide__slides{
+              overflow: visible;
               .glides__slide{
 
                 &:not(:last-child){

@@ -63,9 +63,9 @@ $countries = json_decode($file);
             <label class="label" for="puesto">Puesto</label>
             <div class="select">
               <select name="puesto" id="puesto">
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
+                <option value="Mentor/a">Mentor/a</option>
+                <option value="Inserción de talento">Inserción de talento</option>
+                <option value="Otro">Otro</option>
               </select>
             </div>
           </div>
