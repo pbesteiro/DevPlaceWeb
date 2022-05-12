@@ -46,15 +46,6 @@ section.carousel-component {
         }
 
         .glide {
-
-          .glide__track {
-            overflow: visible;
-            
-            .glide__slides {
-              overflow: visible;
-            }
-          }
-
           &:not(.glide--carousel, .glide--slider){
             .glide__track {
               .glide__slides {

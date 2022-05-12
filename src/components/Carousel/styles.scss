@@ -140,9 +140,19 @@ section.carousel-component {
         }
 
         .glide__track {
-          overflow: visible;
-          .glide__slides{
-            overflow: visible;
+          .glide__slides {
+            .glide__slide {
+              border-radius: 10px;
+              overflow: hidden;
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+              transition: all .3s cubic-bezier(0,0,.5,1);
+
+              &:hover,
+              &:focus {
+                box-shadow: 2px 4px 16px rgb(0 0 0 / 16%);
+                transform: scale3d(1.01,1.01,1.01);
+              }
+            }
           }
         }
 
@@ -154,7 +164,7 @@ section.carousel-component {
             
             .glide__slides{
               width: auto;
-              overflow: auto;
+              overflow: visible;
               touch-action: auto;
               padding: 0px 24px;
                 
