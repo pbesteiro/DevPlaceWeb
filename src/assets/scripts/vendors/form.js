@@ -54,6 +54,13 @@ if(!!inputs){
   }
 }
 
+const saveJsonInLocalStorage = (id, data) => {
+  localStorage.setItem(
+    id, 
+    data
+  );
+}
+
 const saveInLocalSoterage = (formId) => {
   const form = document.getElementById(formId)
   const formData = new FormData(form);

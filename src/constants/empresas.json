@@ -16,7 +16,7 @@
       "content":"",
       "cta":{
         "type": "filled",
-        "action": "showModal('apply-modal')",
+        "action": "showModal('be-partner-modal')",
         "label": "Contrata"
       }
     },
@@ -50,8 +50,8 @@
         "showRainbow": true
       },
       "cta":{
-        "type":"filled",
-        "link": "#",
+        "type": "filled",
+        "action": "showModal('be-partner-modal')",
         "label": "Contrata"
       },
       "content": [
@@ -79,7 +79,7 @@
       },
       "cta":{
         "type": "filled",
-        "action": "showModal('apply-modal')",
+        "action": "showModal('company-contact-us-modal')",
         "label": "Contactar"
       }
     },

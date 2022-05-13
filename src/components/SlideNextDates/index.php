@@ -1,27 +1,19 @@
 <?php
 $_SERVER['DOCUMENT_ROOT'] = sprintf('%s/', rtrim($_SERVER['DOCUMENT_ROOT'], '/'));
 $srcPath = $_SERVER['DOCUMENT_ROOT'];
-/**
- * 
- * 
- * 
- *  component: string,
- *  title: string,
- *  subtitle: string,
- *  text?: string,
- *  cta?:{
- *    href: string,
- *    label: string
- *  },
- *  image: string
- * }
- * 
- * 
- * 
- */
+
+$bootcampInformation = array(
+  'title' => strip_tags($title),
+  'subtitle' => strip_tags($subtitle),
+  'duration' => $duration,
+  'format' => $format,
+  'schedule' => $schedule,
+  'profile' => $profile,
+);
+
 ?>
 
-<div class="slide-component">
+<div class="slide-component" onclick='saveJsonInLocalStorage("selected-bootcamp", <?php echo "JSON.stringify(" . json_encode($bootcampInformation) . ")" ?>)'>
   <h3 class="title">
     <?php echo $title; ?>
   </h3>
@@ -57,6 +49,4 @@ $srcPath = $_SERVER['DOCUMENT_ROOT'];
   <?php if (isset($cta)) { ?> <?php includeWithVariables($srcPath . 'components/CallToAction/index.php', (array) $cta, true); ?> <?php } ?>
 
   <a href="#">Descargar programa</a>
-
-
 </div>

@@ -123,16 +123,18 @@ $coursesTypes = array_filter($pageCursos->sections, function ($section) {
       <input type="checkbox" name="terminos-y-condiciones" id="terminos-y-condiciones">
       <label for="terminos-y-condiciones">Acepto los <a href="/legal.php">términos y condiciones del servicio</a></label>
     </div>
-  </form>
 
-  <div class="form-actions">
-    <button type="button" onClick="historyBack()" class="call-to-action skin-outline">
-      Volver
-    </button>
-    <button type='submit' form="gift-card-form" class="call-to-action skin-filled">
-      Continuar
-    </button>
-  </div>
+    <div class="form-actions">
+      <button type="button" onClick="historyBack()" class="call-to-action skin-outline">
+        Volver
+      </button>
+
+      <button type='submit' form="gift-card-form" class="call-to-action skin-filled">
+        <span>Continuar</span>
+        <?php include $srcPath . 'components/Loader/index.php'; ?>
+      </button>
+    </div>
+  </form>
 </div>
 
 <script>
@@ -183,6 +185,7 @@ $coursesTypes = array_filter($pageCursos->sections, function ($section) {
             getSelctOptions(launches);
           });
       };
+
       const setEmptyState = () => {
         selectedCourseWaiting.style.display = "inline";
         selectedCoursePrice.innerHTML = "";

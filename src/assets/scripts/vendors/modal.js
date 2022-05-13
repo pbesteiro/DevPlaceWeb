@@ -54,10 +54,15 @@ const toggleModal = (modal) => {
   
   modal.classList.toggle("showing");
   backdrop.classList.toggle("showing");
-  document.getElementsByTagName('body')[0].classList('')
 }
 
 const showModal = (idModal) => {
+  const modal = document.getElementById(idModal)
+  toggleModal(modal)
+}
+
+const showModalWidthData = (idModal) => {
+  saveJsonInLocalStorage(idModal, data)
   const modal = document.getElementById(idModal)
   toggleModal(modal)
 }

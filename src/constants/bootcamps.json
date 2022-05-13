@@ -230,11 +230,11 @@
             "label": "Aplicar"
           },
           "component": "SlideNextDates",
-          "title": "31 de Noviembre de<br />2022",
-          "text": "text section 31 de Noviembre de<br />2022",
+          "title": "31 de Noviembre de<br/>2022",
+          "text": "text section 31 de Noviembre de<br/>2022",
           "duration": "4 meses. Full Time.",
           "format": "Clase en vivo",
-          "schedule": "Lunes a Viernes<br />9am a 6pm",
+          "schedule": "Lunes a Viernes<br/>9am a 6pm",
           "profile": "Back End: Java"
         }
       ]

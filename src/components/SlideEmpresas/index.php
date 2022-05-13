@@ -1,10 +1,17 @@
 <?php
 $_SERVER['DOCUMENT_ROOT'] = sprintf('%s/', rtrim($_SERVER['DOCUMENT_ROOT'], '/'));
 $srcPath = $_SERVER['DOCUMENT_ROOT'];
+
+$planInformation = array(
+  'name' => strip_tags($name),
+  'price' => strip_tags($price),
+  'clarification' => $clarification,
+  'content' => $content,
+);
 ?>
 
 
-<div class="slide-empresas-component">
+<div class="slide-empresas-component" onclick='saveJsonInLocalStorage("selected-plan", <?php echo "JSON.stringify(" . json_encode($planInformation) . ")" ?>)'>
   <div class="slide-component">
     <div class="slide">
       <p class="name"><?php echo $name; ?></p>
@@ -27,7 +34,7 @@ $srcPath = $_SERVER['DOCUMENT_ROOT'];
     <div class="button-wrapp">
       <p class="clarification"><?php echo $clarification; ?></p>
 
-      <button type='submit' class="call-to-action skin-filled">
+      <button type='button' onclick="showModal('hire-plan-modal')" class="call-to-action skin-filled">
         Seleccionar Plan
       </button>
     </div>

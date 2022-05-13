@@ -1,0 +1,32 @@
+.call-to-action {
+  .loader {
+    display: none;;
+  }
+
+  &.loading {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    & > * {
+      opacity: 0;
+    }
+
+    .loader {
+      opacity: 1!important;
+      z-index: 1!important;
+      display: block!important;
+
+      svg {
+        background: none!important;
+        fill: none;
+        max-width: 70%;
+
+        circle {
+          stroke: white;
+        }
+      }
+    }
+  }
+}

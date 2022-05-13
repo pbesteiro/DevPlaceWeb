@@ -3,15 +3,15 @@ $file = file_get_contents($srcPath . "constants/countries.json");
 $countries = json_decode($file);
 ?>
 
-<div class="modal" tabindex="-1" id="apply-modal">
+<div class="modal" tabindex="-1" id="company-contact-us-modal">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="btn-close" onclick="hideModal('apply-modal')"></button>
+        <button type="button" class="btn-close" onclick="hideModal('company-contact-us-modal')"></button>
       </div>
 
       <div class="modal-body">
-        <form action="" id="apply-form">
+        <form action="" id="company-contact-us-form">
 
           <div class="field">
             <label for="nombre">Nombre</label>
@@ -24,15 +24,9 @@ $countries = json_decode($file);
           </div>
 
           <div class="field">
-            <label for="numero-de-documento">Numero de documento</label>
-            <input type="number" name="numero-de-documento" id="numero-de-documento">
-          </div>
-
-          <div class="field">
             <label for="email">e-Mail</label>
             <input type="email" name="email" id="email">
           </div>
-
 
           <div class="fields-inline">
             <div class="field country-field">
@@ -59,31 +53,23 @@ $countries = json_decode($file);
           </div>
 
           <div class="field">
-            <label for="nivel-de-conocimiento">Nivel de conocimiento en programación</label>
-            <div class="select">
-              <select name="nivel-de-conocimiento" id="nivel-de-conocimiento">
-                <option value="Cursando o grduado de carreta IT">Cursando o grduado de carreta IT</option>
-                <option value="Autodidacta">Autodidacta</option>
-                <option value="Sin conocimientos">Sin conocimientos</option>
-              </select>
-            </div>
+            <label for="empresa">Empresa</label>
+            <input type="text" name="empresa" id="empresa">
           </div>
-
 
           <div class="field">
-            <label for="otros-conocimientos">Alguna info más sobre tus conocimientos</label>
-            <textarea name="otros-conocimientos" id="otros-conocimientos" cols="30" rows="10"></textarea>
+            <label for="puesto">Puesto</label>
+            <input type="text" name="puesto" id="puesto">
           </div>
 
-          <div class="field-checkbox">
-            <input type="checkbox" name="terminos-y-condiciones" id="terminos-y-condiciones">
-            <label for="terminos-y-condiciones">Acepto los <a href="/legal.php">términos y condiciones del servicio</a></label>
+          <div class="field">
+            <label for="que-necesita">Explicanos que necesitas</label>
+            <textarea name="que-necesita" id="que-necesita" cols="30" rows="10"></textarea>
           </div>
 
           <div class="wrapper">
-            <button type='submit' form="apply-form" class="call-to-action skin-filled" id="send-form">
+            <button type='submit' form="company-contact-us-form" class="call-to-action skin-filled" id="send-form">
               Enviar
-              <?php include $srcPath . 'components/Loader/index.php'; ?>
             </button>
           </div>
         </form>

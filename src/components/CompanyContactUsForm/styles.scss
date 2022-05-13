@@ -1,0 +1,13 @@
+#company-contact-us-form{
+  .wrapper {
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: 1440px) {
+      justify-content: center;
+    }
+    .call-to-action{
+      width: 100%;
+    }
+  }
+}

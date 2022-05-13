@@ -6,12 +6,10 @@ $file = file_get_contents($srcPath . "constants/countries.json");
 $countries = json_decode($file);
 ?>
 
-
 <div class="work-with-us-component">
   <div class="container">
     <div class="row">
       <div class="col">
-
         <form id="work-with-us-form">
           <h2 class="title">Trabaja en Dev Place</h2>
 
@@ -74,7 +72,7 @@ $countries = json_decode($file);
             <label>Adjuntar CV</label>
 
             <div class="dropzone">
-              <input type="file" name="comprobante-de-pago" id="comprobante-de-pago" multiple>
+              <input type="file" name="curriculum" id="curriculum" multiple>
 
               <div class="dz-message">
                 <div class="empty-state">
@@ -101,15 +99,15 @@ $countries = json_decode($file);
             <input type="checkbox" name="terminos-y-condiciones" id="terminos-y-condiciones">
             <label for="terminos-y-condiciones">Acepto los <a href="/legal.php">términos y condiciones del servicio</a></label>
           </div>
+
+          <div class="form-actions">
+            <span></span>
+            <button type='submit' form="work-with-us-form" class="call-to-action skin-filled">
+              <span>Enviar</span>
+              <?php include $srcPath . 'components/Loader/index.php'; ?>
+            </button>
+          </div>
         </form>
-
-        <div class="form-actions">
-          <span></span>
-          <button type='submit' form="work-with-us-form" class="call-to-action skin-filled">
-            Enviar
-          </button>
-        </div>
-
       </div>
     </div>
   </div>

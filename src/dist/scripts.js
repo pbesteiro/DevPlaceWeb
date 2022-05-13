@@ -3998,6 +3998,57 @@ if (dropzones.length > 0) {
   });
 }
 
+const emailTemplates = {
+  bankTransfer: 'send_bank_transfer_email',
+  bootcamp: 'send_bootcamp_email',
+  companyContactUs: 'send_company_contact_us_email',
+  contactUs: 'send_contact_us_email',
+  hirePlan: 'send_hire_plan_email',
+  lead: 'send_lead_email',
+  leadGiftCard: 'send_lead_giftcard_email',
+  partnership: 'send_be_partner_email',
+  workWithUs: 'send_work_with_us_email'
+}
+
+const showLoading = (form) => {
+  const body = document.getElementsByTagName('body');
+  body[0].classList.toggle("loading");
+
+  const button = form.querySelectorAll('[type="submit"]')[0];
+  button.disabled = true;
+  button.classList.add('loading')
+}
+
+const hideLoading = (form) => {
+  const body = document.getElementsByTagName('body');
+  body[0].classList.toggle("loading");
+
+  const button = form.querySelectorAll('[type="submit"]')[0];
+  button.disabled = false;
+  button.classList.remove('loading')
+}
+
+const sendEmail = (template, form, formData, callback) => {
+  const sendEmailUrl = `${window.location.protocol}//${window.location.host}/helpers/${emailTemplates[template]}.php`
+  
+  showLoading(form)
+
+  fetch( sendEmailUrl, {
+    body: formData ,
+    method: "post"
+  }).then((response) => {
+    return response.text();
+  }).then((response) => {
+    // showToast('form-sended-toast')
+    if(!!callback){
+      callback(response)
+    }
+  }).catch((error) => {
+    console.warn(error);
+  }).finally(() => {
+    hideLoading(form)
+  });
+}
 
 const paisField = document.getElementById("pais");
 
@@ -4052,6 +4103,13 @@ if(!!inputs){
       }
     })
   }
+}
+
+const saveJsonInLocalStorage = (id, data) => {
+  localStorage.setItem(
+    id, 
+    data
+  );
 }
 
 const saveInLocalSoterage = (formId) => {
@@ -4369,10 +4427,15 @@ const toggleModal = (modal) => {
   
   modal.classList.toggle("showing");
   backdrop.classList.toggle("showing");
-  document.getElementsByTagName('body')[0].classList('')
 }
 
 const showModal = (idModal) => {
+  const modal = document.getElementById(idModal)
+  toggleModal(modal)
+}
+
+const showModalWidthData = (idModal) => {
+  saveJsonInLocalStorage(idModal, data)
   const modal = document.getElementById(idModal)
   toggleModal(modal)
 }
@@ -5111,6 +5174,97 @@ const closeAllSubmenues = () => {
     submenues[i].className = 'submenu'
   }
 }
+const bankTransferInformationForm = document.getElementById('bank-transfer-information-form')
+
+if(!!bankTransferInformationForm ){
+  const validate = new window.JustValidate("#bank-transfer-information-form");
+  
+  validate
+    .addField("#nombre", [
+      { rule: "required", errorMessage: "Campo obligatorio" },
+    ])
+    .addField("#apellido", [
+      { rule: "required", errorMessage: "Campo obligatorio" },
+    ])
+    .addField("#cuit", [
+      { rule: "required", errorMessage: "Campo obligatorio" },
+    ])
+    .addField('#comprobante-de-pago', [
+      {
+        rule: "required",
+        errorMessage: "Campo obligatorio"
+      },
+      {
+        rule: 'minFilesCount',
+        value: 1,
+        errorMessage: "Carga tu comprobante de pago"
+      },
+      {
+        rule: 'maxFilesCount',
+        value: 1,
+        errorMessage: "Solo se puede agregar un comprobante de pago"
+      },
+    ])
+    .onFail((failedFields) => {
+      Object.values(failedFields).forEach(failedField => {
+        if(!failedField.isValid){
+          failedField.elem.parentElement.classList.add('field-error')
+        }
+      });
+    })
+    .onSuccess((event) => {
+      saveInLocalSoterage('bank-transfer-information-form')
+      const formData = new FormData(event.target)
+      sendEmail('bankTransfer', event.target, formData)
+    });
+
+    fillWithLocalStorageInfo('bank-transfer-information-form')
+}
+
+const bePartner = document.getElementById('be-partner-form')
+
+if(!!bePartner ){
+  const validate = new window.JustValidate("#be-partner-form");
+  
+  validate
+    .addField("#nombre", [
+      { rule: "required", errorMessage: "Campo obligatorio" },
+    ])
+    .addField("#apellido", [
+      { rule: "required", errorMessage: "Campo obligatorio" },
+    ])
+    .addField("#email", [
+      { rule: "required", errorMessage: "Campo obligatorio" },
+      {
+        rule: "email",
+        errorMessage: "e-Mail invalido",
+      },
+    ])
+    .addField("#pais", [{ rule: "required", errorMessage: "Campo obligatorio" }])
+    .addField("#telefono", [
+      { rule: "required", errorMessage: "Campo obligatorio" },
+    ])
+    .addField("#empresa", [
+      { rule: "required", errorMessage: "Campo obligatorio" },
+    ])
+    .addField("#puesto", [
+      { rule: "required", errorMessage: "Campo obligatorio" },
+    ])
+    .onFail((failedFields) => {
+      Object.values(failedFields).forEach(failedField => {
+        if(!failedField.isValid){
+          failedField.elem.parentElement.classList.add('field-error')
+        }
+      });
+    })
+    .onSuccess((event) => {
+      saveInLocalSoterage('be-partner-form')
+      const formData = new FormData(event.target)
+      sendEmail('partnership', event.target, formData)
+    });
+  
+}
+
 const applyForm = document.getElementById('apply-form')
 
 if(!!applyForm ){
@@ -5158,66 +5312,14 @@ if(!!applyForm ){
     })
     .onSuccess((event) => {
       saveInLocalSoterage('apply-form')
+      const formData = new FormData(event.target)
+      const perfil = JSON.parse(localStorage.getItem('selected-bootcamp') || '').profile
+      formData.append('perfil', perfil)
+      sendEmail('bootcamp', event.target, formData)
     });
   
 }
 
-const bankTransferInformationForm = document.getElementById('bank-transfer-information-form')
-
-if(!!bankTransferInformationForm ){
-  const validate = new window.JustValidate("#bank-transfer-information-form");
-  
-  validate
-    .addField("#nombre", [
-      { rule: "required", errorMessage: "Campo obligatorio" },
-    ])
-    .addField("#apellido", [
-      { rule: "required", errorMessage: "Campo obligatorio" },
-    ])
-    .addField("#cuit", [
-      { rule: "required", errorMessage: "Campo obligatorio" },
-    ])
-    .addField('#comprobante-de-pago', [
-      {
-        rule: "required",
-        errorMessage: "Campo obligatorio"
-      },
-      {
-        rule: 'minFilesCount',
-        value: 1,
-        errorMessage: "Carga tu comprobante de pago"
-      },
-      {
-        rule: 'maxFilesCount',
-        value: 1,
-        errorMessage: "Solo se puede agregar un comprobante de pago"
-      },
-      // {
-      //   rule: 'files',
-      //   value: {
-      //     files: {
-      //       extensions: ['jpeg', 'png', 'pdf'],
-      //       maxSize: 25000,
-      //       minSize: 1000,
-      //       types: ['image/jpeg', 'image/png', 'application/pdf'],
-      //     },
-      //   },
-      //   errorMessage: "Formato de archivo incorrecto. Intenta con un JPEG, PNG o PDF."
-      // },
-    ])
-    .onFail((failedFields) => {
-      Object.values(failedFields).forEach(failedField => {
-        if(!failedField.isValid){
-          failedField.elem.parentElement.classList.add('field-error')
-        }
-      });
-    })
-    .onSuccess((event) => {
-      saveInLocalSoterage('bank-transfer-information-form')
-    });
-
-    fillWithLocalStorageInfo('bank-transfer-information-form')
-}
 const getCart = () => {
   const cartDetails = document.getElementById("cart-details");
   const selectedProduct = localStorage.getItem(
@@ -5226,11 +5328,10 @@ const getCart = () => {
 
   if(cartDetails && !!selectedProduct) {
     const { name, days, period, hours, mentor, price, discount } = JSON.parse(selectedProduct);
-  
     document.getElementById('course-name').innerText = name;
     document.getElementById('course-days-period').innerText = days + " " + period;
     document.getElementById('course-hour').innerText = hours;
-    document.getElementById('course-teacher').innerText = mentor;
+    document.getElementById('course-teacher').innerText = mentor.name + ", " + mentor.lastName;
     document.getElementById('course-price').innerText = getPesosArFormat(price);
     document.getElementById('course-discount').innerText = discount + '%';
     document.getElementById('course-total').innerText = getPesosArFormat(price - (price / 100 * discount));
@@ -5272,6 +5373,53 @@ const addToCart = (event) => {
 }
 
 getCart()
+const companyContactUsForm = document.getElementById('company-contact-us-form')
+
+if(!!companyContactUsForm ){
+  const validate = new window.JustValidate("#company-contact-us-form");
+  
+  validate
+    .addField("#nombre", [
+      { rule: "required", errorMessage: "Campo obligatorio" },
+    ])
+    .addField("#apellido", [
+      { rule: "required", errorMessage: "Campo obligatorio" },
+    ])
+    .addField("#email", [
+      { rule: "required", errorMessage: "Campo obligatorio" },
+      {
+        rule: "email",
+        errorMessage: "e-Mail invalido",
+      },
+    ])
+    .addField("#pais", [{ rule: "required", errorMessage: "Campo obligatorio" }])
+    .addField("#telefono", [
+      { rule: "required", errorMessage: "Campo obligatorio" },
+    ])
+    .addField("#empresa", [
+      { rule: "required", errorMessage: "Campo obligatorio" },
+    ])
+    .addField("#puesto", [
+      { rule: "required", errorMessage: "Campo obligatorio" },
+    ])
+    .addField("#que-necesita", [
+      { rule: "required", errorMessage: "Campo obligatorio" },
+    ])
+    .onFail((failedFields) => {
+      Object.values(failedFields).forEach(failedField => {
+        if(!failedField.isValid){
+          failedField.elem.parentElement.classList.add('field-error')
+        }
+      });
+    })
+    .onSuccess((event) => {
+      saveInLocalSoterage('company-contact-us-form')
+      const formData = new FormData(event.target)
+      sendEmail('companyContactUs', event.target, formData)
+    });
+  
+}
+
 const contactForm = document.getElementById('contact-form')
 
 if(!!contactForm ){
@@ -5318,10 +5466,11 @@ if(!!contactForm ){
   })
   .onSuccess((event) => {
     saveInLocalSoterage('contact-form')
+    const formData = new FormData(event.target)
+    sendEmail('contactUs', event.target, formData)
   });
   fillWithLocalStorageInfo('contact-form')
 }
-
 const customerInformationForm = document.getElementById('customer-information-form')
 
 if(!!customerInformationForm ){
@@ -5363,8 +5512,13 @@ if(!!customerInformationForm ){
     })
     .onSuccess((event) => {
       saveInLocalSoterage('customer-information-form')
-      let nextStep = event.target.dataset.nextstep
-      goToUrl(nextStep, '/checkout')
+      const formData = new FormData(event.target)
+      const curso = JSON.parse(localStorage.getItem('selected-product') || '')
+      formData.append('curso', curso.name)
+      sendEmail('lead', event.target, formData, () => {
+        let nextStep = event.target.dataset.nextstep
+        goToUrl(nextStep, '/checkout')
+      })
     });
 
     fillWithLocalStorageInfo('customer-information-form')
@@ -5438,12 +5592,70 @@ if(!!giftCardForm ){
     })
     .onSuccess((event) => {
       saveInLocalSoterage('gift-card-form')
-      let nextStep = event.target.dataset.nextstep
-      goToUrl(nextStep, '/checkout')
+      const formData = new FormData(event.target)
+      formData.append('cursoName', event.target.querySelector("option[value='"+event.target.querySelector("[id='curso']").value+"']").text)
+
+      const lanzamiento = JSON.parse(event.target.querySelector("[id='lanzamiento']").value || '')
+      formData.delete('lanzamiento')
+      formData.append('lanzamiento', `${lanzamiento.period}, ${lanzamiento.days} de ${lanzamiento.hours}`)
+
+      console.log('formData',formData.values())
+
+      sendEmail('leadGiftCard', event.target, formData, () => {
+        let nextStep = event.target.dataset.nextstep
+        goToUrl(nextStep, '/checkout')
+      })
     });
 
     fillWithLocalStorageInfo('gift-card-form')
 }
+
+const hirePlan = document.getElementById('hire-plan-form')
+
+if(!!hirePlan ){
+  const validate = new window.JustValidate("#hire-plan-form");
+  
+  validate
+    .addField("#nombre", [
+      { rule: "required", errorMessage: "Campo obligatorio" },
+    ])
+    .addField("#apellido", [
+      { rule: "required", errorMessage: "Campo obligatorio" },
+    ])
+    .addField("#email", [
+      { rule: "required", errorMessage: "Campo obligatorio" },
+      {
+        rule: "email",
+        errorMessage: "e-Mail invalido",
+      },
+    ])
+    .addField("#pais", [{ rule: "required", errorMessage: "Campo obligatorio" }])
+    .addField("#telefono", [
+      { rule: "required", errorMessage: "Campo obligatorio" },
+    ])
+    .addField("#empresa", [
+      { rule: "required", errorMessage: "Campo obligatorio" },
+    ])
+    .addField("#puesto", [
+      { rule: "required", errorMessage: "Campo obligatorio" },
+    ])
+    .onFail((failedFields) => {
+      Object.values(failedFields).forEach(failedField => {
+        if(!failedField.isValid){
+          failedField.elem.parentElement.classList.add('field-error')
+        }
+      });
+    })
+    .onSuccess((event) => {
+      saveInLocalSoterage('hire-plan-form')
+      const formData = new FormData(event.target)
+      const plan = JSON.parse(localStorage.getItem('selected-plan') || '').name
+      formData.append('plan', plan)
+      sendEmail('hirePlan', event.target, formData)
+    });
+  
+}
+
 const paymentMethodForm = document.getElementById("payment-method-form");
 
 if (!!paymentMethodForm) {
@@ -5601,7 +5813,7 @@ if(!!workwithusForm ){
   .addField("#puesto", [
     { rule: "required", errorMessage: "Debes seleccionar una opción" },
   ])
-  .addField('#adjuntar-cv',[
+  .addField('#curriculum',[
     {
       rule: "required",
       errorMessage: "Campo obligatorio"
@@ -5615,18 +5827,7 @@ if(!!workwithusForm ){
       rule: 'maxFilesCount',
       value: 1,
       errorMessage: "Solo se puede agregar un CV"
-    },
-    {
-      rule: 'files',
-      value: {
-        files: {
-          extensions: ['jpeg', 'png', 'pdf'],
-          maxSize: 25000,
-          minSize: 1000,
-          types: ['image/jpeg', 'image/png', 'application/pdf'],
-        },
-      },
-    },
+    }
   ])
   .addField("#terminos-y-condiciones", [
     {
@@ -5643,6 +5844,8 @@ if(!!workwithusForm ){
   })
   .onSuccess((event) => {
     saveInLocalSoterage('work-with-us-form')
+    const formData = new FormData(event.target)
+    sendEmail('workWithUs', event.target, formData)
   });
   fillWithLocalStorageInfo('work-with-us-form')
 }

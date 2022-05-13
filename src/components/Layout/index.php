@@ -74,6 +74,9 @@ $page = json_decode($file);
 
   <?php include $srcPath . 'components/Footer/index.php'; ?>
   <?php include $srcPath . 'components/ApplyForm/index.php'; ?>
+  <?php include $srcPath . 'components/CompanyContactUsForm/index.php'; ?>
+  <?php include $srcPath . 'components/BePartnerForm/index.php'; ?>
+  <?php include $srcPath . 'components/HirePlanForm/index.php'; ?>
   <?php include $srcPath . 'components/Loader/index.php'; ?>
   <a href="https://api.whatsapp.com/send?phone=5491121685045" class="whatsapp" target="_blank">
     <i class="fa fa-whatsapp whatsapp-icon"></i>

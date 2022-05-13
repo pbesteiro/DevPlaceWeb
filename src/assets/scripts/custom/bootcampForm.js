@@ -1,11 +1,11 @@
-const giftCardForm = document.getElementById('gift-card-form')
+const applyForm = document.getElementById('apply-form')
 
-if(!!giftCardForm ){
-  const validate = new window.JustValidate("#gift-card-form");
+if(!!applyForm ){
+  const validate = new window.JustValidate("#apply-form");
   
   validate
     .addField("#nombre", [
-      { rule: "required", errorMessage: "Campo obligatorio"},
+      { rule: "required", errorMessage: "Campo obligatorio" },
     ])
     .addField("#apellido", [
       { rule: "required", errorMessage: "Campo obligatorio" },
@@ -24,32 +24,10 @@ if(!!giftCardForm ){
     .addField("#telefono", [
       { rule: "required", errorMessage: "Campo obligatorio" },
     ])
-    .addField("#curso", [
-      {
-        rule: "required",
-        errorMessage: "Debes seleccionar una opción",
-      },
-    ])
-    .addField("#lanzamiento", [
-      {
-        rule: "required",
-        errorMessage: "Debes seleccionar una opción",
-      },
-    ])
-    .addField("#receptor-nombre", [
-      { rule: "required", errorMessage: "Campo obligatorio"},
-    ])
-    .addField("#receptor-apellido", [
+    .addField("#nivel-de-conocimiento", [
       { rule: "required", errorMessage: "Campo obligatorio" },
     ])
-    .addField("#receptor-email", [
-      { rule: "required", errorMessage: "Campo obligatorio" },
-      {
-        rule: "email",
-        errorMessage: "e-Mail invalido",
-      },
-    ])
-    .addField("#fecha-de-entrega", [
+    .addField("#otros-conocimientos", [
       { rule: "required", errorMessage: "Campo obligatorio" },
     ])
     .addField("#terminos-y-condiciones", [
@@ -66,10 +44,11 @@ if(!!giftCardForm ){
       });
     })
     .onSuccess((event) => {
-      saveInLocalSoterage('gift-card-form')
-      let nextStep = event.target.dataset.nextstep
-      goToUrl(nextStep, '/checkout')
+      saveInLocalSoterage('apply-form')
+      const formData = new FormData(event.target)
+      const perfil = JSON.parse(localStorage.getItem('selected-bootcamp') || '').profile
+      formData.append('perfil', perfil)
+      sendEmail('bootcamp', event.target, formData)
     });
-
-    fillWithLocalStorageInfo('gift-card-form')
+  
 }

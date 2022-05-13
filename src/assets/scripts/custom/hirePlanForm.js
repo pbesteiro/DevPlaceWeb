@@ -1,16 +1,13 @@
-const customerInformationForm = document.getElementById('customer-information-form')
+const hirePlan = document.getElementById('hire-plan-form')
 
-if(!!customerInformationForm ){
-  const validate = new window.JustValidate("#customer-information-form");
+if(!!hirePlan ){
+  const validate = new window.JustValidate("#hire-plan-form");
   
   validate
     .addField("#nombre", [
-      { rule: "required", errorMessage: "Campo obligatorio"},
-    ])
-    .addField("#apellido", [
       { rule: "required", errorMessage: "Campo obligatorio" },
     ])
-    .addField("#numero-de-documento", [
+    .addField("#apellido", [
       { rule: "required", errorMessage: "Campo obligatorio" },
     ])
     .addField("#email", [
@@ -24,11 +21,11 @@ if(!!customerInformationForm ){
     .addField("#telefono", [
       { rule: "required", errorMessage: "Campo obligatorio" },
     ])
-    .addField("#terminos-y-condiciones", [
-      {
-        rule: "required",
-        errorMessage: "Debes aceptar los terminos y condiciones",
-      },
+    .addField("#empresa", [
+      { rule: "required", errorMessage: "Campo obligatorio" },
+    ])
+    .addField("#puesto", [
+      { rule: "required", errorMessage: "Campo obligatorio" },
     ])
     .onFail((failedFields) => {
       Object.values(failedFields).forEach(failedField => {
@@ -38,10 +35,11 @@ if(!!customerInformationForm ){
       });
     })
     .onSuccess((event) => {
-      saveInLocalSoterage('customer-information-form')
-      let nextStep = event.target.dataset.nextstep
-      goToUrl(nextStep, '/checkout')
+      saveInLocalSoterage('hire-plan-form')
+      const formData = new FormData(event.target)
+      const plan = JSON.parse(localStorage.getItem('selected-plan') || '').name
+      formData.append('plan', plan)
+      sendEmail('hirePlan', event.target, formData)
     });
-
-    fillWithLocalStorageInfo('customer-information-form')
+  
 }

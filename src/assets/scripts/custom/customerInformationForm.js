@@ -1,11 +1,11 @@
-const applyForm = document.getElementById('apply-form')
+const customerInformationForm = document.getElementById('customer-information-form')
 
-if(!!applyForm ){
-  const validate = new window.JustValidate("#apply-form");
+if(!!customerInformationForm ){
+  const validate = new window.JustValidate("#customer-information-form");
   
   validate
     .addField("#nombre", [
-      { rule: "required", errorMessage: "Campo obligatorio" },
+      { rule: "required", errorMessage: "Campo obligatorio"},
     ])
     .addField("#apellido", [
       { rule: "required", errorMessage: "Campo obligatorio" },
@@ -24,12 +24,6 @@ if(!!applyForm ){
     .addField("#telefono", [
       { rule: "required", errorMessage: "Campo obligatorio" },
     ])
-    .addField("#nivel-de-conocimiento", [
-      { rule: "required", errorMessage: "Campo obligatorio" },
-    ])
-    .addField("#otros-conocimientos", [
-      { rule: "required", errorMessage: "Campo obligatorio" },
-    ])
     .addField("#terminos-y-condiciones", [
       {
         rule: "required",
@@ -44,7 +38,15 @@ if(!!applyForm ){
       });
     })
     .onSuccess((event) => {
-      saveInLocalSoterage('apply-form')
+      saveInLocalSoterage('customer-information-form')
+      const formData = new FormData(event.target)
+      const curso = JSON.parse(localStorage.getItem('selected-product') || '')
+      formData.append('curso', curso.name)
+      sendEmail('lead', event.target, formData, () => {
+        let nextStep = event.target.dataset.nextstep
+        goToUrl(nextStep, '/checkout')
+      })
     });
-  
+
+    fillWithLocalStorageInfo('customer-information-form')
 }

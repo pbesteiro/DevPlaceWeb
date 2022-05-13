@@ -62,7 +62,8 @@ $countries = json_decode($file);
       </button>
 
       <button type='submit' form="customer-information-form" class="call-to-action skin-filled">
-        Continuar
+        <span>Continuar</span>
+        <?php include $srcPath . 'components/Loader/index.php'; ?>
       </button>
     </div>
   </form>

@@ -27,7 +27,7 @@ if(!!workwithusForm ){
   .addField("#puesto", [
     { rule: "required", errorMessage: "Debes seleccionar una opción" },
   ])
-  .addField('#adjuntar-cv',[
+  .addField('#curriculum',[
     {
       rule: "required",
       errorMessage: "Campo obligatorio"
@@ -41,18 +41,7 @@ if(!!workwithusForm ){
       rule: 'maxFilesCount',
       value: 1,
       errorMessage: "Solo se puede agregar un CV"
-    },
-    {
-      rule: 'files',
-      value: {
-        files: {
-          extensions: ['jpeg', 'png', 'pdf'],
-          maxSize: 25000,
-          minSize: 1000,
-          types: ['image/jpeg', 'image/png', 'application/pdf'],
-        },
-      },
-    },
+    }
   ])
   .addField("#terminos-y-condiciones", [
     {
@@ -69,6 +58,8 @@ if(!!workwithusForm ){
   })
   .onSuccess((event) => {
     saveInLocalSoterage('work-with-us-form')
+    const formData = new FormData(event.target)
+    sendEmail('workWithUs', event.target, formData)
   });
   fillWithLocalStorageInfo('work-with-us-form')
 }

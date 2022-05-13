@@ -8,18 +8,13 @@ include './phpmailer/src/Exception.php';
 include './phpmailer/src/PHPMailer.php';
 include './phpmailer/src/SMTP.php';
 
-$emailReceptor = 'aplicantes@devplace.tech';
+$emailReceptor = 'pagos@devplace.tech';
 $emailReceptor = 'jniemann87@gmail.com';
 
 $firstname = isset($_REQUEST['nombre']) ? $_REQUEST['nombre'] : '';
 $lastName = isset($_REQUEST['apellido']) ? $_REQUEST['apellido'] : '';
-$document = isset($_REQUEST['numero-de-documento']) ? $_REQUEST['numero-de-documento'] : '';
-$email = isset($_REQUEST['email']) ? $_REQUEST['email'] : '';
-$country = isset($_REQUEST['pais']) ? $_REQUEST['pais'] : '';
-$phone = isset($_REQUEST['telefono']) ? $_REQUEST['telefono'] : '';
-$level_of_knowledge = isset($_REQUEST['nivel-de-conocimiento']) ? $_REQUEST['nivel-de-conocimiento'] : '';
-$others_knowledge = isset($_REQUEST['otros-conocimientos']) ? $_REQUEST['otros-conocimientos'] : '';
-$profile = isset($_REQUEST['perfil']) ? $_REQUEST['perfil'] : '';
+$cuit = isset($_REQUEST['cuit']) ? $_REQUEST['cuit'] : '';
+$ticket = isset($_FILES['comprobante-de-pago']) ? $_FILES['comprobante-de-pago'] : '';
 
 $mail = new PHPMailer(true);
 
@@ -44,19 +39,24 @@ try {
 
   // Setting the email content
   $mail->IsHTML(true);
-  $mail->Subject = "Aplicante Bootcamp " . $profile;
+  $mail->Subject = "Transferencia Bancaria - DevPlace Portal";
   $mail->Body = '<ul>
                   <li><strong>Nombre: </strong>' . $firstname . ' ' . $lastName . '</li>
-                  <li><strong>Número de documento: </strong>' . $document . '</li>
-                  <li><strong>E-mail: </strong>' . $email . '</li>
-                  <li><strong>Pais: </strong>' . $country . '</li>
-                  <li><strong>Teléfono: </strong>' . $phone . '</li>
-                  <li><strong>Nivel de conocimiento en programación: </strong>' . $level_of_knowledge . '</li>
-                  <li><strong>Otros conocimientos: </strong>' . $others_knowledge . '</li>
-                  <li><strong>Perfil: </strong>' . $profile . '</li>
+                  <li><strong>CUIT: </strong>' . $cuit . '</li>
+                  <li><strong>Fechas: </strong>' . $date . '</li>
                  </ul>';
 
   //$mail->AltBody = 'Plain text message body for non-HTML email client. Gmail SMTP email body.';
+
+  if (
+    isset($ticket) &&
+    $ticket['error'] == UPLOAD_ERR_OK
+  ) {
+    $mail->AddAttachment(
+      $ticket['tmp_name'],
+      $ticket['name']
+    );
+  }
 
   $mail->send();
   echo "Email message sent.";
