@@ -42,7 +42,7 @@ try {
 
   // Setting the email content
   $mail->IsHTML(true);
-  $mail->Subject = "Transferencia Bancaria - DevPlace Portal";
+  $mail->Subject = "Solicitud de Partnership";
   $mail->Body = '<ul>
                   <li><strong>Nombre: </strong>' . $firstname . ' ' . $lastName . '</li>
                   <li><strong>E-mail: </strong>' . $email . '</li>
