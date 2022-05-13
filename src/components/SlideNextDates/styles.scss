@@ -1,18 +1,18 @@
 div.slide-component {
   background-color: white;
   border-radius: 3px;
-  padding: 64px 24px 46px;
+  padding: 34px 24px;
   height: auto;
 
   h3.title {
     font-size: 30px;
     font-style: italic;
     text-align: left;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 
     @media (min-width: 768px) {
       font-size: 45px;
-      margin-bottom: 60px;
+      margin-bottom: 30px;
       line-height: 50px;
     }
   }
@@ -21,8 +21,8 @@ div.slide-component {
     margin-bottom: 20px;
     color: #334253;
 
-    @media (min-width: 768px) {
-      margin-bottom: 27px;
+    &:nth-child(6) {
+      margin-bottom: 30px;
     }
 
     em,
@@ -40,6 +40,7 @@ div.slide-component {
       display: block;
     }
   }
+
   a {
     line-height: 25px;
     display: block;
