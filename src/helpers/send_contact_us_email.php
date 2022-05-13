@@ -9,7 +9,6 @@ include './phpmailer/src/PHPMailer.php';
 include './phpmailer/src/SMTP.php';
 
 $emailReceptor = 'admin@devplace.tech';
-$emailReceptor = 'jniemann87@gmail.com';
 
 $reason = isset($_REQUEST['motivo']) ? $_REQUEST['motivo'] : '';
 $message = isset($_REQUEST['mensaje']) ? $_REQUEST['mensaje'] : '';
