@@ -6,11 +6,10 @@ const getCart = () => {
 
   if(cartDetails && !!selectedProduct) {
     const { name, days, period, hours, mentor, price, discount } = JSON.parse(selectedProduct);
-  
     document.getElementById('course-name').innerText = name;
     document.getElementById('course-days-period').innerText = days + " " + period;
     document.getElementById('course-hour').innerText = hours;
-    document.getElementById('course-teacher').innerText = mentor;
+    document.getElementById('course-teacher').innerText = mentor.name + ", " + mentor.lastName;
     document.getElementById('course-price').innerText = getPesosArFormat(price);
     document.getElementById('course-discount').innerText = discount + '%';
     document.getElementById('course-total').innerText = getPesosArFormat(price - (price / 100 * discount));
