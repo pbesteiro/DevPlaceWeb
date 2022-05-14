@@ -12,10 +12,13 @@ $coursesTypes = array_filter($pageCursos->sections, function ($section) {
   return $section->component === 'Carousel';
 });
 
+$courses = array_merge(...array_map(function ($course) {
+  return $course->content;
+}, $coursesTypes));
 ?>
 
 <div class="gift-card-component" id="gift-card-component">
-  <form id="gift-card-form">
+  <form id="gift-card-form" data-nextstep="<?php echo $nextStep; ?>">
     <div class="field">
       <label class="label" for="nombre">Nombre</label>
       <input type="text" name="nombre" id="nombre">
@@ -140,6 +143,8 @@ $coursesTypes = array_filter($pageCursos->sections, function ($section) {
 <script>
   document.onreadystatechange = async () => {
     if (document.readyState == "complete") {
+      const cursosJSON = <?php echo json_encode($courses); ?>;
+
       resetCart();
 
       const courseSelector = document.getElementById("curso");
@@ -160,7 +165,7 @@ $coursesTypes = array_filter($pageCursos->sections, function ($section) {
           .then((response) => response.json())
           .then((data) => {
             let launches = [];
-
+            const course = cursosJSON.filter(cursoJson => cursoJson.technologyId === technologyId)[0]
             for (const launch of data) {
               launches.push({
                 _id: launch._id,
@@ -174,6 +179,7 @@ $coursesTypes = array_filter($pageCursos->sections, function ($section) {
                 discount: launch.discount || 0,
                 duration: launch.duration,
                 detail: launch.detail,
+                paymentLink: course.paymentLink
               });
             }
 

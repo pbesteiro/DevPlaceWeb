@@ -6,7 +6,7 @@
   "sections": [
     {
       "component": "PaymentMethod",
-      "prevStep": "customer-information.php",
+      "prevStep": "gift-card-customer-information.php",
       "paymentMethods": [{
         "available": true,
         "slug": "mercado-pago",
