@@ -166,6 +166,7 @@ $courses = array_merge(...array_map(function ($course) {
           .then((data) => {
             let launches = [];
             const course = cursosJSON.filter(cursoJson => cursoJson.technologyId === technologyId)[0]
+
             for (const launch of data) {
               launches.push({
                 _id: launch._id,

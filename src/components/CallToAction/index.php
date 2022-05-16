@@ -3,7 +3,6 @@ $_SERVER['DOCUMENT_ROOT'] = sprintf('%s/', rtrim($_SERVER['DOCUMENT_ROOT'], '/')
 $srcPath = $_SERVER['DOCUMENT_ROOT'];
 ?>
 
-
 <?php if (isset($link) && $link !== '') { ?>
   <a class="call-to-action skin-<?php echo isset($type) ? $type : 'filled'; ?>" href="<?php echo $link; ?>">
     <?php echo $label; ?>

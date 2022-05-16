@@ -1,0 +1,12 @@
+{
+  "title": "Pago Exitoso",
+  "description": "Tu pago por el producto adquirido se realizo satisfactoriamente.",
+  "thumbnail": "logo.png",
+  "header_skin": "brand-mode",
+  "sections": [
+    {
+      "component": "SuccessfulPayment",
+      "title":"Pago Exitoso"
+    }
+  ]
+}
