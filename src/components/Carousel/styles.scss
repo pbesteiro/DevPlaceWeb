@@ -115,6 +115,7 @@ section.carousel-component {
       @media (min-width: 576px) {
         max-width: 540px;
       }
+
       @media (min-width: 768px) {
         max-width: 720px;
       }
@@ -145,12 +146,11 @@ section.carousel-component {
               border-radius: 10px;
               overflow: hidden;
               box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
-              transition: all .3s cubic-bezier(0,0,.5,1);
+              transition: all .25s ease-in-out;
 
               &:hover,
               &:focus {
                 box-shadow: 2px 4px 16px rgb(0 0 0 / 16%);
-                transform: scale3d(1.01,1.01,1.01);
               }
             }
           }
@@ -160,7 +160,20 @@ section.carousel-component {
           overflow: visible;
 
           .glide__track {
-            overflow: visible;
+            margin-top: -20px;
+            padding: 20px 0px;
+            overflow: auto;
+
+            &::-webkit-scrollbar {
+              width: 0;  /* Remove scrollbar space */
+              height: 0;
+              background: transparent;  /* Optional: just make scrollbar invisible */
+            }
+            /* Optional: show position indicator in red */
+            &::-webkit-scrollbar-thumb {
+              height: 0px;
+              background: transparent;
+            }
             
             .glide__slides{
               width: auto;
