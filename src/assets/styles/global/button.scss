@@ -19,6 +19,10 @@ button.return {
     display: inline-flex;
     width: auto;
   }
+
+  &.btn-block {
+    width: 100%!important;
+  }
   
   &.skin-link {
     font-size: 15px;
