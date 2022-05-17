@@ -4007,7 +4007,8 @@ const emailTemplates = {
   lead: 'send_lead_email',
   leadGiftCard: 'send_lead_giftcard_email',
   partnership: 'send_partnership_email',
-  workWithUs: 'send_work_with_us_email'
+  workWithUs: 'send_work_with_us_email',
+  giftCard: 'send_giftcard_email'
 }
 
 const showLoading = (form) => {
@@ -4031,7 +4032,9 @@ const hideLoading = (form) => {
 const sendEmail = (template, form, formData, callback) => {
   const sendEmailUrl = `${window.location.protocol}//${window.location.host}/helpers/${emailTemplates[template]}.php`
   
-  showLoading(form)
+  if(!!form){
+    showLoading(form)
+  }
 
   fetch( sendEmailUrl, {
     body: formData ,
@@ -4046,7 +4049,9 @@ const sendEmail = (template, form, formData, callback) => {
   }).catch((error) => {
     console.warn(error);
   }).finally(() => {
-    hideLoading(form)
+    if(!!form){
+      hideLoading(form)
+    }
   });
 }
 
