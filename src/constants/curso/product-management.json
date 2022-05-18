@@ -44,10 +44,10 @@
         "link": "#course-calendar-carousel",
         "label": "Quiero inscribirme"
       },
-      "objectives": "El objetivo de este curso es que aprendas las buenas prácticas y las herramientas necesarias para gestionar equipos enfocados en hacer producto. Conocerás los indicadores más importantes para la verificacion.",
-      "forWhom": "Personas que busquen profesionalizarse en la gestión de equipos orientados a producto.",
+      "objectives": "El objetivo de este curso es que aprendas las buenas prácticas y las herramientas necesarias para gestionar equipos enfocados en hacer productos. Conocerás los indicadores más importantes para la verificación.",
+      "forWhom": "Está dirigido a personas que busquen profesionalizarse en la gestión de equipos orientados a producto.",
       "finalProject": "El proyecto final e integrador que se podra realizar durante la cursada, será aquel que en caso de estar aprobado, DEV PLACE emitirá un certificado de aprobación del curso. Al terminar el curso el usuario tendra 30 días contando desde la última clase para poder enviar el proyecto final al mail correspondiente. Entregado el proyecto DEV PLACE tendra 30 días corridos desde recibido el mismo para, en caso de que este aprobado el proyecto emitir el certificado validando la aprobación del curso correspondiente y en caso que no, notificando la desaprobación del proyecto y del curso. El proyecto sera corregido según las rúbricas de evaluación de DEV PLACE.",
-      "profile": "● Gestionar correctamente equipos de producto utilizando buenas prácticas de management.\\n ● Aplicación de herramientas de gestión de equipos.\\n ● Medición y creación de indicadores de performance de equipos de producto.",
+      "profile": "● Gestiona correctamente equipos de producto utilizando buenas prácticas de management. \\n ● Aplica herramientas de gestión de equipos. \\n ● Mide y crea indicadores de performance de equipos de producto.",
       "tools": {
         "component": "Carousel",
         "options": {

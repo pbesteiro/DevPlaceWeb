@@ -44,10 +44,10 @@
         "link": "#course-calendar-carousel",
         "label": "Quiero inscribirme"
       },
-      "objectives": "El objetivo de este curso es que aprendas a trabajar en  equipos que utilizan metodologías ágiles, sabiendo usar las herramientas típicas que se usan en estos, frameworks y buenas prácticas de los procesos y las operaciones a aplicar.",
-      "forWhom": "Personas que busquen adaptarse facilmente a un equipo ágil y que no tengan que sufrir un proceso de adaptación en el mismo ya que sabran autogestionarse y manipular las herramientas correspondientes.",
+      "objectives": "El objetivo de este curso es que aprendas a trabajar en equipos que utilizan metodologías ágiles, sabiendo utilizar las herramientas típicas, frameworks y buenas prácticas de los procesos y las operaciones a aplicar.",
+      "forWhom": "Está dirigido a personas que busquen adaptarse facilmente a un equipo ágil sin sufrir un proceso de adaptación en el mismo, ya que sabrán autogestionarse y manipular las herramientas correspondientes.",
       "finalProject": "El proyecto final e integrador que se podra realizar durante la cursada, será aquel que en caso de estar aprobado, DEV PLACE emitirá un certificado de aprobación del curso. Al terminar el curso el usuario tendra 30 días contando desde la última clase para poder enviar el proyecto final al mail correspondiente. Entregado el proyecto DEV PLACE tendra 30 días corridos desde recibido el mismo para, en caso de que este aprobado el proyecto emitir el certificado validando la aprobación del curso correspondiente y en caso que no, notificando la desaprobación del proyecto y del curso. El proyecto sera corregido según las rúbricas de evaluacion de DEV PLACE.",
-      "profile": "● Perfil productivo para un equipo ágil.\\n ● Uso de herramientas de gestión ágiles.",
+      "profile": "● Tiene un perfil productivo para un equipo ágil. \\n ● Utiliza herramientas de gestión ágiles.",
       "tools": {
         "component": "Carousel",
         "options": {

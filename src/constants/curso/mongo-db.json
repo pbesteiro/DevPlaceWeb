@@ -45,9 +45,9 @@
         "label": "Quiero inscribirme"
       },
       "objectives": "El objetivo del curso es darte todos los conocimientos fundamentales para que entiendas que es una base de datos no relacional y cómo funciona. En este curso aprenderás a crear una base de datos en Mongo DB, pensar su estructura y generar los procedimientos necesarios para insertar, modificar, eliminar y obtener información de la misma.",
-      "forWhom": "El curso está dirigido a profesionales de cualquier área que necesiten realizar manipulaciones y gestion de datos e informacion.",
+      "forWhom": "Está dirigido a profesionales de cualquier área que necesiten realizar manipulaciones y gestion de datos e informacion.",
       "finalProject": "El proyecto final e integrador que se podra realizar durante la cursada, será aquel que en caso de estar aprobado, DEV PLACE emitirá un certificado de aprobación del curso. Al terminar el curso el usuario tendra 30 dias contando desde la ultima clase para poder enviar el proyecto final al mail correspondiente. Entregado el proyecto DEV PLACE tendra 30 dias corridos desde recibido el mismo para, en caso de que este aprobado el proyecto emitir el certificado validando la aprobacion del curso correspondiente y en caso que no, notificando la desaprobacion del proyecto y del curso. El proyecto sera corregido segun las rubricas de evaluacion de DEV PLACE.",
-      "profile": "● Entender el funcionamiento de una base de datos NoSQL.\\n ● Implementar el lenguaje para la creación de una base de datos y todos sus componentes: tablas, índices, disparadores (triggers), procedimientos almacenados.\\n ● Implementar el lenguaje  para insertar, borrar, modificar y consultar los datos de una base de datos. ",
+      "profile": "● Entiende el funcionamiento de una base de datos NoSQL. \\n ● Implementa el lenguaje para la creación de una base de datos y todos sus componentes: tablas, índices, disparadores (triggers), procedimientos almacenados. \\n ● Implementa el lenguaje  para insertar, borrar, modificar y consultar los datos de una base de datos.",
       "tools": {
         "component": "Carousel",
         "options": {
