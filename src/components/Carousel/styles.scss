@@ -92,6 +92,25 @@ section.carousel-component {
     }
   }
 
+  .empty-state-slide{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+    transition: all .25s ease-in-out;
+    width: 285px;
+    height: 499px;
+
+    &:hover,
+    &:focus {
+      box-shadow: 2px 4px 16px rgb(0 0 0 / 16%);
+    }
+
+    #loader {
+      opacity: 1!important;
+      z-index: 10!important;
+    }
+  }
+
   .carousel {
     position: relative;
 
@@ -131,6 +150,8 @@ section.carousel-component {
       
       .carousel-row {
         @include make-row();
+        justify-content: center;
+        align-items: center;
       }
       
       .glide {

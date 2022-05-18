@@ -132,7 +132,7 @@ try {
                                                       display: block;
                                                       max-width: 420px;
                                                       min-height: 200px;
-                                                      background-color: #4a20a8;
+                                                      background-color: #0095f6;
                                                       border-radius: 10px;
                                                       padding: 0px 15px;
                                                       margin: 0 auto;

@@ -100,7 +100,33 @@ $srcPath = $_SERVER['DOCUMENT_ROOT'];
     </div>
   </div>
 
-  <div id="course-calendar-carousel"></div>
+  <div id="course-calendar-carousel">
+    <section class="carousel-component carousel-calendar-skin show-rainbow-desktop show-rainbow-mobile rainbow-mobile-position-top rainbow-desktop-position-center">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="title">Calendario</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel">
+        <div class="rainbow-hero-wrapper isLoaded">
+          <canvas class="rainbow-hero isLoaded" width="1680" height="600" id="rainbow-hero-2"></canvas>
+        </div>
+
+        <div class="carousel-container">
+          <div class="carousel-row">
+            <div class="empty-state-slide">
+              <div class="content-center">
+                <?php include $srcPath . 'components/Loader/index.php'; ?>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </section>
 
 <script>
