@@ -70,6 +70,76 @@
           }
         ]
       }
+    },
+    {
+      "component": "Faqs",
+      "title": "Preguntas Frecuentes",
+      "content": [
+        {
+          "question": "¿Qué métodos de pago se aceptan?",
+          "answer": "Transferencia bancaria, Mercado Pago, tarjeta de crédito y débito Visa Mastercard, American Express, Tarjeta Naranja, Nativa, Cabal y Ethereum."
+        },
+        {
+          "question": "¿Qué significa online en vivo?",
+          "answer": "Los cursos que ofrece Dev Place son online y en vivo. Utilizamos herramientas como google Meet o Zoom para las clases sincrónicas. Tanto el profesor como el estudiante deben conectarse ciertos días y horarios de la semana para poder asistir a la clase. Todos los estudiantes tienen un grupo con el que empiezan y terminan el curso."
+        },
+        {
+          "question": "¿Las clases quedan grabadas?",
+          "answer": "Si las clases quedan grabadas y se suben a la plataforma para que se puedan repasar o seguir el curso a tu propio ritmo."
+        },
+        {
+          "question": "¿Qué se necesita  para hacer el curso?",
+          "answer": "Una computadora con 4GB de RAM como mínimo, acceso a Wi-Fi."
+        },
+        {
+          "question": "¿Cuánto es la capacidad máxima del curso?",
+          "answer": "Hay un máximo de 30 personas por curso para que cada persona pueda hacer  consultas personalizadas al profesor titular."
+        },
+        {
+          "question": "¿Se puede hacer el curso sin asistir a las clases online en vivo?",
+          "answer": "Si, la asistencia no es obligatoria ni tampoco hay un mínimo de asistencia. Lo importante es aprobar el proyecto final para obtener el certificado, aunque para tener la mejor experiencia como usuario de un curso lo recomendable es tener asistencia perfecta a las clases online en vivo."
+        },
+        {
+          "question": "¿Qué salida laboral tiene el curso?",
+          "answer": "El curso tiene el objetivo del entendimiento y la aplicación de los temas que se ven a lo largo del mismo. El conocimiento que brinda el curso es aplicable para diversos puestos de la industria IT."
+        },
+        {
+          "question": "¿Hay descuento por ser estudiante?",
+          "answer": "Si, los descuentos son según la cantidad de cursos hechos en Dev Place."
+        },
+        {
+          "question": "¿Hay descuento si me anoto con alguien más?",
+          "answer": "Si, utilizando el programa de referidos obtienen un 15% de descuento las 2 personas participantes en cualquiera de los cursos."
+        },
+        {
+          "question": "¿Cómo puedo abonar estando en el exterior (fuera de Argentina)?",
+          "answer": "Aceptamos Paypal y Ethereum."
+        },
+        {
+          "question": "¿Qué curso se recomienda realizar para empezar?",
+          "answer": "Para incursionar en el mundo IT podrías elegir Fundamentos de la programación."
+        },
+        {
+          "question": "¿Qué curso se recomienda avanzar luego del primer curso recomendado?",
+          "answer": "Podrías avanzar con SQL o Desarrollo web, dependiendo tus preferencias."
+        },
+        {
+          "question": "¿Es necesario asistir a las clases?",
+          "answer": "Para tener la mejor experiencia como usuario de un curso lo recomendable es tener asistencia perfecta a las clases online en vivo."
+        },
+        {
+          "question": "¿Cómo es el proyecto final y cuánto tiempo tengo para entregarlo?",
+          "answer": "El proyecto final se va haciendo durante la cursada pero puedes entregarlo 30 días después desde la ultima clase del curso."
+        },
+        {
+          "question": "¿Aceptan criptomonedas como forma de pago?",
+          "answer": "Si. Aceptamos Ethereum solamente. #GoETH!!!"
+        },
+        {
+          "question": "¿El certificado está validado por algún organismo/universidad?",
+          "answer": "No, somos una empresa de tecnología que brinda distintos productos educativos. No dependemos de instituciones centralizadas en cuanto a la regulación de planes de estudio u otros contenidos diseñados y creados por Dev Place. El aval de Dev Place son los miles de usuarios que consumen nuestros productos educativos."
+        }
+      ]
     }
   ]
 }
