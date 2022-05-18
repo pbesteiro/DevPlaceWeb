@@ -11,6 +11,8 @@
       "technologyId":"624322c9e14c520a7dcaf2f8",
       "name": "Diseño UX & UI",
       "image": "ui-ux-design.png",
+      "paymentLink":"",
+      "link": "/curso/diseno-ux-ui.php",
       "program": {
         "type": "link",
         "icon": {

@@ -11,6 +11,8 @@
       "technologyId":"6243241de14c520a7dcaf330",
       "name": "Linux",
       "image": "linux.png",
+      "paymentLink":"",
+      "link": "/curso/linux.php",
       "program": {
         "type": "link",
         "icon": {

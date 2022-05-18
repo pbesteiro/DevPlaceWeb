@@ -11,6 +11,8 @@
       "technologyId":"62432405e14c520a7dcaf325",
       "name": "Product Management",
       "image": "product-management.png",
+      "paymentLink":"",
+      "link": "/curso/product-management.php",
       "program": {
         "type": "link",
         "icon": {

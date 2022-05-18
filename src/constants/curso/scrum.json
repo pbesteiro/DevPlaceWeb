@@ -11,6 +11,8 @@
       "technologyId":"6243240ce14c520a7dcaf328",
       "name": "Scrum",
       "image": "product-management.png",
+      "paymentLink":"",
+      "link": "/curso/scrum.php",
       "program": {
         "type": "link",
         "icon": {

@@ -12,6 +12,7 @@
       "name": "JavaScript",
       "image": "javascript.png",
       "paymentLink":"https://mpago.la/1ZfxjJe",
+      "link": "/curso/javascript.php",
       "program": {
         "type": "link",
         "icon": {

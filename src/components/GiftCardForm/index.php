@@ -128,7 +128,7 @@ $courses = array_merge(...array_map(function ($course) {
     </div>
 
     <div class="form-actions">
-      <button type="button" onClick="historyBack()" class="call-to-action skin-outline">
+      <button type="button" onClick="goToUrl('beneficios.php')" class="call-to-action skin-outline">
         Volver
       </button>
 

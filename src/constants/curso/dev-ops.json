@@ -11,6 +11,8 @@
       "technologyId":"62432418e14c520a7dcaf32d",
       "name": "Dev Ops",
       "image": "dev-ops.png",
+      "paymentLink":"",
+      "link": "/curso/dev-ops.php",
       "program": {
         "type": "link",
         "icon": {

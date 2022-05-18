@@ -11,6 +11,8 @@
       "technologyId":"6243242de14c520a7dcaf335",
       "name": "Mongo DB",
       "image": "mongo-db.png",
+      "paymentLink":"",
+      "link": "/curso/mongo-db.php",
       "program": {
         "type": "link",
         "icon": {

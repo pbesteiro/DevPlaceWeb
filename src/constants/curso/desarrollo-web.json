@@ -12,6 +12,7 @@
       "name": "Desarrollo Web",
       "image": "html.png",
       "paymentLink":"https://mpago.la/29PMkqk",
+      "link": "/curso/desarrollo-web.php",
       "program": {
         "type": "link",
         "icon": {

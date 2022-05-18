@@ -11,6 +11,8 @@
       "technologyId":"624323f7e14c520a7dcaf322",
       "name": "Excel Avanzado",
       "image": "excel.png",
+      "paymentLink":"",
+      "link": "/curso/excel-avanzado.php",
       "program": {
         "type": "link",
         "icon": {

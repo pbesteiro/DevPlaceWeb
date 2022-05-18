@@ -12,6 +12,7 @@
       "name": "Fundamentos de la Programación",
       "image": "fundamentos-de-la-programacion.png",
       "paymentLink":"https://mpago.la/2vCPBuw",
+      "link": "/curso/fundamentos-de-la-programacion.php",
       "program": {
         "type": "link",
         "icon": {

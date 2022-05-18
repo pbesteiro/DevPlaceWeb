@@ -12,6 +12,7 @@
       "name": "POO",
       "image": "poo.png",
       "paymentLink":"https://mpago.la/1r8yq3r",
+      "link": "/curso/poo.php",
       "program": {
         "type": "link",
         "icon": {

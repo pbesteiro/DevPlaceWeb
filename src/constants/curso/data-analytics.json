@@ -11,6 +11,8 @@
       "technologyId":"62432360e14c520a7dcaf30f",
       "name": "Data Analytics",
       "image": "data-analytics.png",
+      "paymentLink":"",
+      "link": "/curso/data-analytics.php",
       "program": {
         "type": "link",
         "icon": {
