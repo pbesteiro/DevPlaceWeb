@@ -104,42 +104,6 @@
         {
           "question": "¿Qué salida laboral tiene el curso?",
           "answer": "El curso tiene el objetivo del entendimiento y la aplicación de los temas que se ven a lo largo del mismo. El conocimiento que brinda el curso es aplicable para diversos puestos de la industria IT."
-        },
-        {
-          "question": "¿Hay descuento por ser estudiante?",
-          "answer": "Si, los descuentos son según la cantidad de cursos hechos en Dev Place."
-        },
-        {
-          "question": "¿Hay descuento si me anoto con alguien más?",
-          "answer": "Si, utilizando el programa de referidos obtienen un 15% de descuento las 2 personas participantes en cualquiera de los cursos."
-        },
-        {
-          "question": "¿Cómo puedo abonar estando en el exterior (fuera de Argentina)?",
-          "answer": "Aceptamos Paypal y Ethereum."
-        },
-        {
-          "question": "¿Qué curso se recomienda realizar para empezar?",
-          "answer": "Para incursionar en el mundo IT podrías elegir Fundamentos de la programación."
-        },
-        {
-          "question": "¿Qué curso se recomienda avanzar luego del primer curso recomendado?",
-          "answer": "Podrías avanzar con SQL o Desarrollo web, dependiendo tus preferencias."
-        },
-        {
-          "question": "¿Es necesario asistir a las clases?",
-          "answer": "Para tener la mejor experiencia como usuario de un curso lo recomendable es tener asistencia perfecta a las clases online en vivo."
-        },
-        {
-          "question": "¿Cómo es el proyecto final y cuánto tiempo tengo para entregarlo?",
-          "answer": "El proyecto final se va haciendo durante la cursada pero puedes entregarlo 30 días después desde la ultima clase del curso."
-        },
-        {
-          "question": "¿Aceptan criptomonedas como forma de pago?",
-          "answer": "Si. Aceptamos Ethereum solamente. #GoETH!!!"
-        },
-        {
-          "question": "¿El certificado está validado por algún organismo/universidad?",
-          "answer": "No, somos una empresa de tecnología que brinda distintos productos educativos. No dependemos de instituciones centralizadas en cuanto a la regulación de planes de estudio u otros contenidos diseñados y creados por Dev Place. El aval de Dev Place son los miles de usuarios que consumen nuestros productos educativos."
         }
       ]
     }
