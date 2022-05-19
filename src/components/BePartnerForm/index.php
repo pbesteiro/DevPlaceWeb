@@ -63,7 +63,7 @@ $countries = json_decode($file);
           </div>
 
           <div class="wrapper">
-            <button type='submit' form="be-partner-form" class="call-to-action skin-filled" id="send-form">
+            <button type='submit' form="be-partner-form" class="call-to-action skin-filled btn-block" id="send-form">
               <span>Enviar</span>
               <?php include $srcPath . 'components/Loader/index.php'; ?>
             </button>

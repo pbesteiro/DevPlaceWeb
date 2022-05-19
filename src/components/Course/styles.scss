@@ -93,6 +93,7 @@ section.course-component {
   }
 
   .details {
+    max-width: 420px;
     margin: 40px auto;
     display: flex;
     flex-wrap: wrap;
@@ -113,11 +114,15 @@ section.course-component {
       display: flex;
       align-items: center;
       color: $text;
-      width: 45%;
+      width: 40%;
       margin-bottom: 10px;
 
-      @media(min-width: 768px){
-        width: 40%;
+      &:nth-child(2),&:nth-child(4){
+        padding-left: 25px;
+
+        @media(min-width: 768px){
+          padding-left: 0;
+        }
       }
 
       @media (min-width: 1440px) {

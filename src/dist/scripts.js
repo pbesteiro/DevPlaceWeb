@@ -4007,7 +4007,8 @@ const emailTemplates = {
   lead: 'send_lead_email',
   leadGiftCard: 'send_lead_giftcard_email',
   partnership: 'send_partnership_email',
-  workWithUs: 'send_work_with_us_email'
+  workWithUs: 'send_work_with_us_email',
+  giftCard: 'send_giftcard_email'
 }
 
 const showLoading = (form) => {
@@ -4031,7 +4032,9 @@ const hideLoading = (form) => {
 const sendEmail = (template, form, formData, callback) => {
   const sendEmailUrl = `${window.location.protocol}//${window.location.host}/helpers/${emailTemplates[template]}.php`
   
-  showLoading(form)
+  if(!!form){
+    showLoading(form)
+  }
 
   fetch( sendEmailUrl, {
     body: formData ,
@@ -4046,7 +4049,9 @@ const sendEmail = (template, form, formData, callback) => {
   }).catch((error) => {
     console.warn(error);
   }).finally(() => {
-    hideLoading(form)
+    if(!!form){
+      hideLoading(form)
+    }
   });
 }
 
@@ -5857,6 +5862,30 @@ const goToTop = () => {
 const historyBack = () => {
   history.back()
 }
+
+const checkoutStepOneBack = (target) => {
+  if(!!target){
+    const json = JSON.parse(localStorage.getItem(target))
+    const a = document.createElement('a');
+    a.style.display = 'none';
+    a.href = json.link;
+    document.body.appendChild(a);
+    a.click();
+  }
+}
+
+const getUrlParamByName = (name, url = window.location.href) => {
+  const paramName = name.replace(/[[\]]/g, "\\$&");
+  const regex = new RegExp(`[?&]${paramName}(=([^&#]*)|&|#|$)`);
+  const results = regex.exec(url);
+  if (!results) {
+    return null;
+  }
+  if (!results[2]) {
+    return "";
+  }
+  return decodeURIComponent(results[2].replace(/\+/g, " "));
+};
 
 /**
  * Init front end routing

@@ -1,6 +1,7 @@
 <?php
 $_SERVER['DOCUMENT_ROOT'] = sprintf('%s/', rtrim($_SERVER['DOCUMENT_ROOT'], '/'));
 $srcPath = $_SERVER['DOCUMENT_ROOT'];
+
 $file = file_get_contents($srcPath . "constants/countries.json");
 $countries = json_decode($file);
 ?>
@@ -57,7 +58,7 @@ $countries = json_decode($file);
     </div>
 
     <div class="form-actions">
-      <button type="button" onClick="historyBack()" class="call-to-action skin-outline">
+      <button type="button" onClick="checkoutStepOneBack('selected-product')" class="call-to-action skin-outline">
         Volver
       </button>
 

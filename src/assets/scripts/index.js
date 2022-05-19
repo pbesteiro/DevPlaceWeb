@@ -7,6 +7,30 @@ const historyBack = () => {
   history.back()
 }
 
+const checkoutStepOneBack = (target) => {
+  if(!!target){
+    const json = JSON.parse(localStorage.getItem(target))
+    const a = document.createElement('a');
+    a.style.display = 'none';
+    a.href = json.link;
+    document.body.appendChild(a);
+    a.click();
+  }
+}
+
+const getUrlParamByName = (name, url = window.location.href) => {
+  const paramName = name.replace(/[[\]]/g, "\\$&");
+  const regex = new RegExp(`[?&]${paramName}(=([^&#]*)|&|#|$)`);
+  const results = regex.exec(url);
+  if (!results) {
+    return null;
+  }
+  if (!results[2]) {
+    return "";
+  }
+  return decodeURIComponent(results[2].replace(/\+/g, " "));
+};
+
 /**
  * Init front end routing
  */

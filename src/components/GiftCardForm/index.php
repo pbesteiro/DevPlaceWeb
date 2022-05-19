@@ -128,7 +128,7 @@ $courses = array_merge(...array_map(function ($course) {
     </div>
 
     <div class="form-actions">
-      <button type="button" onClick="historyBack()" class="call-to-action skin-outline">
+      <button type="button" onClick="goToUrl('beneficios.php')" class="call-to-action skin-outline">
         Volver
       </button>
 
@@ -166,6 +166,7 @@ $courses = array_merge(...array_map(function ($course) {
           .then((data) => {
             let launches = [];
             const course = cursosJSON.filter(cursoJson => cursoJson.technologyId === technologyId)[0]
+
             for (const launch of data) {
               launches.push({
                 _id: launch._id,

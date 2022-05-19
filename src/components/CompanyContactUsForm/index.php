@@ -68,7 +68,7 @@ $countries = json_decode($file);
           </div>
 
           <div class="wrapper">
-            <button type='submit' form="company-contact-us-form" class="call-to-action skin-filled" id="send-form">
+            <button type='submit' form="company-contact-us-form" class="call-to-action skin-filled btn-block" id="send-form">
               Enviar
             </button>
           </div>

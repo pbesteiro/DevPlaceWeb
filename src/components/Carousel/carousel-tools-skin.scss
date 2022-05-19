@@ -16,6 +16,19 @@ section.carousel-component {
         .glide {
           padding: 0px;
 
+          .glide__track {
+            .glide__slides {
+              .glide__slide {
+                box-shadow: none;
+
+                &:hover,
+                &:focus {
+                  box-shadow: none;
+                }
+              }
+            }
+          }
+
           &:not(.glide--carousel, .glide--slider){
             .glide__track{
               .glide__slides{

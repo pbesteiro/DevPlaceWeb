@@ -17,6 +17,7 @@ $courseInformation = array(
   'duration' => $duration,
   'detail' => $detail,
   'paymentLink' => $paymentLink,
+  'link' => $link,
 );
 /**
  * 

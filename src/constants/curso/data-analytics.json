@@ -11,6 +11,8 @@
       "technologyId":"62432360e14c520a7dcaf30f",
       "name": "Data Analytics",
       "image": "data-analytics.png",
+      "paymentLink":"",
+      "link": "/curso/data-analytics.php",
       "program": {
         "type": "link",
         "icon": {
@@ -42,10 +44,10 @@
         "link": "#course-calendar-carousel",
         "label": "Quiero inscribirme"
       },
-      "objectives": "El objetivo del curso es que aprendas a gestionar la información recabada para que generarle un alto valor a tu negocio. Para esto aprenderás también a gestionar bases de datos relacionales y posteriormente diseñaras y desarrollaras tableros de control con las herramientas de analiticas más usadas del mercado IT.",
-      "forWhom": "● Para profesionales que desean emprender en el área del análisis de los datos y que quieran generar impacto dentro de las unidades de negocio de una organización. \\n ● Quienes esperan ampliar o profundizar conocimientos dentro de sus rubros profesionales, como por ejemplo: Administración y/o Negocios, Ingeniería , Economía, Contabilidad o carreras técnicas. \\n ● Quienes buscan dar un giro profesional a su carrera, orientándose hacia una nueva disciplina muy demandada en el mercado de diversas industrias.",
+      "objectives": "El objetivo del curso es que aprendas a gestionar la información recabada para generar un alto valor a tu negocio. Para esto aprenderás a gestionar bases de datos relacionales, también diseñarás y desarrollarás tableros de control con las herramientas de analíticas más utilizadas del mercado IT.",
+      "forWhom": "Está dirigido a profesionales que desean emprender en el área del análisis de datos y que quieran generar impacto dentro de las unidades de negocio de una organización. \\n Está dirigido a quienes esperan ampliar o profundizar conocimientos dentro de sus rubros profesionales, como por ejemplo: Administración y/o Negocios, Ingeniería, Economía, Contabilidad o carreras técnicas. \\n Está dirigido a quienes buscan dar un giro profesional a su carrera, orientándose hacia una nueva disciplina muy demandada en el mercado laboral de diversas industrias.",
       "finalProject": "El proyecto final e integrador que se podra realizar durante la cursada, será aquel que en caso de estar aprobado, DEV PLACE emitirá un certificado de aprobación del curso. Al terminar el curso el usuario tendra 30 días contando desde la ultima clase para poder enviar el proyecto final al mail correspondiente. Entregado el proyecto DEV PLACE tendra 30 días corridos desde recibido el mismo para, en caso de que este aprobado el proyecto emitir el certificado validando la aprobación del curso correspondiente y en caso que no, notificando la desaprobación del proyecto y del curso. El proyecto sera corregido según las rúbricas de evaluacion de DEV PLACE.",
-      "profile": "● Comprende y aplica los conceptos asociados al análisis de datos y la extracción de patrones usando un lenguaje de programación, con el objetivo de identificar las diferentes técnicas y modelos en relación a las aplicaciones potenciales. \\n  ● Interpreta y transmite las tendencias obtenidas del análisis de datos y su influencia en las métricas de negocio, con el objetivo de potenciar el proceso de toma de decisiones empresariales.\\n ● Cumple de manera responsable con las asignaciones para asegurar el éxito del trabajo y la calidad del mismo. \\n ● Colabora y participa en forma proactiva para alcanzar las metas y grupales propuestas.",
+      "profile": "● Comprende y aplica los conceptos asociados al análisis de datos y la extracción de patrones usando un lenguaje de programación, con el objetivo de identificar las diferentes técnicas y modelos en relación a las aplicaciones potenciales. \\n ● Interpreta y transmite las tendencias obtenidas del análisis de datos y su influencia en las métricas de negocio, con el objetivo de potenciar el proceso de toma de decisiones empresariales. \\n ● Cumple de manera responsable con las asignaciones para asegurar el éxito del trabajo y la calidad del mismo. \\n ● Colabora y participa en forma proactiva para alcanzar las metas grupales propuestas.",
       "tools": {
         "component": "Carousel",
         "options": {
@@ -90,6 +92,76 @@
           }
         ]
       }
+    },
+    {
+      "component": "Faqs",
+      "title": "Preguntas Frecuentes",
+      "content": [
+        {
+          "question": "¿Qué métodos de pago se aceptan?",
+          "answer": "Transferencia bancaria, Mercado Pago, tarjeta de crédito y débito Visa Mastercard, American Express, Tarjeta Naranja, Nativa, Cabal y Ethereum."
+        },
+        {
+          "question": "¿Qué significa online en vivo?",
+          "answer": "Los cursos que ofrece Dev Place son online y en vivo. Utilizamos herramientas como google Meet o Zoom para las clases sincrónicas. Tanto el profesor como el estudiante deben conectarse ciertos días y horarios de la semana para poder asistir a la clase. Todos los estudiantes tienen un grupo con el que empiezan y terminan el curso."
+        },
+        {
+          "question": "¿Las clases quedan grabadas?",
+          "answer": "Si las clases quedan grabadas y se suben a la plataforma para que se puedan repasar o seguir el curso a tu propio ritmo."
+        },
+        {
+          "question": "¿Qué se necesita  para hacer el curso?",
+          "answer": "Una computadora con 4GB de RAM como mínimo, acceso a Wi-Fi."
+        },
+        {
+          "question": "¿Cuánto es la capacidad máxima del curso?",
+          "answer": "Hay un máximo de 30 personas por curso para que cada persona pueda hacer  consultas personalizadas al profesor titular."
+        },
+        {
+          "question": "¿Se puede hacer el curso sin asistir a las clases online en vivo?",
+          "answer": "Si, la asistencia no es obligatoria ni tampoco hay un mínimo de asistencia. Lo importante es aprobar el proyecto final para obtener el certificado, aunque para tener la mejor experiencia como usuario de un curso lo recomendable es tener asistencia perfecta a las clases online en vivo."
+        },
+        {
+          "question": "¿Qué salida laboral tiene el curso?",
+          "answer": "El curso tiene el objetivo del entendimiento y la aplicación de los temas que se ven a lo largo del mismo. El conocimiento que brinda el curso es aplicable para diversos puestos de la industria IT."
+        },
+        {
+          "question": "¿Hay descuento por ser estudiante?",
+          "answer": "Si, los descuentos son según la cantidad de cursos hechos en Dev Place."
+        },
+        {
+          "question": "¿Hay descuento si me anoto con alguien más?",
+          "answer": "Si, utilizando el programa de referidos obtienen un 15% de descuento las 2 personas participantes en cualquiera de los cursos."
+        },
+        {
+          "question": "¿Cómo puedo abonar estando en el exterior (fuera de Argentina)?",
+          "answer": "Aceptamos Paypal y Ethereum."
+        },
+        {
+          "question": "¿Qué curso se recomienda realizar para empezar?",
+          "answer": "Para incursionar en el mundo IT podrías elegir Fundamentos de la programación."
+        },
+        {
+          "question": "¿Qué curso se recomienda avanzar luego del primer curso recomendado?",
+          "answer": "Podrías avanzar con SQL o Desarrollo web, dependiendo tus preferencias."
+        },
+        {
+          "question": "¿Es necesario asistir a las clases?",
+          "answer": "Para tener la mejor experiencia como usuario de un curso lo recomendable es tener asistencia perfecta a las clases online en vivo."
+        },
+        {
+          "question": "¿Cómo es el proyecto final y cuánto tiempo tengo para entregarlo?",
+          "answer": "El proyecto final se va haciendo durante la cursada pero puedes entregarlo 30 días después desde la ultima clase del curso."
+        },
+        {
+          "question": "¿Aceptan criptomonedas como forma de pago?",
+          "answer": "Si. Aceptamos Ethereum solamente. #GoETH!!!"
+        },
+        {
+          "question": "¿El certificado está validado por algún organismo/universidad?",
+          "answer": "No, somos una empresa de tecnología que brinda distintos productos educativos. No dependemos de instituciones centralizadas en cuanto a la regulación de planes de estudio u otros contenidos diseñados y creados por Dev Place. El aval de Dev Place son los miles de usuarios que consumen nuestros productos educativos."
+        }
+      ]
     }
   ]
 }

@@ -11,6 +11,8 @@
       "technologyId":"624322c9e14c520a7dcaf2f8",
       "name": "Diseño UX & UI",
       "image": "ui-ux-design.png",
+      "paymentLink":"",
+      "link": "/curso/diseno-ux-ui.php",
       "program": {
         "type": "link",
         "icon": {
@@ -42,10 +44,10 @@
         "link": "#course-calendar-carousel",
         "label": "Quiero inscribirme"
       },
-      "objectives": "El objetivo del curso es que Aprendas a Diseñar y crear un prototipo de app o sitio web mobile first (en base a esta tendencia, se crea primero una versión optimizada para dispositivos móviles, y luego se amplía a web o desktop). \\n Comenzarás a plasmar tu idea definiendo las funcionalidades principales de la misma (MVP). Entenderás qué tipo de perfiles son aquellos a los cuales les interesará tu producto. \\n Utilizarás herramientas de prototipo actuales y solicitadas en el mundo laboral. Asimismo, validarás tu proyecto mediante diferentes metodologías y actividades.\\n Llegarás a adquirir habilidades de metodologías ágiles. Podrás fundamentar las decisiones de diseño del proyecto de manera clara. Finalmente, aprenderás metodologías de diseño para tu proyecto, e incorporarás conocimientos de disciplinas proyectuales.",
-      "forWhom": "Personas que busquen profesionalizarse en el Diseño digital de aplicaciones y sistemas creados, confeccionados y pensandos para que el usuario tenga la mejor experiencia posible.",
+      "objectives": "El objetivo del curso es que aprendas a diseñar y crear un prototipo de app o sitio web mobile first (en base a esta tendencia, se crea primero una versión optimizada para dispositivos móviles y luego se amplía a web o desktop). \\n Comenzarás a plasmar tu idea definiendo las funcionalidades principales de la misma (MVP). Entenderás qué tipo de perfiles son aquellos a los cuales les interesaría tu producto. \\n Utilizarás herramientas de prototipo actuales y solicitadas en el mundo laboral. Asimismo, validarás tu proyecto mediante diferentes metodologías y actividades. \\n Llegarás a adquirir habilidades de metodologías ágiles. Podrás fundamentar las decisiones de diseño del proyecto de manera clara. \\n Finalmente, aprenderás metodologías de diseño para tu proyecto e incorporarás conocimientos de disciplinas proyectuales.",
+      "forWhom": "Está dirigido a personas que buscan profesionalizarse en el Diseño Digital de aplicaciones y sistemas creados, confeccionados y pensados para que el usuario tenga la mejor experiencia posible.",
       "finalProject": "El proyecto final e integrador que se podra realizar durante la cursada, será aquel que en caso de estar aprobado, DEV PLACE emitirá un certificado de aprobación del curso. Al terminar el curso el usuario tendra 30 dias contando desde la ultima clase para poder enviar el proyecto final al mail correspondiente. Entregado el proyecto DEV PLACE tendra 30 dias corridos desde recibido el mismo para, en caso de que este aprobado el proyecto emitir el certificado validando la aprobacion del curso correspondiente y en caso que no, notificando la desaprobacion del proyecto y del curso. El proyecto sera corregido segun las rubricas de evaluacion de DEV PLACE.",
-      "profile": "● Utilizar la metodología del Diseño Centrado en el Usuario (DCU).\\n ● Fundamentar decisiones de diseño de tu proyecto.\\n  ● Analizar e identificar las necesidades de los usuarios.\\n ● Diferenciar el trabajo de UX de UI.\\n ● Conocer sobre metodologías ágiles.\\n ● Conocer sobre metodologías de diseño: design thinking, lean UX, design sprint.\\n ● Conocer, aplicar y utilizar los patrones y tendencias de diseño.\\n ● Adquirir habilidades para el manejo de las herramientas y recursos que se utilizan para elaborar un diseño de interfaz.\\n ● Comprender conceptos de grilla para que tu diseño se adapte correctamente a cualquier dispositivo.\\n ● Crear la estructura y wireframe de tu diseño de interfaces).\\n ● Validar prototipos funcionales con usuarios (pruebas de usabilidad).\\n ● Utilizar herramientas de validación del prototipo tales como evaluación heurística, testeo de usuarios, entrevistas cualitativas, entre otros.\\n ● Construir prototipos navegables para presentar el proyecto.",
+      "profile": "● Utiliza la metodología del Diseño Centrado en el Usuario (DCU). \\n ● Fundamenta decisiones de diseño de su proyecto. \\n ● Analiza e identifica las necesidades de los usuarios. \\n ● Diferencia el trabajo de UX de UI. \\n ● Conoce sobre metodologías ágiles. \\n ● Conoce sobre metodologías de diseño: design thinking, lean UX, design sprint. \\n ● Conoce, aplica y utiliza los patrones y tendencias de diseño. \\n ● Adquiere habilidades para el manejo de las herramientas y recursos que se utilizan para elaborar un diseño de interfaz. \\n ● Comprende conceptos de grilla para que su diseño se adapte correctamente a cualquier dispositivo. \\n ● Crea la estructura y wireframe de su diseño de interfaces. \\n ● Valida prototipos funcionales con usuarios (pruebas de usabilidad). \\n ● Utiliza herramientas de validación del prototipo tales como evaluación heurística, testeo de usuarios, entrevistas cualitativas, entre otros. \\n ● Construye prototipos navegables para presentar el proyecto.",
       "tools": {
         "component": "Carousel",
         "options": {
@@ -95,6 +97,76 @@
           }
         ]
       }
+    },
+    {
+      "component": "Faqs",
+      "title": "Preguntas Frecuentes",
+      "content": [
+        {
+          "question": "¿Qué métodos de pago se aceptan?",
+          "answer": "Transferencia bancaria, Mercado Pago, tarjeta de crédito y débito Visa Mastercard, American Express, Tarjeta Naranja, Nativa, Cabal y Ethereum."
+        },
+        {
+          "question": "¿Qué significa online en vivo?",
+          "answer": "Los cursos que ofrece Dev Place son online y en vivo. Utilizamos herramientas como google Meet o Zoom para las clases sincrónicas. Tanto el profesor como el estudiante deben conectarse ciertos días y horarios de la semana para poder asistir a la clase. Todos los estudiantes tienen un grupo con el que empiezan y terminan el curso."
+        },
+        {
+          "question": "¿Las clases quedan grabadas?",
+          "answer": "Si las clases quedan grabadas y se suben a la plataforma para que se puedan repasar o seguir el curso a tu propio ritmo."
+        },
+        {
+          "question": "¿Qué se necesita  para hacer el curso?",
+          "answer": "Una computadora con 4GB de RAM como mínimo, acceso a Wi-Fi."
+        },
+        {
+          "question": "¿Cuánto es la capacidad máxima del curso?",
+          "answer": "Hay un máximo de 30 personas por curso para que cada persona pueda hacer  consultas personalizadas al profesor titular."
+        },
+        {
+          "question": "¿Se puede hacer el curso sin asistir a las clases online en vivo?",
+          "answer": "Si, la asistencia no es obligatoria ni tampoco hay un mínimo de asistencia. Lo importante es aprobar el proyecto final para obtener el certificado, aunque para tener la mejor experiencia como usuario de un curso lo recomendable es tener asistencia perfecta a las clases online en vivo."
+        },
+        {
+          "question": "¿Qué salida laboral tiene el curso?",
+          "answer": "El curso tiene el objetivo del entendimiento y la aplicación de los temas que se ven a lo largo del mismo. El conocimiento que brinda el curso es aplicable para diversos puestos de la industria IT."
+        },
+        {
+          "question": "¿Hay descuento por ser estudiante?",
+          "answer": "Si, los descuentos son según la cantidad de cursos hechos en Dev Place."
+        },
+        {
+          "question": "¿Hay descuento si me anoto con alguien más?",
+          "answer": "Si, utilizando el programa de referidos obtienen un 15% de descuento las 2 personas participantes en cualquiera de los cursos."
+        },
+        {
+          "question": "¿Cómo puedo abonar estando en el exterior (fuera de Argentina)?",
+          "answer": "Aceptamos Paypal y Ethereum."
+        },
+        {
+          "question": "¿Qué curso se recomienda realizar para empezar?",
+          "answer": "Para incursionar en el mundo IT podrías elegir Fundamentos de la programación."
+        },
+        {
+          "question": "¿Qué curso se recomienda avanzar luego del primer curso recomendado?",
+          "answer": "Podrías avanzar con SQL o Desarrollo web, dependiendo tus preferencias."
+        },
+        {
+          "question": "¿Es necesario asistir a las clases?",
+          "answer": "Para tener la mejor experiencia como usuario de un curso lo recomendable es tener asistencia perfecta a las clases online en vivo."
+        },
+        {
+          "question": "¿Cómo es el proyecto final y cuánto tiempo tengo para entregarlo?",
+          "answer": "El proyecto final se va haciendo durante la cursada pero puedes entregarlo 30 días después desde la ultima clase del curso."
+        },
+        {
+          "question": "¿Aceptan criptomonedas como forma de pago?",
+          "answer": "Si. Aceptamos Ethereum solamente. #GoETH!!!"
+        },
+        {
+          "question": "¿El certificado está validado por algún organismo/universidad?",
+          "answer": "No, somos una empresa de tecnología que brinda distintos productos educativos. No dependemos de instituciones centralizadas en cuanto a la regulación de planes de estudio u otros contenidos diseñados y creados por Dev Place. El aval de Dev Place son los miles de usuarios que consumen nuestros productos educativos."
+        }
+      ]
     }
   ]
 }
