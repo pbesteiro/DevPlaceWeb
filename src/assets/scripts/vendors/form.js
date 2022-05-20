@@ -98,6 +98,8 @@ const fillWithLocalStorageInfo = (formId) => {
       for (const item of element) {
         if(field.type === 'checkbox' || field.type === 'radio'){
           item.checked = item.value === field.value 
+        } else if (field.type === 'file'){
+          item.value = ''
         } else {
           item.value = field.value
         }

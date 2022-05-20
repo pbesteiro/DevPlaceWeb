@@ -87,7 +87,7 @@ $countries = json_decode($file);
               </button>
             </div>
 
-            <p class="helper-text">Formato de archivo incorrecto. Intenta con un JPEG, PNG o PDF.</p>
+            <p class="helper-text">Formatos aceptados JPEG, PNG o PDF.</p>
           </div>
 
           <div class="field">

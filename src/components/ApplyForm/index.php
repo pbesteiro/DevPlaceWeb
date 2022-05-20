@@ -82,7 +82,7 @@ $countries = json_decode($file);
 
           <div class="wrapper">
             <button type='submit' form="apply-form" class="call-to-action skin-filled" id="send-form">
-              Enviar
+              <span>Enviar</span>
               <?php include $srcPath . 'components/Loader/index.php'; ?>
             </button>
           </div>

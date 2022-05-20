@@ -39,7 +39,8 @@ $default_gateway = $paymentMethods[0]->gateway;
     </a>
 
     <button type='submit' form="payment-method-form" class="call-to-action skin-filled">
-      Continuar
+      <span>Continuar</span>
+      <?php include $srcPath . 'components/Loader/index.php'; ?>
     </button>
   </div>
 </div>

@@ -18,7 +18,8 @@
         </div>
 
         <button type='submit' form="signin-form" class="call-to-action skin-filled">
-          Ingresar
+          <span>Ingresar</span>
+          <?php include $srcPath . 'components/Loader/index.php'; ?>
         </button>
 
         <div class="get-it-back">
