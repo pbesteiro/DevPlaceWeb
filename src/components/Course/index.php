@@ -128,7 +128,11 @@ $srcPath = $_SERVER['DOCUMENT_ROOT'];
     </section>
   </div>
 </section>
-
+<style>
+  .faqs-component {
+    padding: 65px 0;
+  }
+</style>
 <script>
   const TECHNOLOGY_ID = "<?php echo $technologyId; ?>";
   const PAYMENT_LINK = "<?php echo $paymentLink; ?>";

@@ -3,7 +3,7 @@ $file = file_get_contents($srcPath . "constants/countries.json");
 $countries = json_decode($file);
 ?>
 
-<div class="modal" tabindex="-1" id="be-partner-modal">
+<div class="modal show-out" tabindex="-1" id="be-partner-modal">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
