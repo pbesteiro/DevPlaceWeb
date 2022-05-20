@@ -5914,6 +5914,8 @@ const initRainbows = () => {
 }
 
 const init = () => {
+  document.activeElement.blur()
+  
   /**
    * Init Acordeon
    */
