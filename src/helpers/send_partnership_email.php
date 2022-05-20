@@ -8,7 +8,7 @@ include './phpmailer/src/Exception.php';
 include './phpmailer/src/PHPMailer.php';
 include './phpmailer/src/SMTP.php';
 
-$emailReceptor = 'pagos@devplace.tech';
+$emailReceptor = 'companies@devplace.tech';
 
 $firstname = isset($_REQUEST['nombre']) ? $_REQUEST['nombre'] : '';
 $lastName = isset($_REQUEST['apellido']) ? $_REQUEST['apellido'] : '';
