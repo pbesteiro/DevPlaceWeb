@@ -70,14 +70,15 @@ $countries = json_decode($file);
             <input type="checkbox" name="terminos-y-condiciones" id="terminos-y-condiciones">
             <label for="terminos-y-condiciones">Acepto los <a href="/legal.php">términos y condiciones del servicio</a></label>
           </div>
-        </form>
 
-        <div class="form-actions">
-          <span></span>
-          <button type='submit' form="contact-form" class="call-to-action skin-filled">
-            Enviar
-          </button>
-        </div>
+          <div class="form-actions">
+            <span></span>
+            <button type='submit' form="contact-form" class="call-to-action skin-filled">
+              <span>Enviar</span>
+              <?php include $srcPath . 'components/Loader/index.php'; ?>
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
