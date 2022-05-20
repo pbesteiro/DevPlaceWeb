@@ -8,7 +8,7 @@ $file = file_get_contents($srcPath . "constants/main-menu.json");
 $main_menu_items = json_decode($file);
 ?>
 
-<nav class="sidebar-navbar" id="sidebar-navbar">
+<nav class="sidebar-navbar show-out" id="sidebar-navbar">
   <div class="sidebar-navbar-header">
     <button class="sidebar-navbar-close-button" onclick="toggleSidebar()">
       <i class="cross-icon">

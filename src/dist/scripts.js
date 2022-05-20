@@ -4006,7 +4006,7 @@ const emailTemplates = {
   hirePlan: 'send_hire_plan_email',
   lead: 'send_lead_email',
   leadGiftCard: 'send_lead_giftcard_email',
-  partnership: 'send_partnership_email',
+  partnership: 'send_become_partner_email',
   workWithUs: 'send_work_with_us_email',
   giftCard: 'send_giftcard_email'
 }
@@ -4154,6 +4154,8 @@ const fillWithLocalStorageInfo = (formId) => {
       for (const item of element) {
         if(field.type === 'checkbox' || field.type === 'radio'){
           item.checked = item.value === field.value 
+        } else if (field.type === 'file'){
+          item.value = ''
         } else {
           item.value = field.value
         }

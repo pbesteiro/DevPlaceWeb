@@ -3,7 +3,7 @@ $file = file_get_contents($srcPath . "constants/countries.json");
 $countries = json_decode($file);
 ?>
 
-<div class="modal" tabindex="-1" id="apply-modal">
+<div class="modal show-out" tabindex="-1" id="apply-modal">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -82,7 +82,7 @@ $countries = json_decode($file);
 
           <div class="wrapper">
             <button type='submit' form="apply-form" class="call-to-action skin-filled" id="send-form">
-              Enviar
+              <span>Enviar</span>
               <?php include $srcPath . 'components/Loader/index.php'; ?>
             </button>
           </div>

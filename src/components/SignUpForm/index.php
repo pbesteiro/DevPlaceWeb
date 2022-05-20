@@ -37,7 +37,8 @@
         </div>
 
         <button type='submit' form="signup-form" class="call-to-action skin-filled">
-          Crear cuenta
+          <span>Crear cuenta</span>
+          <?php include $srcPath . 'components/Loader/index.php'; ?>
         </button>
 
         <hr>

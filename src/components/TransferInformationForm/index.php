@@ -44,17 +44,17 @@ $countries = json_decode($file);
         </button>
       </div>
 
-      <p class="helper-text">Formato de archivo incorrecto. Intenta con un JPEG, PNG o PDF.</p>
+      <p class="helper-text">Formatos aceptados JPEG, PNG o PDF.</p>
+    </div>
+    <div class="form-actions">
+      <a href="/checkout/<?php echo $prevStep; ?>" class="call-to-action skin-outline">
+        Volver
+      </a>
+
+      <button type='submit' form="bank-transfer-information-form" id="send-form" class="call-to-action skin-filled">
+        <span>Reservar cupo</span>
+        <?php include $srcPath . 'components/Loader/index.php'; ?>
+      </button>
     </div>
   </form>
-
-  <div class="form-actions">
-    <a href="/checkout/<?php echo $prevStep; ?>" class="call-to-action skin-outline">
-      Volver
-    </a>
-
-    <button type='submit' form="bank-transfer-information-form" id="send-form" class="call-to-action skin-filled">
-      Reservar cupo
-    </button>
-  </div>
 </div>

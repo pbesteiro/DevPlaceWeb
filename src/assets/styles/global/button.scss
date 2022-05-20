@@ -58,7 +58,8 @@ button.return {
     } 
 
     &:hover {
-      background-color: #f4f4f4;
+      background-color: #acacac;
+      opacity: .6;
     }
   }
   
@@ -68,6 +69,7 @@ button.return {
     height: 44px;
     border-radius: 22px;
     padding: 0px 15px;
+    opacity: 1;
     transition: all .2s ease-in;
 
     @media (min-width: 768px) {
@@ -81,6 +83,7 @@ button.return {
 
     &:hover {
       background-color: #0940a7;
+      opacity: 0.6;
     }
 
     img {
