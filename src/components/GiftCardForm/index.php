@@ -57,8 +57,10 @@ $courses = array_merge(...array_map(function ($course) {
 
       <div class="field phone-field">
         <label class="label" for="telefono">Teléfono</label>
-        <input type="number" name="telefono" id="telefono" placeholder="11 49173181">
-        <span id="country-code">+54</span>
+        <div class="phone-code-and-number">
+          <span id="country-code">+54</span>
+          <input type="number" name="telefono" id="telefono" placeholder="11 49173181">
+        </div>
         <span class="helper-text">Ingrese el código de área</span>
       </div>
     </div>
