@@ -8,7 +8,7 @@ include './phpmailer/src/Exception.php';
 include './phpmailer/src/PHPMailer.php';
 include './phpmailer/src/SMTP.php';
 
-$emailReceptor = 'admin@devplace.tech';
+$emailReceptor = 'info@devplace.tech';
 
 $reason = isset($_REQUEST['motivo']) ? $_REQUEST['motivo'] : '';
 $message = isset($_REQUEST['mensaje']) ? $_REQUEST['mensaje'] : '';
