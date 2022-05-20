@@ -17,6 +17,7 @@ $country = isset($_REQUEST['pais']) ? $_REQUEST['pais'] : '';
 $phone = isset($_REQUEST['telefono']) ? $_REQUEST['telefono'] : '';
 $company = isset($_REQUEST['empresa']) ? $_REQUEST['empresa'] : '';
 $position = isset($_REQUEST['puesto']) ? $_REQUEST['puesto'] : '';
+$message = isset($_REQUEST['que-necesita']) ? $_REQUEST['que-necesita'] : '';
 
 $mail = new PHPMailer(true);
 
@@ -49,7 +50,8 @@ try {
                   <li><strong>Teléfono: </strong>' . $phone . '</li>
                   <li><strong>Empresa: </strong>' . $company . '</li>
                   <li><strong>Puesto: </strong>' . $position . '</li>
-                </ul>';
+                  <li style="display: none;"><strong>Que necesita: </strong>' . $message . '</li>
+                 </ul>';
 
   //$mail->AltBody = 'Plain text message body for non-HTML email client. Gmail SMTP email body.';
 
