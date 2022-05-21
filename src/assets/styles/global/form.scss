@@ -92,8 +92,12 @@ form {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin-bottom: 30px;
+
+    @media(min-width: 768px){
+      flex-wrap: nowrap;
+    }
   }
 
   .field-checkbox {
