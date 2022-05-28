@@ -6,6 +6,7 @@
   "sections": [
     {
       "component": "HeroText",
+      "visible": true,
       "options": {
         "skin": "dark",
         "showRainbow": true,
@@ -16,6 +17,7 @@
     },
     {
       "component": "Carousel",
+      "visible": true,
       "options": {
         "skin": "courses"
       },
@@ -24,6 +26,7 @@
       "content": [
         {
           "component": "SlideCourses",
+          "visible": true,
           "image": "javascript.png",
           "duration": "8 semanas",
           "name": "JavaScript",
@@ -39,6 +42,7 @@
         },
         {
           "component": "SlideCourses",
+          "visible": true,
           "image": "html.png",
           "duration": "8 semanas",
           "name": "Desarrollo Web",
@@ -54,6 +58,7 @@
         },
         {
           "component": "SlideCourses",
+          "visible": true,
           "image": "fundamentos-de-la-programacion.png",
           "duration": "12 semanas",
           "name": "Fundamentos de la Programación",
@@ -69,6 +74,7 @@
         },
         {
           "component": "SlideCourses",
+          "visible": true,
           "image": "poo.png",
           "duration": "6 semanas",
           "name": "POO",
@@ -86,6 +92,7 @@
     },
     {
       "component": "Carousel",
+      "visible": true,
       "options": {
         "skin": "courses",
         "showRainbowDesktop": false,
@@ -98,6 +105,7 @@
       "content": [
         {
           "component": "SlideCourses",
+          "visible": true,
           "image": "microsoft-sql-server.png",
           "duration": "8 semanas",
           "name": "SQL",
@@ -113,6 +121,7 @@
         },
         {
           "component": "SlideCourses",
+          "visible": true,
           "image": "mongo-db.png",
           "duration": "6 semanas",
           "name": "Mongo DB",
@@ -129,6 +138,7 @@
     },
     {
       "component": "Carousel",
+      "visible": true,
       "options": {
         "skin": "courses"
       },
@@ -137,6 +147,7 @@
       "content": [
         {
           "component": "SlideCourses",
+          "visible": true,
           "image": "ui-ux-design.png",
           "duration": "12 semanas",
           "name": "Diseño UX & UI",
@@ -153,6 +164,7 @@
     },
     {
       "component": "Carousel",
+      "visible": true,
       "options": {
         "skin": "courses",
         "showRainbowDesktop": false,
@@ -165,6 +177,7 @@
       "content": [
         {
           "component": "SlideCourses",
+          "visible": true,
           "image": "growth-marketing.png",
           "duration": "8 semanas",
           "name": "Growth Marketing",
@@ -179,6 +192,7 @@
         },
         {
           "component": "SlideCourses",
+          "visible": true,
           "image": "community-management.png",
           "duration": "12 semanas",
           "name": "Community management + FB & Google Ads",
@@ -195,6 +209,7 @@
     },
     {
       "component": "Carousel",
+      "visible": true,
       "options": {
         "skin": "courses"
       },
@@ -203,6 +218,7 @@
       "content": [
         {
           "component": "SlideCourses",
+          "visible": true,
           "image": "data-analytics.png",
           "duration": "12 semanas",
           "name": "Data Analytics",
@@ -219,6 +235,7 @@
     },
     {
       "component": "Carousel",
+      "visible": true,
       "options": {
         "skin": "courses",
         "showRainbowDesktop": false,
@@ -231,6 +248,7 @@
       "content": [
         {
           "component": "SlideCourses",
+          "visible": true,
           "image": "dev-ops.png",
           "duration": "6 semanas",
           "name": "Dev Ops",
@@ -245,6 +263,7 @@
         },
         {
           "component": "SlideCourses",
+          "visible": true,
           "image": "linux.png",
           "duration": "4 semanas",
           "name": "Linux",
@@ -261,6 +280,7 @@
     },
     {
       "component": "Carousel",
+      "visible": true,
       "options": {
         "skin": "courses"
       },
@@ -269,6 +289,7 @@
       "content": [
         {
           "component": "SlideCourses",
+          "visible": true,
           "image": "product-management.png",
           "duration": "8 semanas",
           "name": "Product Management",
@@ -283,6 +304,7 @@
         },
         {
           "component": "SlideCourses",
+          "visible": true,
           "image": "excel.png",
           "duration": "6 semanas",
           "name": "Excel Avanzado",
@@ -297,6 +319,7 @@
         },
         {
           "component": "SlideCourses",
+          "visible": true,
           "image": "product-management.png",
           "duration": "4 semanas",
           "name": "Scrum",

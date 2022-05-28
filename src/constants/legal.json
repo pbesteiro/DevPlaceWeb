@@ -6,6 +6,7 @@
   "sections":[
     {
       "component":"TeamInformation",
+      "visible": true,
       "options":{
         "skin": "long"},
       "title":"TERMINOS Y CONDICIONES",

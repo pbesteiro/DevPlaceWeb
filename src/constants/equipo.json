@@ -6,6 +6,7 @@
   "sections": [
     {
       "component": "TeamInformation",
+      "visible": true,
       "title":"Equipo",
       "cta": {
         "label": "Contactanos",

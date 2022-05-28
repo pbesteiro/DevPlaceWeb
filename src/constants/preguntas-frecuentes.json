@@ -6,6 +6,7 @@
   "sections": [
     {
       "component": "Faqs",
+      "visible": true,
       "title": "Preguntas Frecuentes",
       "content": [
         {

@@ -6,6 +6,7 @@
   "sections": [
     {
       "component": "HeroText",
+      "visible": true,
       "section_id": "convertite-en-un-desarrollador",
       "options": {
         "skin": "dark",
@@ -23,6 +24,7 @@
     },
     {
       "component": "Box",
+      "visible": true,
       "section_id": "proceso-de-admision",
       "title": "Proceso de admisión",
       "subtitle": "",
@@ -38,21 +40,25 @@
       "content": [
         {
           "component": "HighLight",
+          "visible": true,
           "title": "01.",
           "text": "Aplica completando el formulario en ***5 minutos***."
         },
         {
           "component": "HighLight",
+          "visible": true,
           "title": "02.",
           "text": "Evalúa ***tus skills*** en tecnología con el Dev Challenge."
         },
         {
           "component": "HighLight",
+          "visible": true,
           "title": "03.",
           "text": "Completa el formulario de inscripción y ***comenza a aprender*** y entrenarte en tu Tech Bootcamp."
         },
         {
           "component": "HighLight",
+          "visible": true,
           "title": "04.",
           "text": "Conéctate con ***nuestras empresas partner*** en tecnológia de todo el mundo y accede a tu empleo IT."
         }
@@ -60,6 +66,7 @@
     },
     {
       "component": "steps",
+      "visible": true,
       "section_id": "tu-camino-con-el-tech-bootcamp",
       "title": "Tu camino con el \\n Tech Bootcamp",
       "subtitle": "",
@@ -87,6 +94,7 @@
     },
     {
       "component": "Box",
+      "visible": true,
       "section_id": "requisitos-para-ingresar-al-tech-bootcamp",
       "title": " Requisitos para ingresar \\n al Tech Bootcamp",
       "subtitle": "",
@@ -97,16 +105,19 @@
       "content": [
         {
           "component": "HighLight",
+          "visible": true,
           "title": "wifi",
           "text": "Acceso a una computadora y conexión wi fi."
         },
         {
           "component": "HighLight",
+          "visible": true,
           "title": "+18.",
           "text": "Ser mayor de 18 años."
         },
         {
           "component": "HighLight",
+          "visible": true,
           "title": "full time",
           "text": "Disponibilidad full time de lunes a viernes"
         }
@@ -114,6 +125,7 @@
     },
     {
       "component": "Calendar",
+      "visible": true,
       "section_id": "daily-calendar",
       "title": "Daily calendar",
       "subtitle": "Lunes a Viernes (*)",
@@ -163,6 +175,7 @@
     },
     {
       "component": "Box",
+      "visible": true,
       "section_id": "dev-place-en-numeros",
       "title": "Dev Place en números",
       "subtitle": "",
@@ -173,21 +186,25 @@
       "content": [
         {
           "component": "HighLight",
+          "visible": true,
           "title": "80%",
           "text": "De inserción laboral en los primeros 2 meses."
         },
         {
           "component": "HighLight",
+          "visible": true,
           "title": " 95%",
           "text": "De inserción laboral en los primeros 3 meses."
         },
         {
           "component": "HighLight",
+          "visible": true,
           "title": "+9",
           "text": "Países"
         },
         {
           "component": "HighLight",
+          "visible": true,
           "title": "+150",
           "text": "Empresas partner"
         }
@@ -195,6 +212,7 @@
     },
     {
       "component": "steps",
+      "visible": true,
       "section_id": "costo-del-tech-bootcamp",
       "title": "Costo del \\n Tech Bootcamp",
       "options": {
@@ -217,6 +235,7 @@
     },
     {
       "component": "Carousel",
+      "visible": true,
       "section_id": "proximas-fechas",
       "options": {
         "skin": "next-dates"
@@ -230,6 +249,7 @@
             "label": "Aplicar"
           },
           "component": "SlideNextDates",
+          "visible": true,
           "title": "31 de Noviembre de<br/>2022",
           "text": "text section 31 de Noviembre de<br/>2022",
           "duration": "4 meses. Full Time.",

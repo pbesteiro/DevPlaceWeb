@@ -136,7 +136,7 @@
     "href": "/bootcamps.php"
   },
   {
-    "visible": true,
+    "visible": false,
     "label": "Carreras",
     "href": "/carreras.php"
   },

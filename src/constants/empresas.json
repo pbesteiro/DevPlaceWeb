@@ -6,6 +6,7 @@
   "sections": [
     {
       "component": "HeroText",
+      "visible": true,
       "options": {
         "skin": "dark",
         "showRainbow": true,
@@ -22,21 +23,25 @@
     },
     {
       "component": "Box",
+      "visible": true,
       "title": "¿Por qué talento Dev Place?",
       "subtitle": "",
       "content": [
         {
           "component": "HighLight",
+          "visible": true,
           "title": "Costo inicial $0",
           "text": "Ahorra tiempo y dinero. No nos tienes que pagar ***ninguna tarifa*** por contratación ni por intermediación."
         },
         {
           "component": "HighLight",
+          "visible": true,
           "title": "Perfil preparado para trabajar",
           "text": "Además de aprender, entrenarse y especializarse en tecnología, el talento se somete a un proyecto con un equipo de trabajo donde ***tendrá una experiencia laboral real.***"
         },
         {
           "component": "HighLight",
+          "visible": true,
           "title": "Detalle de los talentos",
           "text": "Conoce tanto las ***habilidades blandas como las técnicas*** de cada candidato que vayas a entrevistar con especifidad."
         }
@@ -44,6 +49,7 @@
     },
     {
       "component": "steps",
+      "visible": true,
       "title": "Proceso",
       "subtitle": "",
       "options": {
@@ -71,6 +77,7 @@
     },
     {
       "component":"plainBox",
+      "visible": true,
       "title":"Programas in Company",
       "text":"Si estas buscando una capacitación, un bootcamp a medida para desarrollar tu marca como una marca empleadora o un entrenamiento para tus colaboradores, contáctenos para trabajar jusntos en la en la solución.",
       "image": {
@@ -85,6 +92,7 @@
     },
     {
       "component": "Carousel",
+      "visible": true,
       "options": {
         "skin":"empresas",
         "showRainbowDesktop": true,
@@ -97,6 +105,7 @@
       "content": [
         {
          "component": "SlideEmpresas",
+         "visible": true,
          "name":"Team",
           "price": "9.350*",
           "content": [
@@ -110,6 +119,7 @@
         },
         {
           "component": "SlideEmpresas",
+          "visible": true,
           "name":"business",
            "price": "19.850*",
            "content": [
@@ -123,6 +133,7 @@
         },
         {
           "component": "SlideEmpresas",
+          "visible": true,
           "name":"Company",
            "price": "26.650*",
            "content": [

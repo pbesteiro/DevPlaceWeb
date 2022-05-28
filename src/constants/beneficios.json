@@ -7,6 +7,7 @@
  {
    "section_id": "beneficios-banner",
     "component":"HeroText",
+    "visible": true,
     "options": {
       "skin": "dark",
       "showRainbow": true,
@@ -25,6 +26,7 @@
   },{
     "section_id": "beneficios-como-funciona",
     "component": "steps",
+    "visible": true,
     "title": "¿Cómo funciona?",
     "subtitle": "",
     "options": {
@@ -52,6 +54,7 @@
   },{
     "section_id": "beneficios-programa-referido",
     "component": "Box",
+    "visible": true,
     "styles": "",
     "title": "Programas de referidos",
     "subtitle": "Vos y tu compañero/a pueden beneficiarce si van a hacer por primera vez un curso en Dev Place. Obtene un 15% de descuento con tu compañero/a refiriéndole Dev Place y haciendo el mismo curso junt@s! ",

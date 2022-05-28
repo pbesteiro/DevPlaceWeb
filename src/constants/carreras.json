@@ -6,6 +6,7 @@
   "sections": [
     {
       "component": "HeroText",
+      "visible": true,
       "options": {
         "skin": "dark",
         "showRainbow": true,
@@ -16,6 +17,7 @@
     },
     {
       "component": "Carousel",
+      "visible": true,
       "options": {
         "skin": "courses"
       },
@@ -24,6 +26,7 @@
       "content": [
         {
           "component": "SlideCourses",
+          "visible": true,
           "image": "javascript.png",
           "duration": "6 meses",
           "name": "Programador Web",
@@ -37,6 +40,7 @@
         },
         {
           "component": "SlideCourses",
+          "visible": true,
           "image": "javascript.png",
           "duration": "6 meses",
           "name": "Programador Web",
@@ -52,6 +56,7 @@
     },
     {
       "component": "Carousel",
+      "visible": true,
       "options": {
         "skin": "courses"
       },
@@ -60,6 +65,7 @@
       "content": [
         {
           "component": "SlideCourses",
+          "visible": true,
           "image": "javascript.png",
           "duration": "6 meses",
           "name": "Programador Web",
@@ -73,6 +79,7 @@
         },
         {
           "component": "SlideCourses",
+          "visible": true,
           "image": "javascript.png",
           "duration": "6 meses",
           "name": "Programador Web",
@@ -88,6 +95,7 @@
     },
     {
       "component": "Carousel",
+      "visible": true,
       "options": {
         "skin": "courses"
       },
@@ -96,6 +104,7 @@
       "content": [
         {
           "component": "SlideCourses",
+          "visible": true,
           "image": "javascript.png",
           "duration": "6 meses",
           "name": "Programador Web",
@@ -109,6 +118,7 @@
         },
         {
           "component": "SlideCourses",
+          "visible": true,
           "image": "javascript.png",
           "duration": "6 meses",
           "name": "Programador Web",

@@ -6,6 +6,7 @@
   "sections": [
     {
       "component": "HeroText",
+      "visible": true,
       "options": {
         "skin": "white",
         "showRainbow": true,
@@ -23,6 +24,7 @@
     },
     {
       "component": "Box",
+      "visible": true,
       "title": "Tech bootcamps",
       "subtitle": "Especializate en las ***tecnologías más pedidas*** por el mercado laboral IT. Aprende y entrénate alcanzando una alta performance como programador y accede a tu primer experiencia laboral IT.",
       "image": {
@@ -38,6 +40,7 @@
     {
       "section_id": "home-carreras",
       "component": "HeroText",
+      "visible": false,
       "options": {
         "skin": "white",
         "showRainbow": true,
@@ -56,6 +59,7 @@
     },
     {
       "component": "Box",
+      "visible": true,
       "title": "Empresas",
       "subtitle": "Incorpora talento IT según tus necesidades específicas siendo partner nuestro. Programas In Company a medida. Contrata el plan de cursos  que necesites para que tus colaboradores adquieran nuevas habilidades en tecnología.",
       "image": {
@@ -71,6 +75,7 @@
     {
       "section_id": "home-dev-platform",
       "component": "HeroText",
+      "visible": true,
       "options": {
         "skin": "white",
         "showRainbow": true,
@@ -88,6 +93,7 @@
     },
     {
       "component": "Box",
+      "visible": true,
       "title": "Beneficios",
       "subtitle": null,
       "image": {
@@ -102,11 +108,13 @@
       "content": [
         {
           "component": "HighLight",
+          "visible": true,
           "title": "gift card",
           "text": "Regalale ese curso a la persona que sabes que lo necesita con la ***giftcard de Dev Place***"
         },
         {
           "component": "HighLight",
+          "visible": true,
           "title": "15% off",
           "text": "Si quieres hacer un primer curso con un amigo aprovecha el descuento del ***15% para los dos***!"
         }

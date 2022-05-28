@@ -5,7 +5,8 @@
   "header_skin": "brand-mode",
   "sections": [
     {
-    "component":"WorkWithUsForm"   
+      "component":"WorkWithUsForm",
+      "visible": true
     }
   ]
 }

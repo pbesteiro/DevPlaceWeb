@@ -6,6 +6,7 @@
   "sections": [
     {
       "component": "SuccessfulPayment",
+      "visible": true,
       "title":"Pago Exitoso"
     }
   ]

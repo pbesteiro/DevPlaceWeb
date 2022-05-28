@@ -4,7 +4,8 @@
   "thumbnail": "logo.png",
   "sections": [
     {
-    "component":"SignUpForm"   
+      "component":"SignUpForm",
+      "visible": true
     }
   ]
 }
