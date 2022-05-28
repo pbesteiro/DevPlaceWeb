@@ -59,7 +59,9 @@ if(!!workwithusForm ){
   .onSuccess((event) => {
     saveInLocalSoterage('work-with-us-form')
     const formData = new FormData(event.target)
-    sendEmail('workWithUs', event.target, formData)
+    sendEmail('workWithUs', event.target, formData, () => {
+      showToast('success', 'Hemos recibimos tu CV, pronto nos pondremos en contacto contigo.')
+    })
   });
   fillWithLocalStorageInfo('work-with-us-form')
 }

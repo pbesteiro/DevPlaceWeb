@@ -39,7 +39,10 @@ if(!!hirePlan ){
       const formData = new FormData(event.target)
       const plan = JSON.parse(localStorage.getItem('selected-plan') || '').name
       formData.append('plan', plan)
-      sendEmail('hirePlan', event.target, formData)
+      sendEmail('hirePlan', event.target, formData, () => {
+        showToast('success', 'Recibimos tu consulta, pronto nos pondremos en contacto contigo.')
+        hideModal('hire-plan-modal')
+      })
     });
   
 }

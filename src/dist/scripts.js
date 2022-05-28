@@ -4042,7 +4042,6 @@ const sendEmail = (template, form, formData, callback) => {
   }).then((response) => {
     return response.text();
   }).then((response) => {
-    // showToast('form-sended-toast')
     if(!!callback){
       callback(response)
     }
@@ -4452,6 +4451,17 @@ const hideModal = (idModal) => {
   toggleModal(modal)
 }
 
+const hideAllModals = () => {
+  const modals = document.getElementsByClassName('modal')
+  const backdrop = document.getElementById("backdrop");
+
+  for(const modal of modals ){
+    setTimeout(() => {
+      backdrop.classList.toggle("show-out");
+      modal.classList.toggle("show-out");
+    }, 500)
+  }
+}
 
 
 
@@ -5181,6 +5191,34 @@ const closeAllSubmenues = () => {
     submenues[i].className = 'submenu'
   }
 }
+const showToast = (type, innerHTML) => {
+  console.log('Toast')
+  const toast = document.createElement('div');
+  toast.innerHTML = '<span class="tick"></span><span class="message">' + innerHTML + '</span>';
+  toast.classList.add('toast')
+  toast.classList.add('toast-' + type)
+  toast.id='toast'
+
+  document.body.appendChild(toast)
+  
+
+  // Add the "show" class to toast
+  document.getElementById('toast').classList.add("show");
+
+  // After 5 seconds, remove the show class from DIV
+  setTimeout(() => {
+    console.log('Hide Toast')
+    document.getElementById('toast').classList.remove("show");
+
+    // After 6 seconds, remove toast element
+    setTimeout(() => {
+      console.log('Remove Toast')
+      document.getElementById('toast').remove()
+    }, 1000);
+  }, 5000);
+
+};
+
 const bankTransferInformationForm = document.getElementById('bank-transfer-information-form')
 
 if(!!bankTransferInformationForm ){
@@ -5222,7 +5260,9 @@ if(!!bankTransferInformationForm ){
     .onSuccess((event) => {
       saveInLocalSoterage('bank-transfer-information-form')
       const formData = new FormData(event.target)
-      sendEmail('bankTransfer', event.target, formData)
+      sendEmail('bankTransfer', event.target, formData, () => {
+        showToast('success', 'Hemos recibido tu compra.')
+      })
     });
 
     fillWithLocalStorageInfo('bank-transfer-information-form')
@@ -5267,7 +5307,11 @@ if(!!bePartner ){
     .onSuccess((event) => {
       saveInLocalSoterage('be-partner-form')
       const formData = new FormData(event.target)
-      sendEmail('partnership', event.target, formData)
+      sendEmail('partnership', event.target, formData, () => {
+        console.log('callback be partner')
+        showToast('success', 'Hemos recibido tu solicitud de partnership.')
+        hideModal('be-partner-modal')
+      })
     });
   
 }
@@ -5322,7 +5366,9 @@ if(!!applyForm ){
       const formData = new FormData(event.target)
       const perfil = JSON.parse(localStorage.getItem('selected-bootcamp') || '').profile
       formData.append('perfil', perfil)
-      sendEmail('bootcamp', event.target, formData)
+      sendEmail('bootcamp', event.target, formData, () => {
+        showToast('success', 'Hemos recibido tu solicitud de inscripción al bootcamp de <strong>' + perfil + "</strong>")
+      })
     });
   
 }
@@ -5422,7 +5468,10 @@ if(!!companyContactUsForm ){
     .onSuccess((event) => {
       saveInLocalSoterage('company-contact-us-form')
       const formData = new FormData(event.target)
-      sendEmail('companyContactUs', event.target, formData)
+      sendEmail('companyContactUs', event.target, formData, () => {
+        showToast('success', 'Recibimos tu consulta, pronto nos pondremos en contacto contigo.')
+        hideModal('company-contact-us-modal')
+      })
     });
   
 }
@@ -5474,7 +5523,9 @@ if(!!contactForm ){
   .onSuccess((event) => {
     saveInLocalSoterage('contact-form')
     const formData = new FormData(event.target)
-    sendEmail('contactUs', event.target, formData)
+    sendEmail('contactUs', event.target, formData, () => {
+      showToast('success', 'Recibimos tu consulta, pronto nos pondremos en contacto contigo.')
+    })
   });
   fillWithLocalStorageInfo('contact-form')
 }
@@ -5658,7 +5709,10 @@ if(!!hirePlan ){
       const formData = new FormData(event.target)
       const plan = JSON.parse(localStorage.getItem('selected-plan') || '').name
       formData.append('plan', plan)
-      sendEmail('hirePlan', event.target, formData)
+      sendEmail('hirePlan', event.target, formData, () => {
+        showToast('success', 'Recibimos tu consulta, pronto nos pondremos en contacto contigo.')
+        hideModal('hire-plan-modal')
+      })
     });
   
 }
@@ -5852,7 +5906,9 @@ if(!!workwithusForm ){
   .onSuccess((event) => {
     saveInLocalSoterage('work-with-us-form')
     const formData = new FormData(event.target)
-    sendEmail('workWithUs', event.target, formData)
+    sendEmail('workWithUs', event.target, formData, () => {
+      showToast('success', 'Hemos recibimos tu CV, pronto nos pondremos en contacto contigo.')
+    })
   });
   fillWithLocalStorageInfo('work-with-us-form')
 }

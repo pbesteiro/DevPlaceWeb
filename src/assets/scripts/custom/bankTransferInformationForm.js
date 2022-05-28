@@ -39,7 +39,9 @@ if(!!bankTransferInformationForm ){
     .onSuccess((event) => {
       saveInLocalSoterage('bank-transfer-information-form')
       const formData = new FormData(event.target)
-      sendEmail('bankTransfer', event.target, formData)
+      sendEmail('bankTransfer', event.target, formData, () => {
+        showToast('success', 'Hemos recibido tu compra.')
+      })
     });
 
     fillWithLocalStorageInfo('bank-transfer-information-form')

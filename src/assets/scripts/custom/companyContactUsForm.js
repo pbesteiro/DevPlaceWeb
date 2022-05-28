@@ -40,7 +40,10 @@ if(!!companyContactUsForm ){
     .onSuccess((event) => {
       saveInLocalSoterage('company-contact-us-form')
       const formData = new FormData(event.target)
-      sendEmail('companyContactUs', event.target, formData)
+      sendEmail('companyContactUs', event.target, formData, () => {
+        showToast('success', 'Recibimos tu consulta, pronto nos pondremos en contacto contigo.')
+        hideModal('company-contact-us-modal')
+      })
     });
   
 }

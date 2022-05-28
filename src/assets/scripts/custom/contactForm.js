@@ -45,7 +45,9 @@ if(!!contactForm ){
   .onSuccess((event) => {
     saveInLocalSoterage('contact-form')
     const formData = new FormData(event.target)
-    sendEmail('contactUs', event.target, formData)
+    sendEmail('contactUs', event.target, formData, () => {
+      showToast('success', 'Recibimos tu consulta, pronto nos pondremos en contacto contigo.')
+    })
   });
   fillWithLocalStorageInfo('contact-form')
 }

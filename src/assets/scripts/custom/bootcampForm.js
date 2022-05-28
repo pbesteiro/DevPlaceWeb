@@ -48,7 +48,9 @@ if(!!applyForm ){
       const formData = new FormData(event.target)
       const perfil = JSON.parse(localStorage.getItem('selected-bootcamp') || '').profile
       formData.append('perfil', perfil)
-      sendEmail('bootcamp', event.target, formData)
+      sendEmail('bootcamp', event.target, formData, () => {
+        showToast('success', 'Hemos recibido tu solicitud de inscripción al bootcamp de <strong>' + perfil + "</strong>")
+      })
     });
   
 }

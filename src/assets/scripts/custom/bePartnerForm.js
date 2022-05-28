@@ -37,7 +37,11 @@ if(!!bePartner ){
     .onSuccess((event) => {
       saveInLocalSoterage('be-partner-form')
       const formData = new FormData(event.target)
-      sendEmail('partnership', event.target, formData)
+      sendEmail('partnership', event.target, formData, () => {
+        console.log('callback be partner')
+        showToast('success', 'Hemos recibido tu solicitud de partnership.')
+        hideModal('be-partner-modal')
+      })
     });
   
 }

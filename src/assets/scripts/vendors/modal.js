@@ -72,4 +72,15 @@ const hideModal = (idModal) => {
   toggleModal(modal)
 }
 
+const hideAllModals = () => {
+  const modals = document.getElementsByClassName('modal')
+  const backdrop = document.getElementById("backdrop");
+
+  for(const modal of modals ){
+    setTimeout(() => {
+      backdrop.classList.toggle("show-out");
+      modal.classList.toggle("show-out");
+    }, 500)
+  }
+}
 

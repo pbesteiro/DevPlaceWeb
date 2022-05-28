@@ -42,7 +42,6 @@ const sendEmail = (template, form, formData, callback) => {
   }).then((response) => {
     return response.text();
   }).then((response) => {
-    // showToast('form-sended-toast')
     if(!!callback){
       callback(response)
     }
