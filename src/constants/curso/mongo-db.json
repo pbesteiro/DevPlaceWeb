@@ -7,6 +7,7 @@
   "sections": [
     {
       "component": "Course",
+      "visible": true,
       "modality": "Curso online en vivo",
       "technologyId":"6243242de14c520a7dcaf335",
       "name": "Mongo DB",
@@ -50,6 +51,7 @@
       "profile": "● Entiende el funcionamiento de una base de datos NoSQL. \\n ● Implementa el lenguaje para la creación de una base de datos y todos sus componentes: tablas, índices, disparadores (triggers), procedimientos almacenados. \\n ● Implementa el lenguaje  para insertar, borrar, modificar y consultar los datos de una base de datos.",
       "tools": {
         "component": "Carousel",
+        "visible": true,
         "options": {
           "skin": "tools"
         },
@@ -57,16 +59,19 @@
         "content": [
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "mongo-db.png",
             "name": "Mongo DB"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "visual-studio-code.png",
             "name": "Visual Studio"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "terminal.png",
             "name": "Terminal"
           }
@@ -75,6 +80,7 @@
     },
     {
       "component": "Faqs",
+      "visible": true,
       "title": "Preguntas Frecuentes",
       "content": [
         {

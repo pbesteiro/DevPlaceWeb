@@ -7,6 +7,7 @@
   "sections": [
     {
       "component": "Course",
+      "visible": true,
       "modality": "Curso online en vivo",
       "technologyId":"62432433e14c520a7dcaf338",
       "name": "SQL",
@@ -50,6 +51,7 @@
       "profile": "● Entiende el funcionamiento de una base de datos SQL. \\n ● Implementa el lenguaje DDL para la creación de una base de datos y todos sus componentes: tablas, índices, relaciones, disparadores (triggers), procedimientos almacenados. \\n ● Implementa el lenguaje DML para insertar, borrar, modificar y consultar los datos de una base de datos. \\n ● Realiza reportes de datos con herramientas actuales del mercado.",
       "tools": {
         "component": "Carousel",
+        "visible": true,
         "options": {
           "skin": "tools"
         },
@@ -57,31 +59,37 @@
         "content": [
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "sql.png",
             "name": "SQL"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "microsoft-sql-server.png",
             "name": "SQL Server"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "power-bi.png",
             "name": "Power bi"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "excel.png",
             "name": "Excel"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "visual-studio-code.png",
             "name": "Visual Studio"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "terminal.png",
             "name": "Terminal"
           }
@@ -90,6 +98,7 @@
     },
     {
       "component": "Faqs",
+      "visible": true,
       "title": "Preguntas Frecuentes",
       "content": [
         {

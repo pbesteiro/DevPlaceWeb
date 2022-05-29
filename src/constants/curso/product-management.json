@@ -7,6 +7,7 @@
   "sections": [
     {
       "component": "Course",
+      "visible": true,
       "modality": "Curso online en vivo",
       "technologyId":"62432405e14c520a7dcaf325",
       "name": "Product Management",
@@ -50,6 +51,7 @@
       "profile": "● Gestiona correctamente equipos de producto utilizando buenas prácticas de management. \\n ● Aplica herramientas de gestión de equipos. \\n ● Mide y crea indicadores de performance de equipos de producto.",
       "tools": {
         "component": "Carousel",
+        "visible": true,
         "options": {
           "skin": "tools"
         },
@@ -57,41 +59,49 @@
         "content": [
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "jira.png",
             "name": "Jira"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "trello.png",
             "name": "Trello"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "power-bi.png",
             "name": "Power bi"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "google-drive.png",
             "name": "Google Drive"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "notion.png",
             "name": "Notion"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "git.png",
             "name": "Git"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "github.png",
             "name": "Git Hub"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "figma.png",
             "name": "Figma"
           }
@@ -100,6 +110,7 @@
     },
     {
       "component": "Faqs",
+      "visible": true,
       "title": "Preguntas Frecuentes",
       "content": [
         {

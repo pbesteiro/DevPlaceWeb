@@ -7,6 +7,7 @@
   "sections": [
     {
       "component": "Course",
+      "visible": true,
       "modality": "Curso online en vivo",
       "technologyId":"62431031e14c520a7dcaf236",
       "name": "POO",
@@ -50,6 +51,7 @@
       "profile": "● Puede aplicar el paradigma orientado a objetos a cualquiera de los lenguajes en los cuales se aplique el mismo.",
       "tools": {
         "component": "Carousel",
+        "visible": true,
         "options": {
           "skin": "tools"
         },
@@ -57,31 +59,37 @@
         "content": [
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "git.png",
             "name": "Git"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "github.png",
             "name": "Git Hub"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "visual-studio-code.png",
             "name": "Visual Studio Code"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "html.png",
             "name": "Html"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "javascript.png",
             "name": "Javascript"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "terminal.png",
             "name": "Terminal"
           }
@@ -90,6 +98,7 @@
     },
     {
       "component": "Faqs",
+      "visible": true,
       "title": "Preguntas Frecuentes",
       "content": [
         {

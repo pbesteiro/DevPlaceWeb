@@ -7,6 +7,7 @@
   "sections": [
     {
       "component": "Course",
+      "visible": true,
       "modality": "Curso online en vivo",
       "technologyId":"62432360e14c520a7dcaf30f",
       "name": "Data Analytics",
@@ -50,6 +51,7 @@
       "profile": "● Comprende y aplica los conceptos asociados al análisis de datos y la extracción de patrones usando un lenguaje de programación, con el objetivo de identificar las diferentes técnicas y modelos en relación a las aplicaciones potenciales. \\n ● Interpreta y transmite las tendencias obtenidas del análisis de datos y su influencia en las métricas de negocio, con el objetivo de potenciar el proceso de toma de decisiones empresariales. \\n ● Cumple de manera responsable con las asignaciones para asegurar el éxito del trabajo y la calidad del mismo. \\n ● Colabora y participa en forma proactiva para alcanzar las metas grupales propuestas.",
       "tools": {
         "component": "Carousel",
+        "visible": true,
         "options": {
           "skin": "tools"
         },
@@ -57,36 +59,43 @@
         "content": [
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "sql.png",
             "name": "sql"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "microsoft-sql-server.png",
             "name": "sql Server"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "python.png",
             "name": "Python"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "pandas.png",
             "name": "Pandas"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "power-bi.png",
             "name": "Power Bi"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "tableau.png",
             "name": "Tableau"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "excel.png",
             "name": "Excel"
           }
@@ -95,6 +104,7 @@
     },
     {
       "component": "Faqs",
+      "visible": true,
       "title": "Preguntas Frecuentes",
       "content": [
         {

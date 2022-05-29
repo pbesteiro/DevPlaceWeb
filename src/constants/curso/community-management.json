@@ -7,6 +7,7 @@
   "sections": [
     {
       "component": "Course",
+      "visible": true,
       "modality": "Curso online en vivo",
       "technologyId":"62432459e14c520a7dcaf342",
       "name": "Community management + FB & Google Ads",
@@ -50,6 +51,7 @@
       "profile": "● Diseña estrategias de marketing de contenido, comunicacionales y de adquisición de clientes. \\n ● Gestiona canales comunicacionales digitales.",
       "tools": {
         "component": "Carousel",
+        "visible": true,
         "options": {
           "skin": "tools"
         },
@@ -57,61 +59,73 @@
         "content": [
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "facebook.png",
             "name": "Facebook"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "instagram.png",
             "name": "Intagram"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "linkedin.png",
             "name": "Linkedin"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "facebook-ads.png",
             "name": "Facebook ads"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "facebook-manager.png",
             "name": "Facebook Manager"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "whatsapp-busines.png",
             "name": "Whatsapp Busines"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "google-ads.png",
             "name": "Google ads"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "creator-studio.png",
             "name": "Creator Studio"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "youtube.png",
             "name": "Youtube"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "tik-tok.png",
             "name": "Tik Tok"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "email-mkt.png",
             "name": "Email mkt"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "twitter.png",
             "name": "Twitter"
           }
@@ -121,6 +135,7 @@
     },
     {
       "component": "Faqs",
+      "visible": true,
       "title": "Preguntas Frecuentes",
       "content": [
         {

@@ -7,6 +7,7 @@
   "sections": [
     {
       "component": "Course",
+      "visible": true,
       "modality": "Curso online en vivo",
       "technologyId":"62432418e14c520a7dcaf32d",
       "name": "Dev Ops",
@@ -50,6 +51,7 @@
       "profile": "Entiende cómo aplicar los conceptos y herramientas escenciales de la cultura DevOps en una organización que utiliza metodologías ágiles.",
       "tools": {
         "component": "Carousel",
+        "visible": true,
         "options": {
           "skin": "tools"
         },
@@ -57,36 +59,43 @@
         "content": [
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "docker.png",
             "name": "Docker"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "kubernetes.png",
             "name": "Kubernetes"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "jenkins.png",
             "name": "Jenkins"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "terminal.png",
             "name": "Terminal"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "linux.png",
             "name": "Linux"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "git.png",
             "name": "Git"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "github.png",
             "name": "Git Hub"
           }
@@ -95,6 +104,7 @@
     },
     {
       "component": "Faqs",
+      "visible": true,
       "title": "Preguntas Frecuentes",
       "content": [
         {

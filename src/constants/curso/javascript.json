@@ -7,6 +7,7 @@
   "sections": [
     {
       "component": "Course",
+      "visible": true,
       "modality": "Curso online en vivo",
       "technologyId":"62430fe9e14c520a7dcaf228",
       "name": "JavaScript",
@@ -50,6 +51,7 @@
       "profile": "● Domina JavaScript y su sintaxis. \\n ● Usa importaciones y sintaxis moderna de JavaScript. \\ n● Tiene una base para entrar en frameworks como AngularJS, ReactJS y NodeJS.",
       "tools": {
         "component": "Carousel",
+        "visible": true,
         "options": {
           "skin": "tools"
         },
@@ -57,31 +59,37 @@
         "content": [
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "git.png",
             "name": "Git"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "visual-studio-code.png",
             "name": "Visual Studio Code"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "github.png",
             "name": "Git Hub"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "javascript.png",
             "name": "Javascript"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "json.png",
             "name": "JSON"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "terminal.png",
             "name": "Terminal"
           }
@@ -90,6 +98,7 @@
     },
     {
       "component": "Faqs",
+      "visible": true,
       "title": "Preguntas Frecuentes",
       "content": [
         {

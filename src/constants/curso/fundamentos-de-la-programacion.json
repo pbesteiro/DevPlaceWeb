@@ -7,6 +7,7 @@
   "sections": [
     {
       "component": "Course",
+      "visible": true,
       "modality": "Curso online en vivo",
       "technologyId":"6243247be14c520a7dcaf347",
       "name": "Fundamentos de la Programación",
@@ -50,6 +51,7 @@
       "profile": "● Puede crear aplicaciones básicas. \\n ● Sabe programar sistemas desde 0. \\n ● Domina los conceptos escenciales para poder aprender otros lenguajes de programación.",
       "tools": {
         "component": "Carousel",
+        "visible": true,
         "options": {
           "skin": "tools"
         },
@@ -57,31 +59,37 @@
         "content": [
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "git.png",
             "name": "Git"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "github.png",
             "name": "Git Hub"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "visual-studio-code.png",
             "name": "Visual Studio Code"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "html.png",
             "name": "Html"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "javascript.png",
             "name": "Javascript"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "terminal.png",
             "name": "Terminal"
           }
@@ -90,6 +98,7 @@
     },
     {
       "component": "Faqs",
+      "visible": true,
       "title": "Preguntas Frecuentes",
       "content": [
         {

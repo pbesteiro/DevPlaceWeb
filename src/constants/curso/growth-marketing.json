@@ -7,6 +7,7 @@
   "sections": [
     {
       "component": "Course",
+      "visible": true,
       "modality": "Curso online en vivo",
       "technologyId":"62432444e14c520a7dcaf33d",
       "name": "Growth Marketing",
@@ -50,6 +51,7 @@
       "profile": "● Diseña estrategias de crecimiento y adquisición de clientes vía canales orgánicos y/o pagos. \\n ● Toma desiciones de marketing digital estratégicas. ",
       "tools": {
         "component": "Carousel",
+        "visible": true,
         "options": {
           "skin": "tools"
         },
@@ -57,61 +59,73 @@
         "content": [
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "facebook.png",
             "name": "Facebook"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "instagram.png",
             "name": "Intagram"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "facebook-ads.png",
             "name": "Facebook-ads"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "facebook-manager.png",
             "name": "Facebook-manager"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "email-mkt.png",
             "name": "Email-mkt"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "whatsapp-busines.png",
             "name": "whatsapp-busines"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "google-ads.png",
             "name": "Google-ads"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "creator-studio.png",
             "name": "Creator Studio"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "youtube.png",
             "name": "Youtube"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "tik-tok.png",
             "name": "Tik Tok"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "twitter.png",
             "name": "Twitter"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "google-data-studio.png",
             "name": "Data Studio"
           }
@@ -121,6 +135,7 @@
     },
     {
       "component": "Faqs",
+      "visible": true,
       "title": "Preguntas Frecuentes",
       "content": [
         {

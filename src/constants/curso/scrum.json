@@ -7,6 +7,7 @@
   "sections": [
     {
       "component": "Course",
+      "visible": true,
       "modality": "Curso online en vivo",
       "technologyId":"6243240ce14c520a7dcaf328",
       "name": "Scrum",
@@ -50,6 +51,7 @@
       "profile": "● Tiene un perfil productivo para un equipo ágil. \\n ● Utiliza herramientas de gestión ágiles.",
       "tools": {
         "component": "Carousel",
+        "visible": true,
         "options": {
           "skin": "tools"
         },
@@ -57,11 +59,13 @@
         "content": [
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "jira.png",
             "name": "Jira"
           },
           {
             "component": "SlideTools",
+            "visible": true,
             "image": "trello.png",
             "name": "Trello"
           }
@@ -70,6 +74,7 @@
     },
     {
       "component": "Faqs",
+      "visible": true,
       "title": "Preguntas Frecuentes",
       "content": [
         {
