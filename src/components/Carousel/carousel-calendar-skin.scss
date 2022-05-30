@@ -47,15 +47,7 @@ section.carousel-component {
                 justify-content: center;
 
                 .glide__slide{
-                  max-width: 285px;
-      
-                  @media(min-width: 768px){
-                    max-width: 285px;
-                  }
-      
-                  @media (min-width: 1024px) {
-                    max-width: 285px;
-                  }
+                  max-width: 325px;
                 }
               }
             }

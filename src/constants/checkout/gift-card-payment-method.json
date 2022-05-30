@@ -28,7 +28,7 @@
       },{
         "available": true,
         "slug": "tarjeta-de-credito",
-        "name": "Tarjeta de crédigo",
+        "name": "Tarjeta de crédito",
         "icon": "credit-card.png",
         "gateway": "mercado-pago"
       }]

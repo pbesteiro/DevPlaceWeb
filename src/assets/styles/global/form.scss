@@ -185,25 +185,35 @@ form {
 .form-actions {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  min-height: 108px;
+
+  @media (min-width: 768px) {
+    min-height: 0;
+    flex-direction: row;
+  }
 
   a {
     &.call-to-action {
       &.skin-filled,
       &.skin-outline {
         width: auto;
+        min-width: 100%;
         padding: 0px 35px;
 
         @media (min-width: 768px) {
-          min-width: 155px;
+          min-width: 220px;
         }
       }
     }
   }
+  
   button {
     &.call-to-action {
       &.skin-filled,
       &.skin-outline {
         width: auto;
+        min-width: 100%;
         padding: 0px 35px;
 
         @media (min-width: 768px) {

@@ -39,6 +39,7 @@ const toggleModal = (modal) => {
     setTimeout(() => {
       backdrop.classList.toggle("show-out");
       modal.classList.toggle("show-out");
+
     }, 500)
   }
   
@@ -50,6 +51,7 @@ const toggleModal = (modal) => {
   }else{
     backdrop.classList.toggle("show-in");
     modal.classList.toggle("show-in");
+    
   }
   
   modal.classList.toggle("showing");
@@ -58,6 +60,8 @@ const toggleModal = (modal) => {
 
 const showModal = (idModal) => {
   const modal = document.getElementById(idModal)
+  document.body.style.overflow= 'hidden';
+  document.body.style.height= '100%';
   toggleModal(modal)
 }
 
@@ -69,6 +73,8 @@ const showModalWidthData = (idModal) => {
 
 const hideModal = (idModal) => {
   const modal = document.getElementById(idModal)
+  document.body.style.overflow= 'auto';
+  document.body.style.height= '';
   toggleModal(modal)
 }
 

@@ -76,17 +76,14 @@ section.course-component {
     line-height: 19px;
     display: flex;
     margin: 0px auto;
-    max-width: calc(100% - 48px);
 
     @media (min-width: 1024px) {
       font-size: 20px;
-      max-width: none;
     }
 
     .call-to-action{
       @media (min-width: 1440px) {
         font-size: 18px;
-        height: 50px;
         padding: 0px 43px;
       }
     }
@@ -148,7 +145,8 @@ section.course-component {
   .objectives,
   .for-whom,
   .final-project,
-  .profile {
+  .profile,
+  .inscription {
     margin: 100px 0px;
 
     @media (min-width: 768px) {
@@ -180,17 +178,108 @@ section.course-component {
     }
   }
 
+  .inscription {
+    .m-b-120 {
+      margin-bottom: 60px;
+
+      @media (min-width: 1440px) {
+        margin-bottom: 120px;
+      }
+    }
+    
+    h2.title {
+      margin-bottom: 50px;
+
+      @media (min-width: 1440px) {
+        margin-bottom: 90px;
+      }
+    }
+
+    .highlight-component {
+      margin-bottom: 30px;
+
+      @media (min-width: 1440px) {
+        margin-bottom: 60px;
+      }
+
+      h3.title {
+        margin: 0;
+        font-size: 20px;
+
+        @media (min-width: 1440px) {
+          font-size: 50px;
+        }
+      }
+    }
+
+    ul {
+      padding: 0;
+      margin: 0 0 60px;
+
+      @media (min-width: 1440px) {
+        margin: 0 0 120px;
+      }
+
+      li {
+        list-style: none;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        span {
+          flex-shrink: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          font-size: 18px;
+          margin-right: 16px;
+          line-height: 22px;
+          width: 20px;
+          height: 22px;
+          
+          @media (min-width: 1440px) {
+            margin-right: 20px;
+            width: 32px;
+            font-size: 30px;
+            line-height: 34px;
+            height: 34px;
+          }
+
+          &.bullet {
+            justify-content: flex-start;
+            margin-right: 0;
+          }
+
+          img {
+            max-width: 20px;
+            max-height: 20px;
+
+            @media (min-width: 1440px) {
+              max-width: 32px;
+              max-height: 32px;
+            }
+          }
+        }
+      }
+    }
+  }
+
   .carousel-component {
-    margin: 50px 0px 0px;
+    margin: 0px;
+    padding: 50px 0;
     
     @media (min-width: 768px) {
-      margin: 100px 0px;
+      margin: 0px;
     }
 
     &.carousel-tools-skin {
+      margin-top: 60px;
       padding: 80px 0px 95px;
 
       @media (min-width: 768px) {
+        margin-top: 120px;
         padding: 163px 0px 240px;
       }
 
@@ -204,6 +293,10 @@ section.course-component {
           margin-bottom: 120px;
         }
       }
+    }
+
+    &.carousel-mentors-skin {
+
     }
   }
 }

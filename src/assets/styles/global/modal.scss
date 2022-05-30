@@ -15,9 +15,13 @@
     background: #fff;
     padding: 30px;
     max-width: 600px;
-    margin: 80px auto;
+    margin: 0px auto;
     position: relative;
 
+    @media(min-width: 768px){
+      margin: 80px auto;
+    }
+  
     .modal-hader {
     }
 

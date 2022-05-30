@@ -9,7 +9,7 @@ const getCart = () => {
     document.getElementById('course-name').innerText = name;
     document.getElementById('course-days-period').innerText = days + " " + period;
     document.getElementById('course-hour').innerText = hours;
-    document.getElementById('course-teacher').innerText = mentor.name + ", " + mentor.lastName;
+    document.getElementById('course-teacher').innerText = mentor.name ? mentor.name + ", " + mentor.lastName : mentor;
     document.getElementById('course-price').innerText = getPesosArFormat(price);
     document.getElementById('course-discount').innerText = discount + '%';
     document.getElementById('course-total').innerText = getPesosArFormat(price - (price / 100 * discount));

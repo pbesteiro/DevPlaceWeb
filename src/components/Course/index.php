@@ -35,8 +35,14 @@ $srcPath = $_SERVER['DOCUMENT_ROOT'];
   <?php } ?>
 
   <?php if (isset($cta)) { ?>
-    <div class="content-center">
-      <?php includeWithVariables($srcPath . 'components/CallToAction/index.php', (array) $cta, true); ?>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="content-center">
+            <?php includeWithVariables($srcPath . 'components/CallToAction/index.php', (array) $cta, true); ?>
+          </div>
+        </div>
+      </div>
     </div>
   <?php } ?>
 
@@ -63,8 +69,14 @@ $srcPath = $_SERVER['DOCUMENT_ROOT'];
   </div>
 
   <?php if (isset($cta)) { ?>
-    <div class="content-center">
-      <?php includeWithVariables($srcPath . 'components/CallToAction/index.php', (array) $cta, true); ?>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="content-center">
+            <?php includeWithVariables($srcPath . 'components/CallToAction/index.php', (array) $cta, true); ?>
+          </div>
+        </div>
+      </div>
     </div>
   <?php } ?>
 
@@ -82,10 +94,15 @@ $srcPath = $_SERVER['DOCUMENT_ROOT'];
     </div>
   </div>
 
-
   <?php if (isset($cta)) { ?>
-    <div class="content-center">
-      <?php includeWithVariables($srcPath . 'components/CallToAction/index.php', (array) $cta, true); ?>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="content-center">
+            <?php includeWithVariables($srcPath . 'components/CallToAction/index.php', (array) $cta, true); ?>
+          </div>
+        </div>
+      </div>
     </div>
   <?php } ?>
 
@@ -95,6 +112,139 @@ $srcPath = $_SERVER['DOCUMENT_ROOT'];
         <div class="col">
           <h2 class="title">Perfil del egresado</h2>
           <p class="markdown text"><?php echo $profile; ?></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mentors-carousel">
+    <?php includeWithVariables($srcPath . 'components/Carousel/index.php', (array) $mentors, true); ?>
+  </div>
+
+  <div class="inscription">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="title">Inscripción</h2>
+
+          <div class="highlight-component">
+            <h3 class="title">Pago</h3>
+          </div>
+
+          <p>Una vez abonado el curso, te va a llegar un mail con:</p>
+          <br>
+          <ul>
+            <li>
+              <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
+              <p>
+                Acceso a nuestra plataforma.
+              </p>
+            </li>
+            <li>
+              <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
+              <p>
+                Acceso al sistema de chat de todo el ecosistema.
+              </p>
+            </li>
+            <li>
+              <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
+              <p>
+                Acceso a los links de las clases online en vivo.
+              </p>
+            </li>
+          </ul>
+
+          <div class="highlight-component">
+            <h3 class="title">Lo que recibes</h3>
+          </div>
+
+          <ul>
+            <li>
+              <span><img src="/dist/images/icons/notebook.png" alt="icon"></span>
+              <p>
+                Clases online en vivo con profesor/a en horarios determinados.
+              </p>
+            </li>
+            <li>
+              <span><img src="/dist/images/icons/documentation.png" alt="icon"></span>
+              <p>
+                Documentación y contenido exclusivo.
+              </p>
+            </li>
+            <li>
+              <span><img src="/dist/images/icons/foro.png" alt="icon"></span>
+              <p>
+                Acceso al foro privado de tu curso.
+              </p>
+            </li>
+            <li>
+              <span><img src="/dist/images/icons/support.png" alt="icon"></span>
+              <p>
+                Soporte y seguimiento las 24hs.
+              </p>
+            </li>
+            <li>
+              <span><img src="/dist/images/icons/extra-material.png" alt="icon"></span>
+              <p>
+                Videos extra grabados.
+              </p>
+            </li>
+            <li>
+              <span><img src="/dist/images/icons/recorded-classes.png" alt="icon"></span>
+              <p>
+                Clases grabadas y publicadas en la plataforma.
+              </p>
+            </li>
+          </ul>
+
+          <?php if (isset($cta)) { ?>
+            <div class="content-center m-b-120">
+              <?php includeWithVariables($srcPath . 'components/CallToAction/index.php', (array) $cta, true); ?>
+            </div>
+          <?php } ?>
+
+          <div class="highlight-component">
+            <h3 class="title">¿Por qué inscribirme en un curso de Dev Place?</h3>
+          </div>
+
+          <ul>
+            <li>
+              <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
+              <p>
+                Becas por buen rendimiento del 100% para próximos cursos
+              </p>
+            </li>
+            <li>
+              <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
+              <p>
+                Talleres para crecimiento profesional.
+              </p>
+            </li>
+            <li>
+              <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
+              <p>
+                Certificado al aprobar proyecto final.
+              </p>
+            </li>
+            <li>
+              <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
+              <p>
+                Descuentos para futuros cursos.
+              </p>
+            </li>
+            <li>
+              <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
+              <p>
+                Descuentos para futuros cursos usando el programa de referidos meetups y conferencias exclusivas del ecosistema con lideres #tech.
+              </p>
+            </li>
+            <li>
+              <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
+              <p>
+                Acceso a los links de las clases online en vivo.
+              </p>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -168,8 +318,9 @@ $srcPath = $_SERVER['DOCUMENT_ROOT'];
           hours: slide.hours,
           modality: "Online en vivo",
           mentor: slide.mentor?.name + ' ' + slide.mentor?.lastName,
-          price: slide.price,
-          discount: slide.discount,
+          price: slide.price * 2,
+          discount_price: slide.price,
+          discount: 50,
           duration: slide.duration,
           detail: slide.detail,
           cta: {
@@ -189,8 +340,9 @@ $srcPath = $_SERVER['DOCUMENT_ROOT'];
           hours: slide.hours,
           modality: "Online en vivo",
           mentor: slide.mentor?.name + ' ' + slide.mentor?.lastName,
-          price: slide.price,
-          discount: slide.discount,
+          price: slide.price * 2,
+          discount_price: slide.price,
+          discount: 50,
           duration: slide.duration,
           detail: slide.detail,
           cta: {

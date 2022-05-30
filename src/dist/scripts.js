@@ -3616,17 +3616,49 @@ const skins = [
     options: {
       destroyInMobile: false,
       destroyInDesktop: false,
+      slidesToScroll: 1,
+      swipeThreshold: true,
+      dragThreshold: true,
       startAt: 0,
       perView: 6,
       gap: 64,
-      autoplay: 3000,
+      // autoplay: false,
+      rewind: false,
+      bound: true,
+      type: "slider",
       breakpoints: {
-        767: {
-          perView: 4,
+        1199: {
+          perView: 3,
           gap: 24,
         },
         579: {
-          perView: 2.3,
+          perView: 1,
+        },
+      },
+    },
+  },
+  {
+    name: "mentors",
+    options: {
+      destroyInMobile: false,
+      destroyInDesktop: false,
+      slidesToScroll: 1,
+      swipeThreshold: true,
+      dragThreshold: true,
+      startAt: 0,
+      perView: 3,
+      gap: 64,
+      // autoplay: false,
+      rewind: false,
+      bound: true,
+      type: "slider",
+      breakpoints: {
+        1199: {
+          perView: 2,
+          gap: 24,
+        },
+        579: {
+          perView: 1,
         },
       },
     },
@@ -3684,31 +3716,6 @@ const initCarousel = () => {
       
       if (initResponsiveCarusel(carousel, skin)) {
         const carouselInstance = new Glide(carousel, skin.options);
-
-        /**
-         * Ocultamos o mostramos las arrows
-         */
-          carouselInstance.on("move.after", () => {
-            const currentIndex = carouselInstance.index;
-            const totalItems =
-              document.getElementsByClassName("glide__slide").length;
-            const prevArrow =
-              document.getElementsByClassName("glide__arrow--left")[0];
-            const nextArrow = document.getElementsByClassName(
-              "glide__arrow--right"
-            )[0];
-
-            prevArrow.style.display = "block";
-            nextArrow.style.display = "block";
-
-            if (currentIndex === 0) {
-              prevArrow.style.display = "none";
-            }
-
-            if (currentIndex === totalItems - skin.options.perView) {
-              nextArrow.style.display = "none";
-            }
-          });
 
         /**
          * Agregamos la funcion destroyCarousel
@@ -4418,6 +4425,7 @@ const toggleModal = (modal) => {
     setTimeout(() => {
       backdrop.classList.toggle("show-out");
       modal.classList.toggle("show-out");
+
     }, 500)
   }
   
@@ -4429,6 +4437,7 @@ const toggleModal = (modal) => {
   }else{
     backdrop.classList.toggle("show-in");
     modal.classList.toggle("show-in");
+    
   }
   
   modal.classList.toggle("showing");
@@ -4437,6 +4446,8 @@ const toggleModal = (modal) => {
 
 const showModal = (idModal) => {
   const modal = document.getElementById(idModal)
+  document.body.style.overflow= 'hidden';
+  document.body.style.height= '100%';
   toggleModal(modal)
 }
 
@@ -4448,6 +4459,8 @@ const showModalWidthData = (idModal) => {
 
 const hideModal = (idModal) => {
   const modal = document.getElementById(idModal)
+  document.body.style.overflow= 'auto';
+  document.body.style.height= '';
   toggleModal(modal)
 }
 
@@ -5384,7 +5397,7 @@ const getCart = () => {
     document.getElementById('course-name').innerText = name;
     document.getElementById('course-days-period').innerText = days + " " + period;
     document.getElementById('course-hour').innerText = hours;
-    document.getElementById('course-teacher').innerText = mentor.name + ", " + mentor.lastName;
+    document.getElementById('course-teacher').innerText = mentor.name ? mentor.name + ", " + mentor.lastName : mentor;
     document.getElementById('course-price').innerText = getPesosArFormat(price);
     document.getElementById('course-discount').innerText = discount + '%';
     document.getElementById('course-total').innerText = getPesosArFormat(price - (price / 100 * discount));

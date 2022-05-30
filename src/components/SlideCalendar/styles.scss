@@ -1,23 +1,29 @@
 div.slide-calendar-component {
   background-color: white;
   border-radius: 3px;
-  padding: 20px 30px 20px;
   height: auto;
 
-  @media (min-width: 768px) {
-    padding: 65px 35px 70px;
+  .m-l-10 {
+    margin-left: 10px;
+  }
 
-    @media (min-width: 1440px) {
-      padding: 20px 30px 30px;
+  .slide-body {
+    padding: 20px 30px 20px;
+  
+    @media (min-width: 768px) {
+      padding: 65px 35px 70px;
+  
+      @media (min-width: 1440px) {
+        padding: 20px 30px 30px;
+      }
     }
   }
 
   h3.title {
-    font-size: 32px;
-    line-height: 35px;
-    font-style: italic;
+    font-size: 30px;
+    line-height: 50px;
     text-align: left;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 
     @media (min-width: 768px) {
       margin-bottom: 30px;
@@ -35,9 +41,8 @@ div.slide-calendar-component {
     }
 
     @media (min-width: 1440px) {
-      font-size: 18px;
+      font-size: 20px;
     }
-
   }
 
    .text-teacher{
@@ -48,13 +53,13 @@ div.slide-calendar-component {
      }
 
      @media (min-width: 1440px) {
-      font-size: 18px;
+      font-size: 20px;
     }
    }
    
    em,
    strong {
-     font-size: 17px;
+     font-size: 20px;
      line-height: 24px;
 
      @media (min-width: 768px) {
@@ -74,9 +79,36 @@ div.slide-calendar-component {
     color: #1573e5;
   }
 
-  button.call-to-action {
-    display: flex;
-    min-width: 200px;
-    margin: 0 auto;
+  .discount {
+    background-color: #42009c;
+    color: white;
+    padding: 17px 30px 14px;
+  
+    @media (min-width: 768px) {
+      padding: 17px 35px 14px;
+  
+      @media (min-width: 1440px) {
+        padding: 17px 30px 14px;
+      }
+    }
+    
+    div {
+      font-size: 50px;
+      line-height: 38px;
+      font-weight: bold;
+      background-image: linear-gradient(to bottom, #90e0ff, #95c8fc 78%, #a960ee);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    small {
+      margin-top: 12px;
+      font-size: 20px;
+      line-height: 15px;
+      background-image: linear-gradient(to bottom, #a960ee, #91d8fe 33%, #90e0ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
   }
 }

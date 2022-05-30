@@ -178,8 +178,9 @@ $courses = array_merge(...array_map(function ($course) {
                 hours: launch.hours,
                 modality: "Online en vivo",
                 mentor: launch.mentor || "Aún no asignado",
-                price: launch.price,
-                discount: launch.discount || 0,
+                price: launch.price * 2,
+                discount_price: launch.price,
+                discount: 50,
                 duration: launch.duration,
                 detail: launch.detail,
                 paymentLink: course.paymentLink
