@@ -46,7 +46,7 @@ setlocale(LC_MONETARY, 'es_AR');
 <div class="slide-calendar-component">
   <div class="discount">
     <div>50% OFF</div>
-    <small>Hasta 12 cuotas sin interes</small>
+    <small>Hasta 12 cuotas sin interés</small>
   </div>
 
   <div class="slide-body" <?php echo "data-course='" . json_encode($courseInformation) . "'"; ?>>
