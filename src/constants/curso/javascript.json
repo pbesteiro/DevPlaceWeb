@@ -48,7 +48,7 @@
       "objectives": "El objetivo principal del curso es introducirte al mundo de la programación JavaScript, empezando de cero hasta llevarte a un nivel intermedio, necesario para que puedas ingresar sin problemas a capacitaciones en lenguajes más avanzados. Si quieres ser programador/a con bases sólidas para continuar aumentando tus conocimientos, este curso es para ti!",
       "forWhom": "Está dirigido a personas con experiencia mínima o nula en programación.",
       "finalProject": "El proyecto final e integrador que se podra realizar durante la cursada, será aquel que en caso de estar aprobado, DEV PLACE emitirá un certificado de aprobación del curso. Al terminar el curso el usuario tendra 30 dias contando desde la ultima clase para poder enviar el proyecto final al mail correspondiente. Entregado el proyecto DEV PLACE tendra 30 dias corridos desde recibido el mismo para, en caso de que este aprobado el proyecto emitir el certificado validando la aprobacion del curso correspondiente y en caso que no, notificando la desaprobacion del proyecto y del curso. El proyecto sera corregido segun las rubricas de evaluacion de DEV PLACE.",
-      "profile": "● Domina JavaScript y su sintaxis. \\n ● Usa importaciones y sintaxis moderna de JavaScript. \\n ● Tiene una base para entrar en frameworks como AngularJS, ReactJS y NodeJS.",
+      "profile": ">●Domina JavaScript y su sintaxis. >●Usa importaciones y sintaxis moderna de JavaScript. >●Tiene una base para entrar en frameworks como AngularJS, ReactJS y NodeJS.",
       "tools": {
         "component": "Carousel",
         "visible": true,
@@ -92,52 +92,6 @@
             "visible": true,
             "image": "terminal.png",
             "name": "Terminal"
-          }
-        ]
-      },
-      "mentors": {
-        "component": "Carousel",
-        "visible": true,
-        "options": {
-          "skin": "mentors"
-        },
-        "title": "Con quien vas a cursar",
-        "content": [
-          {
-            "component": "SlideMentor",
-            "visible": true,
-            "full_name":"Pablo Byro",
-            "picture":"avatar.jpeg",
-            "degree":"Data Base Administrator Engineer",
-            "socials_networks": [{
-              "name": "linkedin",
-              "logo": "linkedin.svg",
-              "link": "http://google.com"
-            }]
-          },
-          {
-            "component": "SlideMentor",
-            "visible": true,
-            "full_name":"Pablo Besteiro",
-            "picture":"avatar.jpeg",
-            "degree":"Senior Software Engineer",
-            "socials_networks": [{
-              "name": "linkedin",
-              "logo": "linkedin.svg",
-              "link": "http://google.com"
-            }]
-          },
-          {
-            "component": "SlideMentor",
-            "visible": true,
-            "full_name":"Tomas Ignacio Chorroarin",
-            "picture":"avatar.jpeg",
-            "degree":"Senior Software Engineer",
-            "socials_networks": [{
-              "name": "linkedin",
-              "logo": "linkedin.svg",
-              "link": "http://google.com"
-            }]
           }
         ]
       }

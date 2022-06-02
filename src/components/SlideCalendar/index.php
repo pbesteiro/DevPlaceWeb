@@ -80,6 +80,7 @@ setlocale(LC_MONETARY, 'es_AR');
         <span class="m-l-10">$<?php echo $discount_price; ?>ARS</span>
       </strong>
     </div>
+    <br>
     <?php if (isset($cta)) { ?> <?php includeWithVariables($srcPath . 'components/CallToAction/index.php', (array) $cta, true); ?> <?php } ?>
   </div>
 </div>

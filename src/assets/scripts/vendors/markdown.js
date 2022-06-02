@@ -1,9 +1,28 @@
 function markdownTranspiler(md){
-  //ul
-  md = md.replace(/^\s*\n\>/gm, '<ul>\n*');
-  md = md.replace(/^(\>.+)\s*\n([^\>])/gm, '$1\n</ul>\n\n$2');
-  md = md.replace(/^\>(.+)/gm, '<li>$1</li>');
-  
+  //UL
+  const list = md.match(/^\>(.+)/g)
+
+  if(list){
+    const match = [...list[0].matchAll(/([^\>])+/g)]
+    let listHtml = '<ul class="list">';
+
+    for(const li of match){
+      let text = li[0].trim()
+      const hasBullet = !!text.match(/●/g)
+
+      if(hasBullet){
+        const noBulletText = text.replace(/●/g,'')
+        text = noBulletText
+      }
+      
+      listHtml = listHtml + `<li>${!!hasBullet && '<span>●</span>'}<p>${text}</p></li>`;
+    }
+
+    listHtml = listHtml + '</ul>'
+
+    md = listHtml;
+  }
+
   //ol
   md = md.replace(/^\s*\n\d\./gm, '<ol>\n1.');
   md = md.replace(/^(\d\..+)\s*\n([^\d\.])/gm, '$1\n</ol>\n\n$2');
@@ -12,6 +31,9 @@ function markdownTranspiler(md){
   //blockquote
   md = md.replace(/^\>(.+)/gm, '<blockquote>$1</blockquote>');
   
+  //Viñetas
+  md = md.replace(/\●/g, '<img style="margin-right: 16px;" src="/dist/images/icons/bullet.png" alt="icon">')
+
   //h
   md = md.replace(/[\#]{6}(.+)/g, '<h6>$1</h6>');
   md = md.replace(/[\#]{5}(.+)/g, '<h5>$1</h5>');

@@ -261,8 +261,13 @@ section.carousel-component {
               background-repeat: no-repeat;
               background-position: center;
               background-size: cover;
-              width: 22px;
-              height: 22px;
+              width: 16px;
+              height: 16px;
+
+              @media(min-width: 768px){
+                width: 22px;
+                height: 22px;
+              }
             }
       
             &.glide__arrow--left {

@@ -72,6 +72,9 @@
         {
           "question": "¿El certificado está validado por algún organismo/universidad?",
           "answer": "No, somos una empresa de tecnología que brinda distintos productos educativos. No dependemos de instituciones centralizadas en cuanto a la regulación de planes de estudio u otros contenidos diseñados y creados por Dev Place. El aval de Dev Place son los miles de usuarios que consumen nuestros productos educativos."
+        },{
+          "question":"¿Qué métodos de pago se aceptan?",
+          "answer": "Transferencia bancaria, Deposito Bancario,  Mercado Pago, Uala, tarjeta de crédito y débito Visa Mastercard, American Express, Tarjeta Naranja, Nativa, Cabal, Efectivo a traves de Rapipago y Pago fácil y Ethereum."
         }
       ]
     }

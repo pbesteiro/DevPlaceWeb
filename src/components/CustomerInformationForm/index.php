@@ -60,7 +60,7 @@ $countries = json_decode($file);
     </div>
 
     <div class="form-actions">
-      <button type="button" onClick="checkoutStepOneBack('selected-product')" class="call-to-action skin-outline">
+      <button type="button" onClick="checkoutStepOneBack('selected-product')" class="call-to-action skin-outline back-button">
         Volver
       </button>
 

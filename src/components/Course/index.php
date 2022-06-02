@@ -1,6 +1,9 @@
 <?php
 $_SERVER['DOCUMENT_ROOT'] = sprintf('%s/', rtrim($_SERVER['DOCUMENT_ROOT'], '/'));
 $srcPath = $_SERVER['DOCUMENT_ROOT'];
+
+$file = file_get_contents($srcPath . "constants/mentors.json");
+$mentors = json_decode($file);
 ?>
 
 <section class="course-component" id="course-component">
@@ -133,7 +136,7 @@ $srcPath = $_SERVER['DOCUMENT_ROOT'];
 
           <p>Una vez abonado el curso, te va a llegar un mail con:</p>
           <br>
-          <ul>
+          <ul class="list">
             <li>
               <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
               <p>
@@ -158,7 +161,7 @@ $srcPath = $_SERVER['DOCUMENT_ROOT'];
             <h3 class="title">Lo que recibes</h3>
           </div>
 
-          <ul>
+          <ul class="list">
             <li>
               <span><img src="/dist/images/icons/notebook.png" alt="icon"></span>
               <p>
@@ -207,7 +210,7 @@ $srcPath = $_SERVER['DOCUMENT_ROOT'];
             <h3 class="title">¿Por qué inscribirme en un curso de Dev Place?</h3>
           </div>
 
-          <ul>
+          <ul class="list">
             <li>
               <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
               <p>

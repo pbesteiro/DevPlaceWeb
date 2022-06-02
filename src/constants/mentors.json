@@ -1,0 +1,122 @@
+{
+  "component": "Carousel",
+  "visible": true,
+  "options": {
+    "skin": "mentors"
+  },
+  "title": "Equipo",
+  "content": [
+    {
+      "component": "SlideMentor",
+      "visible": true,
+      "full_name": "Pablo Byro",
+      "picture": "PabloByro.jpeg",
+      "degree": "Product Owner",
+      "socials_networks": [
+        {
+          "name": "linkedin",
+          "logo": "linkedin.svg",
+          "link": "https://www.linkedin.com/in/pablo-byr%C3%B3-24033314?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAALlbJABy5zg_YQy_Wb1vG19_2PKXcy-F2A&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BrKa7W2cbTXi2JHJmrKQK5w%3D%3D"
+        }
+      ]
+    },
+    {
+      "component": "SlideMentor",
+      "visible": true,
+      "full_name": "Pablo Besteiro",
+      "picture": "PabloBesteiro.jpeg",
+      "degree": "Senior Software Engineer",
+      "socials_networks": [
+        {
+          "name": "linkedin",
+          "logo": "linkedin.svg",
+          "link": "https://www.linkedin.com/in/pablo-besteiro-460a4870?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAA8atIgBMB7ZbxT4vnLdsi2RwDb9zSL-8AA&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BrQhe9QU0SHSzqZLo9zVCEA%3D%3D"
+        }
+      ]
+    },
+    {
+      "component": "SlideMentor",
+      "visible": true,
+      "full_name": "Santiago Pelle",
+      "picture": "SantiagoPelle.jpeg",
+      "degree": "Technical Leader",
+      "socials_networks": [
+        {
+          "name": "linkedin",
+          "logo": "linkedin.svg",
+          "link": "https://www.linkedin.com/in/pellesantiago?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAW2ALgBDyCbJ4WntdakenkatbZteQeLvqg&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BuRIP6Hi0SRmC1lISiU8YlQ%3D%3D"
+        }
+      ]
+    },
+    {
+      "component": "SlideMentor",
+      "visible": true,
+      "full_name": "Nicolas Liloia",
+      "picture": "NicolasLiloia.jpeg",
+      "degree": "Technical Leader & Full Stack Developer",
+      "socials_networks": [
+        {
+          "name": "linkedin",
+          "logo": "linkedin.svg",
+          "link": "https://www.linkedin.com/in/liloiascottn?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAB7Y-foBkXhI63l0K--0QO-pBm1VkuB6OrI&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BL9wFqt4cS3qYaU0Bi3v4LQ%3D%3D"
+        }
+      ]
+    },
+    {
+      "component": "SlideMentor",
+      "visible": true,
+      "full_name": "Gaston Tognola",
+      "picture": "GastonTognola.jpeg",
+      "degree": "Senior Full Stack Developer",
+      "socials_networks": [
+        {
+          "name": "linkedin",
+          "logo": "linkedin.svg",
+          "link": "https://www.linkedin.com/in/gast%C3%B3n-tognola-74767393?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAABPah2cB3WiDlBhErlKc60SG51BB_rDFSb8&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BPd0Ml5I4R2yqbAIk9MLL9A%3D%3D"
+        }
+      ]
+    },
+    {
+      "component": "SlideMentor",
+      "visible": true,
+      "full_name": "Fernando Arias",
+      "picture": "FernandoArias.jpeg",
+      "degree": "Senior Front end Web Developer",
+      "socials_networks": [
+        {
+          "name": "linkedin",
+          "logo": "linkedin.svg",
+          "link": "https://www.linkedin.com/in/fernando-rafael-arias-34607344?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAlDjSYB0TZYyeFJQG1xa2dHfKiHt04yE5A&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BQ67aM89ESkibIliMS2jN%2Fw%3D%3D"
+        }
+      ]
+    },
+    {
+      "component": "SlideMentor",
+      "visible": true,
+      "full_name": "Pablo Drappo",
+      "picture": "PabloDrappo.jpeg",
+      "degree": "Senior Full Stack Developer",
+      "socials_networks": [
+        {
+          "name": "linkedin",
+          "logo": "linkedin.svg",
+          "link": "https://www.linkedin.com/in/pablodrappo?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAg97fAB_mthaSLpxR52YSs01DqYe7cmOvQ&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BntAcShLWTXK%2FCpoM%2BsG7Ww%3D%3D"
+        }
+      ]
+    },
+    {
+      "component": "SlideMentor",
+      "visible": true,
+      "full_name": "Jorge Pacheco",
+      "picture": "JorgePacheco.jpeg",
+      "degree": "Senior Software Engineer",
+      "socials_networks": [
+        {
+          "name": "linkedin",
+          "logo": "linkedin.svg",
+          "link": "https://www.linkedin.com/in/orge-p-36375054?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAuAKvsBAD2CcZCsd0DjxEwNumcOXsAFMBo&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BRF5vFTwEQ%2BKQopyLDsNRmw%3D%3D"
+        }
+      ]
+    }
+  ]
+}

@@ -48,7 +48,7 @@
       "objectives": "El objetivo de este curso es enseñarte a desarrollar una página web de viajes a la cual se podrá acceder desde diferentes dispositivos, ya sea una computadora, tablet o celular. Contará con un diseño moderno, con animaciones y elementos multimedia. Además, tendrá varias secciones para que los usuarios puedan ver los precios, realizar consultas y ver destinos destacados.",
       "forWhom": "Está dirigido a personas con experiencia mínima o nula en programación.",
       "finalProject": "El proyecto final e integrador que se podra realizar durante la cursada, será aquel que en caso de estar aprobado, DEV PLACE emitirá un certificado de aprobación del curso. Al terminar el curso el usuario tendra 30 dias contando desde la ultima clase para poder enviar el proyecto final al mail correspondiente. Entregado el proyecto DEV PLACE tendra 30 días corridos desde recibido el mismo para, en caso de que este aprobado el proyecto emitir el certificado validando la aprobacion del curso correspondiente y en caso que no, notificando la desaprobacion del proyecto y del curso. El proyecto sera corregido segun las rubricas de evaluacion de DEV PLACE.",
-      "profile": "● Desarrolla páginas web siguiendo las mejores prácticas. \\n ● Utiliza HTML y CSS. \\n ● Crea sitios web responsive.",
+      "profile": "●Desarrolla páginas web siguiendo las mejores prácticas. \\n ●Utiliza HTML y CSS. \\n ●Crea sitios web responsive.",
       "tools": {
         "component": "Carousel",
         "visible": true,

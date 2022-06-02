@@ -34,7 +34,7 @@ $default_gateway = $paymentMethods[0]->gateway;
   </div>
 
   <div class="form-actions">
-    <a href="/checkout/<?php echo $prevStep; ?>" class="call-to-action skin-outline">
+    <a href="/checkout/<?php echo $prevStep; ?>" class="call-to-action skin-outline back-button">
       Volver
     </a>
 

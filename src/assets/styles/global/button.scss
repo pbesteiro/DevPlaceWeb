@@ -17,7 +17,7 @@ button.return {
   
   @media (min-width: 768px) {
     display: inline-flex;
-    min-width: 330px;
+    min-width: 450px;
     max-width: 100%;
   }
 
@@ -88,6 +88,15 @@ button.return {
     img {
       height: 40px;
       margin-right: 15px;
+    }
+  }
+
+  &.skin-filled,
+  &.skin-outline {
+    &.back-button {
+      @media (min-width: 768px) {
+        min-width: 150px;
+      }
     }
   }
 }

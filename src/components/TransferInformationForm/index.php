@@ -47,7 +47,7 @@ $countries = json_decode($file);
       <p class="helper-text">Formatos aceptados JPEG, PNG o PDF.</p>
     </div>
     <div class="form-actions">
-      <a href="/checkout/<?php echo $prevStep; ?>" class="call-to-action skin-outline">
+      <a href="/checkout/<?php echo $prevStep; ?>" class="call-to-action skin-outline back-button">
         Volver
       </a>
 
