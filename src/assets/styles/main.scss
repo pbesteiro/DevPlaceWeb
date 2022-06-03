@@ -109,3 +109,9 @@ ul.list {
     }
   }
 }
+
+.container {
+  @media (max-width: 1199px){
+    max-width: none!important;
+  }
+}

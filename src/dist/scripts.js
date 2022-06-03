@@ -3614,6 +3614,8 @@ const skins = [
   {
     name: "tools",
     options: {
+      type: 'carousel',
+      hideArrows: true,
       destroyInMobile: false,
       destroyInDesktop: false,
       slidesToScroll: 1,
@@ -3622,10 +3624,9 @@ const skins = [
       startAt: 0,
       perView: 6,
       gap: 64,
-      // autoplay: false,
+      autoplay: 3000,
       rewind: false,
       bound: true,
-      type: "slider",
       breakpoints: {
         1199: {
           perView: 3,
@@ -3640,6 +3641,8 @@ const skins = [
   {
     name: "mentors",
     options: {
+      type: 'carousel',
+      hideArrows: true,
       destroyInMobile: false,
       destroyInDesktop: false,
       slidesToScroll: 1,
@@ -3648,10 +3651,9 @@ const skins = [
       startAt: 0,
       perView: 3,
       gap: 64,
-      // autoplay: false,
+      autoplay: 3000,
       rewind: false,
       bound: true,
-      type: "slider",
       breakpoints: {
         1199: {
           perView: 2,
@@ -3717,6 +3719,11 @@ const initCarousel = () => {
       if (initResponsiveCarusel(carousel, skin)) {
         const carouselInstance = new Glide(carousel, skin.options);
 
+        if(skin.options.hideArrows){
+          console.log('carousel',carousel)
+          carousel.getElementsByClassName('glide__arrows')[0].innerHTML = ''
+        }
+
         /**
          * Agregamos la funcion destroyCarousel
          * Esta revisara entre las opciones del carousel si debe ser eliminado o no
@@ -3755,9 +3762,11 @@ const reInit = () => {
 
 var interval;
 window.onresize = function(){
-  width = document.body.clientWidth;
-  clearTimeout(interval);
-  interval = setTimeout(reInit, 100);
+  if(width !== document.body.clientWidth){
+    width = document.body.clientWidth;
+    clearTimeout(interval);
+    interval = setTimeout(reInit, 100);
+  }
 };
 const getPesosArFormat = (price) => {
   const pesos = { style: 'currency', currency: 'ARS' };
