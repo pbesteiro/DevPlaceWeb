@@ -5,7 +5,8 @@
   "header_skin": "brand-mode",
   "sections": [
     {
-    "component":"ContactForm"   
+      "visible": true,
+      "component":"ContactForm"   
     }
   ]
 }
