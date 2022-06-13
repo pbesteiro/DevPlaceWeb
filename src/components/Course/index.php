@@ -346,24 +346,24 @@ $students = json_decode($file);
       <div class="row">
         <div class="col">
           <h2 style="margin-bottom: 30px;">Formas de pago</h2>
-          <p class="text text-center" style="line-height: 26px; margin-bottom: 65px;">Paga con tarjeta de crédito hasta 12 cuotas sin interés, tarjeta de <br />debito, transferencia bancaria, deposito bancario, Mercado Pago, <br />Ualá, Ethereum o efectivo a través de Rapipago o Pago Fácil. </p>
+          <p class="text text-center" style="line-height: 26px; margin-bottom: 65px; max-width: 700px">Paga con tarjeta de crédito hasta 12 cuotas sin interés, tarjeta de debito, transferencia bancaria, deposito bancario, Mercado Pago, Ualá, Ethereum o efectivo a través de Rapipago o Pago Fácil. </p>
         </div>
       </div>
 
       <div class="row">
         <div class="col">
           <ul class="payment-method-list">
-            <li><span>Mercado Pago</span></li>
-            <li><span>Mastercard</span></li>
-            <li><span>Visa</span></li>
-            <li><span>Ualá</span></li>
+            <li><span><img src="/dist/images/course-payment-methods/mercado-pago.png" alt="Picture"></span></li>
+            <li><span><img src="/dist/images/course-payment-methods/mastercard.png" alt="Picture"></span></li>
+            <li><span><img src="/dist/images/course-payment-methods/visa.png" alt="Picture"></span></li>
+            <li><span><img src="/dist/images/course-payment-methods/uala.png" alt="Picture"></span></li>
           </ul>
 
           <ul class="payment-method-list">
-            <li><span>Ethereum</span></li>
-            <li><span>American Express</span></li>
-            <li><span>Pago Facíl</span></li>
-            <li><span>Transferencia Bancarea</span></li>
+            <li><span><img src="/dist/images/course-payment-methods/ethereum.png" alt="Picture"></span></li>
+            <li><span><img src="/dist/images/course-payment-methods/american-express.png" alt="Picture"></span></li>
+            <li><span><img src="/dist/images/course-payment-methods/pago-facil.png" alt="Picture"></span></li>
+            <li><span><img src="/dist/images/course-payment-methods/bank-transfer.png" alt="Picture"></span></li>
           </ul>
         </div>
       </div>

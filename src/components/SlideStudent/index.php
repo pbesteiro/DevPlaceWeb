@@ -5,7 +5,7 @@ $srcPath = $_SERVER['DOCUMENT_ROOT'];
 
 <div class="slide-student-component">
   <div class="picture">
-    <img src="/dist/images/student/<?php echo $picture; ?>" alt="Picture">
+    <img src="/dist/images/students/<?php echo $picture; ?>" alt="Picture">
   </div>
 
   <h3 class="full-name">

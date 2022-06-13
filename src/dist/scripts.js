@@ -3747,17 +3747,12 @@ const initCarousel = () => {
       /**
        * Iniciamos el carousel solo si nos encontramos en el tamaño de pantalla correcto
        */
-      const loader = findAncestor(carousel, '.carousel').getElementsByClassName('loader')[0]
-      loader.classList.remove('hidden');
       
-      setTimeout(() => {
-        loader.classList.add('hidden');
-      }, 1000)
-
-      setTimeout(() => {
-        carousel.style.opacity = 1;
-      }, 1500)
       if (initResponsiveCarusel(carousel, skin)) {
+        const loader = findAncestor(carousel, '.carousel').getElementsByClassName('loader')[0]
+        loader.classList.remove('hidden');
+        carousel.style.opacity = 0;
+
         const carouselInstance = new Glide(carousel, skin.options);
 
         if(skin.options.hideArrows){
@@ -3784,6 +3779,13 @@ const initCarousel = () => {
          * Montamos el carousel
          */
         carouselInstance.mount();
+
+        setTimeout(() => {
+          carousel.style.opacity = 1;
+          loader.classList.add('hidden');
+        }, 1500)
+      } else {
+        carousel.style.opacity = 1;
       }
     }
   }
