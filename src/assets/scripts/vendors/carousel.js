@@ -156,6 +156,33 @@ const skins = [
       },
     },
   },
+  {
+    name: "students",
+    options: {
+      type: 'carousel',
+      hideArrows: true,
+      destroyInMobile: false,
+      destroyInDesktop: false,
+      slidesToScroll: 1,
+      swipeThreshold: false,
+      dragThreshold: false,
+      startAt: 0,
+      perView: 3,
+      gap: 64,
+      autoplay: 3000,
+      rewind: false,
+      bound: true,
+      breakpoints: {
+        1199: {
+          perView: 2,
+          gap: 24,
+        },
+        579: {
+          perView: 1,
+        },
+      },
+    },
+  },
 ];
 
 const initResponsiveCarusel = (carousel, skin) => {
@@ -196,6 +223,11 @@ const thereAreCarousels = () => {
   return carousels.length > 0
 }
 
+function findAncestor (el, sel) {
+  while ((el = el.parentElement) && !((el.matches || el.matchesSelector).call(el,sel)));
+  return el;
+}
+
 const initCarousel = () => {
   if (thereAreCarousels()) {
     for (const carousel of carousels) {
@@ -208,10 +240,11 @@ const initCarousel = () => {
        */
       
       if (initResponsiveCarusel(carousel, skin)) {
+        const loader = findAncestor(carousel, '.carousel').getElementsByClassName('loader')[0]
+        loader.classList.remove('hidden');
         const carouselInstance = new Glide(carousel, skin.options);
 
         if(skin.options.hideArrows){
-          console.log('carousel',carousel)
           carousel.getElementsByClassName('glide__arrows')[0].innerHTML = ''
         }
 
@@ -234,7 +267,12 @@ const initCarousel = () => {
         /**
          * Montamos el carousel
          */
-          carouselInstance.mount();
+        carouselInstance.mount();
+
+        setTimeout(() => {
+          carousel.style.opacity = 1;
+          loader.classList.add('hidden');
+        }, 1500)
       }
     }
   }

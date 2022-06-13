@@ -4,17 +4,21 @@ $srcPath = $_SERVER['DOCUMENT_ROOT'];
 
 $file = file_get_contents($srcPath . "constants/mentors.json");
 $mentors = json_decode($file);
+
+$file = file_get_contents($srcPath . "constants/what-students-say.json");
+$students = json_decode($file);
 ?>
 
 <section class="course-component" id="course-component">
+  <!-- Encabezado -->
   <div class="hero">
     <?php include $srcPath . 'components/Rainbow/index.php'; ?>
     <img src="/dist/images/courses/<?php echo $image; ?>" alt="<?php echo $name; ?>">
   </div>
 
-  <h2 class="modality">
+  <h3 class="modality">
     <?php echo $modality; ?>
-  </h2>
+  </h3>
 
   <h1 class="name">
     <?php echo $name; ?>
@@ -49,216 +53,454 @@ $mentors = json_decode($file);
     </div>
   <?php } ?>
 
-  <div class="objectives">
+  <!-- Clases online en vivo  -->
+  <div class="in-columns">
     <div class="container">
       <div class="row">
         <div class="col">
-          <h2 class="title">Objetivos de aprendizaje</h2>
-          <p class="markdown text"><?php echo $objectives; ?></p>
-        </div>
-      </div>
-    </div>
-  </div>
+          <div class="columns align-center">
+            <div class="final-project">
+              <h2 class="title align-left">Clases online en vivo con profesionales de la industria</h2>
+              <p class="markdown text">Interactúa online y en vivo con el profesor/a experto en la materia, aprendiendo directamente de el/ella y haciendo las preguntas sin intermediarios y chatea con tus compañeros/as mientras se dicta la clase.</p>
+            </div>
 
-  <div class="for-whom">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h2 class="title">A quién va dirigido?</h2>
-          <p class="markdown text"><?php echo $forWhom; ?></p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <?php if (isset($cta)) { ?>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="content-center">
-            <?php includeWithVariables($srcPath . 'components/CallToAction/index.php', (array) $cta, true); ?>
+            <div class="certification" style="max-width: 425px;">
+              <img src="/dist/images/live-classes.png" alt="Certificado" width="100%" height="auto">
+            </div>
           </div>
         </div>
       </div>
     </div>
-  <?php } ?>
 
+    <?php if (isset($cta)) { ?>
+      <div class="container m-t-100">
+        <div class="row">
+          <div class="col">
+            <div class="content-center">
+              <?php includeWithVariables($srcPath . 'components/CallToAction/index.php', (array) $cta, true); ?>
+            </div>
+          </div>
+        </div>
+      </div>
+    <?php } ?>
+  </div>
+
+  <!-- Centro de contenidos  -->
+  <div class="in-columns gray-box">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="columns align-center">
+            <div class="final-project">
+              <h2 class="title align-left">Centro de contenidos exclusivo de nuestra plataforma</h2>
+              <p class="markdown text">Documentación, ejercicios y videos explicativos exclusivos de tu curso. Accede a las clases grabadas por si quieres hacer el curso a tu ritmo.</p>
+            </div>
+
+            <div class="certification" style="max-width: 437px;">
+              <img src="/dist/images/content-center.png" alt="Certificado" width="100%" height="auto">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <?php if (isset($cta)) { ?>
+      <div class="container m-t-100">
+        <div class="row">
+          <div class="col">
+            <div class="content-center">
+              <?php includeWithVariables($srcPath . 'components/CallToAction/index.php', (array) $cta, true); ?>
+            </div>
+          </div>
+        </div>
+      </div>
+    <?php } ?>
+  </div>
+
+  <!-- Panel del usuario -->
+  <div class="in-columns">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="columns align-center">
+            <div class="final-project">
+              <h2 class="title align-left">Panel del Usuario</h2>
+              <p class="text">Panel general para administrar los cursos que hayas realizado, unirte a las clases online en vivo de los cursos que estés realizando. Puedes administrar tu curso, a tu manera y también podrás personalizar tu perfil.</p>
+            </div>
+
+            <div class="certification" style="max-width: 332px;">
+              <img src="/dist/images/user-screen.png" alt="Certificado" width="100%" height="auto">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <?php if (isset($cta)) { ?>
+      <div class="container m-t-100">
+        <div class="row">
+          <div class="col">
+            <div class="content-center">
+              <?php includeWithVariables($srcPath . 'components/CallToAction/index.php', (array) $cta, true); ?>
+            </div>
+          </div>
+        </div>
+      </div>
+    <?php } ?>
+  </div>
+
+  <!-- Chat -->
+  <div class="in-columns gray-box">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="columns align-center">
+            <div class="final-project">
+              <h2 class="title align-left">Network</h2>
+              <p class="text">Conversa en vivo con tu grupo y tu mentor/a 24/7, con la comunidad que realizó los mismos cursos y con todo el ecosistema Dev. Accede a canales de conversación de los temas de vanguardia de la industria tecnológica que reúnen a las personas y a la información adecuadas.</p>
+            </div>
+
+            <div class="certification" style="max-width: 332px;">
+              <img src="/dist/images/user-screen.png" alt="Certificado" width="100%" height="auto">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <?php if (isset($cta)) { ?>
+      <div class="container m-t-100">
+        <div class="row">
+          <div class="col">
+            <div class="content-center">
+              <?php includeWithVariables($srcPath . 'components/CallToAction/index.php', (array) $cta, true); ?>
+            </div>
+          </div>
+        </div>
+      </div>
+    <?php } ?>
+  </div>
+
+  <!-- Calendario -->
+  <div class="in-columns">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="columns align-center">
+            <div class="final-project">
+              <h2 class="title align-left">Calendario</h2>
+              <p class="text">Organiza las fechas de tu curso y mira los próximos temas de las clases. Además, podrás ver las próximas fechas de eventos y talleres gratuitos de crecimiento profesional. Recibe notificaciones sobre todos los eventos en los que te encuentres inscripto</p>
+            </div>
+
+            <div class="certification" style="max-width: 332px;">
+              <img src="/dist/images/user-screen.png" alt="Certificado" width="100%" height="auto">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <?php if (isset($cta)) { ?>
+      <div class="container m-t-100">
+        <div class="row">
+          <div class="col">
+            <div class="content-center">
+              <?php includeWithVariables($srcPath . 'components/CallToAction/index.php', (array) $cta, true); ?>
+            </div>
+          </div>
+        </div>
+      </div>
+    <?php } ?>
+  </div>
+
+  <!-- Principal Información sobre tu curso -->
+  <!-- Objetivos de aprendizaje -->
+  <!-- A quien va dirigido? -->
+  <!-- Perfil del Egresado -->
+  <div class="in-columns">
+    <div class="container">
+      <div class="row">
+        <div class="col align-center">
+          <h2>Principal Información sobre tu curso</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="columns align-top">
+            <div class="objectives">
+              <h3 class="title">Objetivos de aprendizaje</h3>
+              <p class="markdown text"><?php echo $objectives; ?></p>
+            </div>
+
+            <div class="for-whom">
+              <h3 class="title">¿A quién va dirigido?</h3>
+              <p class="markdown text"><?php echo $forWhom; ?></p>
+            </div>
+
+            <div class="profile">
+              <h3 class="title">Perfil del egresado</h3>
+              <p class="markdown text"><?php echo $profile; ?></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <?php if (isset($cta)) { ?>
+      <div class="container m-t-100">
+        <div class="row">
+          <div class="col">
+            <div class="content-center">
+              <?php includeWithVariables($srcPath . 'components/CallToAction/index.php', (array) $cta, true); ?>
+            </div>
+          </div>
+        </div>
+      </div>
+    <?php } ?>
+  </div>
+
+  <!-- Herramientas -->
   <?php includeWithVariables($srcPath . 'components/' . $tools->component . '/index.php', (array) $tools, true);
   ?>
 
-  <div class="final-project">
+  <!-- Proyecto final + Certificación -->
+  <div class="in-columns">
     <div class="container">
       <div class="row">
         <div class="col">
-          <h2 class="title">Proyecto final + certificación</h2>
-          <p class="markdown text"><?php echo $finalProject; ?></p>
-        </div>
-      </div>
-    </div>
-  </div>
+          <div class="columns align-center">
+            <div class="final-project">
+              <h2 class="title align-left">Proyecto final + certificación</h2>
+              <p class="markdown text"><?php echo $finalProject; ?></p>
+            </div>
 
-  <?php if (isset($cta)) { ?>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="content-center">
-            <?php includeWithVariables($srcPath . 'components/CallToAction/index.php', (array) $cta, true); ?>
+            <div class="certification" style="max-width: 550px;">
+              <img src="/dist/images/certification.png" alt="Certificado" width="100%" height="auto">
+            </div>
           </div>
         </div>
       </div>
     </div>
-  <?php } ?>
 
-  <div class="profile">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h2 class="title">Perfil del egresado</h2>
-          <p class="markdown text"><?php echo $profile; ?></p>
+    <?php if (isset($cta)) { ?>
+      <div class="container m-t-100">
+        <div class="row">
+          <div class="col">
+            <div class="content-center">
+              <?php includeWithVariables($srcPath . 'components/CallToAction/index.php', (array) $cta, true); ?>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    <?php } ?>
   </div>
 
+  <!-- Equipo -->
   <div class="mentors-carousel">
     <?php includeWithVariables($srcPath . 'components/Carousel/index.php', (array) $mentors, true); ?>
   </div>
 
-  <div class="inscription">
+  <!-- Estadísticos -->
+  <div class="in-columns">
     <div class="container">
       <div class="row">
         <div class="col">
-          <h2 class="title">Inscripción</h2>
+          <div class="columns align-top">
+            <div class="objectives">
+              <h3 class="gradient-title">+80</h3>
+              <p class="text size-2">Cursos online en vivo brindados en habilidades digitales</p>
+            </div>
 
-          <div class="highlight-component">
-            <h3 class="title">Pago</h3>
+            <div class="for-whom">
+              <h3 class="gradient-title">+5000</h3>
+              <p class="text size-2">Horas de contenido entre clases online en vivo y contenido on demand</p>
+            </div>
+
+            <div class="profile">
+              <h3 class="gradient-title">100%</h3>
+              <p class="text size-2">De las personas que completaron al menos 1 curso admiten haber progresado en su carrera profesional gracias a las habilidades digitales incorporadas</p>
+            </div>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <p>Una vez abonado el curso, te va a llegar un mail con:</p>
-          <br>
-          <ul class="list">
-            <li>
-              <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
-              <p>
-                Acceso a nuestra plataforma.
-              </p>
-            </li>
-            <li>
-              <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
-              <p>
-                Acceso al sistema de chat de todo el ecosistema.
-              </p>
-            </li>
-            <li>
-              <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
-              <p>
-                Acceso a los links de las clases online en vivo.
-              </p>
-            </li>
-          </ul>
-
-          <div class="highlight-component">
-            <h3 class="title">Lo que recibes</h3>
-          </div>
-
-          <ul class="list">
-            <li>
-              <span><img src="/dist/images/icons/notebook.png" alt="icon"></span>
-              <p>
-                Clases online en vivo con profesor/a en horarios determinados.
-              </p>
-            </li>
-            <li>
-              <span><img src="/dist/images/icons/documentation.png" alt="icon"></span>
-              <p>
-                Documentación y contenido exclusivo.
-              </p>
-            </li>
-            <li>
-              <span><img src="/dist/images/icons/foro.png" alt="icon"></span>
-              <p>
-                Acceso al foro privado de tu curso.
-              </p>
-            </li>
-            <li>
-              <span><img src="/dist/images/icons/support.png" alt="icon"></span>
-              <p>
-                Soporte y seguimiento las 24hs.
-              </p>
-            </li>
-            <li>
-              <span><img src="/dist/images/icons/extra-material.png" alt="icon"></span>
-              <p>
-                Videos extra grabados.
-              </p>
-            </li>
-            <li>
-              <span><img src="/dist/images/icons/recorded-classes.png" alt="icon"></span>
-              <p>
-                Clases grabadas y publicadas en la plataforma.
-              </p>
-            </li>
-          </ul>
-
-          <?php if (isset($cta)) { ?>
-            <div class="content-center m-b-120">
+    <?php if (isset($cta)) { ?>
+      <div class="container m-t-100">
+        <div class="row">
+          <div class="col">
+            <div class="content-center">
               <?php includeWithVariables($srcPath . 'components/CallToAction/index.php', (array) $cta, true); ?>
             </div>
-          <?php } ?>
-
-          <div class="highlight-component">
-            <h3 class="title">¿Por qué inscribirme en un curso de Dev Place?</h3>
           </div>
+        </div>
+      </div>
+    <?php } ?>
+  </div>
 
-          <ul class="list">
-            <li>
-              <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
-              <p>
-                Becas por buen rendimiento del 100% para próximos cursos
-              </p>
-            </li>
-            <li>
-              <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
-              <p>
-                Talleres para crecimiento profesional.
-              </p>
-            </li>
-            <li>
-              <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
-              <p>
-                Certificado al aprobar proyecto final.
-              </p>
-            </li>
-            <li>
-              <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
-              <p>
-                Descuentos para futuros cursos.
-              </p>
-            </li>
-            <li>
-              <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
-              <p>
-                Descuentos para futuros cursos usando el programa de referidos meetups y conferencias exclusivas del ecosistema con lideres #tech.
-              </p>
-            </li>
-            <li>
-              <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
-              <p>
-                Acceso a los links de las clases online en vivo.
-              </p>
-            </li>
+  <!-- Formas de Pago -->
+  <div class="payment-menthods gray-box">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 style="margin-bottom: 30px;">Formas de pago</h2>
+          <p class="text text-center" style="line-height: 26px; margin-bottom: 65px;">Paga con tarjeta de crédito hasta 12 cuotas sin interés, tarjeta de <br />debito, transferencia bancaria, deposito bancario, Mercado Pago, <br />Ualá, Ethereum o efectivo a través de Rapipago o Pago Fácil. </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <ul class="payment-method-list">
+            <li><span>Mercado Pago</span></li>
+            <li><span>Mastercard</span></li>
+            <li><span>Visa</span></li>
+            <li><span>Ualá</span></li>
           </ul>
+
+          <ul class="payment-method-list">
+            <li><span>Ethereum</span></li>
+            <li><span>American Express</span></li>
+            <li><span>Pago Facíl</span></li>
+            <li><span>Transferencia Bancarea</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="notes text-center">*¡Conoce otras tarjetas y métodos de pago que aceptamos en la sección de preguntas frecuentes!</div>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Inscripcion -->
+  <div class="inscription">
+    <div class="in-columns">
+      <div class="container">
+        <div class="row">
+          <div class="col align-center">
+            <h2>Inscripción</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div class="columns align-top">
+              <div>
+                <h3 class="title">Pago</h3>
+                <p>Una vez abonado el curso, te va a llegar un mail con:</p>
+                <br>
+                <ul class="list">
+                  <li>
+                    <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
+                    <p>Acceso a nuestra plataforma.</p>
+                  </li>
+                  <li>
+                    <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
+                    <p>Acceso al sistema de chat de todo el ecosistema.</p>
+                  </li>
+                  <li>
+                    <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
+                    <p>Acceso a los links de las clases online en vivo.</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="title">Lo que recibes</h3>
+                <ul class="list">
+                  <li>
+                    <span><img src="/dist/images/icons/notebook.png" alt="icon"></span>
+                    <p>Clases online en vivo con profesor/a en horarios determinados.</p>
+                  </li>
+                  <li>
+                    <span><img src="/dist/images/icons/documentation.png" alt="icon"></span>
+                    <p>Documentación y contenido exclusivo.</p>
+                  </li>
+                  <li>
+                    <span><img src="/dist/images/icons/foro.png" alt="icon"></span>
+                    <p>Acceso al foro privado de tu curso.</p>
+                  </li>
+                  <li>
+                    <span><img src="/dist/images/icons/support.png" alt="icon"></span>
+                    <p>Soporte y seguimiento las 24hs.</p>
+                  </li>
+                  <li>
+                    <span><img src="/dist/images/icons/extra-material.png" alt="icon"></span>
+                    <p>Videos extra grabados.</p>
+                  </li>
+                  <li>
+                    <span><img src="/dist/images/icons/recorded-classes.png" alt="icon"></span>
+                    <p>Clases grabadas y publicadas en la plataforma.</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="title">¿Por qué inscribirme en un curso de Dev Place?</h3>
+                <ul class="list">
+                  <li>
+                    <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
+                    <p>Becas por buen rendimiento del 100% para próximos cursos</p>
+                  </li>
+                  <li>
+                    <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
+                    <p>Talleres para crecimiento profesional.</p>
+                  </li>
+                  <li>
+                    <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
+                    <p>Certificado al aprobar proyecto final.</p>
+                  </li>
+                  <li>
+                    <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
+                    <p>Descuentos para futuros cursos.</p>
+                  </li>
+                  <li>
+                    <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
+                    <p>Descuentos para futuros cursos usando el programa de referidos meetups y conferencias exclusivas del ecosistema con lideres #tech.</p>
+                  </li>
+                  <li>
+                    <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
+                    <p>Acceso a los links de las clases online en vivo.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <?php if (isset($cta)) { ?>
+    <div class="container m-t-100">
+      <div class="row">
+        <div class="col">
+          <div class="content-center">
+            <?php includeWithVariables($srcPath . 'components/CallToAction/index.php', (array) $cta, true); ?>
+          </div>
+        </div>
+      </div>
+    </div>
+  <?php } ?>
+  </div>
+
+  <!-- Experiencias -->
+  <div class="students-carousel gray-box m-t-100">
+    <?php includeWithVariables($srcPath . 'components/Carousel/index.php', (array) $students, true); ?>
+  </div>
+
+  <!-- Carousel Calendario -->
   <div id="course-calendar-carousel">
     <section class="carousel-component carousel-calendar-skin show-rainbow-desktop show-rainbow-mobile rainbow-mobile-position-top rainbow-desktop-position-center">
       <div class="container">
         <div class="row">
           <div class="col">
-            <h2 class="title">Calendario</h2>
+            <h3 class="title">Calendario</h3>
           </div>
         </div>
       </div>
@@ -396,3 +638,5 @@ $mentors = json_decode($file);
     }
   }
 </script>
+
+<!-- Preguntas Frecuentes -->

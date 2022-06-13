@@ -30,10 +30,15 @@ $srcPath = $_SERVER['DOCUMENT_ROOT'];
   <p class="duration">Duración: <?php echo $duration; ?></p>
   <p class="name"><?php echo $name; ?></p>
 
-  <div class="value">
-    <p class="cost">$ <?php echo $price; ?></p>
-    <p class="payment"><?php echo $payment; ?></p>
-  </div>
+  <p class="price">
+    <strike><?php echo $price; ?> ARS</strike>
+  </p>
+
+  <p class="discount-price">
+    <?php echo $discountPrice; ?> ARS
+  </p>
+
+  <p class="payment"><?php echo $payment; ?></p>
 
   <div class="buttonWrapper">
     <?php if (isset($cta)) { ?> <?php includeWithVariables($srcPath . 'components/CallToAction/index.php', (array) $cta, true); ?> <?php } ?>

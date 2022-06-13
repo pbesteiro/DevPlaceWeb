@@ -1,29 +1,25 @@
 section.carousel-component {
-  &.carousel-tools-skin {
+  &.carousel-students-skin {
+    background-color: transparent;
+
     h2.title {
-      font-size: 50px;
+      font-size: 30px;
+      line-height: 34px;
       text-align: center;
     }
 
     .carousel {
-      height: 88px;
-
-      .loader {
-        width: 60px;
-        height: 60px;
-      }
-
       .carousel-container {
-        width: 100%;
-        max-width: 100%;
+        // width: 100%;
+        // max-width: 100%;
         
-        @media(min-width: 768px){
-          width: 900px;
-        }
+        // @media(min-width: 768px){
+        //   width: 900px;
+        // }
         
-        @media(min-width: 1024px){
-          width: 1000px;
-        }
+        // @media(min-width: 1024px){
+        //   width: 1000px;
+        // }
 
         .carousel-row {
         }
@@ -80,6 +76,7 @@ section.carousel-component {
             }
           }
         }
+        
       }
     }
   }

@@ -1,0 +1,65 @@
+{
+  "component": "Carousel",
+  "visible": true,
+  "options": {
+    "skin": "students"
+  },
+  "title": "Experiencias de <br/> estudiantes",
+  "content": [
+    {
+      "component": "SlideStudent",
+      "visible": true,
+      "full_name": "Lucas",
+      "picture": "lucas.jpeg",
+      "comments": "Me pareció bien todo. El curso tiene su proceso de aprendizaje, la cursada terminó cumpliendo su objetivo, hoy en día la tengo clara lo que aprendí en el curso. Con respecto a la cursada con un grupo reducido, siempre pude saciar mis dudas tanto en vivo como por mensaje con el profe así que eso estuvo de 10 para mi crecimiento personal. Todo lo que aprendí lo apliqué y así como lo aprendí lo compartí con el resto de compañeros que tuve de ahí. La realidad es que terminé de cursar con Pablo Drappo y enseguida busqué la manera de seguir cursando y siempre me pasaba que me pedían ayuda con algo referido a css y de ahí en más mejoré la UI",
+      "cta": {
+        "link": "https://www.linkedin.com/in/lucasezequielsilva?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACi9y5cBHoG7SPhu_ur93TI1D8-S0Bq4Cac&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BWIYbn0AFSPqH2kvDZC9c9Q%3D%3D",
+        "label": "Ver Publicación"
+      }
+    },
+    {
+      "component": "SlideStudent",
+      "visible": true,
+      "full_name": "Ruben",
+      "picture": "ruben.jpeg",
+      "comments": "Gracias DEV PLACE por enseñarme a: ¡Entender el funcionamiento de una base de datos SQL, implementar el lenguaje DDL para la creación de una base de datos y todos sus componentes: tablas, índices, relaciones, disparadores (triggers), procedimientos almacenados, implementar el lenguaje DML para insertar, borrar, modificar y consultar los datos de una base de datos y realizar reportes de datos con herramientas actuales del mercado!",
+      "cta": {
+        "link": "https://www.linkedin.com/posts/rciambrignoni_base-de-datos-sql-curso-completo-y-aprobado-activity-6939643771143733248-_1dS?utm_source=linkedin_share&utm_medium=member_desktop_web",
+        "label": "Ver Publicación"
+      }
+    },
+    {
+      "component": "SlideStudent",
+      "visible": true,
+      "full_name": "Lucas",
+      "picture": "lucas.jpeg",
+      "comments": "Mi certificado de finalización del curso de desarrollo web hecho con DEV PLACE. Excelente y recomendable todo, desde los contenidos que nos dan las herramientas necesarias para entrar al mundo IT, así como también los mentores que están disponibles en todo momento para ayudarte, corregirte y aconsejarte a la hora de encarar un proyecto ! #desarrolloweb",
+      "cta": {
+        "link": "https://www.linkedin.com/posts/lucas-julian-zelaya-54a5601b3_desarrolloweb-activity-6939934167447023616-NVs4?utm_source=linkedin_share&utm_medium=member_desktop_web",
+        "label": "Ver Publicación"
+      }
+    },
+    {
+      "component": "SlideStudent",
+      "visible": true,
+      "full_name": "Marisa",
+      "picture": "marisa.jpeg",
+      "comments": "“¡Un logro más! Gracias, DEV PLACE“",
+      "cta": {
+        "link": "https://www.linkedin.com/posts/marisa-zubillaga-37381b191_un-logro-mas-gracias-dev-place-activity-6939873926005035008-jB1q?utm_source=linkedin_share&utm_medium=member_desktop_web",
+        "label": "Ver Publicación"
+      }
+    },
+    {
+      "component": "SlideStudent",
+      "visible": true,
+      "full_name": "Marisa",
+      "picture": "marisa.jpeg",
+      "comments": "¡Excelente el curso de SQL de Dev Place! Increíble experiencia de aprendizaje.",
+      "cta": {
+        "link": "https://www.linkedin.com/in/mapozzo/",
+        "label": "Ver Publicación"
+      }
+    }
+  ]
+}

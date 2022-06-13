@@ -65,11 +65,12 @@ if (!function_exists('includeWithVariables')) {
 
   <div class="carousel">
     <?php include $srcPath . 'components/Rainbow/index.php'; ?>
+    <?php include $srcPath . 'components/Loader/index.php'; ?>
 
     <?php if (is_array($content)) { ?>
       <div class="carousel-container">
         <div class="carousel-row">
-          <div class="glide" data-skin="<?php echo isset($options->skin) && $options->skin !== '' ? $options->skin : 'calendar'; ?>">
+          <div class="glide" data-skin="<?php echo isset($options->skin) && $options->skin !== '' ? $options->skin : 'calendar'; ?>" style="opacity: 0;">
             <div class="glide__track" data-glide-el="track">
               <ul class="glide__slides">
                 <?php

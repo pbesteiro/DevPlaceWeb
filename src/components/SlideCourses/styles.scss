@@ -41,18 +41,27 @@ div.slide-courses-component {
      
     // }
   }
-
-  .cost {
+  
+  .price, .discount-price {
     color: #1e1433;
-    font-size: 28px;
+    font-size: 22px;
+    line-height: 29px;
+    margin: 0;
     font-weight: bold;
-    margin-bottom: 0px;
+  }
+
+  .price {
+    color: #425466;
+  }
+
+  .discount-price {
+    margin-bottom: 16px;
   }
 
   .payment {
     color: #334253;
     font-size: 14px;
-    font-style: italic;
+    font-weight: bold;
 
     @media (min-width: 768px) {
      
