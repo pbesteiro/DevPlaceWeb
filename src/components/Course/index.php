@@ -346,7 +346,7 @@ $students = json_decode($file);
       <div class="row">
         <div class="col">
           <h2 style="margin-bottom: 30px;">Formas de pago</h2>
-          <p class="text text-center" style="line-height: 26px; margin-bottom: 65px; max-width: 700px">Paga con tarjeta de crédito hasta 12 cuotas sin interés, tarjeta de debito, transferencia bancaria, deposito bancario, Mercado Pago, Ualá, Ethereum o efectivo a través de Rapipago o Pago Fácil. </p>
+          <p class="text text-center" style="line-height: 26px; margin: 0px auto 65px; max-width: 700px">Paga con tarjeta de crédito hasta 12 cuotas sin interés, tarjeta de debito, transferencia bancaria, deposito bancario, Mercado Pago, Ualá, Ethereum o efectivo a través de Rapipago o Pago Fácil. </p>
         </div>
       </div>
 
