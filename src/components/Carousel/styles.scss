@@ -116,6 +116,11 @@ section.carousel-component {
   .carousel {
     position: relative;
 
+    #loader {
+      width: 60px;
+      height: 60px;
+    }
+
     .rainbow-hero-wrapper {
       display: none;
       z-index: 1;

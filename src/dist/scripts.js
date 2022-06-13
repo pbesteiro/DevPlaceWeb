@@ -3779,6 +3779,8 @@ const initCarousel = () => {
         carouselInstance.mount();
 
         setTimeout(() => {
+          console.log('carousel',document.getElementsByClassName('carousel-' + carousel.dataset.skin + '-skin')[0])
+          document.getElementsByClassName('carousel-' + carousel.dataset.skin + '-skin')[0].style.opacity = 1;
           carousel.style.opacity = 1;
           loader.classList.add('hidden');
         }, 1500)

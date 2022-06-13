@@ -523,6 +523,7 @@ $students = json_decode($file);
     </section>
   </div>
 </section>
+
 <style>
   .faqs-component {
     padding: 65px 0;

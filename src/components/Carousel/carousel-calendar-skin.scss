@@ -38,6 +38,7 @@ section.carousel-component {
         }
         
         .glide {
+          opacity: 1!important;
           overflow: visible;
           
           &:not(.glide--carousel, .glide--slider){
