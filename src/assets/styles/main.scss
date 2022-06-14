@@ -60,15 +60,15 @@ body {
 
 ul.list {
   padding: 0;
-  margin: 0 0 60px;
+  
 
-  @media (min-width: 1440px) {
-    margin: 0 0 120px;
+  @media (max-width: 1439px) {
+    margin: 0 0 60px;
   }
 
   li {
     list-style: none;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -79,19 +79,19 @@ ul.list {
       align-items: center;
       justify-content: center;
       text-align: center;
-      font-size: 18px;
+      font-size: 14px;
       margin-right: 10px;
-      line-height: 22px;
+      line-height: 16px;
       width: 20px;
-      height: 22px;
+      height: 26px;
       
-      @media (min-width: 1440px) {
-        margin-right: 20px;
-        width: 32px;
-        font-size: 30px;
-        line-height: 34px;
-        height: 34px;
-      }
+      // @media (min-width: 1440px) {
+      //   margin-right: 20px;
+      //   width: 32px;
+      //   font-size: 30px;
+      //   line-height: 26px;
+      //   height: 34px;
+      // }
 
       &.bullet {
         justify-content: flex-start;
@@ -99,14 +99,13 @@ ul.list {
       }
 
       img {
-        max-width: 20px;
-        max-height: 20px;
-
-        @media (min-width: 1440px) {
-          max-width: 32px;
-          max-height: 32px;
-        }
+        max-width: 15px;
+        max-height: 15px;
       }
+    }
+
+    & > * {
+      line-height: 26px!important;
     }
   }
 }

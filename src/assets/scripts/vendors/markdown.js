@@ -32,7 +32,7 @@ function markdownTranspiler(md){
   md = md.replace(/^\>(.+)/gm, '<blockquote>$1</blockquote>');
   
   //Viñetas
-  md = md.replace(/\●/g, '<img style="margin-right: 16px;" src="/dist/images/icons/bullet.png" alt="icon">')
+  md = md.replace(/\●/g, '<img src="/dist/images/icons/bullet.png" alt="icon">')
 
   //h
   md = md.replace(/[\#]{6}(.+)/g, '<h6>$1</h6>');

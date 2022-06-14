@@ -61,7 +61,7 @@ $students = json_decode($file);
           <div class="columns align-center">
             <div class="final-project">
               <h2 class="title align-left">Clases online en vivo con profesionales de la industria</h2>
-              <p class="markdown text">Interactúa online y en vivo con el profesor/a experto en la materia, aprendiendo directamente de el/ella y haciendo las preguntas sin intermediarios y chatea con tus compañeros/as mientras se dicta la clase.</p>
+              <p class="text" style="line-height: 26px;">Interactúa online y en vivo con el profesor/a experto en la materia, aprendiendo directamente de el/ella y haciendo las preguntas sin intermediarios y chatea con tus compañeros/as mientras se dicta la clase.</p>
             </div>
 
             <div class="certification" style="max-width: 425px;">
@@ -93,7 +93,7 @@ $students = json_decode($file);
           <div class="columns align-center">
             <div class="final-project">
               <h2 class="title align-left">Centro de contenidos exclusivo de nuestra plataforma</h2>
-              <p class="markdown text">Documentación, ejercicios y videos explicativos exclusivos de tu curso. Accede a las clases grabadas por si quieres hacer el curso a tu ritmo.</p>
+              <p class="text" style="line-height: 26px;">Documentación, ejercicios y videos explicativos exclusivos de tu curso. <br /> Accede a las clases grabadas por si quieres hacer el curso a tu ritmo.</p>
             </div>
 
             <div class="certification" style="max-width: 437px;">
@@ -125,7 +125,10 @@ $students = json_decode($file);
           <div class="columns align-center">
             <div class="final-project">
               <h2 class="title align-left">Panel del Usuario</h2>
-              <p class="text">Panel general para administrar los cursos que hayas realizado, unirte a las clases online en vivo de los cursos que estés realizando. Puedes administrar tu curso, a tu manera y también podrás personalizar tu perfil.</p>
+              <p class="text" style="line-height: 26px;">
+                Panel general para administrar los cursos que hayas realizado, unirte a las clases online en vivo de los cursos que estés realizando.<br />
+                Puedes administrar tu curso, a tu manera y también podrás personalizar tu perfil.
+              </p>
             </div>
 
             <div class="certification" style="max-width: 332px;">
@@ -157,7 +160,7 @@ $students = json_decode($file);
           <div class="columns align-center">
             <div class="final-project">
               <h2 class="title align-left">Network</h2>
-              <p class="text">Conversa en vivo con tu grupo y tu mentor/a 24/7, con la comunidad que realizó los mismos cursos y con todo el ecosistema Dev. Accede a canales de conversación de los temas de vanguardia de la industria tecnológica que reúnen a las personas y a la información adecuadas.</p>
+              <p class="text" style="line-height: 26px;">Conversa en vivo con tu grupo y tu mentor/a 24/7, con la comunidad que realizó los mismos cursos y con todo el ecosistema Dev. Accede a canales de conversación de los temas de vanguardia de la industria tecnológica que reúnen a las personas y a la información adecuadas.</p>
             </div>
 
             <div class="certification" style="max-width: 332px;">
@@ -189,7 +192,11 @@ $students = json_decode($file);
           <div class="columns align-center">
             <div class="final-project">
               <h2 class="title align-left">Calendario</h2>
-              <p class="text">Organiza las fechas de tu curso y mira los próximos temas de las clases. Además, podrás ver las próximas fechas de eventos y talleres gratuitos de crecimiento profesional. Recibe notificaciones sobre todos los eventos en los que te encuentres inscripto</p>
+              <p class="text" style="line-height: 26px;">
+                Organiza las fechas de tu curso y mira los próximos temas de las clases.<br />
+                Además, podrás ver las próximas fechas de eventos y talleres gratuitos de crecimiento profesional.<br />
+                Recibe notificaciones sobre todos los eventos en los que te encuentres inscripto.
+              </p>
             </div>
 
             <div class="certification" style="max-width: 332px;">
@@ -345,7 +352,7 @@ $students = json_decode($file);
     <div class="container">
       <div class="row">
         <div class="col">
-          <h2 style="margin-bottom: 30px;">Formas de pago</h2>
+          <h2 class="text-center" style="margin-bottom: 30px;">Formas de pago</h2>
           <p class="text text-center" style="line-height: 26px; margin: 0px auto 65px; max-width: 700px">Paga con tarjeta de crédito hasta 12 cuotas sin interés, tarjeta de debito, transferencia bancaria, deposito bancario, Mercado Pago, Ualá, Ethereum o efectivo a través de Rapipago o Pago Fácil. </p>
         </div>
       </div>

@@ -189,7 +189,7 @@ section.course-component {
   }
 
   h2 {
-    text-align: center;
+    text-align: left;
     font-size: 32px;
     font-weight: 500;
     margin-top: 0px;
@@ -224,6 +224,8 @@ section.course-component {
       flex-direction: column;
       align-items: flex-start;
       justify-content: space-between;
+      max-width: 1120px;
+      margin: 0 auto;
 
       &.align-center {
         align-items: center;
@@ -298,6 +300,7 @@ section.course-component {
   .objectives,
   .for-whom,
   .final-project,
+  .profile,
   .payment-menthods {
     h3.title,
     h3.gradient-title {
@@ -342,7 +345,6 @@ section.course-component {
     }
   }
 
-  .profile,
   .inscription {
     p {
       font-size: 14px;
