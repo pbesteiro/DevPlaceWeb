@@ -227,8 +227,8 @@ $students = json_decode($file);
   <div class="in-columns">
     <div class="container">
       <div class="row">
-        <div class="col align-center">
-          <h2>Principal Información sobre tu curso</h2>
+        <div class="col">
+          <h2 class="align-center">Principal Información sobre tu curso</h2>
         </div>
       </div>
 
@@ -352,8 +352,8 @@ $students = json_decode($file);
     <div class="container">
       <div class="row">
         <div class="col">
-          <h2 class="text-center" style="margin-bottom: 30px;">Formas de pago</h2>
-          <p class="text text-center" style="line-height: 26px; margin: 0px auto 65px; max-width: 700px">Paga con tarjeta de crédito hasta 12 cuotas sin interés, tarjeta de debito, transferencia bancaria, deposito bancario, Mercado Pago, Ualá, Ethereum o efectivo a través de Rapipago o Pago Fácil. </p>
+          <h2 class="align-center" style="margin-bottom: 30px;">Formas de pago</h2>
+          <p class="text align-center" style="line-height: 26px; margin: 0px auto 65px; max-width: 700px">Paga con tarjeta de crédito hasta 12 cuotas sin interés, tarjeta de debito, transferencia bancaria, deposito bancario, Mercado Pago, Ualá, Ethereum o efectivo a través de Rapipago o Pago Fácil. </p>
         </div>
       </div>
 
