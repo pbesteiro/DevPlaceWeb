@@ -200,7 +200,7 @@ $students = json_decode($file);
             </div>
 
             <div class="certification" style="max-width: 550px;">
-              <img src="/dist/images/user-screen.svg" alt="Certificado" width="100%" height="auto">
+              <img src="/dist/images/calendar.svg" alt="Certificado" width="100%" height="auto">
             </div>
           </div>
         </div>
