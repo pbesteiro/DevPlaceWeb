@@ -217,6 +217,19 @@ section.course-component {
         text-align: center;
       }
     }
+
+    &.margin-bottom-20 {
+      margin-bottom: 20px!important;
+    }
+
+    &.gradient-title {
+      line-height: 30px;
+      background-image: linear-gradient(to bottom, #fc6608 -131%, #ef6010 24%, #973349 83%, #4a0c7a 95%, #32008a 136%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
     
     @media(min-width: 1024px){
       line-height: 52px;
@@ -296,6 +309,10 @@ section.course-component {
           }
         }
       }
+
+      img {
+        box-shadow: 0px 0px 6px 0px rgb(0 0 0 / 20%);
+      }
     }
   }
   
@@ -312,8 +329,7 @@ section.course-component {
   .final-project,
   .profile,
   .payment-menthods {
-    h3.title,
-    h3.gradient-title {
+    h3.title {
       text-align: left;
       font-size: 22px;
       line-height: 30px;
@@ -326,31 +342,25 @@ section.course-component {
       }
     }
 
-    h3.gradient-title {
-      line-height: 30px;
-      background-image: linear-gradient(to bottom, #fc6608 -131%, #ef6010 24%, #973349 83%, #4a0c7a 95%, #32008a 136%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
     p {
       margin: 0px;
       font-size: 14px;
       line-height: 26px;
 
-      @media(min-width: 1024px){
-        line-height: 45px;
+      &.align-left{
+        @media(min-width: 1024px){
+          text-align: left;
+        }
+      }
+      
+      &.align-center{
+        @media(min-width: 1024px){
+          text-align: center;
+        }
       }
 
       &.size-2 {
         font-size: 18px;
-        line-height: 25px;
-
-        @media(min-width: 1024px){
-          line-height: 25px;
-        }
       }
     }
   }

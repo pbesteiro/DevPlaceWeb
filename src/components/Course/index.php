@@ -60,12 +60,12 @@ $students = json_decode($file);
         <div class="col">
           <div class="columns align-center">
             <div class="final-project">
-              <h2 class="title align-left">Clases online en vivo con profesionales de la industria</h2>
-              <p class="text" style="line-height: 26px;">Interactúa online y en vivo con el profesor/a experto en la materia, aprendiendo directamente de el/ella y haciendo las preguntas sin intermediarios y chatea con tus compañeros/as mientras se dicta la clase.</p>
+              <h2 class="title align-left margin-bottom-20">Clases online en vivo con profesionales de la industria</h2>
+              <p class="text size-2" style="line-height: 26px;">Interactúa online y en vivo con el profesor/a experto en la materia, aprendiendo directamente de el/ella y haciendo las preguntas sin intermediarios y chatea con tus compañeros/as mientras se dicta la clase.</p>
             </div>
 
-            <div class="certification" style="max-width: 425px;">
-              <img src="/dist/images/live-classes.png" alt="Certificado" width="100%" height="auto">
+            <div class="certification" style="max-width: 550px;">
+              <img src="/dist/images/live-classes.svg" alt="Certificado" width="100%" height="auto">
             </div>
           </div>
         </div>
@@ -91,13 +91,13 @@ $students = json_decode($file);
       <div class="row">
         <div class="col">
           <div class="columns align-center">
-            <div class="final-project">
-              <h2 class="title align-left">Centro de contenidos exclusivo de nuestra plataforma</h2>
-              <p class="text" style="line-height: 26px;">Documentación, ejercicios y videos explicativos exclusivos de tu curso. <br /> Accede a las clases grabadas por si quieres hacer el curso a tu ritmo.</p>
+            <div class="certification" style="max-width: 550px;">
+              <img src="/dist/images/content-center.svg" alt="Certificado" width="100%" height="auto">
             </div>
 
-            <div class="certification" style="max-width: 437px;">
-              <img src="/dist/images/content-center.png" alt="Certificado" width="100%" height="auto">
+            <div class="final-project">
+              <h2 class="title align-left margin-bottom-20">Centro de contenidos exclusivo de nuestra plataforma</h2>
+              <p class="text size-2" style="line-height: 26px;">Documentación, ejercicios y videos explicativos exclusivos de tu curso. <br /> Accede a las clases grabadas por si quieres hacer el curso a tu ritmo.</p>
             </div>
           </div>
         </div>
@@ -124,15 +124,15 @@ $students = json_decode($file);
         <div class="col">
           <div class="columns align-center">
             <div class="final-project">
-              <h2 class="title align-left">Panel del Usuario</h2>
-              <p class="text" style="line-height: 26px;">
+              <h2 class="title align-left margin-bottom-20">Panel del Usuario</h2>
+              <p class="text size-2" style="line-height: 26px;">
                 Panel general para administrar los cursos que hayas realizado, unirte a las clases online en vivo de los cursos que estés realizando.<br />
                 Puedes administrar tu curso, a tu manera y también podrás personalizar tu perfil.
               </p>
             </div>
 
-            <div class="certification" style="max-width: 332px;">
-              <img src="/dist/images/user-screen.png" alt="Certificado" width="100%" height="auto">
+            <div class="certification" style="max-width: 550px;">
+              <img src="/dist/images/user-screen.svg" alt="Certificado" width="100%" height="auto">
             </div>
           </div>
         </div>
@@ -158,13 +158,13 @@ $students = json_decode($file);
       <div class="row">
         <div class="col">
           <div class="columns align-center">
-            <div class="final-project">
-              <h2 class="title align-left">Network</h2>
-              <p class="text" style="line-height: 26px;">Conversa en vivo con tu grupo y tu mentor/a 24/7, con la comunidad que realizó los mismos cursos y con todo el ecosistema Dev. Accede a canales de conversación de los temas de vanguardia de la industria tecnológica que reúnen a las personas y a la información adecuadas.</p>
+            <div class="certification" style="max-width: 550px;">
+              <img src="/dist/images/network.svg" alt="Certificado" width="100%" height="auto">
             </div>
 
-            <div class="certification" style="max-width: 332px;">
-              <img src="/dist/images/user-screen.png" alt="Certificado" width="100%" height="auto">
+            <div class="final-project">
+              <h2 class="title align-left margin-bottom-20">Network</h2>
+              <p class="text size-2" style="line-height: 26px;">Conversa en vivo con tu grupo y tu mentor/a 24/7, con la comunidad que realizó los mismos cursos y con todo el ecosistema Dev. Accede a canales de conversación de los temas de vanguardia de la industria tecnológica que reúnen a las personas y a la información adecuadas.</p>
             </div>
           </div>
         </div>
@@ -191,16 +191,16 @@ $students = json_decode($file);
         <div class="col">
           <div class="columns align-center">
             <div class="final-project">
-              <h2 class="title align-left">Calendario</h2>
-              <p class="text" style="line-height: 26px;">
+              <h2 class="title align-left margin-bottom-20">Calendario</h2>
+              <p class="text size-2" style="line-height: 26px;">
                 Organiza las fechas de tu curso y mira los próximos temas de las clases.<br />
                 Además, podrás ver las próximas fechas de eventos y talleres gratuitos de crecimiento profesional.<br />
                 Recibe notificaciones sobre todos los eventos en los que te encuentres inscripto.
               </p>
             </div>
 
-            <div class="certification" style="max-width: 332px;">
-              <img src="/dist/images/user-screen.png" alt="Certificado" width="100%" height="auto">
+            <div class="certification" style="max-width: 550px;">
+              <img src="/dist/images/user-screen.svg" alt="Certificado" width="100%" height="auto">
             </div>
           </div>
         </div>
@@ -279,8 +279,8 @@ $students = json_decode($file);
         <div class="col">
           <div class="columns align-center">
             <div class="final-project">
-              <h2 class="title align-left">Proyecto final + certificación</h2>
-              <p class="markdown text"><?php echo $finalProject; ?></p>
+              <h2 class="title align-left margin-bottom-20">Proyecto final + certificación</h2>
+              <p class="markdown text size-2"><?php echo $finalProject; ?></p>
             </div>
 
             <div class="certification" style="max-width: 550px;">
@@ -316,17 +316,17 @@ $students = json_decode($file);
         <div class="col">
           <div class="columns align-top">
             <div class="objectives">
-              <h3 class="gradient-title">+80</h3>
+              <h2 class="gradient-title">+80</h2>
               <p class="text size-2">Cursos online en vivo brindados en habilidades digitales</p>
             </div>
 
             <div class="for-whom">
-              <h3 class="gradient-title">+5000</h3>
+              <h2 class="gradient-title">+5000</h2>
               <p class="text size-2">Horas de contenido entre clases online en vivo y contenido on demand</p>
             </div>
 
             <div class="profile">
-              <h3 class="gradient-title">100%</h3>
+              <h2 class="gradient-title">100%</h2>
               <p class="text size-2">De las personas que completaron al menos 1 curso admiten haber progresado en su carrera profesional gracias a las habilidades digitales incorporadas</p>
             </div>
           </div>
@@ -389,7 +389,7 @@ $students = json_decode($file);
       <div class="container">
         <div class="row">
           <div class="col align-center">
-            <h2>Inscripción</h2>
+            <h2 class="text-center">Inscripción</h2>
           </div>
         </div>
 
