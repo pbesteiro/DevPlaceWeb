@@ -228,7 +228,7 @@ $students = json_decode($file);
     <div class="container">
       <div class="row">
         <div class="col">
-          <h2 class="align-center-desktop align-center-mobile">Principal Información sobre tu curso</h2>
+          <h2 class="align-center-desktop">Principal Información sobre tu curso</h2>
         </div>
       </div>
 
