@@ -1,6 +1,14 @@
 section.course-component {
   padding: 0px;
 
+  img.no-shadow {
+    box-shadow: none!important;
+  }
+
+  .img-bullet {
+    border-radius: 100%;
+    overflow: hidden;
+  }
 
   .m-t-100 {
     margin-top: 100px;
@@ -198,6 +206,15 @@ section.course-component {
     background-color: #f1f1f5;
   }
 
+  h2,
+  h3.title {
+    &.gradient-title {
+      background-image: linear-gradient(to bottom, #fc6608 -131%, #ef6010 24%, #973349 83%, #4a0c7a 95%, #32008a 136%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
   h2 {
     text-align: left;
     font-size: 32px;
@@ -206,14 +223,25 @@ section.course-component {
     margin-bottom: 30px;
     color: #201634;
     
+    &.gradient-title {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    
     &.align-left{
       @media(min-width: 1024px){
         text-align: left;
       }
     }
     
-    &.align-center{
+    &.align-center-desktop{
       @media(min-width: 1024px){
+        text-align: center;
+      }
+    }
+
+    &.align-center-mobile{
+      @media(max-width: 1023px){
         text-align: center;
       }
     }
@@ -222,15 +250,6 @@ section.course-component {
       margin-bottom: 20px!important;
     }
 
-    &.gradient-title {
-      line-height: 30px;
-      background-image: linear-gradient(to bottom, #fc6608 -131%, #ef6010 24%, #973349 83%, #4a0c7a 95%, #32008a 136%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-    
     @media(min-width: 1024px){
       line-height: 52px;
       margin-bottom: 50px;
@@ -250,6 +269,12 @@ section.course-component {
       max-width: 1120px;
       margin: 0 auto;
 
+      &.inverse-columns {
+        @media(min-width: 1024px){
+          flex-direction: row-reverse;
+        }
+      }
+
       &.align-center {
         align-items: center;
       }
@@ -264,6 +289,7 @@ section.course-component {
 
       & > div{
         width: 100%;
+        padding: 0px 15px;
 
         &:not(:first-child){
           @media(max-width: 1023px){
@@ -329,7 +355,7 @@ section.course-component {
   .final-project,
   .profile,
   .payment-menthods {
-    h3.title {
+    h3.title.title {
       text-align: left;
       font-size: 22px;
       line-height: 30px;

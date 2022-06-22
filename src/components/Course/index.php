@@ -54,18 +54,18 @@ $students = json_decode($file);
   <?php } ?>
 
   <!-- Clases online en vivo  -->
-  <div class="in-columns">
+  <div class="in-columns gray-box">
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="columns align-center">
+          <div class="columns inverse-columns align-center-desktop align-center-mobile">
             <div class="final-project">
               <h2 class="title align-left margin-bottom-20">Clases online en vivo con profesionales de la industria</h2>
               <p class="text size-2" style="line-height: 26px;">Interactúa online y en vivo con el profesor/a experto en la materia, aprendiendo directamente de el/ella y haciendo las preguntas sin intermediarios y chatea con tus compañeros/as mientras se dicta la clase.</p>
             </div>
 
             <div class="certification" style="max-width: 550px;">
-              <img src="/dist/images/live-classes.svg" alt="Certificado" width="100%" height="auto">
+              <img src="/dist/images/live-classes.svg" alt="Live Classes" width="100%" height="auto">
             </div>
           </div>
         </div>
@@ -86,18 +86,18 @@ $students = json_decode($file);
   </div>
 
   <!-- Centro de contenidos  -->
-  <div class="in-columns gray-box">
+  <div class="in-columns">
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="columns align-center">
-            <div class="certification" style="max-width: 550px;">
-              <img src="/dist/images/content-center.svg" alt="Certificado" width="100%" height="auto">
-            </div>
-
+          <div class="columns align-center-desktop align-center-mobile">
             <div class="final-project">
               <h2 class="title align-left margin-bottom-20">Centro de contenidos exclusivo de nuestra plataforma</h2>
               <p class="text size-2" style="line-height: 26px;">Documentación, ejercicios y videos explicativos exclusivos de tu curso. <br /> Accede a las clases grabadas por si quieres hacer el curso a tu ritmo.</p>
+            </div>
+
+            <div class="certification" style="max-width: 550px;">
+              <img src="/dist/images/content-center.svg" alt="Content Center" width="100%" height="auto">
             </div>
           </div>
         </div>
@@ -118,11 +118,11 @@ $students = json_decode($file);
   </div>
 
   <!-- Panel del usuario -->
-  <div class="in-columns">
+  <div class="in-columns gray-box">
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="columns align-center">
+          <div class="columns inverse-columns align-center-desktop align-center-mobile">
             <div class="final-project">
               <h2 class="title align-left margin-bottom-20">Panel del Usuario</h2>
               <p class="text size-2" style="line-height: 26px;">
@@ -132,7 +132,7 @@ $students = json_decode($file);
             </div>
 
             <div class="certification" style="max-width: 550px;">
-              <img src="/dist/images/user-screen.svg" alt="Certificado" width="100%" height="auto">
+              <img src="/dist/images/user-screen.svg" alt="User Screen" width="100%" height="auto">
             </div>
           </div>
         </div>
@@ -153,18 +153,18 @@ $students = json_decode($file);
   </div>
 
   <!-- Chat -->
-  <div class="in-columns gray-box">
+  <div class="in-columns">
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="columns align-center">
-            <div class="certification" style="max-width: 550px;">
-              <img src="/dist/images/network.svg" alt="Certificado" width="100%" height="auto">
-            </div>
-
+          <div class="columns align-center-desktop align-center-mobile">
             <div class="final-project">
               <h2 class="title align-left margin-bottom-20">Network</h2>
               <p class="text size-2" style="line-height: 26px;">Conversa en vivo con tu grupo y tu mentor/a 24/7, con la comunidad que realizó los mismos cursos y con todo el ecosistema Dev. Accede a canales de conversación de los temas de vanguardia de la industria tecnológica que reúnen a las personas y a la información adecuadas.</p>
+            </div>
+
+            <div class="certification" style="max-width: 550px;">
+              <img src="/dist/images/network.svg" alt="Network" width="100%" height="auto">
             </div>
           </div>
         </div>
@@ -185,11 +185,11 @@ $students = json_decode($file);
   </div>
 
   <!-- Calendario -->
-  <div class="in-columns">
+  <div class="in-columns gray-box">
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="columns align-center">
+          <div class="columns inverse-columns align-center-desktop align-center-mobile">
             <div class="final-project">
               <h2 class="title align-left margin-bottom-20">Calendario</h2>
               <p class="text size-2" style="line-height: 26px;">
@@ -200,7 +200,7 @@ $students = json_decode($file);
             </div>
 
             <div class="certification" style="max-width: 550px;">
-              <img src="/dist/images/calendar.svg" alt="Certificado" width="100%" height="auto">
+              <img src="/dist/images/calendar.svg" alt="Calendar" width="100%" height="auto">
             </div>
           </div>
         </div>
@@ -228,7 +228,7 @@ $students = json_decode($file);
     <div class="container">
       <div class="row">
         <div class="col">
-          <h2 class="align-center">Principal Información sobre tu curso</h2>
+          <h2 class="align-center-desktop align-center-mobile">Principal Información sobre tu curso</h2>
         </div>
       </div>
 
@@ -277,14 +277,14 @@ $students = json_decode($file);
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="columns align-center">
+          <div class="columns align-center-desktop align-center-mobile">
             <div class="final-project">
               <h2 class="title align-left margin-bottom-20">Proyecto final + certificación</h2>
               <p class="markdown text size-2"><?php echo $finalProject; ?></p>
             </div>
 
             <div class="certification" style="max-width: 550px;">
-              <img src="/dist/images/certification.png" alt="Certificado" width="100%" height="auto">
+              <img class="no-shadow" src="/dist/images/certification.png" alt="Certificado" width="100%" height="auto">
             </div>
           </div>
         </div>
@@ -305,11 +305,11 @@ $students = json_decode($file);
   </div>
 
   <!-- Equipo -->
-  <div class="mentors-carousel">
+  <div class="mentors-carousel gray-box">
     <?php includeWithVariables($srcPath . 'components/Carousel/index.php', (array) $mentors, true); ?>
   </div>
 
-  <!-- Estadísticos -->
+  <!-- Estadísticas -->
   <div class="in-columns">
     <div class="container">
       <div class="row">
@@ -352,8 +352,8 @@ $students = json_decode($file);
     <div class="container">
       <div class="row">
         <div class="col">
-          <h2 class="align-center" style="margin-bottom: 30px;">Formas de pago</h2>
-          <p class="text align-center" style="line-height: 26px; margin: 0px auto 65px; max-width: 700px">Paga con tarjeta de crédito hasta 12 cuotas sin interés, tarjeta de debito, transferencia bancaria, deposito bancario, Mercado Pago, Ualá, Ethereum o efectivo a través de Rapipago o Pago Fácil. </p>
+          <h2 class="align-center-desktop align-center-mobile" style="margin-bottom: 30px;">Formas de pago</h2>
+          <p class="text align-center-desktop align-center-mobile" style="line-height: 26px; margin: 0px auto 65px; max-width: 700px">Paga con tarjeta de crédito hasta 12 cuotas sin interés, tarjeta de debito, transferencia bancaria, deposito bancario, Mercado Pago, Ualá, Ethereum o efectivo a través de Rapipago o Pago Fácil. </p>
         </div>
       </div>
 
@@ -388,7 +388,7 @@ $students = json_decode($file);
     <div class="in-columns">
       <div class="container">
         <div class="row">
-          <div class="col align-center">
+          <div class="col align-center-desktop align-center-mobile">
             <h2 class="text-center">Inscripción</h2>
           </div>
         </div>
@@ -397,81 +397,81 @@ $students = json_decode($file);
           <div class="col">
             <div class="columns align-top">
               <div>
-                <h3 class="title">Pago</h3>
+                <h3 class="title gradient-title">Pago</h3>
                 <p>Una vez abonado el curso, te va a llegar un mail con:</p>
                 <br>
                 <ul class="list">
                   <li>
-                    <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
+                    <span><img class="img-bullet" src="/dist/images/icons/bullet.png" alt="icon"></span>
                     <p>Acceso a nuestra plataforma.</p>
                   </li>
                   <li>
-                    <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
+                    <span><img class="img-bullet" src="/dist/images/icons/bullet.png" alt="icon"></span>
                     <p>Acceso al sistema de chat de todo el ecosistema.</p>
                   </li>
                   <li>
-                    <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
+                    <span><img class="img-bullet" src="/dist/images/icons/bullet.png" alt="icon"></span>
                     <p>Acceso a los links de las clases online en vivo.</p>
                   </li>
                 </ul>
               </div>
 
               <div>
-                <h3 class="title">Lo que recibes</h3>
+                <h3 class="title gradient-title">Lo que recibes</h3>
                 <ul class="list">
                   <li>
-                    <span><img src="/dist/images/icons/notebook.png" alt="icon"></span>
+                    <span><img class="no-shadow" src="/dist/images/icons/notebook.png" alt="icon"></span>
                     <p>Clases online en vivo con profesor/a en horarios determinados.</p>
                   </li>
                   <li>
-                    <span><img src="/dist/images/icons/documentation.png" alt="icon"></span>
+                    <span><img class="no-shadow" src="/dist/images/icons/documentation.png" alt="icon"></span>
                     <p>Documentación y contenido exclusivo.</p>
                   </li>
                   <li>
-                    <span><img src="/dist/images/icons/foro.png" alt="icon"></span>
+                    <span><img class="no-shadow" src="/dist/images/icons/foro.png" alt="icon"></span>
                     <p>Acceso al foro privado de tu curso.</p>
                   </li>
                   <li>
-                    <span><img src="/dist/images/icons/support.png" alt="icon"></span>
+                    <span><img class="no-shadow" src="/dist/images/icons/support.png" alt="icon"></span>
                     <p>Soporte y seguimiento las 24hs.</p>
                   </li>
                   <li>
-                    <span><img src="/dist/images/icons/extra-material.png" alt="icon"></span>
+                    <span><img class="no-shadow" src="/dist/images/icons/extra-material.png" alt="icon"></span>
                     <p>Videos extra grabados.</p>
                   </li>
                   <li>
-                    <span><img src="/dist/images/icons/recorded-classes.png" alt="icon"></span>
+                    <span><img class="no-shadow" src="/dist/images/icons/recorded-classes.png" alt="icon"></span>
                     <p>Clases grabadas y publicadas en la plataforma.</p>
                   </li>
                 </ul>
               </div>
 
               <div>
-                <h3 class="title">¿Por qué inscribirme en un curso de Dev Place?</h3>
+                <h3 class="title gradient-title">¿Por qué inscribirme en un curso de Dev Place?</h3>
                 <ul class="list">
                   <li>
-                    <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
+                    <span><img class="img-bullet" src="/dist/images/icons/bullet.png" alt="icon"></span>
                     <p>Becas por buen rendimiento del 100% para próximos cursos</p>
                   </li>
                   <li>
-                    <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
+                    <span><img class="img-bullet" src="/dist/images/icons/bullet.png" alt="icon"></span>
                     <p>Talleres para crecimiento profesional.</p>
                   </li>
                   <li>
-                    <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
+                    <span><img class="img-bullet" src="/dist/images/icons/bullet.png" alt="icon"></span>
                     <p>Certificado al aprobar proyecto final.</p>
                   </li>
                   <li>
-                    <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
+                    <span><img class="img-bullet" src="/dist/images/icons/bullet.png" alt="icon"></span>
                     <p>Descuentos para futuros cursos.</p>
                   </li>
                   <li>
-                    <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
-                    <p>Descuentos para futuros cursos usando el programa de referidos meetups y conferencias exclusivas del ecosistema con lideres #tech.</p>
+                    <span><img class="img-bullet" src="/dist/images/icons/bullet.png" alt="icon"></span>
+                    <p>Descuentos para futuros cursos usando el programa de referidos.</p>
                   </li>
                   <li>
-                    <span><img src="/dist/images/icons/bullet.png" alt="icon"></span>
-                    <p>Acceso a los links de las clases online en vivo.</p>
+                    <span><img class="img-bullet" src="/dist/images/icons/bullet.png" alt="icon"></span>
+                    <p>Meetups y conferencias exclusivas del ecosistema con lideres #tech.</p>
                   </li>
                 </ul>
               </div>
@@ -479,21 +479,21 @@ $students = json_decode($file);
           </div>
         </div>
       </div>
-    </div>
-  </div>
 
-
-  <?php if (isset($cta)) { ?>
-    <div class="container m-t-100">
-      <div class="row">
-        <div class="col">
-          <div class="content-center">
-            <?php includeWithVariables($srcPath . 'components/CallToAction/index.php', (array) $cta, true); ?>
+      <div class="container">
+        <?php if (isset($cta)) { ?>
+          <div class="m-t-100">
+            <div class="row">
+              <div class="col">
+                <div class="content-center">
+                  <?php includeWithVariables($srcPath . 'components/CallToAction/index.php', (array) $cta, true); ?>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+        <?php } ?>
       </div>
     </div>
-  <?php } ?>
   </div>
 
   <!-- Experiencias -->

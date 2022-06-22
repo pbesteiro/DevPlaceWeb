@@ -1,14 +1,14 @@
 .faqs-component {
   h2.title {
-    font-size: 44px;
-    line-height: 50px;
+    font-size: 32px;
     font-weight: 500;
     margin-bottom: 88px;
     letter-spacing: -1.5px;
     text-align: start;
 
     @media (min-width: 768px) {
-      font-size: 60px;
+      font-size: 40px;
+      line-height: 52px;
       font-weight: 600;
       margin-bottom: 115px;
       letter-spacing: -1.1px;
@@ -50,25 +50,26 @@
 
     h3.title {
       margin: 0px 50px 20px 0px;
-      font-size: 20px;
+      font-size: 22px;
       line-height: 24px;
       font-weight: 500; 
 
       @media (min-width: 768px) {
-        font-size: 25px;
+        font-size: 26px;
         line-height: 29px;
         font-weight: 600;
         margin: 0px 0px 27px 0px;
       }
     }
+
     p.text {
-      font-size: 17px;
+      font-size: 14px;
       line-height: 24px;
       color: #334253;
       margin: 0px;
 
       @media (min-width: 768px) {
-        font-size: 20px;
+        font-size: 14px;
         line-height: 30px;
       }
     }
