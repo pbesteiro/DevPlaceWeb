@@ -84,6 +84,9 @@ $page = json_decode($file);
 </head>
 
 <body class="checkout-layout">
+   <!-- Google Tag Manager (noscript) -->
+   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNK22WB" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <header>
     <span class="logo">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 438.63 81.48">
