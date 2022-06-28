@@ -18,6 +18,20 @@ section.course-component {
     font-weight: bold;
   }
 
+  p {
+    &.align-center-desktop{
+      @media(min-width: 1024px){
+        text-align: center;
+      }
+    }
+  
+    &.align-center-mobile{
+      @media(max-width: 1023px){
+        text-align: center;
+      }
+    }
+  }
+
   .hero {
     position: relative;
     height: 220px;

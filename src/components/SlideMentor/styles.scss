@@ -5,6 +5,11 @@ div.slide-mentor-component{
   justify-content: center;
   text-align: center;
 
+  margin: 20px;
+  background-color: white;
+  box-shadow: 2px 4px 12px rgb(0 0 0 / 40%);
+  border-radius: 17px;
+  padding: 65px 35px 70px;
 
   @media (min-width: 768px) {
     padding: 65px 35px 70px;
