@@ -16,10 +16,11 @@
       "link": "/curso/desarrollo-web.php",
       "program": {
         "type": "link",
+        "target": "_blank",
         "icon": {
           "name": "blue-arrow.png"
         },
-        "action": "window.open('https://devplace.tech/constants/curso/programa/DESARROLLO_WEB-DEVPLACE.pdf','_blank')",
+        "link": "/constants/curso/programa/temario-desarrollo-web.pdf",
         "label": "Descargar programa"
       },
       "details": [

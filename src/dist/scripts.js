@@ -5278,7 +5278,6 @@ const closeAllSubmenues = () => {
   }
 }
 const showToast = (type, innerHTML) => {
-  console.log('Toast')
   const toast = document.createElement('div');
   toast.innerHTML = '<span class="tick"></span><span class="message">' + innerHTML + '</span>';
   toast.classList.add('toast')
@@ -5287,23 +5286,29 @@ const showToast = (type, innerHTML) => {
 
   document.body.appendChild(toast)
   
-
+  
   // Add the "show" class to toast
-  document.getElementById('toast').classList.add("show");
+  setTimeout(() => {
+    document.getElementById('toast').classList.add("show");
+    document.getElementById('backdrop').classList.add("show-in")
+    document.getElementById('backdrop').classList.add("showing")
+  }, 750);
 
   // After 5 seconds, remove the show class from DIV
   setTimeout(() => {
-    console.log('Hide Toast')
     document.getElementById('toast').classList.remove("show");
-
-    // After 6 seconds, remove toast element
+    
     setTimeout(() => {
-      console.log('Remove Toast')
+      document.getElementById('backdrop').classList.remove("show-in")
+      document.getElementById('backdrop').classList.remove("showing")
+    }, 500);
+    
+    setTimeout(() => {
       document.getElementById('toast').remove()
     }, 1000);
-  }, 5000);
-
+  }, 3000);
 };
+
 
 const bankTransferInformationForm = document.getElementById('bank-transfer-information-form')
 
@@ -5394,7 +5399,6 @@ if(!!bePartner ){
       saveInLocalSoterage('be-partner-form')
       const formData = new FormData(event.target)
       sendEmail('partnership', event.target, formData, () => {
-        console.log('callback be partner')
         showToast('success', 'Hemos recibido tu solicitud de partnership.')
         hideModal('be-partner-modal')
       })
@@ -5454,6 +5458,7 @@ if(!!applyForm ){
       formData.append('perfil', perfil)
       sendEmail('bootcamp', event.target, formData, () => {
         showToast('success', 'Hemos recibido tu solicitud de inscripción al bootcamp de <strong>' + perfil + "</strong>")
+        hideModal('apply-modal')
       })
     });
   

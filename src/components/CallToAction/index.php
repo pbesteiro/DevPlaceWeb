@@ -4,8 +4,9 @@ $srcPath = $_SERVER['DOCUMENT_ROOT'];
 ?>
 
 <?php if (isset($link) && $link !== '') { ?>
-  <a class="call-to-action skin-<?php echo isset($type) ? $type : 'filled'; ?>" href="<?php echo $link; ?>">
+  <a class="call-to-action skin-<?php echo isset($type) ? $type : 'filled'; ?>" href="<?php echo $link; ?>" target="<?php echo isset($target) ? $target : '_self'; ?>">
     <?php echo $label; ?>
+    <?php echo isset($icon) ? '<img src="/dist/images/icons/' . $icon->name . '">' : ''; ?>
     <?php include $srcPath . 'components/Loader/index.php'; ?>
   </a>
 <?php } ?>

@@ -16,10 +16,11 @@
       "link": "/curso/sql.php",
       "program": {
         "type": "link",
+        "target": "_blank",
         "icon": {
           "name": "blue-arrow.png"
         },
-        "action": "window.open('https://devplace.tech/constants/curso/programa/SQL-DEV PLACE.pdf','_blank')",
+        "link": "/constants/curso/programa/temario-sql.pdf",
         "label": "Descargar programa"
       },
       "details": [

@@ -16,10 +16,11 @@
       "link": "/curso/javascript.php",
       "program": {
         "type": "link",
+        "target": "_blank",
         "icon": {
           "name": "blue-arrow.png"
         },
-        "action": "window.open('https://devplace.tech/constants/curso/programa/JS-DEV PLACE.pdf','_blank')",
+        "link": "/constants/curso/programa/temario-javascript.pdf",
         "label": "Descargar programa"
       },
       "details": [

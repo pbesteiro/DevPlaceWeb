@@ -54,11 +54,12 @@ $srcPath = $_SERVER['DOCUMENT_ROOT'];
           hours,
           mentor,
           price,
-          discount
+          discount_price,
+          discount,
         } = selectedProduct;
 
         document.getElementById('curse').innerText = name;
-        document.getElementById('price').innerText = getPesosArFormat(price);
+        document.getElementById('price').innerText = getPesosArFormat(discount_price);
 
         if (!benefitedEmailSent) {
           const curse = JSON.parse(benefited.filter((field) => field.key === 'lanzamiento')[0].value)

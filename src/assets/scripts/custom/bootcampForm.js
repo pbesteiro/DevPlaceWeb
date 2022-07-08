@@ -50,6 +50,7 @@ if(!!applyForm ){
       formData.append('perfil', perfil)
       sendEmail('bootcamp', event.target, formData, () => {
         showToast('success', 'Hemos recibido tu solicitud de inscripción al bootcamp de <strong>' + perfil + "</strong>")
+        hideModal('apply-modal')
       })
     });
   
