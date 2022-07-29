@@ -25,7 +25,7 @@ $students = json_decode($file);
   </h1>
 
   <?php if (isset($program)) { ?>
-    <div class="content-center">
+    <div class="content-center download-programme-cta-wrapper">
       <?php includeWithVariables($srcPath . 'components/CallToAction/index.php', (array) $program, true); ?>
     </div>
   <?php } ?>
