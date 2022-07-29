@@ -531,11 +531,14 @@ $students = json_decode($file);
   </div>
 </section>
 
+<?php include $srcPath . 'components/LeadCourseProgramModal/index.php'; ?>
+
 <style>
   .faqs-component {
     padding: 65px 0;
   }
 </style>
+
 <script>
   const TECHNOLOGY_ID = "<?php echo $technologyId; ?>";
   const PAYMENT_LINK = "<?php echo $paymentLink; ?>";

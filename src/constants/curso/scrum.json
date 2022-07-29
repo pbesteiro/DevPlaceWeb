@@ -19,8 +19,10 @@
         "icon": {
           "name": "blue-arrow.png"
         },
+        "id": "descargar-programa",
+        "label": "Descargar programa",
         "action": "#",
-        "label": "Descargar programa"
+        "callback": ""
       },
       "details": [
         {

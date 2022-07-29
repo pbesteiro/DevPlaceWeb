@@ -20,8 +20,10 @@
         "icon": {
           "name": "blue-arrow.png"
         },
-        "link": "/constants/curso/programa/temario-desarrollo-web.pdf",
-        "label": "Descargar programa"
+        "id": "descargar-programa",
+        "label": "Descargar programa",
+        "action": "showModal('lead-course-program-modal')",
+        "callback": "/constants/curso/programa/temario-desarrollo-web.pdf"
       },
       "details": [
         {

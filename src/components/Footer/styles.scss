@@ -109,3 +109,44 @@ footer {
     }
   }
 }
+
+#newsletter-form {
+  .fields-inline {
+    align-items: center;
+    justify-content: flex-start;
+
+    .field {
+      margin: 0px 26px 0px 0px;
+      width: 300px;
+
+      input {
+
+      }
+    }
+  }
+
+  .call-to-action {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    padding: 0px;
+    color: #145ade;
+
+    svg {
+      fill: #145ade;
+      width: 24px;
+      height: 24px;
+    }
+
+    &:hover {
+      background-color: #145ade;
+      color: white;
+
+      svg {
+        fill: white;
+      }
+    }
+
+  }
+}
