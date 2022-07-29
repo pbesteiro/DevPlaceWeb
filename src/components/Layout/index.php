@@ -76,7 +76,7 @@ $page = json_decode($file);
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-  <link href="/dist/styles.css" rel="stylesheet">
+  <link href="/dist/styles.css?cb=<?php echo date('h:i:s'); ?>" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 
@@ -102,7 +102,7 @@ $page = json_decode($file);
   <?php include $srcPath . 'components/HirePlanForm/index.php'; ?>
   <?php include $srcPath . 'components/Loader/index.php'; ?>
   <a href="https://api.whatsapp.com/send?phone=5491121685045" class="whatsapp" target="_blank">
-    <i class="fa fa-whatsapp whatsapp-icon"></i>
+    <i class="fa fa-whatsapp whatsapp-icon"></i> <span>¿Preguntas? ¡Escribinos!</span>
   </a>
   <div id="backdrop"></div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"></script>
