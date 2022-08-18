@@ -16,9 +16,7 @@
       "link": "/curso/community-management-fb-google-ads.php",
       "program": {
         "type": "link",
-        "icon": {
-          "name": "blue-arrow.png"
-        },
+        "icon": null,
         "id": "descargar-programa",
         "label": "Descargar programa",
         "action": "#",

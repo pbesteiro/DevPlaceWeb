@@ -17,9 +17,7 @@
       "program": {
         "type": "link",
         "target": "_blank",
-        "icon": {
-          "name": "blue-arrow.png"
-        },
+        "icon": null,
         "id": "descargar-programa",
         "label": "Descargar programa",
         "action": "showModal('lead-course-program-modal')",

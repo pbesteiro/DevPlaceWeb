@@ -9,6 +9,7 @@ include './phpmailer/src/PHPMailer.php';
 include './phpmailer/src/SMTP.php';
 
 $emailReceptor = 'info@devplace.tech';
+$emailReceptor = 'organizacion@devplace.tech';
 
 $email = isset($_REQUEST['email']) ? $_REQUEST['email'] : '';
 $curseName = isset($_REQUEST['cursoName']) ? $_REQUEST['cursoName'] : '';

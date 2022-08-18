@@ -16,9 +16,7 @@
       "link": "/curso/growth-marketing.php",
       "program": {
         "type": "link",
-        "icon": {
-          "name": "blue-arrow.png"
-        },
+        "icon": null,
         "id": "descargar-programa",
         "label": "Descargar programa",
         "action": "#",
