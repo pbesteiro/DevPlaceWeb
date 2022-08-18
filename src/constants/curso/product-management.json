@@ -11,6 +11,7 @@
       "modality": "Curso online en vivo",
       "technologyId":"62432405e14c520a7dcaf325",
       "name": "Product Management",
+      "category": "Productividad",
       "image": "product-management.png",
       "paymentLink":"https://mpago.la/1Z5Q6XP",
       "link": "/curso/product-management.php",

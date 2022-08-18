@@ -23,6 +23,8 @@ if (!!paymentMethodForm) {
       var jsonStr = localStorage.getItem("selected-product");
       var selectedProduct = JSON.parse(jsonStr);
 
+      fireTrack(fbTrack.ADD_PAYMENT_INFO, selectedProduct)
+
       if (nextStep == "mercado-pago"){
         document.location.href = selectedProduct.paymentLink;
       } else if (nextStep == "whatsapp") {

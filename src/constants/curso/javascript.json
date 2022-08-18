@@ -11,6 +11,7 @@
       "modality": "Curso online en vivo",
       "technologyId":"62430fe9e14c520a7dcaf228",
       "name": "JavaScript",
+      "category": "Programación",
       "image": "javascript.png",
       "paymentLink":"https://mpago.la/1HwceXD",
       "link": "/curso/javascript.php",

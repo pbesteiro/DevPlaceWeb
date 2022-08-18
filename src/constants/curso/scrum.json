@@ -11,6 +11,7 @@
       "modality": "Curso online en vivo",
       "technologyId":"6243240ce14c520a7dcaf328",
       "name": "Scrum",
+      "category": "Productividad",
       "image": "product-management.png",
       "paymentLink":"https://mpago.la/2qaXjfS",
       "link": "/curso/scrum.php",

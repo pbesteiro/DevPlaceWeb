@@ -11,6 +11,7 @@
       "modality": "Curso online en vivo",
       "technologyId":"6243241de14c520a7dcaf330",
       "name": "Linux",
+      "category": "Infraestructura digital",
       "image": "linux.png",
       "paymentLink":"https://mpago.la/2DJtP5v",
       "link": "/curso/linux.php",

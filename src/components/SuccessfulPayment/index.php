@@ -41,11 +41,15 @@ $srcPath = $_SERVER['DOCUMENT_ROOT'];
       const benefitedJsonStr = localStorage.getItem('gift-card-form')
       const benefitedEmailSent = localStorage.getItem('benefitedEmailSent')
 
+
+
       document.getElementById('payment_id').innerText = payment_id;
 
       if (!!selectedProductJsonStr && !!benefitedJsonStr) {
         const selectedProduct = JSON.parse(selectedProductJsonStr)
         const benefited = JSON.parse(benefitedJsonStr)
+
+        fireTrack(fbTrack.PURCHASE, selectedProduct)
 
         const {
           name,

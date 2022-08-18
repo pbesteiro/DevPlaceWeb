@@ -11,6 +11,7 @@
       "modality": "Curso online en vivo",
       "technologyId":"62430ff7e14c520a7dcaf22c",
       "name": "Desarrollo Web",
+      "category": "Programación",
       "image": "html.png",
       "paymentLink":"https://mpago.la/1ooLstL",
       "link": "/curso/desarrollo-web.php",

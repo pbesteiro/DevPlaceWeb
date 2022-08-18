@@ -11,6 +11,7 @@
       "modality": "Curso online en vivo",
       "technologyId":"62431031e14c520a7dcaf236",
       "name": "POO",
+      "category": "Programación",
       "image": "poo.png",
       "paymentLink":"https://mpago.la/2X9uXyx",
       "link": "/curso/poo.php",

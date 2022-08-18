@@ -579,6 +579,8 @@ $students = json_decode($file);
           discount: 50,
           duration: slide.duration,
           detail: slide.detail,
+          type: 'Curso',
+          category: "<?php echo $category; ?>",
           cta: {
             type: "filled",
             action: "addToCart(event)",
@@ -601,6 +603,8 @@ $students = json_decode($file);
           discount: 50,
           duration: slide.duration,
           detail: slide.detail,
+          type: 'Curso',
+          category: "<?php echo $category; ?>",
           cta: {
             type: "filled",
             action: "addToCart(event)",

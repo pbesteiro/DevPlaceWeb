@@ -11,6 +11,7 @@
       "modality": "Curso online en vivo",
       "technologyId":"62432360e14c520a7dcaf30f",
       "name": "Data Analytics",
+      "category": "Datos",
       "image": "data-analytics.png",
       "paymentLink":"https://mpago.la/1K6YCDw",
       "link": "/curso/data-analytics.php",

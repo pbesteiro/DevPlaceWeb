@@ -42,6 +42,9 @@ if(!!customerInformationForm ){
       const formData = new FormData(event.target)
       const curso = JSON.parse(localStorage.getItem('selected-product') || '')
       formData.append('curso', curso.name)
+
+      fireTrack(fbTrack.INITIATE_CHECKOUT, curso)
+
       sendEmail('lead', event.target, formData, () => {
         let nextStep = event.target.dataset.nextstep
         goToUrl(nextStep, '/checkout')

@@ -43,6 +43,9 @@ const setSelectedProduct = (data) => {
 const addToCart = (event) => {
   const data = event.target.parentNode.dataset.course
   setSelectedProduct(data)
+
+  fireTrack(fbTrack.ADD_TO_CART, JSON.parse(data))
+
   const a = document.createElement('a');
   a.style.display = 'none';
   a.href = '/checkout/customer-information.php';

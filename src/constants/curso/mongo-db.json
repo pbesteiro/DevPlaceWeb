@@ -11,6 +11,7 @@
       "modality": "Curso online en vivo",
       "technologyId":"6243242de14c520a7dcaf335",
       "name": "Mongo DB",
+      "category": "Base de datos",
       "image": "mongo-db.png",
       "paymentLink":"https://mpago.la/1x7FGEY",
       "link": "/curso/mongo-db.php",

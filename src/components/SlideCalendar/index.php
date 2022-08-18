@@ -19,6 +19,8 @@ $courseInformation = array(
   'detail' => $detail,
   'paymentLink' => $paymentLink,
   'link' => $link,
+  'type' => $type,
+  'category' => $category
 );
 
 setlocale(LC_MONETARY, 'es_AR');

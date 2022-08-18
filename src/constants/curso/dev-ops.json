@@ -11,6 +11,7 @@
       "modality": "Curso online en vivo",
       "technologyId":"62432418e14c520a7dcaf32d",
       "name": "Dev Ops",
+      "category": "Infraestructura digital",
       "image": "dev-ops.png",
       "paymentLink":"https://mpago.la/2cQRrQF",
       "link": "/curso/dev-ops.php",
